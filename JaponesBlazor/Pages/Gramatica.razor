@@ -1,7 +1,12 @@
 ﻿@page "/Capitulo/{Id:int}/Gramatica"
+@using JaponesBlazor.Component
 @inject HttpClient Http
 
-<h1 class="text-xl font-bold text-green-700 text-center mb-6">🧠 Gramática – Capítulo @Id</h1>
+<div class="header-bar mb-8">
+    <BackButton />
+    <h1 class="titulo-centrado">🧠 Gramática – Capítulo @Id</h1>
+    <div class="header-bar-space"></div>
+</div>
 
 @if (Items is null)
 {

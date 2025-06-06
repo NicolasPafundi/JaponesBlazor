@@ -1,12 +1,20 @@
 ﻿@page "/Capitulos"
+@using JaponesBlazor.Component
 
-<div class="capitulo-bg py-8 min-h-screen">
-    <div class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-        <h1 class="text-3xl font-extrabold text-sky-700 text-center mb-6 drop-shadow">📘 Capítulos</h1>
-        <div class="flex flex-col gap-6">
+
+<div class="header-bar mb-8">
+    <BackButton />
+    <h1 class="titulo-centrado">📘 Capítulos</h1>
+    <div class="header-bar-space"></div>
+</div>
+
+<div>
+    <div class="max-w-xl mx-auto">
+
+        <div class="flex flex-col gap-8">
             @foreach (var cap in capitulos)
             {
-                <NavLink class="capitulo-card cursor-pointer transition-all" href="@($"/Capitulo/{cap.Id}")">
+                <NavLink class="capitulo-card cursor-pointer transition-all" href="@($"Capitulo/{cap.Id}")">
                     <span class="capitulo-titulo">@cap.Titulo</span>
                 </NavLink>
             }
@@ -17,8 +25,7 @@
 @code {
     private List<CapituloModel> capitulos = new()
     {
-        new CapituloModel { Id = 1, Titulo = "Capítulo 1: Saludos" },
-        new CapituloModel { Id = 2, Titulo = "Capítulo 2: Verbos básicos" },
-        new CapituloModel { Id = 3, Titulo = "Capítulo 3: Partículas" },
+        new CapituloModel { Id = 1, Titulo = "Capítulo 1" },
+        new CapituloModel { Id = 2, Titulo = "Capítulo 2" }
     };
 }

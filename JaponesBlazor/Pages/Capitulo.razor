@@ -1,9 +1,15 @@
 ﻿@page "/Capitulo/{Id:int}"
+@using JaponesBlazor.Component
 @inject NavigationManager Nav
 
-<div class="capitulo-bg py-8 min-h-screen">
-    <div class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-        <h1 class="text-3xl font-extrabold text-sky-700 text-center mb-4 drop-shadow">📘 Capítulo @Id</h1>
+<div class="header-bar mb-8">
+    <BackButton />
+    <h1 class="titulo-centrado">📘 Capítulo @Id</h1>
+    <div class="header-bar-space"></div>
+</div>
+
+<div>
+    <div class="max-w-xl mx-auto">
         <p class="text-center text-gray-600 mb-8 text-lg">Seleccioná qué querés estudiar:</p>
 
         <div class="flex flex-col gap-8">
