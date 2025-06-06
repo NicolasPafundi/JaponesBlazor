@@ -1,13 +1,15 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inject IJSRuntime JS
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Japones</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu" @ref="menuButtonRef">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+<div class="@NavMenuCssClass nav-scrollable" @ref="navMenuRef">
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink href="quizz" class="block bg-purple-100 hover:bg-purple-200 text-purple-900 font-semibold p-6 rounded-xl text-center shadow transition">
@@ -24,6 +26,10 @@
 
 @code {
     private bool collapseNavMenu = true;
+    private ElementReference navMenuRef;
+    private IJSObjectReference? outsideClickModule;
+    private DotNetObjectReference<NavMenu>? dotNetRef;
+    private ElementReference menuButtonRef;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
@@ -31,4 +37,53 @@
     {
         collapseNavMenu = !collapseNavMenu;
     }
+
+    [JSInvokable]
+    public void CollapseMenu()
+    {
+        if (!collapseNavMenu)
+        {
+            collapseNavMenu = true;
+            StateHasChanged();
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            dotNetRef = DotNetObjectReference.Create(this);
+            await JS.InvokeAsync<object>(
+                "registerOutsideClick",
+                navMenuRef,
+                menuButtonRef,
+                dotNetRef
+            );
+        }
+    }
+
+    public void Dispose()
+    {
+        dotNetRef?.Dispose();
+    }
 }
+
+<script>
+    window.registerOutsideClick = (menuElement, buttonElement, dotNetHelper) => {
+        function onClick(event) {
+            if (
+                menuElement &&
+                !menuElement.contains(event.target) &&
+                buttonElement &&
+                !buttonElement.contains(event.target)
+            ) {
+                dotNetHelper.invokeMethodAsync('CollapseMenu');
+            }
+        }
+        document.addEventListener('mousedown', onClick);
+
+        return {
+            dispose: () => document.removeEventListener('mousedown', onClick)
+        };
+    };
+</script>
