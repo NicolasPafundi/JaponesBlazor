@@ -229,3 +229,68 @@ code {
     border-color: #ef4444 !important;
     color: #991b1b !important;
 }
+
+/* Responsive header bar */
+@media (max-width: 600px) {
+    .header-bar > .btn-atras,
+    .header-bar-space {
+        width: 2.2rem;
+        min-width: 2.2rem;
+        height: 2.2rem;
+    }
+    .header-bar {
+        gap: 0.5rem;
+        min-height: 2.2rem;
+    }
+    /* No reduzcas el font-size del título aquí */
+}
+
+/* Otros */
+code {
+    color: #c02d76;
+}
+.nav-scrollable a {
+    text-decoration: none;
+}
+
+body, .bg-white, .bg-light {
+    background: #fff !important;
+    color: #111 !important;
+    box-shadow: none !important;
+}
+
+[data-bs-theme="dark"], [data-theme="dark"], .dark, body.dark {
+    background: #fff !important;
+    color: #111 !important;
+    --bs-body-bg: #fff !important;
+    --bs-body-color: #111 !important;
+}
+
+:root {
+    --bs-body-bg: #fff !important;
+    --bs-body-color: #111 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #fff !important;
+        color: #111 !important;
+    }
+
+    body, .bg-white, .bg-light {
+        background: #fff !important;
+        color: #111 !important;
+    }
+}
+
+.btn-audio {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #0ea5e9;
+    transition: color 0.2s;
+}
+.btn-audio:hover {
+    color: #0369a1;
+}

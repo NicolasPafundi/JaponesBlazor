@@ -20,7 +20,12 @@
             var actual = PreguntasFiltradas[Indice];
 
             <div class="mb-8">
-                <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center">@actual.Enunciado</h2>
+                <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center">
+                    <div class="quizz-palabra-centralizada mb-6">
+                        <PlayJapanese Texto="@actual.Enunciado" />
+                        <span class="quizz-palabra-japonesa">@actual.Enunciado</span>
+                    </div>
+                </h2>
                 <div class="flex flex-col gap-5">
                     @foreach (var opcion in actual.Opciones)
                     {

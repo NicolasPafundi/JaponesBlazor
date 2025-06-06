@@ -27,6 +27,19 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        window.leerJapones = function (texto) {
+            if (!window.speechSynthesis) return;
+            window.speechSynthesis.cancel(); // Detiene cualquier reproducción anterior
+            var utter = new window.SpeechSynthesisUtterance(texto);
+            utter.lang = "ja-JP";
+            // Opcional: selecciona una voz japonesa si está disponible
+            var voices = window.speechSynthesis.getVoices();
+            var jpVoice = voices.find(v => v.lang.startsWith("ja"));
+            if (jpVoice) utter.voice = jpVoice;
+            window.speechSynthesis.speak(utter);
+        };
+    </script>
 </body>
 
 </html>
