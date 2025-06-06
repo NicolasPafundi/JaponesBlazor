@@ -346,4 +346,9 @@ body, .bg-white, .bg-light {
         background-color: #fff !important;
         color: #111 !important;
     }
+
+    body, .bg-white, .bg-light {
+        background: #fff !important;
+        color: #111 !important;
+    }
 }
