@@ -3,59 +3,70 @@
 @inject NavigationManager Nav
 @inject HttpClient Http
 
-<h1 class="text-xl font-bold text-purple-600 text-center mb-6">📝 Quizz</h1>
+<div class="capitulo-bg py-8 min-h-screen">
+    <div class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+        <h1 class="text-3xl font-extrabold text-sky-700 text-center mb-8 drop-shadow">📝 Quizz</h1>
 
-@if (PreguntasFiltradas == null)
-{
-    <p class="text-center text-gray-600">Cargando preguntas...</p>
-}
-else if (!PreguntasFiltradas.Any())
-{
-    <p class="text-center text-red-600">No hay preguntas disponibles para esos capítulos.</p>
-}
-else
-{
-    var actual = PreguntasFiltradas[Indice];
-
-    <div class="max-w-xl mx-auto bg-white p-6 rounded-xl shadow border mb-6">
-        <h2 class="text-lg font-semibold mb-4 text-gray-800">@actual.Enunciado</h2>
-
-        @foreach (var opcion in actual.Opciones)
+        @if (PreguntasFiltradas == null)
         {
-            <button class="block w-full text-left px-4 py-2 mb-2 rounded border hover:bg-purple-100 transition
-                                   @(RespuestaSeleccionada == opcion ? (opcion == actual.RespuestaCorrecta ? "bg-green-200" : "bg-red-200") : "")"
-                    @onclick="() => SeleccionarRespuesta(opcion)"
-                    disabled="@YaRespondida">
-                @opcion
-            </button>
+            <p class="text-center text-gray-600">Cargando preguntas...</p>
+        }
+        else if (!PreguntasFiltradas.Any())
+        {
+            <p class="text-center text-red-600">No hay preguntas disponibles para esos capítulos.</p>
+        }
+        else
+        {
+            var actual = PreguntasFiltradas[Indice];
+
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center">@actual.Enunciado</h2>
+                <div class="flex flex-col gap-5">
+                    @foreach (var opcion in actual.Opciones)
+                    {
+                        var esSeleccionada = RespuestaSeleccionada == opcion;
+                        var esCorrecta = opcion == actual.RespuestaCorrecta;
+                        var mostrarCorrecta = YaRespondida && !esSeleccionada && esCorrecta && RespuestaSeleccionada != actual.RespuestaCorrecta;
+
+                        <button class="quizz-opcion-btn
+                            @(esSeleccionada
+                                ? (esCorrecta ? "quizz-opcion-correcta" : "quizz-opcion-incorrecta")
+                                : (mostrarCorrecta ? "quizz-opcion-correcta" : ""))"
+                            @onclick="() => SeleccionarRespuesta(opcion)"
+                            disabled="@YaRespondida">
+                            @opcion
+                        </button>
+                    }
+                </div>
+            </div>
+
+            <div class="flex justify-between mb-4">
+                <span class="text-gray-600">Pregunta @(Indice + 1) de @PreguntasFiltradas.Count</span>
+                <span class="text-gray-600">✅ Correctas: @Correctas</span>
+            </div>
+
+            @if (YaRespondida && !EsUltima)
+            {
+                <div class="mt-6 flex justify-center">
+                    <button class="quizz-comenzar-btn"
+                            @onclick="SiguientePregunta">
+                        Siguiente ➡️
+                    </button>
+                </div>
+            }
+            else if (YaRespondida && EsUltima)
+            {
+                <div class="mt-6 text-center">
+                    <p class="text-green-600 font-semibold mb-3 text-xl">🎉 ¡Quizz completado!</p>
+                    <button class="quizz-comenzar-btn"
+                            @onclick="@(() => Nav.NavigateTo("Quizz"))">
+                        Volver al inicio
+                    </button>
+                </div>
+            }
         }
     </div>
-
-    <div class="flex justify-between max-w-xl mx-auto">
-        <span class="text-gray-600">Pregunta @(Indice + 1) de @PreguntasFiltradas.Count</span>
-        <span class="text-gray-600">✅ Correctas: @Correctas</span>
-    </div>
-
-    @if (YaRespondida && !EsUltima)
-    {
-        <div class="mt-6 flex justify-center">
-            <button class="bg-purple-600 text-white px-6 py-2 rounded-full shadow hover:bg-purple-700"
-                    @onclick="SiguientePregunta">
-                Siguiente ➡️
-            </button>
-        </div>
-    }
-    else if (YaRespondida && EsUltima)
-    {
-        <div class="mt-6 text-center">
-            <p class="text-green-600 font-semibold mb-3">🎉 ¡Quizz completado!</p>
-            <button class="bg-blue-600 text-white px-6 py-2 rounded-full shadow hover:bg-blue-700"
-                    @onclick="@(() => Nav.NavigateTo("Quizz"))">
-                Volver al inicio
-            </button>
-        </div>
-    }
-}
+</div>
 
 @code {
     private List<PreguntaModel>? TodasLasPreguntas;

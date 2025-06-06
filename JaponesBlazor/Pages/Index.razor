@@ -1,25 +1,16 @@
 ﻿@page "/"
 
-<h3 class="text-center mt-4">Bienvenido a la app de japonés</h3>
+<div class="capitulo-bg py-8 min-h-screen">
+    <div class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+        <h3 class="text-3xl font-extrabold text-sky-700 text-center mb-8 drop-shadow">Bienvenido a la app de japonés</h3>
 
-<div class="container mt-4">
-    <div class="mb-4">
-        <div class="card shadow-sm">
-            <div class="card-body text-center">
-                <h5 class="card-title">📚 Capítulos</h5>
-                <p class="card-text">Explora vocabulario y gramática por unidad.</p>
-                <a href="capitulos" class="btn btn-primary">Ver Capítulos</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="mb-4">
-        <div class="card shadow-sm">
-            <div class="card-body text-center">
-                <h5 class="card-title">📝 Quizz</h5>
-                <p class="card-text">Poné a prueba tus conocimientos.</p>
-                <a href="quizz" class="btn btn-success">Ir a Quizz</a>
-            </div>
+        <div class="flex flex-col gap-8">
+            <NavLink href="capitulos" class="capitulo-opcion">
+                📘 Ver Capítulos
+            </NavLink>
+            <NavLink href="quizz" class="capitulo-opcion">
+                📝 Practicar Quizz
+            </NavLink>
         </div>
     </div>
 </div>
