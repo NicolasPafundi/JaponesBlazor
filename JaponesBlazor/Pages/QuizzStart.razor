@@ -50,7 +50,7 @@ else
         <div class="mt-6 text-center">
             <p class="text-green-600 font-semibold mb-3">🎉 ¡Quizz completado!</p>
             <button class="bg-blue-600 text-white px-6 py-2 rounded-full shadow hover:bg-blue-700"
-                    @onclick="@(() => Nav.NavigateTo("/Quizz"))">
+                    @onclick="@(() => Nav.NavigateTo("Quizz"))">
                 Volver al inicio
             </button>
         </div>
@@ -77,7 +77,7 @@ else
 
         if (ids is null || ids.Count == 0)
         {
-            Nav.NavigateTo("/Quizz");
+            Nav.NavigateTo("Quizz");
             return;
         }
 

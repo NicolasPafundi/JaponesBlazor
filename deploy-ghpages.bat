@@ -8,6 +8,11 @@ REM Eliminar carpeta temporal si ya existe
 rmdir /S /Q _publish
 mkdir _publish
 
+REM Modificar el index.html publicado
+echo ===== CAMBIANDO BASE HREF A /%BASE_PATH%/ EN ARCHIVO PUBLICADO =====
+powershell -Command "(Get-Content -Raw 'JaponesBlazor\bin\Release\net8.0\publish\wwwroot\index.html') -replace '<base href=\".*?\" />', '<base href=\"/JaponesBlazor/\" />' | Set-Content 'JaponesBlazor\bin\Release\net8.0\publish\wwwroot\index.html'"
+
+
 REM Copiar solo el contenido dentro de la subcarpeta correcta
 xcopy /E /I /Y JaponesBlazor\bin\Release\net8.0\publish\wwwroot\* _publish
 
