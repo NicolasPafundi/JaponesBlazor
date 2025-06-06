@@ -229,3 +229,31 @@ code {
     border-color: #ef4444 !important;
     color: #991b1b !important;
 }
+
+.btn-atras {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 9999px;
+    border: none;
+    box-shadow: 0 2px 12px 0 rgba(14,165,233,0.10);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+    outline: none;
+    padding: 0;
+}
+.btn-atras:hover, .btn-atras:focus {
+    background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%);
+    transform: scale(1.08);
+    box-shadow: 0 4px 24px 0 rgba(14,165,233,0.15);
+}
+.btn-atras-icon {
+    font-size: 1.4em;
+    line-height: 1;
+}

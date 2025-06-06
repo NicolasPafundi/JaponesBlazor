@@ -1,16 +1,69 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager Nav
+
 <div class="page">
     <div class="sidebar">
         <NavMenu />
     </div>
-
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
+        <div class="max-w-xl mx-auto flex items-center gap-4 pt-8 px-4">
+            @if (!EsIndex)
+            {
+                <button class="btn-atras" @onclick="VolverAtras" title="Volver">
+                    <span class="btn-atras-icon">←</span>
+                </button>
+            }
             @Body
-        </article>
+        </div>
     </main>
 </div>
+
+@code {
+    private bool EsIndex => Nav.Uri.TrimEnd('/').Equals(Nav.BaseUri.TrimEnd('/'), StringComparison.OrdinalIgnoreCase);
+
+    private void VolverAtras()
+    {
+        var uri = Nav.ToBaseRelativePath(Nav.Uri).TrimEnd('/').ToLower();
+
+        // Ejemplo de rutas:
+        // "" (index)
+        // "capitulos"
+        // "capitulo/1"
+        // "capitulo/1/gramatica"
+        // "capitulo/1/vocabulario"
+        // "quizz"
+        // "quizz/start"
+
+        if (uri.StartsWith("capitulo/") && (uri.EndsWith("/gramatica") || uri.EndsWith("/vocabulario")))
+        {
+            // Si está en Gramatica o Vocabulario de un capítulo, volver al capítulo
+            var capId = uri.Split('/')[1];
+            Nav.NavigateTo($"/Capitulo/{capId}");
+        }
+        else if (uri.StartsWith("capitulo/"))
+        {
+            // Si está en un capítulo, volver al listado de capítulos
+            Nav.NavigateTo("/Capitulos");
+        }
+        else if (uri == "capitulos")
+        {
+            // Si está en el listado de capítulos, volver al index
+            Nav.NavigateTo("/");
+        }
+        else if (uri.StartsWith("quizz/start"))
+        {
+            // Si está en el quizz, volver a la selección de capítulos del quizz
+            Nav.NavigateTo("/Quizz");
+        }
+        else if (uri == "quizz")
+        {
+            // Si está en la selección de capítulos del quizz, volver al index
+            Nav.NavigateTo("/");
+        }
+        else
+        {
+            // Por defecto, ir al index
+            Nav.NavigateTo("/");
+        }
+    }
+}
