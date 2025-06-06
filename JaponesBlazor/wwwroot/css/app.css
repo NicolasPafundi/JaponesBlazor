@@ -1,7 +1,7 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: #fff !important;
-    color-scheme: light !important;
+    color-scheme: only light !important;
     color: #111 !important;
 }
 
@@ -325,6 +325,14 @@ code {
 }
 
 body, .bg-white, .bg-light {
-    background: transparent !important;
+    background: #fff !important;
+    color: #111 !important;
     box-shadow: none !important;
+}
+
+[data-bs-theme="dark"], [data-theme="dark"], .dark, body.dark {
+    background: #fff !important;
+    color: #111 !important;
+    --bs-body-bg: #fff !important;
+    --bs-body-color: #111 !important;
 }
