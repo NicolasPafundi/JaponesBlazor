@@ -14,7 +14,7 @@
         <div class="flex flex-col gap-6">
             @foreach (var cap in capitulos)
             {
-                <NavLink class="capitulo-card cursor-pointer transition-all" href="@($"/Capitulo/{cap.Id}")">
+                <NavLink class="capitulo-card cursor-pointer transition-all" href="@($"Capitulo/{cap.Id}")">
                     <span class="capitulo-titulo">@cap.Titulo</span>
                 </NavLink>
             }

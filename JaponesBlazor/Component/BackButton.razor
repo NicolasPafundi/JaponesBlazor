@@ -32,11 +32,11 @@
             if (uri.StartsWith("capitulo/") && (uri.EndsWith("/gramatica") || uri.EndsWith("/vocabulario")))
             {
                 var capId = uri.Split('/')[1];
-                Nav.NavigateTo($"/Capitulo/{capId}");
+                Nav.NavigateTo($"Capitulo/{capId}");
             }
             else if (uri.StartsWith("capitulo/"))
             {
-                Nav.NavigateTo("/Capitulos");
+                Nav.NavigateTo("Capitulos");
             }
             else if (uri == "capitulos")
             {
@@ -44,7 +44,7 @@
             }
             else if (uri.StartsWith("quizz/start"))
             {
-                Nav.NavigateTo("/Quizz");
+                Nav.NavigateTo("Quizz");
             }
             else if (uri == "quizz")
             {
