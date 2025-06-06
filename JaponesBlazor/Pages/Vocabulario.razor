@@ -1,7 +1,12 @@
 ﻿@page "/capitulo/{Id:int}/vocabulario"
+@using JaponesBlazor.Component
 @inject HttpClient Http
 
-<h1 class="text-xl font-bold text-yellow-600 text-center mb-6">📚 Vocabulario – Capítulo @Id</h1>
+<div class="header-bar mb-8">
+    <BackButton />
+    <h1 class="titulo-centrado">📚 Vocabulario – Capítulo @Id</h1>
+    <div class="header-bar-space"></div>
+</div>
 
 @if (Items is null)
 {

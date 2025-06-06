@@ -1,0 +1,59 @@
+﻿@inject NavigationManager Nav
+
+<button class="btn-atras" @onclick="VolverAtras" title="Volver" @attributes="AdditionalAttributes">
+    <span class="btn-atras-icon">←</span>
+</button>
+
+@code {
+    [Parameter]
+    public string? Target { get; set; }
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object>? AdditionalAttributes { get; set; }
+
+    private async Task VolverAtras()
+    {
+        if (OnClick.HasDelegate)
+        {
+            await OnClick.InvokeAsync(null);
+        }
+        else if (!string.IsNullOrEmpty(Target))
+        {
+            Nav.NavigateTo(Target);
+        }
+        else
+        {
+            // Lógica genérica según la ruta actual
+            var uri = Nav.ToBaseRelativePath(Nav.Uri).TrimEnd('/').ToLower();
+
+            if (uri.StartsWith("capitulo/") && (uri.EndsWith("/gramatica") || uri.EndsWith("/vocabulario")))
+            {
+                var capId = uri.Split('/')[1];
+                Nav.NavigateTo($"/Capitulo/{capId}");
+            }
+            else if (uri.StartsWith("capitulo/"))
+            {
+                Nav.NavigateTo("/Capitulos");
+            }
+            else if (uri == "capitulos")
+            {
+                Nav.NavigateTo("/");
+            }
+            else if (uri.StartsWith("quizz/start"))
+            {
+                Nav.NavigateTo("/Quizz");
+            }
+            else if (uri == "quizz")
+            {
+                Nav.NavigateTo("/");
+            }
+            else
+            {
+                Nav.NavigateTo("/");
+            }
+        }
+    }
+}

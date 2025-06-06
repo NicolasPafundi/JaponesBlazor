@@ -119,6 +119,7 @@ code {
     box-shadow: 0 4px 24px 0 rgba(14, 165, 233, 0.08);
     transition: background 0.2s, color 0.2s, transform 0.2s;
     border: 2px solid #38bdf8;
+    text-decoration: none;
 }
 
 .capitulo-opcion:last-child {
@@ -147,6 +148,7 @@ code {
     font-size: 1.25rem;
     font-weight: 600;
     transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+    text-decoration: none;
 }
 
 .capitulo-card:hover, .capitulo-card:focus-within {
@@ -166,6 +168,7 @@ code {
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.01em;
+    text-decoration: none;
 }
 
 .quizz-comenzar-btn {
@@ -247,6 +250,7 @@ code {
     transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
     outline: none;
     padding: 0;
+    z-index: 2;
 }
 .btn-atras:hover, .btn-atras:focus {
     background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%);
@@ -256,4 +260,63 @@ code {
 .btn-atras-icon {
     font-size: 1.4em;
     line-height: 1;
+}
+
+.titulo-centrado {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 800; /* font-extrabold */
+    color: #0ea5e9; /* text-sky-700 */
+    flex: 1 1 0%;
+    text-align: center;
+    margin: 0;
+    line-height: 1.1;
+    word-break: break-word;
+    z-index: 1;
+    overflow-wrap: anywhere;
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 3.5rem;
+    gap: 1rem;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 3.5rem;
+    gap: 1rem;
+    text-decoration: underline;
+}
+
+.header-bar > .btn-atras,
+.header-bar-space {
+    width: 2.7rem;
+    min-width: 2.7rem;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .header-bar > .btn-atras,
+    .header-bar-space {
+        width: 2.2rem;
+        min-width: 2.2rem;
+        height: 2.2rem;
+    }
+    .header-bar {
+        gap: 0.5rem;
+        min-height: 2.2rem;
+    }
+    /* No reduzcas el font-size del título aquí */
+}
+.nav-scrollable a {
+    text-decoration: none;
 }
