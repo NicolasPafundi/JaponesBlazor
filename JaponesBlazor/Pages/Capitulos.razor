@@ -1,19 +1,21 @@
 ﻿@page "/Capitulos"
 
-<h1 class="text-2xl font-bold text-blue-600 text-center mb-6">📘 Capítulos</h1>
-
-<div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto">
-    @foreach (var cap in caps)
-    {
-        <NavLink class="block bg-white border border-gray-300 rounded-xl p-6 text-center shadow hover:shadow-lg transition"
-                 href="@($"Capitulo/{cap.Id}")">
-            <h2 class="text-lg font-semibold text-blue-700">@cap.Titulo</h2>
-        </NavLink>
-    }
+<div class="capitulo-bg py-8 min-h-screen">
+    <div class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+        <h1 class="text-3xl font-extrabold text-sky-700 text-center mb-6 drop-shadow">📘 Capítulos</h1>
+        <div class="flex flex-col gap-6">
+            @foreach (var cap in capitulos)
+            {
+                <NavLink class="capitulo-card cursor-pointer transition-all" href="@($"/Capitulo/{cap.Id}")">
+                    <span class="capitulo-titulo">@cap.Titulo</span>
+                </NavLink>
+            }
+        </div>
+    </div>
 </div>
 
 @code {
-    private List<CapituloModel> caps = new()
+    private List<CapituloModel> capitulos = new()
     {
         new CapituloModel { Id = 1, Titulo = "Capítulo 1: Saludos" },
         new CapituloModel { Id = 2, Titulo = "Capítulo 2: Verbos básicos" },
