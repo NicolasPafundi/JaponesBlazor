@@ -1,112 +1,501 @@
 ﻿[
   {
+    "Id": 1,
     "CapituloId": 1,
-    "Japonés": "こんにちは",
-    "Español": "Hola"
+    "Japonés": "わたし",
+    "Español": "Yo"
   },
   {
+    "Id": 2,
     "CapituloId": 1,
-    "Japonés": "さようなら",
-    "Español": "Adiós"
+    "Japonés": "あなた",
+    "Español": "Vos"
   },
   {
+    "Id": 3,
+    "CapituloId": 1,
+    "Japonés": "あのひと o あのかた",
+    "Español": "Aquella persona"
+  },
+  {
+    "Id": 4,
+    "CapituloId": 1,
+    "Japonés": "さん",
+    "Español": "Sufijo para señor o señorita"
+  },
+  {
+    "Id": 5,
+    "CapituloId": 1,
+    "Japonés": "ちゃん",
+    "Español": "Sufijo para niños en lugar de san"
+  },
+  {
+    "Id": 6,
+    "CapituloId": 1,
+    "Japonés": "～じん（～人）",
+    "Español": "Sufijo que se usa para la nacionalidad de una persona"
+  },
+  {
+    "Id": 7,
+    "CapituloId": 1,
+    "Japonés": "せんせい（先生）",
+    "Español": "Profesor/Maestro (no a sí mismo)"
+  },
+  {
+    "Id": 8,
+    "CapituloId": 1,
+    "Japonés": "きょうし（教師）",
+    "Español": "Profesor/Maestro (a uno mismo)"
+  },
+  {
+    "Id": 9,
+    "CapituloId": 1,
+    "Japonés": "がくせい（学生）",
+    "Español": "Estudiante"
+  },
+  {
+    "Id": 10,
+    "CapituloId": 1,
+    "Japonés": "かいしゃいん（会社員）",
+    "Español": "Empleado de una empresa"
+  },
+  {
+    "Id": 11,
+    "CapituloId": 1,
+    "Japonés": "[会社名] の しゃいん（～の社員）",
+    "Español": "Empleado de una empresa específica"
+  },
+  {
+    "Id": 12,
+    "CapituloId": 1,
+    "Japonés": "いしゃ（医者）",
+    "Español": "Médico"
+  },
+  {
+    "Id": 13,
+    "CapituloId": 1,
+    "Japonés": "けんきゅうしゃ（研究者）",
+    "Español": "Investigador"
+  },
+  {
+    "Id": 14,
+    "CapituloId": 1,
+    "Japonés": "ぎんこういん（銀行員）",
+    "Español": "Bancario"
+  },
+  {
+    "Id": 15,
+    "CapituloId": 1,
+    "Japonés": "だいがく（大学）",
+    "Español": "Universidad"
+  },
+  {
+    "Id": 16,
+    "CapituloId": 1,
+    "Japonés": "びょういん（病院）",
+    "Español": "Hospital"
+  },
+  {
+    "Id": 17,
+    "CapituloId": 1,
+    "Japonés": "だれ（誰）",
+    "Español": "¿Quién? (informal)"
+  },
+  {
+    "Id": 18,
+    "CapituloId": 1,
+    "Japonés": "どなた",
+    "Español": "¿Quién? (formal)"
+  },
+  {
+    "Id": 19,
+    "CapituloId": 1,
+    "Japonés": "～さい（～歳）",
+    "Español": "Decir edad"
+  },
+  {
+    "Id": 20,
+    "CapituloId": 1,
+    "Japonés": "なんさい（何歳） / おいくつ",
+    "Español": "¿Cuántos años?"
+  },
+  {
+    "Id": 21,
+    "CapituloId": 1,
+    "Japonés": "はい",
+    "Español": "Sí"
+  },
+  {
+    "Id": 22,
+    "CapituloId": 1,
+    "Japonés": "いいえ",
+    "Español": "No"
+  },
+  {
+    "Id": 23,
+    "CapituloId": 1,
+    "Japonés": "はじめまして",
+    "Español": "Mucho gusto"
+  },
+  {
+    "Id": 24,
+    "CapituloId": 1,
+    "Japonés": "[くに]からきました（[国]から来ました）",
+    "Español": "Vengo de tal país o soy de tal país"
+  },
+  {
+    "Id": 25,
+    "CapituloId": 1,
+    "Japonés": "しつれいですが…（失礼ですが…）",
+    "Español": "Disculpe pero..."
+  },
+  {
+    "Id": 26,
+    "CapituloId": 1,
+    "Japonés": "おなまえは？（お名前は？）",
+    "Español": "¿Cómo te llamas?"
+  },
+  {
+    "Id": 27,
+    "CapituloId": 1,
+    "Japonés": "どうぞ よろしく おねがいします（どうぞよろしくお願いします）",
+    "Español": "Encantado de conocerlo"
+  },
+  {
+    "Id": 28,
+    "CapituloId": 1,
+    "Japonés": "[nombre] さんを しょうかいします（～さんを紹介します）",
+    "Español": "Le presento al señor"
+  },
+  {
+    "Id": 29,
+    "CapituloId": 1,
+    "Japonés": "アメリカ",
+    "Español": "América"
+  },
+  {
+    "Id": 30,
+    "CapituloId": 1,
+    "Japonés": "イギリス",
+    "Español": "Reino Unido"
+  },
+  {
+    "Id": 31,
+    "CapituloId": 1,
+    "Japonés": "インド",
+    "Español": "India"
+  },
+  {
+    "Id": 32,
+    "CapituloId": 1,
+    "Japonés": "インドネシア",
+    "Español": "Indonesia"
+  },
+  {
+    "Id": 33,
+    "CapituloId": 1,
+    "Japonés": "かんこく（韓国）",
+    "Español": "Corea del Sur"
+  },
+  {
+    "Id": 34,
+    "CapituloId": 1,
+    "Japonés": "タイ",
+    "Español": "Tailandia"
+  },
+  {
+    "Id": 35,
+    "CapituloId": 1,
+    "Japonés": "ちゅうごく（中国）",
+    "Español": "China"
+  },
+  {
+    "Id": 36,
+    "CapituloId": 1,
+    "Japonés": "ドイツ",
+    "Español": "Alemania"
+  },
+  {
+    "Id": 37,
+    "CapituloId": 1,
+    "Japonés": "にほん（日本） / にっぽん",
+    "Español": "Japón"
+  },
+  {
+    "Id": 38,
+    "CapituloId": 1,
+    "Japonés": "ブラジル",
+    "Español": "Brasil"
+  },
+  {
+    "Id": 39,
     "CapituloId": 2,
-    "Japonés": "たべます",
-    "Español": "Comer"
+    "Japonés": "これ",
+    "Español": "Esto, esta, este"
   },
   {
-    "CapituloId": 1,
-    "Japonés": "こんにちは",
-    "Español": "Hola"
-  },
-  {
-    "CapituloId": 1,
-    "Japonés": "さようなら",
-    "Español": "Adiós"
-  },
-  {
+    "Id": 40,
     "CapituloId": 2,
-    "Japonés": "たべます",
-    "Español": "Comer"
+    "Japonés": "それ",
+    "Español": "Eso, esa, ese"
   },
   {
-    "CapituloId": 1,
-    "Japonés": "こんにちは",
-    "Español": "Hola"
-  },
-  {
-    "CapituloId": 1,
-    "Japonés": "さようなら",
-    "Español": "Adiós"
-  },
-  {
+    "Id": 41,
     "CapituloId": 2,
-    "Japonés": "たべます",
-    "Español": "Comer"
+    "Japonés": "あれ",
+    "Español": "Aquel, aquello, aquella"
   },
   {
-    "CapituloId": 1,
-    "Japonés": "こんにちは",
-    "Español": "Hola"
+    "Id": 42,
+    "CapituloId": 2,
+    "Japonés": "この～",
+    "Español": "Esta..., este..."
   },
   {
-    "CapituloId": 3,
-    "Japonés": "さようなら",
-    "Español": "Adiós"
+    "Id": 43,
+    "CapituloId": 2,
+    "Japonés": "その～",
+    "Español": "Esa..., este..."
   },
   {
-    "CapituloId": 3,
-    "Japonés": "たべます",
-    "Español": "Comer"
+    "Id": 44,
+    "CapituloId": 2,
+    "Japonés": "あの～",
+    "Español": "Aquel..., aquella..."
   },
   {
-    "CapituloId": 3,
-    "Japonés": "さようなら",
-    "Español": "Adiós"
+    "Id": 45,
+    "CapituloId": 2,
+    "Japonés": "ほん（本）",
+    "Español": "Libro"
   },
   {
-    "CapituloId": 3,
-    "Japonés": "たべます",
-    "Español": "Comer"
+    "Id": 46,
+    "CapituloId": 2,
+    "Japonés": "じしょ（辞書）",
+    "Español": "Diccionario"
   },
   {
-    "CapituloId": 3,
-    "Japonés": "さようなら",
-    "Español": "Adiós"
+    "Id": 47,
+    "CapituloId": 2,
+    "Japonés": "ざっし（雑誌）",
+    "Español": "Revista"
   },
   {
-    "CapituloId": 3,
-    "Japonés": "たべます",
-    "Español": "Comer"
+    "Id": 48,
+    "CapituloId": 2,
+    "Japonés": "しんぶん（新聞）",
+    "Español": "Periódico, diario"
   },
   {
-    "CapituloId": 3,
-    "Japonés": "さようなら",
-    "Español": "Adiós"
+    "Id": 49,
+    "CapituloId": 2,
+    "Japonés": "ノート",
+    "Español": "Cuaderno"
   },
   {
-    "CapituloId": 3,
-    "Japonés": "たべます",
-    "Español": "Comer"
+    "Id": 50,
+    "CapituloId": 2,
+    "Japonés": "てちょう（手帳）",
+    "Español": "Agenda"
   },
   {
-    "CapituloId": 3,
-    "Japonés": "さようなら",
-    "Español": "Adiós"
+    "Id": 51,
+    "CapituloId": 2,
+    "Japonés": "めいし（名刺）",
+    "Español": "Tarjeta de negocio"
   },
   {
-    "CapituloId": 3,
-    "Japonés": "たべます",
-    "Español": "Comer"
+    "Id": 52,
+    "CapituloId": 2,
+    "Japonés": "カード",
+    "Español": "Tarjeta"
   },
   {
-    "CapituloId": 3,
-    "Japonés": "さようなら",
-    "Español": "Adiós"
+    "Id": 53,
+    "CapituloId": 2,
+    "Japonés": "えんぴつ（鉛筆）",
+    "Español": "Lápiz"
   },
   {
-    "CapituloId": 3,
-    "Japonés": "たべます",
-    "Español": "Comer"
+    "Id": 54,
+    "CapituloId": 2,
+    "Japonés": "ボールペン",
+    "Español": "Lapicera"
+  },
+  {
+    "Id": 55,
+    "CapituloId": 2,
+    "Japonés": "シャープペンシル",
+    "Español": "Porta minas"
+  },
+  {
+    "Id": 56,
+    "CapituloId": 2,
+    "Japonés": "かぎ（鍵）",
+    "Español": "Llave"
+  },
+  {
+    "Id": 57,
+    "CapituloId": 2,
+    "Japonés": "とけい（時計）",
+    "Español": "Reloj"
+  },
+  {
+    "Id": 58,
+    "CapituloId": 2,
+    "Japonés": "かさ（傘）",
+    "Español": "Paraguas"
+  },
+  {
+    "Id": 59,
+    "CapituloId": 2,
+    "Japonés": "かばん",
+    "Español": "Maleta o bolso"
+  },
+  {
+    "Id": 60,
+    "CapituloId": 2,
+    "Japonés": "CD（シーディー）",
+    "Español": "CD"
+  },
+  {
+    "Id": 61,
+    "CapituloId": 2,
+    "Japonés": "テレビ",
+    "Español": "Televisor"
+  },
+  {
+    "Id": 62,
+    "CapituloId": 2,
+    "Japonés": "ラジオ",
+    "Español": "Radio"
+  },
+  {
+    "Id": 63,
+    "CapituloId": 2,
+    "Japonés": "カメラ",
+    "Español": "Cámara"
+  },
+  {
+    "Id": 64,
+    "CapituloId": 2,
+    "Japonés": "コンピューター",
+    "Español": "Computadora"
+  },
+  {
+    "Id": 65,
+    "CapituloId": 2,
+    "Japonés": "くるま（車）",
+    "Español": "Auto"
+  },
+  {
+    "Id": 66,
+    "CapituloId": 2,
+    "Japonés": "つくえ（机）",
+    "Español": "Escritorio"
+  },
+  {
+    "Id": 67,
+    "CapituloId": 2,
+    "Japonés": "いす",
+    "Español": "Silla"
+  },
+  {
+    "Id": 68,
+    "CapituloId": 2,
+    "Japonés": "チョコレート",
+    "Español": "Chocolate"
+  },
+  {
+    "Id": 69,
+    "CapituloId": 2,
+    "Japonés": "コーヒー",
+    "Español": "Café"
+  },
+  {
+    "Id": 70,
+    "CapituloId": 2,
+    "Japonés": "おみやげ（お土産）",
+    "Español": "Souvenir de viaje"
+  },
+  {
+    "Id": 71,
+    "CapituloId": 2,
+    "Japonés": "えいご（英語）",
+    "Español": "Idioma inglés"
+  },
+  {
+    "Id": 72,
+    "CapituloId": 2,
+    "Japonés": "にほんご（日本語）",
+    "Español": "Idioma japonés"
+  },
+  {
+    "Id": 73,
+    "CapituloId": 2,
+    "Japonés": "くに（国）",
+    "Español": "País, idioma"
+  },
+  {
+    "Id": 74,
+    "CapituloId": 2,
+    "Japonés": "なん（何）",
+    "Español": "¿Qué?"
+  },
+  {
+    "Id": 75,
+    "CapituloId": 2,
+    "Japonés": "あのう",
+    "Español": "Eh..., esto..."
+  },
+  {
+    "Id": 76,
+    "CapituloId": 2,
+    "Japonés": "えっ",
+    "Español": "¿Cómo?"
+  },
+  {
+    "Id": 77,
+    "CapituloId": 2,
+    "Japonés": "どうぞ",
+    "Español": "Aquí tiene, tome"
+  },
+  {
+    "Id": 78,
+    "CapituloId": 2,
+    "Japonés": "どうもありがとうございます",
+    "Español": "Muchas gracias"
+  },
+  {
+    "Id": 79,
+    "CapituloId": 2,
+    "Japonés": "そうですか",
+    "Español": "Ah, ¿sí?"
+  },
+  {
+    "Id": 80,
+    "CapituloId": 2,
+    "Japonés": "ちがいます",
+    "Español": "No es así"
+  },
+  {
+    "Id": 81,
+    "CapituloId": 2,
+    "Japonés": "あっ",
+    "Español": "¡Eh!"
+  },
+  {
+    "Id": 82,
+    "CapituloId": 2,
+    "Japonés": "これから おせわに なります（これからお世話になります）",
+    "Español": "Le agradezco de antemano su gentil apoyo"
+  },
+  {
+    "Id": 83,
+    "CapituloId": 2,
+    "Japonés": "こちらこそ よろしく",
+    "Español": "Yo también estoy encantado de conocerlo"
   }
+
 ]

@@ -76,7 +76,7 @@
 </div>
 
 @code {
-    private List<PreguntaModel>? TodasLasPreguntas;
+    private List<VocabularioModel>? vocabularioList;
     private List<PreguntaModel> PreguntasFiltradas = new();
     private List<int> CapitulosSeleccionados = new();
 
@@ -100,12 +100,31 @@
         }
 
         CapitulosSeleccionados = ids;
+        vocabularioList = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
+        Random rng = new Random();
+        List<VocabularioModel> palabras = vocabularioList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).OrderBy(x => rng.Next()).ToList();
+        foreach (var palabra in palabras)
+        {
+            var opcionesIncorrectas = palabras
+                .Where(p => p.Español != palabra.Español) // excluye la correcta
+                .OrderBy(_ => rng.Next())                 // mezcla aleatoriamente
+                .Take(3)                                  // toma 3 incorrectas
+                .Select(p => p.Español)                   // solo el texto
 
-        TodasLasPreguntas = await Http.GetFromJsonAsync<List<PreguntaModel>>("data/Preguntas.json");
-        PreguntasFiltradas = TodasLasPreguntas?
-            .Where(p => CapitulosSeleccionados.Contains(p.Capitulo))
-            .OrderBy(_ => Guid.NewGuid()) // aleatorizar
-            .ToList() ?? new();
+                .ToList();
+
+            opcionesIncorrectas.Add(palabra.Español);     // agrega la respuesta correcta
+            opcionesIncorrectas = opcionesIncorrectas
+                .OrderBy(_ => rng.Next())                 // mezcla las opciones
+                .ToList();
+
+            PreguntasFiltradas.Add(new PreguntaModel
+            {
+                Enunciado = palabra.Japonés,
+                Opciones = opcionesIncorrectas,
+                RespuestaCorrecta = palabra.Español
+            });
+        }
     }
 
     private void SeleccionarRespuesta(string opcion)
