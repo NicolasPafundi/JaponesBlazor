@@ -1,0 +1,16 @@
+﻿@inject IJSRuntime JS
+
+<button class="btn-audio" @onclick="Play" title="Escuchar">
+    ▶️
+</button>
+
+@code {
+    [Parameter]
+    public string? Texto { get; set; }
+
+    private async Task Play()
+    {
+        if (!string.IsNullOrWhiteSpace(Texto))
+            await JS.InvokeVoidAsync("leerJapones", Texto);
+    }
+}

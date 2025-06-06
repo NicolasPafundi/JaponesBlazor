@@ -327,3 +327,15 @@ body, .bg-white, .bg-light {
         color: #111 !important;
     }
 }
+
+.btn-audio {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #0ea5e9;
+    transition: color 0.2s;
+}
+.btn-audio:hover {
+    color: #0369a1;
+}

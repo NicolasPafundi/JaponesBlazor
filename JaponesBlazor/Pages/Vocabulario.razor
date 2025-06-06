@@ -22,7 +22,8 @@ else
         @foreach (var palabra in Items)
         {
             <li class="bg-yellow-50 p-4 rounded border shadow">
-                <strong>@palabra.Japonés</strong> – @palabra.Español
+                <PlayJapanese Texto="@palabra.Japonés"/>
+                <strong>@palabra.Japonés </strong> – @palabra.Español
             </li>
         }
     </ul>
