@@ -8,9 +8,9 @@
     <div class="header-bar-space"></div>
 </div>
 
-@if (Items is null)
+@if (cargando)
 {
-    <p class="text-center text-red-500">No hay temas de gramática en este capítulo.</p>
+    <p class="text-center text-red-500">Cargando...</p>
 }
 else if (!Items.Any())
 {
@@ -55,10 +55,12 @@ else
     public int Id { get; set; }
 
     private List<GramaticaModel>? Items;
+    private bool cargando = true;
 
     protected override async Task OnInitializedAsync()
     {
         var all = await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
         Items = all?.Where(x => x.CapituloId == Id).ToList();
+        cargando = false;
     }
 }

@@ -8,7 +8,7 @@
     <div class="header-bar-space"></div>
 </div>
 
-@if (Items is null)
+@if (cargando)
 {
     <p class="text-center text-gray-500">Cargando...</p>
 }
@@ -34,10 +34,12 @@ else
     public int Id { get; set; }
 
     private List<VocabularioModel>? Items;
+    bool cargando = true;
 
     protected override async Task OnInitializedAsync()
     {
         var all = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
         Items = all?.Where(x => x.CapituloId == Id).ToList();
+        cargando = false;
     }
 }

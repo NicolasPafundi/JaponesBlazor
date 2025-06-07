@@ -14,7 +14,7 @@
 <div> 
     <div class="max-w-xl mx-auto">
 
-        @if (PreguntasFiltradas == null)
+        @if (cargando)
         {
             <p class="text-center text-gray-600">Cargando preguntas...</p>
         }
@@ -83,6 +83,7 @@
 @code {
     private List<PreguntaModel> PreguntasFiltradas = new();
     private List<int> CapitulosSeleccionados = new();
+    private bool cargando = true;
 
     private int Indice = 0;
     private string? RespuestaSeleccionada;
@@ -186,6 +187,7 @@
                 RespuestaCorrecta = palabra.EjemploEsp
             });
         }
+        cargando = false;
     }
 
     private void SeleccionarRespuesta(string opcion)
