@@ -1,9 +1,15 @@
 ﻿[
   {
+    "Id": 2,
+    "CapituloId": 1,
+    "Japonés": "あのかた",
+    "Español": "Aquella persona (Formal)"
+  },
+  {
     "Id": 3,
     "CapituloId": 1,
-    "Japonés": "あのひと o あのかた",
-    "Español": "Aquella persona"
+    "Japonés": "あのひと",
+    "Español": "Aquella persona (Informal)"
   },
   {
     "Id": 4,
@@ -20,73 +26,73 @@
   {
     "Id": 6,
     "CapituloId": 1,
-    "Japonés": "～じん（～人）",
+    "Japonés": "～じん",
     "Español": "Sufijo que se usa para la nacionalidad de una persona"
   },
   {
     "Id": 7,
     "CapituloId": 1,
-    "Japonés": "せんせい（先生）",
+    "Japonés": "せんせい",
     "Español": "Profesor/Maestro (no a sí mismo)"
   },
   {
     "Id": 8,
     "CapituloId": 1,
-    "Japonés": "きょうし（教師）",
+    "Japonés": "きょうし",
     "Español": "Profesor/Maestro (a uno mismo)"
   },
   {
     "Id": 9,
     "CapituloId": 1,
-    "Japonés": "がくせい（学生）",
+    "Japonés": "がくせい",
     "Español": "Estudiante"
   },
   {
     "Id": 10,
     "CapituloId": 1,
-    "Japonés": "かいしゃいん（会社員）",
+    "Japonés": "かいしゃいん",
     "Español": "Empleado de una empresa"
   },
   {
     "Id": 11,
     "CapituloId": 1,
-    "Japonés": "[会社名] の しゃいん（～の社員）",
+    "Japonés": " の しゃいん",
     "Español": "Empleado de una empresa específica"
   },
   {
     "Id": 12,
     "CapituloId": 1,
-    "Japonés": "いしゃ（医者）",
+    "Japonés": "いしゃ",
     "Español": "Médico"
   },
   {
     "Id": 13,
     "CapituloId": 1,
-    "Japonés": "けんきゅうしゃ（研究者）",
+    "Japonés": "けんきゅうしゃ",
     "Español": "Investigador"
   },
   {
     "Id": 14,
     "CapituloId": 1,
-    "Japonés": "ぎんこういん（銀行員）",
+    "Japonés": "ぎんこういん",
     "Español": "Bancario"
   },
   {
     "Id": 15,
     "CapituloId": 1,
-    "Japonés": "だいがく（大学）",
+    "Japonés": "だいがく",
     "Español": "Universidad"
   },
   {
     "Id": 16,
     "CapituloId": 1,
-    "Japonés": "びょういん（病院）",
+    "Japonés": "びょういん",
     "Español": "Hospital"
   },
   {
     "Id": 17,
     "CapituloId": 1,
-    "Japonés": "だれ（誰）",
+    "Japonés": "だれ",
     "Español": "¿Quién? (informal)"
   },
   {
@@ -98,13 +104,13 @@
   {
     "Id": 19,
     "CapituloId": 1,
-    "Japonés": "～さい（～歳）",
+    "Japonés": "～さい",
     "Español": "Decir edad"
   },
   {
     "Id": 20,
     "CapituloId": 1,
-    "Japonés": "なんさい（何歳） / おいくつ",
+    "Japonés": "なんさい",
     "Español": "¿Cuántos años?"
   },
   {
@@ -128,32 +134,32 @@
   {
     "Id": 24,
     "CapituloId": 1,
-    "Japonés": "[くに]からきました（[国]から来ました）",
+    "Japonés": "からきました",
     "Español": "Vengo de tal país o soy de tal país"
   },
   {
     "Id": 25,
     "CapituloId": 1,
-    "Japonés": "しつれいですが…（失礼ですが…）",
+    "Japonés": "しつれいですが",
     "Español": "Disculpe pero..."
   },
   {
     "Id": 26,
     "CapituloId": 1,
-    "Japonés": "おなまえは？（お名前は？）",
+    "Japonés": "おなまえは",
     "Español": "¿Cómo te llamas?"
   },
   {
     "Id": 27,
     "CapituloId": 1,
-    "Japonés": "どうぞ よろしく おねがいします（どうぞよろしくお願いします）",
+    "Japonés": "どうぞ よろしく おねがいします",
     "Español": "Encantado de conocerlo"
   },
   {
     "Id": 28,
     "CapituloId": 1,
-    "Japonés": "[nombre] さんを しょうかいします（～さんを紹介します）",
-    "Español": "Le presento al señor"
+    "Japonés": "こちらはミラーさんです",
+    "Español": "Le presento al señor Miller"
   },
   {
     "Id": 29,
@@ -182,7 +188,7 @@
   {
     "Id": 33,
     "CapituloId": 1,
-    "Japonés": "かんこく（韓国）",
+    "Japonés": "かんこく",
     "Español": "Corea del Sur"
   },
   {
@@ -194,7 +200,7 @@
   {
     "Id": 35,
     "CapituloId": 1,
-    "Japonés": "ちゅうごく（中国）",
+    "Japonés": "ちゅうごく",
     "Español": "China"
   },
   {
@@ -206,7 +212,7 @@
   {
     "Id": 37,
     "CapituloId": 1,
-    "Japonés": "にほん（日本） / にっぽん",
+    "Japonés": "にほん",
     "Español": "Japón"
   },
   {
@@ -254,25 +260,25 @@
   {
     "Id": 45,
     "CapituloId": 2,
-    "Japonés": "ほん（本）",
+    "Japonés": "ほん",
     "Español": "Libro"
   },
   {
     "Id": 46,
     "CapituloId": 2,
-    "Japonés": "じしょ（辞書）",
+    "Japonés": "じしょ",
     "Español": "Diccionario"
   },
   {
     "Id": 47,
     "CapituloId": 2,
-    "Japonés": "ざっし（雑誌）",
+    "Japonés": "ざっし",
     "Español": "Revista"
   },
   {
     "Id": 48,
     "CapituloId": 2,
-    "Japonés": "しんぶん（新聞）",
+    "Japonés": "しんぶん",
     "Español": "Periódico, diario"
   },
   {
@@ -284,13 +290,13 @@
   {
     "Id": 50,
     "CapituloId": 2,
-    "Japonés": "てちょう（手帳）",
+    "Japonés": "てちょう",
     "Español": "Agenda"
   },
   {
     "Id": 51,
     "CapituloId": 2,
-    "Japonés": "めいし（名刺）",
+    "Japonés": "めいし",
     "Español": "Tarjeta de negocio"
   },
   {
@@ -302,7 +308,7 @@
   {
     "Id": 53,
     "CapituloId": 2,
-    "Japonés": "えんぴつ（鉛筆）",
+    "Japonés": "えんぴつ",
     "Español": "Lápiz"
   },
   {
@@ -320,19 +326,19 @@
   {
     "Id": 56,
     "CapituloId": 2,
-    "Japonés": "かぎ（鍵）",
+    "Japonés": "かぎ",
     "Español": "Llave"
   },
   {
     "Id": 57,
     "CapituloId": 2,
-    "Japonés": "とけい（時計）",
+    "Japonés": "とけい",
     "Español": "Reloj"
   },
   {
     "Id": 58,
     "CapituloId": 2,
-    "Japonés": "かさ（傘）",
+    "Japonés": "かさ",
     "Español": "Paraguas"
   },
   {
@@ -344,7 +350,7 @@
   {
     "Id": 60,
     "CapituloId": 2,
-    "Japonés": "CD（シーディー）",
+    "Japonés": "シーディー",
     "Español": "CD"
   },
   {
@@ -374,13 +380,13 @@
   {
     "Id": 65,
     "CapituloId": 2,
-    "Japonés": "くるま（車）",
+    "Japonés": "くるま",
     "Español": "Auto"
   },
   {
     "Id": 66,
     "CapituloId": 2,
-    "Japonés": "つくえ（机）",
+    "Japonés": "つくえ",
     "Español": "Escritorio"
   },
   {
@@ -404,31 +410,31 @@
   {
     "Id": 70,
     "CapituloId": 2,
-    "Japonés": "おみやげ（お土産）",
+    "Japonés": "おみやげ",
     "Español": "Souvenir de viaje"
   },
   {
     "Id": 71,
     "CapituloId": 2,
-    "Japonés": "えいご（英語）",
+    "Japonés": "えいご",
     "Español": "Idioma inglés"
   },
   {
     "Id": 72,
     "CapituloId": 2,
-    "Japonés": "にほんご（日本語）",
+    "Japonés": "にほんご",
     "Español": "Idioma japonés"
   },
   {
     "Id": 73,
     "CapituloId": 2,
-    "Japonés": "くに（国）",
+    "Japonés": "くに",
     "Español": "País, idioma"
   },
   {
     "Id": 74,
     "CapituloId": 2,
-    "Japonés": "なん（何）",
+    "Japonés": "なん",
     "Español": "¿Qué?"
   },
   {
@@ -476,7 +482,7 @@
   {
     "Id": 82,
     "CapituloId": 2,
-    "Japonés": "これから おせわに なります（これからお世話になります）",
+    "Japonés": "これから おせわに なります",
     "Español": "Le agradezco de antemano su gentil apoyo"
   },
   {
