@@ -106,10 +106,11 @@
         CapitulosSeleccionados = ids;
         var vocabularioList = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
         var gramaticaList= await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
-        Random rng = new Random();
-        List<VocabularioModel> palabrasVocabulario = vocabularioList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).OrderBy(x => rng.Next()).ToList();
-        List<EjemploModel> gramaticaModels = gramaticaList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).SelectMany(x=>x.Explicaciones).SelectMany(x=>x.Ejemplos).OrderBy(x => rng.Next()).ToList();
+        List<VocabularioModel> palabrasVocabulario = vocabularioList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).ToList();
+        List<EjemploModel> gramaticaModels = gramaticaList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).SelectMany(x=>x.Explicaciones).SelectMany(x=>x.Ejemplos).ToList();
         List<EjemploModel> palabras = gramaticaModels.Union(palabrasVocabulario.Select(x => new EjemploModel {EjemploEsp = x.Español, EjemploJap = x.Japonés })).ToList();
+        var rng = new Random();
+        palabras = palabras.OrderBy(x => rng.Next()).ToList();
         foreach (var palabra in palabras)
         {
             int longitudCorrecta = palabra.EjemploJap?.Length ?? 0;
