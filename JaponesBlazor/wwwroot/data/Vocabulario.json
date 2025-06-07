@@ -490,6 +490,215 @@
     "CapituloId": 2,
     "Japonés": "こちらこそ よろしく",
     "Español": "Yo también estoy encantado de conocerlo"
+  },
+  {
+    "Id": 84,
+    "CapituloId": 1,
+    "Japonés": "あいさつ",
+    "Español": "Saludo"
+  },
+  {
+    "Id": 85,
+    "CapituloId": 1,
+    "Japonés": "おはようございます",
+    "Español": "Buenos días"
+  },
+  {
+    "Id": 86,
+    "CapituloId": 1,
+    "Japonés": "こんにちは",
+    "Español": "Buenas tardes"
+  },
+  {
+    "Id": 87,
+    "CapituloId": 1,
+    "Japonés": "こんばんは",
+    "Español": "Buenas noches"
+  },
+  {
+    "Id": 88,
+    "CapituloId": 1,
+    "Japonés": "おやすみなさい",
+    "Español": "Buenas noches (antes de dormir)"
+  },
+  {
+    "Id": 89,
+    "CapituloId": 1,
+    "Japonés": "さようなら",
+    "Español": "Adiós"
+  },
+  {
+    "Id": 90,
+    "CapituloId": 1,
+    "Japonés": "ありがとう",
+    "Español": "Gracias"
+  },
+  {
+    "Id": 91,
+    "CapituloId": 1,
+    "Japonés": "すみません",
+    "Español": "Disculpe"
+  },
+  {
+    "Id": 92,
+    "CapituloId": 1,
+    "Japonés": "おねがいします",
+    "Español": "Por favor"
+  },
+  {
+    "Id": 93,
+    "CapituloId": 1,
+    "Japonés": "わたし",
+    "Español": "Yo (Hombre Formal)"
+  },
+  {
+    "Id": 94,
+    "CapituloId": 1,
+    "Japonés": "ぼく",
+    "Español": "Yo (Hombre Neutro)"
+  },
+  {
+    "Id": 95,
+    "CapituloId": 1,
+    "Japonés": "おれ",
+    "Español": "Yo (Hombre Informal)"
+  },
+  {
+    "Id": 96,
+    "CapituloId": 1,
+    "Japonés": "わし",
+    "Español": "Yo (Hombre Formal antiguo)"
+  },
+  {
+    "Id": 97,
+    "CapituloId": 1,
+    "Japonés": "わたし",
+    "Español": "Yo (Mujer Neutro)"
+  },
+  {
+    "Id": 98,
+    "CapituloId": 1,
+    "Japonés": "わたくし",
+    "Español": "Yo (Mujer Formal)"
+  },
+  {
+    "Id": 99,
+    "CapituloId": 1,
+    "Japonés": "あたし",
+    "Español": "Yo (Mujer Informal)"
+  },
+  {
+    "Id": 100,
+    "CapituloId": 1,
+    "Japonés": "あなた",
+    "Español": "Tú/Vos (formal)"
+  },
+  {
+    "Id": 101,
+    "CapituloId": 1,
+    "Japonés": "おまえ",
+    "Español": "Tú/Vos (para pelear hombre)"
+  },
+  {
+    "Id": 102,
+    "CapituloId": 1,
+    "Japonés": "あなた",
+    "Español": "Tú/Vos (para pelear mujer)"
+  },
+  {
+    "Id": 103,
+    "CapituloId": 1,
+    "Japonés": "きみ",
+    "Español": "Tú/Vos (de superior a inferior)"
+  },
+  {
+    "Id": 104,
+    "CapituloId": 1,
+    "Japonés": "かれ",
+    "Español": "Él"
+  },
+  {
+    "Id": 105,
+    "CapituloId": 1,
+    "Japonés": "かのじょ",
+    "Español": "Ella"
+  },
+  {
+    "Id": 106,
+    "CapituloId": 1,
+    "Japonés": "わたしたち",
+    "Español": "Nosotros (Hombre Formal)"
+  },
+  {
+    "Id": 107,
+    "CapituloId": 1,
+    "Japonés": "ぼくたち",
+    "Español": "Nosotros (Hombre Neutro)"
+  },
+  {
+    "Id": 108,
+    "CapituloId": 1,
+    "Japonés": "おれたち",
+    "Español": "Nosotros (Hombre Informal)"
+  },
+  {
+    "Id": 109,
+    "CapituloId": 1,
+    "Japonés": "わしたち",
+    "Español": "Nosotros (Hombre Formal antiguo)"
+  },
+  {
+    "Id": 110,
+    "CapituloId": 1,
+    "Japonés": "わたしたち",
+    "Español": "Nosotras (Neutro)"
+  },
+  {
+    "Id": 111,
+    "CapituloId": 1,
+    "Japonés": "わたくしたち",
+    "Español": "Nosotras (Formal)"
+  },
+  {
+    "Id": 112,
+    "CapituloId": 1,
+    "Japonés": "あたしたち",
+    "Español": "Nosotras (Informal)"
+  },
+  {
+    "Id": 113,
+    "CapituloId": 1,
+    "Japonés": "あなたたち",
+    "Español": "Ustedes (formal)"
+  },
+  {
+    "Id": 114,
+    "CapituloId": 1,
+    "Japonés": "おまえたち",
+    "Español": "Ustedes (para pelear hombre)"
+  },
+  {
+    "Id": 115,
+    "CapituloId": 1,
+    "Japonés": "あなたたち",
+    "Español": "Ustedes (para pelear mujer)"
+  },
+  {
+    "Id": 116,
+    "CapituloId": 1,
+    "Japonés": "きみたち",
+    "Español": "Ustedes (de superior a inferior)"
+  },
+  {
+    "Id": 117,
+    "CapituloId": 1,
+    "Japonés": "かれたち",
+    "Español": "Ellos"
+  },
+  {
+    "Id": 118,
+    "CapituloId": 1,
+    "Japonés": "かのじょたち",
+    "Español": "Ellas"
   }
-
 ]

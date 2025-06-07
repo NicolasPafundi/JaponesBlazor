@@ -18,12 +18,33 @@ else if (!Items.Any())
 }
 else
 {
-    <div class="max-w-2xl mx-auto space-y-4">
+    <div class="max-w-2xl mx-auto space-y-6">
         @foreach (var item in Items)
         {
             <div class="bg-green-50 p-4 rounded-lg border shadow">
-                <h2 class="font-semibold text-lg text-green-800">@item.Titulo</h2>
-                <p class="text-gray-700 mt-1">@item.Explicacion</p>
+                <h2 class="font-semibold text-lg text-green-800 mb-2">@item.Titulo</h2>
+                @if (item.Explicaciones != null && item.Explicaciones.Any())
+                {
+                    @foreach (var explicacion in item.Explicaciones)
+                    {
+                        <div class="mb-3">
+                            <p class="text-gray-700">@explicacion.Explicacion</p>
+                            @if (explicacion.Ejemplos != null && explicacion.Ejemplos.Any())
+                            {
+                                <ul class="mt-2 ml-4 list-disc text-gray-800">
+                                    @foreach (var ejemplo in explicacion.Ejemplos)
+                                    {
+                                        <li>
+                                            <span class="font-semibold">@ejemplo.EjemploEsp</span>
+                                            <span class="mx-2 text-gray-500">–</span>
+                                            <span>@ejemplo.EjemploJap</span>
+                                        </li>
+                                    }
+                                </ul>
+                            }
+                        </div>
+                    }
+                }
             </div>
         }
     </div>
