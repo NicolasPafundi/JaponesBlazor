@@ -1,7 +1,137 @@
 ﻿[
-  //{
-  //  "CapituloId": 1,
-  //  "Titulo": "Uso de 'desu'",
-  //  "Explicacion": "'Desu' es una forma cortés de terminar frases en japonés..."
-  //}
+  {
+    "Id": 1,
+    "CapituloId": 1,
+    "Titulo": "S1 は S2 です",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- は: la partícula は indica que el S1 que le precede es el elemento principal de la oración. El hablante añade は a la palabra que corresponde al objeto del cual desea hablar y así forma la oración agregando diversas descripciones sobre sí mismo.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Yo soy Mike Miller",
+            "EjemploJap": "わたしはマイク・ミラーです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "2- です: los sustantivos usados con です funcionan como predicado. です indica el juicio o afirmación y también transmite constancia por parte del hablante con relación al oyente. です cambia de forma en caso de oración negativa o en tiempo pretérito.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Yo soy empleado de una empresa",
+            "EjemploJap": "わたしはかいしゃいんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "CapituloId": 1,
+    "Titulo": "S1 は S2 じゃありません",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- じゃ: es la forma negativa de です. じゃありません se emplea en la conversación cotidiana. En discursos o escritos formales se dice ではありません.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El señor Miller no es estudiante",
+            "EjemploJap": "ミラーさんはがくせいじゃありません"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "CapituloId": 1,
+    "Titulo": "S1 は S2 ですか",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- か: la partícula か es usada para expresar duda, inseguridad, etc., por parte del hablante. Agregando か al final de una oración se puede formar una oración interrogativa. Normalmente la entonación se torna ascendente al final.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿El señor Miller es estadounidense?",
+            "EjemploJap": "ミラーさんはアメリカじんですか"
+          },
+          {
+            "EjemploEsp": "Sí, es estadounidense",
+            "EjemploJap": "はい、アメリカじんです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "2- Oración interrogativa que exige una respuesta positiva o negativa: se obtiene la forma interrogativa agregando la partícula か al final de una oración sin alterar el orden de las palabras. Esta forma se utiliza para confirmar si el contenido es correcto o no, y el oyente responde con sí/no (はい / いいえ).",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿El señor Miller es profesor?",
+            "EjemploJap": "ミラーさんはせんせいですか"
+          },
+          {
+            "EjemploEsp": "No, no es profesor",
+            "EjemploJap": "いいえ、せんせいじゃありません"
+          }
+        ]
+      },
+      {
+        "Explicacion": "3- Oración interrogativa con la partícula か: la parte que se desea preguntar es reemplazada por la partícula interrogativa. El orden de las palabras no varía, simplemente se agrega か al final de la oración.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿Quién es aquella persona?",
+            "EjemploJap": "あのひとはだれですか"
+          },
+          {
+            "EjemploEsp": "Es el señor Miller",
+            "EjemploJap": "ミラーさんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "CapituloId": 1,
+    "Titulo": "S1 も S2",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- Cuando se hace una afirmación con la idea de que un hecho similar ya ha ocurrido, se usa も.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El señor Miller también es empleado de una empresa.",
+            "EjemploJap": "ミラーさんもかいしゃいんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "CapituloId": 1,
+    "Titulo": "S1 の S2",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- Cuando S1 modifica a S2, se conectan con la partícula の. En este caso, S1 representa un organismo o algún grupo al que pertenece S2.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El señor Miller es empleado de IMC.",
+            "EjemploJap": "ミラーさんはアイエムシーのかいしゃいんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 6,
+    "CapituloId": 1,
+    "Titulo": "～さん",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- En japonés se agrega さん al apellido o nombre del oyente o de una tercera persona. Dado que さん implica respeto, no se debe agregar al nombre del hablante mismo. En el caso de niños, en lugar de さん, se usa ちゃん como expresión de cariño. Normalmente, al referirse directamente a otra persona cuyo nombre se conoce, no se usa あなた. En general, se le dirige la palabra agregando さん a su nombre.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El señor Miller",
+            "EjemploJap": "ミラーさん"
+          }
+        ]
+      }
+    ]
+  }
 ]
