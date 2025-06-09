@@ -133,5 +133,74 @@
         ]
       }
     ]
+  },
+  {
+    "Id": 7,
+    "CapituloId": 2,
+    "Titulo": "これ/それ/あれ",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- Son pronombres demostrativos y funcionan gramaticalmente como sustantivos. これ se refiere a objetos próximos al hablante. それ se refiere a objetos próximos al oyente. あれ se refiere a objetos que están lejos tanto del hablante como del oyente.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Eso es un diccionario?",
+            "EjemploJap": "それはじしょですか"
+          },
+          {
+            "EjemploEsp": "De quien es este paraguas?",
+            "EjemploJap": "これはだれのかさですか"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 8,
+    "CapituloId": 2,
+    "Titulo": "この S / その S / あの S",
+    "Explicaciones": [
+      {
+        "Explicacion": "Son adjetivos demostrativos que modifican sustantivos.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Este libro es mio",
+            "EjemploJap": "このほんはれたしのぞす"
+          },
+          {
+            "EjemploEsp": "Quien es aquella persona",
+            "EjemploJap": "あのかたはどなたですか"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 9,
+    "CapituloId": 2,
+    "Titulo": "そうです",
+    "Explicaciones": [
+      {
+        "Explicacion": "En el caso de una oración sustantiva, normalmente el término そう se usa para contestar afirmativamente a una pregunta que requiere una respuesta afirmativa o negativa. La respuesta afirmativa en este caso es はい、そうです.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Si, asi es (lo es)",
+            "EjemploJap": "はい、そうぞす"
+          }
+        ]
+      },
+      {
+        "Explicacion": "En caso de una respuesta negativa, generalmente no se responde con そう. En su lugar, en la mayoría de los casos, se usa ちがいます ('no lo es') o se expresa la respuesta correcta.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "No, no lo es",
+            "EjemploJap": "ちがいます"
+          },
+          {
+            "EjemploEsp": "No, es una lapicera",
+            "EjemploJap": "いいえ、ボールペンです"
+          }
+        ]
+      }
+    ]
   }
 ]
