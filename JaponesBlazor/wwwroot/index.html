@@ -44,72 +44,31 @@
     </script>
     <script src="https://unpkg.com/wanakana@4.0.2/umd/wanakana.min.js"></script>
     <script>
+        let previousInput = '';
+
         window.kanaInputProcess = function (element) {
             if (!window.wanakana) return;
             const current = element.value;
             if (!current) return "";
 
-            // Convertir el contenido actual a Romaji con lógica de mayúsculas para Katakana
-            const romaji = window.kanaToRomajiWithCase(current);
+            const lastChar = current.slice(-1);
+            const isKatakana = lastChar === lastChar.toUpperCase();
 
-            // Volver a convertir a Kana (mezcla de Hiragana y Katakana según el input)
-            const newKana = window.wanakana.toKana(romaji);
+            // Convertir solo el nuevo carácter o cambio
+            const newPart = current.slice(previousInput.length);
+            let kanaPart = window.wanakana.toKana(newPart);
 
-            // Mostrar visualmente lo que el usuario tipeó respetando mayúsculas originales
-            let result = '';
-            for (let j = 0; j < newKana.length; j++) {
-                if (current[j] && current[j].toLowerCase() === newKana[j].toLowerCase()) {
-                    result += current[j];
-                } else {
-                    result += newKana[j];
-                }
+            // Si se escribió en mayúscula, forzar katakana
+            if (isKatakana) {
+                kanaPart = window.wanakana.toKatakana(window.wanakana.toKana(newPart));
             }
 
-            element.value = result;
-            return result;
+            const updated = window.wanakana.toKana(current, { IMEMode: true });
+            element.value = updated;
+            previousInput = current;
+            return updated;
         };
 
-        window.kanaToRomajiWithCase = function (input) {
-            if (!window.wanakana) return input;
-
-            let romaji = '';
-            for (let i = 0; i < input.length; i++) {
-                const char = input[i];
-                const nextChar = input[i + 1] || '';
-
-                // Manejar contracciones como きゃ, キャ, etc.
-                if (['ゃ', 'ゅ', 'ょ', 'ャ', 'ュ', 'ョ'].includes(nextChar)) {
-                    const combo = char + nextChar;
-                    const romajiCombo = window.wanakana.toRomaji(combo);
-                    const isKatakana = window.wanakana.isKatakana(combo);
-                    romaji += isKatakana ? romajiCombo.toUpperCase() : romajiCombo;
-                    i++; // saltear siguiente
-                }
-
-                // Manejo del っ o ッ (duplicación de consonante)
-                else if (char === 'っ' || char === 'ッ') {
-                    const following = input[i + 1];
-                    if (following) {
-                        const romajiNext = window.wanakana.toRomaji(following)[0] || '';
-                        romaji += romajiNext;
-                    }
-                }
-
-                else if (window.wanakana.isKatakana(char)) {
-                    romaji += window.wanakana.toRomaji(char).toUpperCase();
-                }
-
-                else if (window.wanakana.isHiragana(char)) {
-                    romaji += window.wanakana.toRomaji(char);
-                }
-
-                else {
-                    romaji += char; // dejar otros caracteres como están
-                }
-            }
-
-            return romaji;
-        };
 
         window.autoGrowTextarea = function (element) {
             if (!element) return;
