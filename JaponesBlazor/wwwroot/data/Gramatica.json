@@ -202,5 +202,135 @@
         ]
       }
     ]
+  },
+  {
+    "Id": 10,
+    "CapituloId": 2,
+    "Titulo": "Oración1 か, Oración2 か",
+    "Explicaciones": [
+      {
+        "Explicacion": "En una oracion interlativa que requiere que el oyente seleccione la respuesta correcta de entre dos o mas oraciones interrogativas. Al contestar a este tipo de pregunta, se selecciona la alternativa sin usar はい o いいえ.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Esto es un libro o una revista?",
+            "EjemploJap": "これはほんですか、ざっしですか"
+          },
+          {
+            "EjemploEsp": "Es una revista",
+            "EjemploJap": "ざっしです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 11,
+    "CapituloId": 2,
+    "Titulo": "S1 の S2",
+    "Explicaciones": [
+      {
+        "Explicacion": "En el capitulo 1 vimos que se conectan S1 y S2 con の cuando S1 califica a の. En este capitulo 2 se aprende las formas de usar の abajo indicadas:",
+        "Ejemplos": [
+        ]
+      },
+      {
+        "Explicacion": "1- S1 Aclara que es S2",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Este es un libro de computacion",
+            "EjemploJap": "これはコンピューターのほんです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "2- S1 Aclara a quien pertenece a S2",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Este es mi libro",
+            "EjemploJap": "これはわたしのほんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 12,
+    "CapituloId": 2,
+    "Titulo": "の como sustitutivo del S",
+    "Explicaciones": [
+      {
+        "Explicacion": "La particula の se usa en el lugar del sustantivo que aparecio anteriormente. Se usa の en el lugar de objetos, pero nunca en el lugar de personas.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "De quien es aquella maleta?",
+            "EjemploJap": "あれはだれのかばんですか"
+          },
+          {
+            "EjemploEsp": "Es de el señor Miller",
+            "EjemploJap": "ミラーさんのです"
+          },
+          {
+            "EjemploEsp": "Esta maleta es suya?",
+            "EjemploJap": "このかばんはあなたのですか"
+          },
+          {
+            "EjemploEsp": "No, no es mia",
+            "EjemploJap": "いいえ、わたしのじゃありません"
+          },
+          {
+            "EjemploEsp": "El señor Miller es empleado de IMC?",
+            "EjemploJap": "ミラーさんは IMCのしゃいんですか"
+          },
+          {
+            "EjemploEsp": "Si, es empleado de IMC",
+            "EjemploJap": "はい、IMCのしゃいんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 13,
+    "CapituloId": 2,
+    "Titulo": "お～",
+    "Explicaciones": [
+      {
+        "Explicacion": "Cuando se agrega el prefijo お a un sustantivo, se expresa cortesia.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Souvenir (Cortez)",
+            "EjemploJap": "おみやげ"
+          },
+          {
+            "EjemploEsp": "Bebida alcoholica (Cortez)",
+            "EjemploJap": "おさけ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 14,
+    "CapituloId": 2,
+    "Titulo": "そうですか",
+    "Explicaciones": [
+      {
+        "Explicacion": "Se emplea esta expresion para manifestar que una persona a entendido la informacion recibida. Se pronuncia con la entonacion descendiente.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Este paraguas es suyo?",
+            "EjemploJap": "このかさはあなたのですか"
+          },
+          {
+            "EjemploEsp": "No, no lo es, es del señor Miller",
+            "EjemploJap": "いいえ、ちがいます。ミラーさんのです"
+          },
+          {
+            "EjemploEsp": "Ah, si? / Ya veo",
+            "EjemploJap": "そうですか"
+          }
+        ]
+      }
+    ]
   }
 ]
