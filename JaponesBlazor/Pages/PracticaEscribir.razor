@@ -40,23 +40,15 @@
 
         <div class="juego-escribir-palabra">@actual.Español</div>
         <div class="juego-escribir-inputbox" style="flex-direction:column;align-items:center;">
-            <input
+            <textarea
                 class="@inputClass"
-                style="margin-bottom:0.5rem;"
                 @ref="KanaInputRef"
-                @oninput="OnKanaInput"
+                @oninput="@(async e => { await OnKanaInput(e); await JS.InvokeVoidAsync("autoGrowTextarea", KanaInputRef); })"
                 disabled="@YaRespondida"
                 @bind="RespuestaUsuario"
                 lang="ja"
                 autocomplete="off"
                 placeholder="Romanji - a=あ A=ア" />
-
-            @if (!string.IsNullOrWhiteSpace(RespuestaUsuario))
-            {
-                <div class="kana-preview" style="font-size:1.5em; margin-bottom:0.5em;">
-                    @RespuestaUsuario
-                </div>
-            }
 
             @if (YaRespondida && RespuestaUsuario != actual.Japonés)
             {
@@ -152,13 +144,6 @@
             YaRespondida = false;
             TecladoVisible = TecladoVisibleAntesDeResponder;
         }
-    }
-
-    private async Task ConvertirRomanji(ChangeEventArgs e)
-    {
-        RomanjiInput = e.Value?.ToString() ?? "";
-        RespuestaUsuario = await JS.InvokeAsync<string>("toKana", RomanjiInput);
-        StateHasChanged();
     }
 
     // Al verificar, compara el kana

@@ -1141,8 +1141,24 @@ textarea.form-control {
     box-shadow: 0 1px 6px #fecaca55;
 }
 
-    .respuesta-incorrecta-text .icon-x {
-        font-size: 1.3em;
-        color: #ef4444;
-        margin-right: 0.2em;
-    }
+.respuesta-incorrecta-text .icon-x {
+    font-size: 1.3em;
+    color: #ef4444;
+    margin-right: 0.2em;
+}
+.japones-input {
+    min-height: 1.7em !important; /* Una línea */
+    height: 1.7em !important; /* Una línea */
+    max-height: 8em;
+    overflow-y: auto !important;
+    resize: none; /* El usuario no puede agrandar manualmente */
+    font-size: 1.15rem !important;
+    line-height: 1.2 !important;
+    box-shadow: none !important;
+    border-color: #b3b3ff !important;
+    padding: 0.4em 1em !important;
+}
+.japones-input, .japones-input:focus {
+    box-shadow: none !important;
+    border-color: #b3b3ff !important;
+}

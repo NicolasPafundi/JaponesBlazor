@@ -56,44 +56,75 @@
         };
         window.kanaInputProcess = function (element) {
             if (!window.wanakana) return;
-            let current = element.value;
+            const current = element.value;
             if (!current) return "";
 
-            // Convierte la parte completa a romanji con mayúsculas/minúsculas
-            let asRomanji = window.kanaToRomajiWithCase(current);
+            // Convertir el contenido actual a Romaji con lógica de mayúsculas para Katakana
+            const romaji = window.kanaToRomajiWithCase(current);
 
-            // Convierte esa parte a kana
-            let asKana = window.wanakana.toKana(asRomanji);
+            // Volver a convertir a Kana (mezcla de Hiragana y Katakana según el input)
+            const newKana = window.wanakana.toKana(romaji);
+
+            // Mostrar visualmente lo que el usuario tipeó respetando mayúsculas originales
             let result = '';
-            for (let j = 0; j < asKana.length; j++)
-            {
-                if (asKana[j].toLowerCase() == current[j].toLowerCase()) {
+            for (let j = 0; j < newKana.length; j++) {
+                if (current[j] && current[j].toLowerCase() === newKana[j].toLowerCase()) {
                     result += current[j];
-                }
-                else
-                {
-                    result += asKana[j];
+                } else {
+                    result += newKana[j];
                 }
             }
 
-            // Actualiza el valor del input
             element.value = result;
-
             return result;
-        }; 
+        };
+
+        window.autoGrowTextarea = function (element) {
+            element.style.height = "1.7em"; // Siempre vuelve a una línea antes de crecer
+            if (element.scrollHeight > element.clientHeight) {
+                element.style.height = (element.scrollHeight) + "px";
+            }
+        };
         window.kanaToRomajiWithCase = function (input) {
             if (!window.wanakana) return input;
-            let result = '';
-            for (let char of input) {
-                if (window.wanakana.isKatakana(char)) {
-                    result += window.wanakana.toRomaji(char).toUpperCase();
-                } else if (window.wanakana.isHiragana(char)) {
-                    result += window.wanakana.toRomaji(char);
-                } else {
-                    result += char;
+
+            let romaji = '';
+            for (let i = 0; i < input.length; i++) {
+                const char = input[i];
+                const nextChar = input[i + 1] || '';
+
+                // Manejar contracciones como きゃ, キャ, etc.
+                if (['ゃ', 'ゅ', 'ょ', 'ャ', 'ュ', 'ョ'].includes(nextChar)) {
+                    const combo = char + nextChar;
+                    const romajiCombo = window.wanakana.toRomaji(combo);
+                    const isKatakana = window.wanakana.isKatakana(combo);
+                    romaji += isKatakana ? romajiCombo.toUpperCase() : romajiCombo;
+                    i++; // saltear siguiente
+                }
+
+                // Manejo del っ o ッ (duplicación de consonante)
+                else if (char === 'っ' || char === 'ッ') {
+                    const following = input[i + 1];
+                    if (following) {
+                        const romajiNext = window.wanakana.toRomaji(following)[0] || '';
+                        romaji += romajiNext;
+                    }
+                }
+
+                else if (window.wanakana.isKatakana(char)) {
+                    romaji += window.wanakana.toRomaji(char).toUpperCase();
+                }
+
+                else if (window.wanakana.isHiragana(char)) {
+                    romaji += window.wanakana.toRomaji(char);
+                }
+
+                else {
+                    romaji += char; // dejar otros caracteres como están
                 }
             }
-            return result;
+
+            return romaji;
         };
         window.tokenizeRomanji = function (input) {
             if (window.wanakana) {
