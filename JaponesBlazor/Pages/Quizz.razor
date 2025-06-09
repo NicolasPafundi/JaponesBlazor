@@ -1,10 +1,21 @@
 ﻿@page "/Quizz"
+@page "/Practica/Capitulos"
+@page "/Practica/Capitulos/{TipoPractica}"
 @inject NavigationManager Nav
 @using JaponesBlazor.Component
 
 <div class="header-bar mb-8">
     <BackButton />
-    <h1 class="titulo-centrado">📝 Practica</h1>
+    <h1 class="titulo-centrado">
+        @if (TipoPractica?.ToLower() == "escribir")
+        {
+            <text>✍️ Práctica de Escritura</text>
+        }
+        else
+        {
+            <text>📝 Práctica</text>
+        }
+    </h1>
     <div class="header-bar-space"></div>
 </div>
 
@@ -23,13 +34,16 @@
 
 <div class="flex justify-center">
     <button class="quizz-comenzar-btn"
-            @onclick="ComenzarQuizz"
+            @onclick="Comenzar"
             disabled="@(!CapitulosSeleccionados.Any())">
-        🎯 Comenzar
+        @(TipoPractica?.ToLower() == "escribir" ? "✍️ Comenzar práctica" : "🎯 Comenzar")
     </button>
 </div>
 
 @code {
+    [Parameter]
+    public string? TipoPractica { get; set; } = "quizz"; // valor por defecto
+
     private List<CapituloModel> Capitulos = new()
     {
         new CapituloModel { Id = 1, Titulo = "Capítulo 1" },
@@ -44,9 +58,12 @@
             CapitulosSeleccionados.Remove(id);
     }
 
-    private void ComenzarQuizz()
+    private void Comenzar()
     {
         var ids = string.Join(",", CapitulosSeleccionados);
-        Nav.NavigateTo($"Quizz/Start?ids={ids}");
+        if (TipoPractica?.ToLower() == "escribir")
+            Nav.NavigateTo($"/Practica/Escribir?ids={ids}");
+        else
+            Nav.NavigateTo($"/Quizz/Start?ids={ids}");
     }
 }

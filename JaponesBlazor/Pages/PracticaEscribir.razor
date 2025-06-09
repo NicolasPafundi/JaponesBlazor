@@ -1,22 +1,27 @@
 ﻿@page "/Practica/Escribir"
 @using JaponesBlazor.Component
 @inject HttpClient Http
+@inject NavigationManager Nav
 @inject IJSRuntime JS
+@using System.Web
 
 @{
-    var progreso = Palabras != null && Palabras.Count > 0 ? ((double)(Indice + 1) / Palabras.Count) * 100 : 0;
     var inputClass = "japones-input";
-    VocabularioModel? actual = null;
+    EjemploModel? actual = null;
     if (Palabras != null && Palabras.Count > 0 && Indice < Palabras.Count)
     {
         actual = Palabras[Indice];
         if (YaRespondida)
-            inputClass += RespuestaUsuario == actual.Japonés ? " input-correcto" : " input-incorrecto";
+            inputClass += RespuestaUsuario == actual.EjemploJap ? " input-correcto" : " input-incorrecto";
     }
 }
 
 <div class="juego-escribir-container">
-    <h2 class="juego-escribir-titulo">Escribe la palabra en japonés</h2>
+    <div class="header-bar mb-8">
+        <BackButton />
+         <h2 class="juego-escribir-titulo">Escribe la palabra en japonés</h2>
+        <div class="header-bar-space"></div>
+    </div>
 
     @if (Palabras == null)
     {
@@ -30,15 +35,12 @@
     {
         actual = Palabras[Indice];
 
-        <div class="juego-barra-progreso">
-            <div class="juego-barra-progreso-inner" style="width:@progreso%"></div>
-        </div>
         <div class="juego-progreso">
             <span>Palabra @(Indice + 1) de @Palabras.Count</span>
             <span>✅ Correctas: @Correctas</span>
         </div>
 
-        <div class="juego-escribir-palabra">@actual.Español</div>
+        <div class="juego-escribir-palabra">@actual.EjemploEsp</div>
         <div class="juego-escribir-inputbox" style="flex-direction:column;align-items:center;">
             <textarea
                 class="@inputClass"
@@ -51,14 +53,14 @@
                 rows="1"
                 placeholder="Romanji - a=あ A=ア" />
 
-            @if (YaRespondida && RespuestaUsuario != actual.Japonés)
+            @if (YaRespondida && RespuestaUsuario != actual.EjemploJap)
             {
                 <div class="respuesta-incorrecta-text">
-                    <span>Respuesta correcta:</span>
-                    <span class="text-red font-bold ms-2" style="font-size:1.5rem;">@actual.Japonés</span>
+                    <PlayJapanese Texto="@actual.EjemploJap" />
+                    <span class="text-red font-bold ms-2" style="font-size:1.5rem;">@actual.EjemploJap</span>
                 </div>
             }
-            @if (YaRespondida && RespuestaUsuario == actual.Japonés)
+            @if (YaRespondida && RespuestaUsuario == actual.EjemploJap)
             {
                 <div class="respuesta-correcta-text">
                     <span class="icon-check">✅</span>
@@ -111,7 +113,8 @@
 </div>
 
 @code {
-    private List<VocabularioModel>? Palabras;
+    private List<int> CapitulosSeleccionados = new();
+    private List<EjemploModel>? Palabras;
     private int Indice = 0;
     private string RespuestaUsuario = "";
     private int Correctas = 0;
@@ -125,8 +128,25 @@
 
     protected override async Task OnInitializedAsync()
     {
-        Palabras = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
-        Palabras = Palabras?.OrderBy(x => Guid.NewGuid()).ToList();
+        var uri = Nav.ToAbsoluteUri(Nav.Uri);
+        var query = HttpUtility.ParseQueryString(uri.Query);
+        var ids = query["ids"]?.Split(",").Select(id => int.TryParse(id, out var n) ? n : -1).Where(n => n > 0).ToList();
+
+        if (ids is null || ids.Count == 0)
+        {
+            Nav.NavigateTo("Quizz");
+            return;
+        }
+
+        CapitulosSeleccionados = ids;
+
+        var vocabularioList = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
+        var gramaticaList= await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
+        List<VocabularioModel> palabrasVocabulario = vocabularioList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).ToList();
+        List<EjemploModel> gramaticaModels = gramaticaList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).SelectMany(x=>x.Explicaciones).SelectMany(x=>x.Ejemplos).ToList();
+        List<EjemploModel> palabras = gramaticaModels.Union(palabrasVocabulario.Select(x => new EjemploModel {EjemploEsp = x.Español, EjemploJap = x.Japonés })).ToList();
+        var rng = new Random();
+        Palabras = palabras.OrderBy(x => rng.Next()).ToList();
     }
 
     private void ToggleTeclado()
@@ -149,7 +169,7 @@
     private void VerificarRespuesta()
     {
         YaRespondida = true;
-        if (Palabras![Indice].Japonés == RespuestaUsuario)
+        if (Palabras![Indice].EjemploJap == RespuestaUsuario)
             Correctas++;
         TecladoVisibleAntesDeResponder = TecladoVisible;
         TecladoVisible = false;
