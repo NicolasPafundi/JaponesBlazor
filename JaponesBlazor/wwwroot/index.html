@@ -42,6 +42,48 @@
             window.speechSynthesis.speak(utter);
         };
     </script>
+    <script src="https://unpkg.com/wanakana@4.0.2/umd/wanakana.min.js"></script>
+    <script>
+        window.toKana = function (input) {
+            if (window.wanakana) {
+                return window.wanakana.toKana(input);
+            }
+            return input;
+        };
+        window.getRomanjiInput = function (element) {
+            // Devuelve el valor real del input (lo que el usuario tecleó)
+            return element.value;
+        };
+
+        window.tokenizeRomanji = function (input) {
+            if (window.wanakana) {
+                return window.wanakana.tokenize(input).join(' ');
+            }
+            return input;
+        };
+        window.mixedKana = function (input) {
+            if (!window.wanakana) return input;
+            // Convierte mayúsculas a katakana y minúsculas a hiragana
+            let result = '';
+            let buffer = '';
+            let isKatakana = null;
+            for (let i = 0; i < input.length; i++) {
+                let c = input[i];
+                let katakana = c === c.toUpperCase() && /[A-Z]/i.test(c);
+                if (isKatakana === null) isKatakana = katakana;
+                if (katakana !== isKatakana || i === input.length - 1) {
+                    if (i === input.length - 1) buffer += c;
+                    result += isKatakana
+                        ? window.wanakana.toKatakana(buffer)
+                        : window.wanakana.toHiragana(buffer);
+                    buffer = '';
+                    isKatakana = katakana;
+                }
+                buffer += c;
+            }
+            return result;
+        };
+        </script>
 </body>
 
 </html>
