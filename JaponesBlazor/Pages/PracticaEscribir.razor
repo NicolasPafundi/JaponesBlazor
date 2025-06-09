@@ -121,7 +121,6 @@
     private bool TecladoVisible = false;
     private bool TecladoVisibleAntesDeResponder = false;
 
-    private string RomanjiInput = "";
     private ElementReference KanaInputRef;
 
     protected override async Task OnInitializedAsync()
@@ -141,7 +140,6 @@
         {
             Indice++;
             RespuestaUsuario = "";
-            RomanjiInput = "";
             YaRespondida = false;
             TecladoVisible = TecladoVisibleAntesDeResponder;
         }

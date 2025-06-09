@@ -26,7 +26,7 @@
   {
     "Id": 6,
     "CapituloId": 1,
-    "Japonés": "～じん",
+    "Japonés": "じん",
     "Español": "Sufijo que se usa para la nacionalidad de una persona"
   },
   {
@@ -104,7 +104,7 @@
   {
     "Id": 19,
     "CapituloId": 1,
-    "Japonés": "～さい",
+    "Japonés": "さい",
     "Español": "Decir edad"
   },
   {
@@ -242,19 +242,19 @@
   {
     "Id": 42,
     "CapituloId": 2,
-    "Japonés": "この～",
+    "Japonés": "この",
     "Español": "Esta..., este..."
   },
   {
     "Id": 43,
     "CapituloId": 2,
-    "Japonés": "その～",
+    "Japonés": "その",
     "Español": "Esa..., este..."
   },
   {
     "Id": 44,
     "CapituloId": 2,
-    "Japonés": "あの～",
+    "Japonés": "あの",
     "Español": "Aquel..., aquella..."
   },
   {

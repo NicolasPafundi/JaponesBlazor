@@ -44,32 +44,15 @@
     </script>
     <script src="https://unpkg.com/wanakana@4.0.2/umd/wanakana.min.js"></script>
     <script>
-        let previousInput = '';
-
         window.kanaInputProcess = function (element) {
             if (!window.wanakana) return;
             const current = element.value;
             if (!current) return "";
 
-            const lastChar = current.slice(-1);
-            const isKatakana = lastChar === lastChar.toUpperCase();
-
-            // Convertir solo el nuevo carácter o cambio
-            const newPart = current.slice(previousInput.length);
-            let kanaPart = window.wanakana.toKana(newPart);
-
-            // Si se escribió en mayúscula, forzar katakana
-            if (isKatakana) {
-                kanaPart = window.wanakana.toKatakana(window.wanakana.toKana(newPart));
-            }
-
             const updated = window.wanakana.toKana(current, { IMEMode: true });
             element.value = updated;
-            previousInput = current;
             return updated;
         };
-
-
         window.autoGrowTextarea = function (element) {
             if (!element) return;
             element.style.height = "1px"; // reiniciar altura
