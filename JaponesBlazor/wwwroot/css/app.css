@@ -745,24 +745,25 @@ textarea.form-control {
 .teclado-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 0.5rem;
+    gap: 0.35rem;
     width: 100%;
     margin-bottom: 0.3em;
 }
 
 .tecla-japonesa {
     font-size: 1.15rem;
-    padding: 0.55em 0.1em;
+    padding: 0.35em 0.1em;
     border-radius: 8px;
     border: 1.5px solid #d1d5db;
     background: #fff;
     color: #0369a1;
     transition: background 0.18s, border 0.18s, color 0.18s, box-shadow 0.18s, transform 0.12s;
     cursor: pointer;
-    min-width: 2.2em;
-    min-height: 2.2em;
+    min-width: 1.5em;
+    min-height: 1.5em;
     font-weight: 500;
     box-shadow: 0 1.5px 8px 0 rgba(56,189,248,0.04);
+    word-break: keep-all;
 }
 
     .tecla-japonesa:hover:enabled,
@@ -1147,11 +1148,10 @@ textarea.form-control {
     margin-right: 0.2em;
 }
 .japones-input {
-    min-height: 1.7em !important; /* Una línea */
-    height: 1.7em !important; /* Una línea */
+    min-height: 39px !important; /* altura inicial */
     max-height: 8em;
-    overflow-y: auto !important;
-    resize: none; /* El usuario no puede agrandar manualmente */
+    overflow-y: hidden !important;
+    resize: none;
     font-size: 1.15rem !important;
     line-height: 1.2 !important;
     box-shadow: none !important;
@@ -1161,4 +1161,61 @@ textarea.form-control {
 .japones-input, .japones-input:focus {
     box-shadow: none !important;
     border-color: #b3b3ff !important;
+}
+/* Teclado japonés: grid siempre de 5 columnas */
+.teclado-japones {
+    width: 100%;
+    max-width: 420px;
+    background: #f8fafd;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 1.1em 0.5em 1.2em 0.5em;
+    margin: 0 auto 1.2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teclado-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.35rem;
+    width: 100%;
+    margin-bottom: 0.3em;
+}
+
+.tecla-japonesa {
+    font-size: 1.15rem;
+    padding: 0.35em 0.1em;
+    border-radius: 8px;
+    border: 1.5px solid #d1d5db;
+    background: #fff;
+    color: #0369a1;
+    transition: background 0.18s, border 0.18s, color 0.18s, box-shadow 0.18s, transform 0.12s;
+    cursor: pointer;
+    min-width: 1.5em;
+    min-height: 1.5em;
+    font-weight: 500;
+    box-shadow: 0 1.5px 8px 0 rgba(56,189,248,0.04);
+    word-break: keep-all;
+}
+
+/* Responsive para móviles: botones y grid más pequeños */
+@media (max-width: 600px) {
+    .teclado-japones {
+        max-width: 99vw;
+        padding: 0.5em 0.1em 0.7em 0.1em;
+    }
+
+    .teclado-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.18rem;
+    }
+
+    .tecla-japonesa {
+        font-size: 0.95rem;
+        min-width: 1.1em;
+        min-height: 1.1em;
+        padding: 0.15em 0.1em;
+    }
 }

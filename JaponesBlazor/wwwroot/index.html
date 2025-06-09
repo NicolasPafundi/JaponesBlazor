@@ -79,11 +79,11 @@
             return result;
         };
 
+
         window.autoGrowTextarea = function (element) {
-            element.style.height = "1.7em"; // Siempre vuelve a una línea antes de crecer
-            if (element.scrollHeight > element.clientHeight) {
-                element.style.height = (element.scrollHeight) + "px";
-            }
+            if (!element) return;
+            element.style.height = "1px"; // reiniciar altura
+            element.style.height = (element.scrollHeight + 2) + "px"; // ajustar
         };
         window.kanaToRomajiWithCase = function (input) {
             if (!window.wanakana) return input;
