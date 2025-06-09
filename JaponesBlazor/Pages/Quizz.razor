@@ -62,8 +62,8 @@
     {
         var ids = string.Join(",", CapitulosSeleccionados);
         if (TipoPractica?.ToLower() == "escribir")
-            Nav.NavigateTo($"/Practica/Escribir?ids={ids}");
+            Nav.NavigateTo($"Practica/Escribir?ids={ids}");
         else
-            Nav.NavigateTo($"/Quizz/Start?ids={ids}");
+            Nav.NavigateTo($"Quizz/Start?ids={ids}");
     }
 }
