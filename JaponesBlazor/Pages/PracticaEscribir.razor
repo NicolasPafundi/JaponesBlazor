@@ -1,0 +1,126 @@
+﻿@page "/Practica/Escribir"
+@using JaponesBlazor.Component
+@inject HttpClient Http
+
+@{
+    var progreso = Palabras != null && Palabras.Count > 0 ? ((double)(Indice + 1) / Palabras.Count) * 100 : 0;
+    var inputClass = "japones-input";
+    VocabularioModel? actual = null;
+    if (Palabras != null && Palabras.Count > 0 && Indice < Palabras.Count)
+    {
+        actual = Palabras[Indice];
+        if (YaRespondida)
+            inputClass += RespuestaUsuario == actual.Japonés ? " input-correcto" : " input-incorrecto";
+    }
+}
+
+<div class="juego-escribir-container">
+    <h2 class="juego-escribir-titulo">Escribe la palabra en japonés</h2>
+
+    @if (Palabras == null)
+    {
+        <p class="text-center text-gray-600">Cargando palabras...</p>
+    }
+    else if (!Palabras.Any())
+    {
+        <p class="text-center text-red-600">No hay palabras disponibles.</p>
+    }
+    else
+    {
+        actual = Palabras[Indice];
+
+        <div class="juego-barra-progreso">
+            <div class="juego-barra-progreso-inner" style="width:@progreso%"></div>
+        </div>
+        <div class="juego-progreso">
+            <span>Palabra @(Indice + 1) de @Palabras.Count</span>
+            <span>✅ Correctas: @Correctas</span>
+        </div>
+
+        <div class="juego-escribir-palabra">@actual.Español</div>
+        <div class="juego-escribir-inputbox" style="flex-direction:column;align-items:center;">
+            <input
+                class="@inputClass"
+                style="margin-bottom:0.5rem;"
+                @bind="RespuestaUsuario"
+                disabled="@YaRespondida"
+                lang="ja"
+                autocomplete="off" />
+            @if (YaRespondida && RespuestaUsuario != actual.Japonés)
+{
+                <div class="respuesta-incorrecta-text">
+                    <span>Respuesta correcta:</span>
+                    <span class="text-red font-bold ms-2" style="font-size:1.5rem;">@actual.Japonés</span>
+                </div>
+            }
+            @if (YaRespondida && RespuestaUsuario == actual.Japonés)
+            {
+                <div class="respuesta-correcta-text">
+                    <span class="icon-check">✅</span>
+                    <span>¡Correcto!</span>
+                </div>
+            }
+            <TecladoJapones @bind-Valor="RespuestaUsuario"
+                            Disabled="@YaRespondida"
+                            TextAreaClass="@inputClass" />
+        </div>
+
+        @if (YaRespondida && !EsUltima)
+        {
+            <div class="flex justify-center">
+                <button class="quizz-comenzar-btn" @onclick="SiguientePalabra">
+                    Siguiente <span class="icon-next">➡️</span>
+                </button>
+            </div>
+        }
+        else if (YaRespondida && EsUltima)
+        {
+            <div class="text-center">
+                <p class="text-green-600 font-semibold mb-3 text-xl">🎉 ¡Práctica completada!</p>
+                <button class="quizz-comenzar-btn" @onclick="@(() => Indice = 0)">
+                    Volver a empezar
+                </button>
+            </div>
+        }
+        else
+        {
+            <div class="flex justify-center">
+                <button class="quizz-comenzar-btn" @onclick="VerificarRespuesta" disabled="@YaRespondida">
+                    Verificar
+                </button>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    private List<VocabularioModel>? Palabras;
+    private int Indice = 0;
+    private string RespuestaUsuario = "";
+    private int Correctas = 0;
+    private bool YaRespondida = false;
+    private bool EsUltima => Indice >= (Palabras?.Count ?? 0) - 1;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Palabras = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
+        Palabras = Palabras?.OrderBy(x => Guid.NewGuid()).ToList();
+    }
+
+    private void VerificarRespuesta()
+    {
+        YaRespondida = true;
+        if (Palabras![Indice].Japonés == RespuestaUsuario)
+            Correctas++;
+    }
+
+    private void SiguientePalabra()
+    {
+        if (!EsUltima)
+        {
+            Indice++;
+            RespuestaUsuario = "";
+            YaRespondida = false;
+        }
+    }
+}

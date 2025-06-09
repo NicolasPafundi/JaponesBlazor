@@ -223,13 +223,18 @@ a, .btn-link {
 .quizz-comenzar-btn {
     background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.18rem;
     font-weight: bold;
-    padding: 0.9rem 3rem;
+    padding: 0.9rem 2.5rem;
     border-radius: 9999px;
-    box-shadow: 0 2px 16px 0 rgba(14,165,233,0.10);
+    box-shadow: 0 2px 16px 0 rgba(14,165,233,0.13);
     border: none;
-    transition: background 0.2s, transform 0.1s;
+    transition: background 0.2s, transform 0.13s, box-shadow 0.2s;
+    margin-top: 1.2rem;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
 }
 .quizz-comenzar-btn:disabled {
     opacity: 0.5;
@@ -237,7 +242,15 @@ a, .btn-link {
 }
 .quizz-comenzar-btn:hover:enabled {
     background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%);
-    transform: scale(1.04);
+    transform: scale(1.05);
+    box-shadow: 0 4px 24px 0 #bae6fd;
+}
+.quizz-comenzar-btn .icon-next {
+    display: inline-block;
+    transition: transform 0.18s cubic-bezier(.4,2,.3,1);
+}
+.quizz-comenzar-btn:hover .icon-next {
+    transform: translateX(2px);
 }
 .quizz-opcion-btn {
     display: block;
@@ -339,3 +352,797 @@ body, .bg-white, .bg-light {
 .btn-audio:hover {
     color: #0369a1;
 }
+.teclado-japones .tecla-japonesa {
+    font-size: 1.2rem;
+    margin: 2px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+.teclado-japones .tecla-japonesa:disabled {
+    background: #eee;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.teclado-japones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 0.3em 0.3em 0.5em 0.3em;
+    box-shadow: 0 2px 8px #0001;
+    max-width: 420px;
+    width: 100%;
+}
+
+.teclado-japones .mb-1,
+.teclado-fila {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 0.1em;
+}
+
+.tecla-japonesa {
+    font-size: 1.05rem;
+    margin: 2px 2px;
+    padding: 0.18em 0.5em;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #fff;
+    transition: background 0.2s;
+    min-width: 2.2em;
+    min-height: 2.2em;
+}
+
+.tecla-japonesa:active {
+    background: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+    .teclado-japones {
+        max-width: 98vw;
+        font-size: 0.95rem;
+        padding: 0.1em 0.05em 0.2em 0.05em;
+    }
+    .tecla-japonesa {
+        font-size: 0.95rem;
+        min-width: 1.1em;
+        min-height: 1.1em;
+        padding: 0.1em 0.15em;
+    }
+}
+
+.comb-btn {
+    font-size: 1.1rem;
+    margin: 2px 1px;
+    padding: 0.3em 0.6em;
+    min-width: 2.2em;
+}
+
+@media (max-width: 600px) {
+    .comb-btn {
+        font-size: 1rem;
+        min-width: 1.7em;
+        padding: 0.2em 0.4em;
+    }
+}
+
+.comb-peq {
+    font-size: 0.95rem;
+    padding: 0.1em 0.3em;
+    min-width: 1.2em;
+    min-height: 1.2em;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    .comb-peq {
+        font-size: 0.85rem;
+        min-width: 0.8em;
+        min-height: 0.8em;
+        padding: 0.07em 0.1em;
+    }
+}
+
+textarea.form-control {
+    font-size: 1.4rem !important;
+    min-height: 2.5em !important;
+    max-height: 4em;
+    resize: none;
+    border: 2px solid #b3b3ff;
+    background: #fafdff;
+}
+
+@media (max-width: 600px) {
+    textarea.form-control {
+        font-size: 1.1rem !important;
+        min-height: 2em !important;
+        max-height: 3em;
+    }
+}
+
+.teclado-japones-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.teclado-japones {
+    background: #f8fafd;
+    border-radius: 12px;
+    padding: 0.7em 0.5em 0.7em 0.5em;
+    box-shadow: 0 2px 8px #0001;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.teclado-fila {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.2em;
+    flex-wrap: wrap;
+}
+
+.tecla-japonesa {
+    font-size: 1.1rem;
+    margin: 2px 2px;
+    padding: 0.25em 0.6em;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #fff;
+    transition: background 0.2s;
+    min-width: 2em;
+    min-height: 2em;
+}
+
+.tecla-japonesa:active {
+    background: #e0e0e0;
+}
+
+.comb-peq {
+    font-size: 1rem;
+    padding: 0.15em 0.4em;
+    min-width: 1.2em;
+    min-height: 1.2em;
+    vertical-align: middle;
+}
+
+.teclado-area {
+    font-size: 1.3rem !important;
+    min-height: 2.2em !important;
+    max-height: 4em;
+    resize: none;
+    border: 2px solid #b3b3ff;
+    background: #fafdff;
+}
+
+@media (max-width: 600px) {
+    .teclado-japones {
+        max-width: 100vw;
+        padding: 0.2em 0.1em 0.5em 0.1em;
+    }
+
+    .tecla-japonesa {
+        font-size: 1rem;
+        min-width: 1.3em;
+        min-height: 1.3em;
+        padding: 0.15em 0.2em;
+    }
+
+    .comb-peq {
+        font-size: 0.9rem;
+        min-width: 1em;
+        min-height: 1em;
+        padding: 0.1em 0.15em;
+    }
+
+    .teclado-area {
+        font-size: 1rem !important;
+        min-height: 1.7em !important;
+        max-height: 2.5em;
+    }
+}
+
+.respuesta-box {
+    display: inline-block;
+    padding: 0.3em 0.3em 0 0.3em;
+    border-radius: 10px;
+    transition: border 0.3s, box-shadow 0.3s;
+    background: #fafdff;
+    min-width: 10em;
+    max-width: 16em;
+}
+
+.respuesta-correcta {
+    border: 2.5px solid #22c55e;
+    box-shadow: 0 0 0 2px #bbf7d0;
+}
+
+.respuesta-incorrecta {
+    border: 2.5px solid #ef4444;
+    box-shadow: 0 0 0 2px #fecaca;
+}
+
+.respuesta-feedback {
+    font-size: 1.2rem;
+    margin-top: 0.2em;
+}
+
+.respuesta-correcta-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 1.18rem;
+    margin-top: -0.3em;
+    margin-bottom: 0.7em;
+    color: #22c55e;
+    font-weight: 700;
+    background: #e7fbe9;
+    border-radius: 8px;
+    padding: 0.3em 0.8em;
+    box-shadow: 0 1px 6px #bbf7d055;
+}
+.respuesta-correcta-text .icon-check {
+    font-size: 1.3em;
+    color: #22c55e;
+    margin-right: 0.2em;
+}
+.respuesta-correcta-text .text-gray-700 {
+    color: #333 !important;
+    font-weight: 500;
+}
+.respuesta-correcta-text .text-black {
+    color: #222 !important;
+}
+
+.teclado-japones textarea.form-control,
+.teclado-area {
+    font-size: 1.05rem !important;
+    min-height: 1.7em !important;
+    max-height: 1.7em;
+    width: 9em !important;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+    background: #fafdff;
+    box-shadow: none;
+    resize: none;
+}
+
+@media (max-width: 600px) {
+    .teclado-japones textarea.form-control,
+    .teclado-area {
+        font-size: 0.95rem !important;
+        min-height: 1.2em !important;
+        max-height: 1.2em;
+        width: 80vw !important;
+    }
+}
+
+/* Separa el textarea del teclado */
+.teclado-japones textarea.form-control,
+.teclado-area {
+    margin-bottom: 1.1em !important;
+    border: 2.5px solid #b3b3ff;
+    box-shadow: 0 0 0 2px #e0e7ff;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Borde verde/rojo según respuesta */
+.teclado-japones .teclado-area.respuesta-correcta {
+    border: 2.5px solid #22c55e !important;
+    box-shadow: 0 0 0 2px #bbf7d0 !important;
+}
+
+.teclado-japones .teclado-area.respuesta-incorrecta {
+    border: 2.5px solid #ef4444 !important;
+    box-shadow: 0 0 0 2px #fecaca !important;
+}
+/* Contenedor principal del juego */
+.juego-escribir-container {
+    max-width: 500px;
+    margin: 3rem auto 0 auto;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 6px 32px 0 rgba(56, 189, 248, 0.13), 0 1.5px 8px 0 rgba(0,0,0,0.07);
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Título principal */
+.juego-escribir-titulo {
+    font-size: 2.1rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2.2rem;
+    color: #0ea5e9;
+    letter-spacing: 0.01em;
+}
+
+/* Palabra en español */
+.juego-escribir-palabra {
+    text-align: center;
+    font-size: 1.35rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.01em;
+}
+
+/* Input de escritura */
+.juego-escribir-inputbox {
+    width: 100%;
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.japones-input {
+    width: 100%;
+    max-width: 340px;
+    font-size: 1.35rem;
+    padding: 0.7em 1.1em;
+    border-radius: 14px;
+    border: 2.5px solid #b3b3ff;
+    background: #fafdff;
+    box-shadow: 0 1.5px 8px 0 rgba(56,189,248,0.07);
+    outline: none;
+    transition: background 0.25s, border 0.25s, box-shadow 0.25s;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
+    .japones-input.input-correcto {
+        background: #d1fae5 !important;
+        border-color: #22c55e !important;
+        color: #166534 !important;
+        font-weight: bold;
+        box-shadow: 0 0 0 2px #bbf7d0;
+    }
+
+    .japones-input.input-incorrecto {
+        animation: shake 0.32s cubic-bezier(.36,.07,.19,.97) both;
+        background: #ffeaea !important;
+        border-color: #ef4444 !important;
+        color: #b91c1c !important;
+    }
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-7px); }
+    40% { transform: translateX(7px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Teclado en grid */
+.teclado-japones {
+    width: 100%;
+    max-width: 420px;
+    background: #f8fafd;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 1.1em 0.5em 1.2em 0.5em;
+    margin: 0 auto 1.2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teclado-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.3em;
+}
+
+.tecla-japonesa {
+    font-size: 1.15rem;
+    padding: 0.55em 0.1em;
+    border-radius: 8px;
+    border: 1.5px solid #d1d5db;
+    background: #fff;
+    color: #0369a1;
+    transition: background 0.18s, border 0.18s, color 0.18s, box-shadow 0.18s, transform 0.12s;
+    cursor: pointer;
+    min-width: 2.2em;
+    min-height: 2.2em;
+    font-weight: 500;
+    box-shadow: 0 1.5px 8px 0 rgba(56,189,248,0.04);
+}
+
+    .tecla-japonesa:hover:enabled,
+    .tecla-japonesa:focus:enabled {
+        background: #e0f0ff;
+        border-color: #60a5fa;
+        color: #0ea5e9;
+        box-shadow: 0 2px 8px 0 #bae6fd;
+        transform: scale(1.05);
+    }
+
+    .tecla-japonesa:disabled {
+        background: #f0f0f0 !important;
+        color: #b3b3bb !important;
+        cursor: not-allowed !important;
+        opacity: 0.7;
+        box-shadow: none;
+    }
+
+.tecla-modo {
+    background: #bae6fd;
+    color: #0ea5e9;
+    border: 2px solid #0ea5e9;
+    font-weight: bold;
+    grid-column: span 2;
+}
+
+.comb-peq {
+    font-size: 1rem;
+    padding: 0.15em 0.4em;
+    min-width: 1.2em;
+    min-height: 1.2em;
+    vertical-align: middle;
+}
+
+/* Respuesta correcta/incorrecta y progreso */
+.respuesta-correcta-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 1.18rem;
+    margin-top: 1.2em;
+    margin-bottom: 0.7em;
+    color: #22c55e;
+    font-weight: 700;
+    background: #e7fbe9;
+    border-radius: 8px;
+    padding: 0.3em 0.8em;
+    box-shadow: 0 1px 6px #bbf7d055;
+}
+.respuesta-correcta-text .icon-check {
+    font-size: 1.3em;
+    color: #22c55e;
+    margin-right: 0.2em;
+}
+.respuesta-correcta-text .text-gray-700 {
+    color: #333 !important;
+    font-weight: 500;
+}
+.respuesta-correcta-text .text-black {
+    color: #222 !important;
+}
+
+.juego-progreso {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: #0ea5e9;
+    margin: -1.2rem 0 1.2rem 0;
+    letter-spacing: 0.01em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 1rem;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.juego-barra-progreso {
+    width: 100%;
+    height: 18px;
+    background: #e0e7ff;
+    border-radius: 8px;
+    margin: 0 0 1.2rem 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px #bae6fd55;
+    position: relative;
+}
+
+.juego-barra-progreso-inner {
+    height: 100%;
+    background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
+    border-radius: 8px;
+    transition: width 0.4s cubic-bezier(.4,2,.3,1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .juego-escribir-container {
+        max-width: 99vw;
+        padding: 1.1rem 0.2rem 1.5rem 0.2rem;
+    }
+
+    .juego-escribir-titulo {
+        font-size: 1.3rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .juego-escribir-palabra {
+        font-size: 1.1rem;
+    }
+
+    .japones-input {
+        font-size: 1.05rem;
+        max-width: 98vw;
+        padding: 0.5em 0.5em;
+    }
+
+    .teclado-japones {
+        max-width: 99vw;
+        padding: 0.5em 0.1em 0.7em 0.1em;
+    }
+
+    .teclado-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.35rem;
+    }
+
+    .tecla-japonesa {
+        font-size: 1rem;
+        min-width: 2.5em;
+        min-height: 2.5em;
+        padding: 0.4em 0.1em;
+    }
+
+    .tecla-modo {
+        grid-column: span 2;
+    }
+
+    .juego-progreso {
+        font-size: 1.01rem;
+        padding: 0 0.3rem;
+    }
+
+    .juego-barra-progreso {
+        height: 13px;
+    }
+
+    .quizz-comenzar-btn {
+        font-size: 1.05rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .respuesta-correcta-text {
+        font-size: 1.05rem;
+        padding: 0.2em 0.5em;
+    }
+}
+/* --- Mejoras visuales finales para la práctica y selección --- */
+
+/* Contenedor principal tipo tarjeta */
+.max-w-xl.mx-auto.mt-10.text-center,
+.juego-escribir-container {
+    max-width: 480px;
+    margin: 3rem auto 0 auto;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 6px 32px 0 rgba(56, 189, 248, 0.13), 0 1.5px 8px 0 rgba(0,0,0,0.07);
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Responsive para pantallas grandes */
+@media (min-width: 700px) {
+    .max-w-xl.mx-auto.mt-10.text-center,
+    .juego-escribir-container {
+        max-width: 600px;
+    }
+}
+
+/* Teclado japonés: botones más limpios y espaciados */
+.teclado-japones .tecla-japonesa {
+    background: #f9f9f9 !important;
+    border: 1.5px solid #e5e7eb !important;
+    color: #aaa !important;
+    border-radius: 6px !important;
+    transition: background 0.18s, border 0.18s, color 0.18s, box-shadow 0.18s, transform 0.12s;
+}
+
+    .teclado-japones .tecla-japonesa:enabled {
+        color: #0369a1 !important;
+        background: #fff !important;
+        border: 1.5px solid #d1d5db !important;
+    }
+
+    .teclado-japones .tecla-japonesa:disabled {
+        background: #f9f9f9 !important;
+        color: #aaa !important;
+        border: 1.5px solid #e5e7eb !important;
+        cursor: not-allowed !important;
+        opacity: 0.7;
+    }
+
+.teclado-grid {
+    gap: 8px 6px !important;
+}
+
+.tecla-japonesa {
+    border-radius: 6px !important;
+}
+
+/* Campo de entrada: shake y correcto */
+.japones-input.input-incorrecto {
+    animation: shake 0.28s cubic-bezier(.36,.07,.19,.97) both;
+    background: #ffeaea !important;
+    border-color: #ef4444 !important;
+    color: #b91c1c !important;
+}
+
+.japones-input.input-correcto {
+    background: #d1fae5 !important;
+    border-color: #22c55e !important;
+    color: #166534 !important;
+    font-weight: bold;
+    box-shadow: 0 0 0 2px #bbf7d0;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-5px);
+    }
+
+    40% {
+        transform: translateX(5px);
+    }
+
+    60% {
+        transform: translateX(-3px);
+    }
+
+    80% {
+        transform: translateX(3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Texto de respuesta correcta con ícono y margen */
+.respuesta-correcta-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 1.18rem;
+    margin-top: 1.2em;
+    margin-bottom: 0.7em;
+    color: #22c55e;
+    font-weight: 700;
+    background: #e7fbe9;
+    border-radius: 8px;
+    padding: 0.3em 0.8em;
+    box-shadow: 0 1px 6px #bbf7d055;
+}
+
+    .respuesta-correcta-text .icon-check {
+        font-size: 1.3em;
+        color: #22c55e;
+        margin-right: 0.2em;
+    }
+
+/* Botón siguiente con animación */
+.quizz-comenzar-btn {
+    background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
+    color: #fff;
+    font-size: 1.18rem;
+    font-weight: bold;
+    padding: 0.9rem 2.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 2px 16px 0 rgba(14,165,233,0.13);
+    border: none;
+    transition: background 0.2s, transform 0.13s, box-shadow 0.2s;
+    margin-top: 1.2rem;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+    .quizz-comenzar-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .quizz-comenzar-btn:hover:enabled {
+        background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%);
+        transform: scale(1.05);
+        box-shadow: 0 4px 24px 0 #bae6fd;
+    }
+
+    .quizz-comenzar-btn .icon-next {
+        display: inline-block;
+        transition: transform 0.18s cubic-bezier(.4,2,.3,1);
+    }
+
+    .quizz-comenzar-btn:hover .icon-next {
+        transform: translateX(2px);
+    }
+
+/* Barra de progreso visual */
+.juego-barra-progreso {
+    width: 100%;
+    height: 16px;
+    background: #e0f2fe;
+    border-radius: 8px;
+    margin: 0 0 1.2rem 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px #bae6fd55;
+    position: relative;
+}
+
+.juego-barra-progreso-inner {
+    height: 100%;
+    background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
+    border-radius: 8px;
+    transition: width 0.4s cubic-bezier(.4,2,.3,1);
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .max-w-xl.mx-auto.mt-10.text-center,
+    .juego-escribir-container {
+        max-width: 99vw;
+        padding: 1.1rem 0.2rem 1.5rem 0.2rem;
+    }
+
+    .juego-barra-progreso {
+        height: 11px;
+    }
+
+    .quizz-comenzar-btn {
+        font-size: 1.05rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .respuesta-correcta-text {
+        font-size: 1.05rem;
+        padding: 0.2em 0.5em;
+    }
+}
+
+.respuesta-incorrecta-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 1.18rem;
+    margin-top: 1.2em;
+    margin-bottom: 0.7em;
+    color: #ef4444;
+    font-weight: 700;
+    background: #fef2f2;
+    border-radius: 8px;
+    padding: 0.3em 0.8em;
+    box-shadow: 0 1px 6px #fecaca55;
+}
+
+    .respuesta-incorrecta-text .icon-x {
+        font-size: 1.3em;
+        color: #ef4444;
+        margin-right: 0.2em;
+    }

@@ -1,0 +1,26 @@
+@page "/Practica/Seleccion"
+@inject NavigationManager Nav
+
+<div class="max-w-xl mx-auto mt-10 text-center">
+    <h2 class="text-2xl font-bold mb-6">¿Cómo quieres practicar?</h2>
+    <div class="flex flex-col gap-6">
+        <button class="quizz-comenzar-btn" @onclick="IrAOpcionMultiple">
+            Opción Múltiple
+        </button>
+        <button class="quizz-comenzar-btn" @onclick="IrAEscribir">
+            Escribir en Japonés
+        </button>
+    </div>
+</div>
+
+@code {
+    private void IrAOpcionMultiple()
+    {
+        Nav.NavigateTo("Quizz");
+    }
+
+    private void IrAEscribir()
+    {
+        Nav.NavigateTo("Practica/Escribir");
+    }
+}

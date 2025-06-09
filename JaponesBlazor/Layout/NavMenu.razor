@@ -17,7 +17,7 @@
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink href="quizz" class="block bg-purple-100 hover:bg-purple-200 text-purple-900 font-semibold p-6 rounded-xl text-center shadow transition" @onclick="OnNavLinkClick">
+            <NavLink href="Practica/Seleccion" class="block bg-purple-100 hover:bg-purple-200 text-purple-900 font-semibold p-6 rounded-xl text-center shadow transition" @onclick="OnNavLinkClick">
                 📝 Practicar
             </NavLink>
         </div>
@@ -27,7 +27,6 @@
 @code {
     private bool collapseNavMenu = true;
     private ElementReference navMenuRef;
-    private IJSObjectReference? outsideClickModule;
     private DotNetObjectReference<NavMenu>? dotNetRef;
     private ElementReference menuButtonRef;
 

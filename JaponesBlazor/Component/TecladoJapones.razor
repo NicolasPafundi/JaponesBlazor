@@ -1,0 +1,253 @@
+﻿<div class="teclado-japones">
+    <div class="teclado-fila teclado-grid">
+        <button class="tecla-japonesa tecla-modo" @onclick="CambiarSilabario" type="button">
+            @if (EsHiragana)
+            {
+                <span>カタカナ</span>
+            }
+            else
+            {
+                <span>ひらがな</span>
+            }
+        </button>
+        <button class="tecla-japonesa" @onclick="AgregarDakuten" disabled="@Disabled">゛</button>
+        <button class="tecla-japonesa" @onclick="AgregarHandakuten" disabled="@Disabled">゜</button>
+        <button class="tecla-japonesa comb-peq" @onclick="@(async () => await AgregarCombinacion(EsHiragana ? "ゃ" : "ャ"))" disabled="@Disabled">@((EsHiragana ? "ゃ" : "ャ"))</button>
+        <button class="tecla-japonesa comb-peq" @onclick="@(async () => await AgregarCombinacion(EsHiragana ? "ゅ" : "ュ"))" disabled="@Disabled">@((EsHiragana ? "ゅ" : "ュ"))</button>
+        <button class="tecla-japonesa comb-peq" @onclick="@(async () => await AgregarCombinacion(EsHiragana ? "ょ" : "ョ"))" disabled="@Disabled">@((EsHiragana ? "ょ" : "ョ"))</button>
+        <button class="tecla-japonesa comb-peq" @onclick="@(async () => await AgregarCaracter(EsHiragana ? "っ" : "ッ"))" disabled="@Disabled">@((EsHiragana) ? "っ" : "ッ")</button>
+        <button class="tecla-japonesa comb-peq" @onclick="@(async () => await AgregarCaracter("ー"))" disabled="@Disabled">ー</button>
+    </div>
+    @for (int i = 0; i < (EsHiragana ? Hiragana.Length : Katakana.Length); i++)
+    {
+        <div class="teclado-fila teclado-grid">
+            @foreach (var c in (EsHiragana ? Hiragana : Katakana)[i])
+            {
+                if (!string.IsNullOrWhiteSpace(c))
+                {
+                    <button class="tecla-japonesa" @onclick="() => AgregarCaracter(c)" disabled="@Disabled">@c</button>
+                }
+            }
+        </div>
+    }
+    <div class="teclado-fila teclado-grid">
+        <button class="tecla-japonesa" @onclick="AgregarEspacio" disabled="@Disabled">Espacio</button>
+        <button class="tecla-japonesa" @onclick="BorrarUltimo" disabled="@Disabled">Borrar</button>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Valor { get; set; } = "";
+    [Parameter] public EventCallback<string> ValorChanged { get; set; }
+    [Parameter] public bool Disabled { get; set; }
+    [Parameter] public string? TextAreaClass { get; set; }
+
+    private bool EsHiragana { get; set; } = true;
+
+    private void CambiarSilabario() => EsHiragana = !EsHiragana;
+
+    private async Task AgregarCaracter(string caracter)
+    {
+        Valor += caracter;
+        await ValorChanged.InvokeAsync(Valor);
+    }
+
+    private async Task AgregarEspacio()
+    {
+        Valor += " ";
+        await ValorChanged.InvokeAsync(Valor);
+    }
+
+    private async Task BorrarUltimo()
+    {
+        if (!string.IsNullOrEmpty(Valor))
+        {
+            Valor = Valor[..^1];
+            await ValorChanged.InvokeAsync(Valor);
+        }
+    }
+
+    private async Task AgregarDakuten()
+    {
+        if (string.IsNullOrEmpty(Valor)) return;
+        Valor = CambiarUltimoKanaDakuten(Valor, EsHiragana);
+        await ValorChanged.InvokeAsync(Valor);
+    }
+
+    private async Task AgregarHandakuten()
+    {
+        if (string.IsNullOrEmpty(Valor)) return;
+        Valor = CambiarUltimoKanaHandakuten(Valor, EsHiragana);
+        await ValorChanged.InvokeAsync(Valor);
+    }
+
+    private async Task AgregarCombinacion(string pequena)
+    {
+        if (string.IsNullOrEmpty(Valor))
+        {
+            await AgregarCaracter(pequena);
+            return;
+        }
+
+        var ult = Valor[^1].ToString();
+        var combinables = EsHiragana ? CombinablesHiragana : CombinablesKatakana;
+
+        if (combinables.Contains(ult))
+        {
+            Valor = Valor[..^1] + ult + pequena;
+        }
+        else
+        {
+            Valor += pequena;
+        }
+        await ValorChanged.InvokeAsync(Valor);
+    }
+
+    // Diccionarios para dakuten y handakuten
+    private static readonly Dictionary<string, string> DakutenHiragana = new()
+    {
+        ["か"] = "が",
+        ["き"] = "ぎ",
+        ["く"] = "ぐ",
+        ["け"] = "げ",
+        ["こ"] = "ご",
+        ["さ"] = "ざ",
+        ["し"] = "じ",
+        ["す"] = "ず",
+        ["せ"] = "ぜ",
+        ["そ"] = "ぞ",
+        ["た"] = "だ",
+        ["ち"] = "ぢ",
+        ["つ"] = "づ",
+        ["て"] = "で",
+        ["と"] = "ど",
+        ["は"] = "ば",
+        ["ひ"] = "び",
+        ["ふ"] = "ぶ",
+        ["へ"] = "べ",
+        ["ほ"] = "ぼ"
+    };
+    private static readonly Dictionary<string, string> HandakutenHiragana = new()
+    {
+        ["は"] = "ぱ",
+        ["ひ"] = "ぴ",
+        ["ふ"] = "ぷ",
+        ["へ"] = "ぺ",
+        ["ほ"] = "ぽ"
+    };
+    private static readonly Dictionary<string, string> DakutenKatakana = new()
+    {
+        ["カ"] = "ガ",
+        ["キ"] = "ギ",
+        ["ク"] = "グ",
+        ["ケ"] = "ゲ",
+        ["コ"] = "ゴ",
+        ["サ"] = "ザ",
+        ["シ"] = "ジ",
+        ["ス"] = "ズ",
+        ["セ"] = "ゼ",
+        ["ソ"] = "ゾ",
+        ["タ"] = "ダ",
+        ["チ"] = "ヂ",
+        ["ツ"] = "ヅ",
+        ["テ"] = "デ",
+        ["ト"] = "ド",
+        ["ハ"] = "バ",
+        ["ヒ"] = "ビ",
+        ["フ"] = "ブ",
+        ["ヘ"] = "ベ",
+        ["ホ"] = "ボ"
+    };
+    private static readonly Dictionary<string, string> HandakutenKatakana = new()
+    {
+        ["ハ"] = "パ",
+        ["ヒ"] = "ピ",
+        ["フ"] = "プ",
+        ["ヘ"] = "ペ",
+        ["ホ"] = "ポ"
+    };
+
+    // Kana que pueden combinar con pequeñas
+    private static readonly HashSet<string> CombinablesHiragana = new()
+    {
+        "き", "し", "ち", "に", "ひ", "み", "り", "ぎ", "じ", "ぢ", "び", "ぴ"
+    };
+    private static readonly HashSet<string> CombinablesKatakana = new()
+    {
+        "キ", "シ", "チ", "ニ", "ヒ", "ミ", "リ", "ギ", "ジ", "ヂ", "ビ", "ピ"
+    };
+
+    private static readonly string[][] Hiragana = new[]
+    {
+        new[] { "あ", "い", "う", "え", "お" },
+        new[] { "か", "き", "く", "け", "こ" },
+        new[] { "さ", "し", "す", "せ", "そ" },
+        new[] { "た", "ち", "つ", "て", "と" },
+        new[] { "な", "に", "ぬ", "ね", "の" },
+        new[] { "は", "ひ", "ふ", "へ", "ほ" },
+        new[] { "ま", "み", "む", "め", "も" },
+        new[] { "や", "ゆ", "よ", "", "" },
+        new[] { "ら", "り", "る", "れ", "ろ" },
+        new[] { "わ", "を", "ん", "", "" }
+    };
+
+    private static readonly string[][] Katakana = new[]
+    {
+        new[] { "ア", "イ", "ウ", "エ", "オ" },
+        new[] { "カ", "キ", "ク", "ケ", "コ" },
+        new[] { "サ", "シ", "ス", "セ", "ソ" },
+        new[] { "タ", "チ", "ツ", "テ", "ト" },
+        new[] { "ナ", "ニ", "ヌ", "ネ", "ノ" },
+        new[] { "ハ", "ヒ", "フ", "ヘ", "ホ" },
+        new[] { "マ", "ミ", "ム", "メ", "モ" },
+        new[] { "ヤ", "ユ", "ヨ", "", "" },
+        new[] { "ラ", "リ", "ル", "レ", "ロ" },
+        new[] { "ワ", "ヲ", "ン", "", "" }
+    };
+
+    // Diccionarios inversos para quitar dakuten/handakuten
+    private static readonly Dictionary<string, string> DakutenHiraganaRev = DakutenHiragana.ToDictionary(kv => kv.Value, kv => kv.Key);
+    private static readonly Dictionary<string, string> HandakutenHiraganaRev = HandakutenHiragana.ToDictionary(kv => kv.Value, kv => kv.Key);
+    private static readonly Dictionary<string, string> DakutenKatakanaRev = DakutenKatakana.ToDictionary(kv => kv.Value, kv => kv.Key);
+    private static readonly Dictionary<string, string> HandakutenKatakanaRev = HandakutenKatakana.ToDictionary(kv => kv.Value, kv => kv.Key);
+
+    private static string CambiarUltimoKanaDakuten(string texto, bool hiragana)
+    {
+        if (string.IsNullOrEmpty(texto)) return texto;
+        var ult = texto[^1].ToString();
+
+        var dakuten = hiragana ? DakutenHiragana : DakutenKatakana;
+        var handakuten = hiragana ? HandakutenHiragana : HandakutenKatakana;
+        var dakutenRev = dakuten.ToDictionary(kv => kv.Value, kv => kv.Key);
+        var handakutenRev = handakuten.ToDictionary(kv => kv.Value, kv => kv.Key);
+
+        if (dakuten.TryGetValue(ult, out var conDakuten))
+            return texto[..^1] + conDakuten;
+        if (handakutenRev.TryGetValue(ult, out var baseKana) && dakuten.TryGetValue(baseKana, out var conDakuten2))
+            return texto[..^1] + conDakuten2;
+        if (dakutenRev.TryGetValue(ult, out var baseKana2))
+            return texto[..^1] + baseKana2;
+
+        return texto;
+    }
+
+    private static string CambiarUltimoKanaHandakuten(string texto, bool hiragana)
+    {
+        if (string.IsNullOrEmpty(texto)) return texto;
+        var ult = texto[^1].ToString();
+
+        var dakuten = hiragana ? DakutenHiragana : DakutenKatakana;
+        var handakuten = hiragana ? HandakutenHiragana : HandakutenKatakana;
+        var handakutenRev = handakuten.ToDictionary(kv => kv.Value, kv => kv.Key);
+        var dakutenRev = dakuten.ToDictionary(kv => kv.Value, kv => kv.Key);
+
+        if (handakuten.TryGetValue(ult, out var conHandakuten))
+            return texto[..^1] + conHandakuten;
+        if (dakutenRev.TryGetValue(ult, out var baseKana) && handakuten.TryGetValue(baseKana, out var conHandakuten2))
+            return texto[..^1] + conHandakuten2;
+        if (handakutenRev.TryGetValue(ult, out var baseKana2))
+            return texto[..^1] + baseKana2;
+
+        return texto;
+    }
+}
