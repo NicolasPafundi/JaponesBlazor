@@ -152,7 +152,7 @@
   {
     "Id": 27,
     "CapituloId": 1,
-    "Japonés": "どうぞ よろしく おねがいします",
+    "Japonés": "どうぞよろしくおねがいします",
     "Español": "Encantado de conocerlo"
   },
   {
@@ -482,13 +482,13 @@
   {
     "Id": 82,
     "CapituloId": 2,
-    "Japonés": "これから おせわに なります",
+    "Japonés": "これからおせわになります",
     "Español": "Le agradezco de antemano su gentil apoyo"
   },
   {
     "Id": 83,
     "CapituloId": 2,
-    "Japonés": "こちらこそ よろしく",
+    "Japonés": "こちらこそよろしく",
     "Español": "Yo también estoy encantado de conocerlo"
   },
   {
