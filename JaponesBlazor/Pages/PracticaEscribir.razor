@@ -46,8 +46,9 @@
                 disabled="@YaRespondida"
                 lang="ja"
                 autocomplete="off" />
+
             @if (YaRespondida && RespuestaUsuario != actual.Japonés)
-{
+            {
                 <div class="respuesta-incorrecta-text">
                     <span>Respuesta correcta:</span>
                     <span class="text-red font-bold ms-2" style="font-size:1.5rem;">@actual.Japonés</span>
@@ -60,9 +61,21 @@
                     <span>¡Correcto!</span>
                 </div>
             }
-            <TecladoJapones @bind-Valor="RespuestaUsuario"
-                            Disabled="@YaRespondida"
-                            TextAreaClass="@inputClass" />
+
+            <button type="button"
+                    class="quizz-comenzar-btn"
+                    style="margin-bottom:0.7rem; margin-top:0.2rem; font-size:1rem; padding:0.4em 1.2em;"
+                    @onclick="ToggleTeclado"
+                    disabled="@YaRespondida">
+                @(TecladoVisible ? "Ocultar teclado japonés" : "Mostrar teclado japonés")
+            </button>
+
+            @if (TecladoVisible && !YaRespondida)
+            {
+                <TecladoJapones @bind-Valor="RespuestaUsuario"
+                                Disabled="@YaRespondida"
+                                TextAreaClass="@inputClass" />
+            }
         </div>
 
         @if (YaRespondida && !EsUltima)
@@ -101,10 +114,18 @@
     private bool YaRespondida = false;
     private bool EsUltima => Indice >= (Palabras?.Count ?? 0) - 1;
 
+    private bool TecladoVisible = false;
+    private bool TecladoVisibleAntesDeResponder = false;
+
     protected override async Task OnInitializedAsync()
     {
         Palabras = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
         Palabras = Palabras?.OrderBy(x => Guid.NewGuid()).ToList();
+    }
+
+    private void ToggleTeclado()
+    {
+        TecladoVisible = !TecladoVisible;
     }
 
     private void VerificarRespuesta()
@@ -112,6 +133,8 @@
         YaRespondida = true;
         if (Palabras![Indice].Japonés == RespuestaUsuario)
             Correctas++;
+        TecladoVisibleAntesDeResponder = TecladoVisible;
+        TecladoVisible = false;
     }
 
     private void SiguientePalabra()
@@ -121,6 +144,7 @@
             Indice++;
             RespuestaUsuario = "";
             YaRespondida = false;
+            TecladoVisible = TecladoVisibleAntesDeResponder;
         }
     }
 }
