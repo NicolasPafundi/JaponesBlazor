@@ -43,9 +43,10 @@
             <input
                 class="@inputClass"
                 style="margin-bottom:0.5rem;"
-                @bind="RomanjiInput"
-                @oninput="ConvertirRomanji"
+                @ref="KanaInputRef"
+                @oninput="OnKanaInput"
                 disabled="@YaRespondida"
+                @bind="RespuestaUsuario"
                 lang="ja"
                 autocomplete="off"
                 placeholder="Romanji - a=あ A=ア" />
@@ -128,6 +129,7 @@
     private bool TecladoVisibleAntesDeResponder = false;
 
     private string RomanjiInput = "";
+    private ElementReference KanaInputRef;
 
     protected override async Task OnInitializedAsync()
     {
@@ -167,5 +169,12 @@
             Correctas++;
         TecladoVisibleAntesDeResponder = TecladoVisible;
         TecladoVisible = false;
+    }
+
+    private async Task OnKanaInput(ChangeEventArgs e)
+    {
+        // Llama a la función JS para procesar el input
+        RespuestaUsuario = await JS.InvokeAsync<string>("kanaInputProcess", KanaInputRef);
+        StateHasChanged();
     }
 }

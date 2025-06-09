@@ -54,7 +54,47 @@
             // Devuelve el valor real del input (lo que el usuario tecleó)
             return element.value;
         };
+        window.kanaInputProcess = function (element) {
+            if (!window.wanakana) return;
+            let current = element.value;
+            if (!current) return "";
 
+            // Convierte la parte completa a romanji con mayúsculas/minúsculas
+            let asRomanji = window.kanaToRomajiWithCase(current);
+
+            // Convierte esa parte a kana
+            let asKana = window.wanakana.toKana(asRomanji);
+            let result = '';
+            for (let j = 0; j < asKana.length; j++)
+            {
+                if (asKana[j].toLowerCase() == current[j].toLowerCase()) {
+                    result += current[j];
+                }
+                else
+                {
+                    result += asKana[j];
+                }
+            }
+
+            // Actualiza el valor del input
+            element.value = result;
+
+            return result;
+        }; 
+        window.kanaToRomajiWithCase = function (input) {
+            if (!window.wanakana) return input;
+            let result = '';
+            for (let char of input) {
+                if (window.wanakana.isKatakana(char)) {
+                    result += window.wanakana.toRomaji(char).toUpperCase();
+                } else if (window.wanakana.isHiragana(char)) {
+                    result += window.wanakana.toRomaji(char);
+                } else {
+                    result += char;
+                }
+            }
+            return result;
+        };
         window.tokenizeRomanji = function (input) {
             if (window.wanakana) {
                 return window.wanakana.tokenize(input).join(' ');
