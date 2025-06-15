@@ -86,7 +86,13 @@
 
         @if (YaRespondida && !EsUltima)
         {
-            <div class="flex justify-center">
+            <div class="flex justify-center gap-4">
+                @if (RespuestaUsuario != actual.EjemploJap)
+                {
+                    <button class="quizz-comenzar-btn" @onclick="ReintentarPalabra">
+                        Reintentar
+                    </button>
+                }
                 <button class="quizz-comenzar-btn" @onclick="SiguientePalabra">
                     Siguiente
                 </button>
@@ -163,6 +169,13 @@
             YaRespondida = false;
             TecladoVisible = TecladoVisibleAntesDeResponder;
         }
+    }
+
+    private void ReintentarPalabra()
+    {
+        RespuestaUsuario = "";
+        YaRespondida = false;
+        TecladoVisible = TecladoVisibleAntesDeResponder;
     }
 
     // Al verificar, compara el kana
