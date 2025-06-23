@@ -1126,5 +1126,17 @@
     "CapituloId": 4,
     "Japonés": "えいが",
     "Español": "Película"
+  },
+  {
+    "Id": 191,
+    "CapituloId": 4,
+    "Japonés": "きのう",
+    "Español": "Ayer"
+  },
+  {
+    "Id": 192,
+    "CapituloId": 4,
+    "Japonés": "おととい",
+    "Español": "Antes de ayer"
   }
 ]
