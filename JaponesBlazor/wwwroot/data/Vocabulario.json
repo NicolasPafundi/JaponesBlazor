@@ -705,426 +705,426 @@
     "Id": 119,
     "CapituloId": 3,
     "Japonés": "ここ",
-    "Español": "aquí, en este lugar"
+    "Español": "Aquí, en este lugar"
   },
   {
     "Id": 120,
     "CapituloId": 3,
     "Japonés": "そこ",
-    "Español": "ahí, en ese lugar"
+    "Español": "Ahí, en ese lugar"
   },
   {
     "Id": 121,
     "CapituloId": 3,
     "Japonés": "あそこ",
-    "Español": "allí, en aquel lugar"
+    "Español": "Allí, en aquel lugar"
   },
   {
     "Id": 122,
     "CapituloId": 3,
     "Japonés": "どこ",
-    "Español": "¿dónde?, ¿en qué lugar?"
+    "Español": "¿Dónde?, ¿en qué lugar?"
   },
   {
     "Id": 123,
     "CapituloId": 3,
     "Japonés": "こちら",
-    "Español": "por aquí (formal)"
+    "Español": "Por aquí (formal)"
   },
   {
     "Id": 124,
     "CapituloId": 3,
     "Japonés": "そちら",
-    "Español": "por ahí (formal)"
+    "Español": "Por ahí (formal)"
   },
   {
     "Id": 125,
     "CapituloId": 3,
     "Japonés": "あちら",
-    "Español": "por allí (formal)"
+    "Español": "Por allí (formal)"
   },
   {
     "Id": 126,
     "CapituloId": 3,
     "Japonés": "どちら",
-    "Español": "¿por dónde?, ¿cuál? (formal)"
+    "Español": "¿Por dónde?, ¿cuál? (formal)"
   },
   {
     "Id": 127,
     "CapituloId": 3,
     "Japonés": "きょうしつ",
-    "Español": "aula"
+    "Español": "Aula"
   },
   {
     "Id": 128,
     "CapituloId": 3,
     "Japonés": "しょくどう",
-    "Español": "comedor"
+    "Español": "Comedor"
   },
   {
     "Id": 129,
     "CapituloId": 3,
     "Japonés": "じむしょ",
-    "Español": "oficina"
+    "Español": "Oficina"
   },
   {
     "Id": 130,
     "CapituloId": 3,
     "Japonés": "かいぎしつ",
-    "Español": "sala de reuniones"
+    "Español": "Sala de reuniones"
   },
   {
     "Id": 131,
     "CapituloId": 3,
     "Japonés": "うけつけ",
-    "Español": "recepción"
+    "Español": "Recepción"
   },
   {
     "Id": 132,
     "CapituloId": 3,
     "Japonés": "ロビー",
-    "Español": "lobby"
+    "Español": "Lobby"
   },
   {
     "Id": 133,
     "CapituloId": 3,
     "Japonés": "へや",
-    "Español": "habitación"
+    "Español": "Habitación"
   },
   {
     "Id": 134,
     "CapituloId": 3,
     "Japonés": "トイレ",
-    "Español": "baño"
+    "Español": "Baño"
   },
   {
     "Id": 135,
     "CapituloId": 3,
     "Japonés": "かいだん",
-    "Español": "escaleras"
+    "Español": "Escaleras"
   },
   {
     "Id": 136,
     "CapituloId": 3,
     "Japonés": "エレベーター",
-    "Español": "ascensor"
+    "Español": "Ascensor"
   },
   {
     "Id": 137,
     "CapituloId": 3,
     "Japonés": "エスカレーター",
-    "Español": "escalera mecánica"
+    "Español": "Escalera mecánica"
   },
   {
     "Id": 138,
     "CapituloId": 3,
     "Japonés": "じどうはんばいき",
-    "Español": "máquina expendedora"
+    "Español": "Máquina expendedora"
   },
   {
     "Id": 139,
     "CapituloId": 3,
     "Japonés": "でんわ",
-    "Español": "teléfono"
+    "Español": "Teléfono"
   },
   {
     "Id": 140,
     "CapituloId": 3,
     "Japonés": "ワイン",
-    "Español": "vino"
+    "Español": "Vino"
   },
   {
     "Id": 141,
     "CapituloId": 3,
     "Japonés": "くに",
-    "Español": "país"
+    "Español": "País"
   },
   {
     "Id": 142,
     "CapituloId": 3,
     "Japonés": "かいしゃ",
-    "Español": "empresa"
+    "Español": "Empresa"
   },
   {
     "Id": 143,
     "CapituloId": 3,
     "Japonés": "うち",
-    "Español": "casa, hogar"
+    "Español": "Casa, hogar"
   },
   {
     "Id": 144,
     "CapituloId": 3,
     "Japonés": "くつ",
-    "Español": "zapatos"
+    "Español": "Zapatos"
   },
   {
     "Id": 145,
     "CapituloId": 3,
     "Japonés": "ネクタイ",
-    "Español": "corbata"
+    "Español": "Corbata"
   },
   {
     "Id": 146,
     "CapituloId": 3,
     "Japonés": "うりば",
-    "Español": "sección (de tienda)"
+    "Español": "Sección (de tienda)"
   },
   {
     "Id": 147,
     "CapituloId": 3,
     "Japonés": "ちか",
-    "Español": "subsuelo / sótano"
+    "Español": "Subsuelo / sótano"
   },
   {
     "Id": 148,
     "CapituloId": 3,
     "Japonés": "なんがい",
-    "Español": "¿qué piso?"
+    "Español": "¿Qué piso?"
   },
   {
     "Id": 149,
     "CapituloId": 3,
     "Japonés": "えん",
-    "Español": "yen (moneda japonesa)"
+    "Español": "Yen (moneda japonesa)"
   },
   {
     "Id": 150,
     "CapituloId": 3,
     "Japonés": "いくら",
-    "Español": "¿cuánto cuesta?"
+    "Español": "¿Cuánto cuesta?"
   },
   {
     "Id": 151,
     "CapituloId": 3,
     "Japonés": "いっかい",
-    "Español": "primer piso"
+    "Español": "Primer piso"
   },
   {
     "Id": 152,
     "CapituloId": 3,
     "Japonés": "にかい",
-    "Español": "segundo piso"
+    "Español": "Segundo piso"
   },
   {
     "Id": 153,
     "CapituloId": 3,
     "Japonés": "さんがい",
-    "Español": "tercer piso"
+    "Español": "Tercer piso"
   },
   {
     "Id": 154,
     "CapituloId": 3,
     "Japonés": "はっかい",
-    "Español": "octavo piso"
+    "Español": "Octavo piso"
   },
   {
     "Id": 155,
     "CapituloId": 4,
     "Japonés": "おきます",
-    "Español": "levantarse"
+    "Español": "Levantarse"
   },
   {
     "Id": 156,
     "CapituloId": 4,
     "Japonés": "ねます",
-    "Español": "acostarse"
+    "Español": "Acostarse"
   },
   {
     "Id": 157,
     "CapituloId": 4,
     "Japonés": "はたらきます",
-    "Español": "trabajar"
+    "Español": "Trabajar"
   },
   {
     "Id": 158,
     "CapituloId": 4,
     "Japonés": "やすみます",
-    "Español": "descansar"
+    "Español": "Descansar"
   },
   {
     "Id": 159,
     "CapituloId": 4,
     "Japonés": "べんきょうします",
-    "Español": "estudiar"
+    "Español": "Estudiar"
   },
   {
     "Id": 160,
     "CapituloId": 4,
     "Japonés": "おわります",
-    "Español": "terminar"
+    "Español": "Terminar"
   },
   {
     "Id": 161,
     "CapituloId": 4,
     "Japonés": "デパート",
-    "Español": "tienda departamental"
+    "Español": "Tienda departamental"
   },
   {
     "Id": 162,
     "CapituloId": 4,
     "Japonés": "としょかん",
-    "Español": "biblioteca"
+    "Español": "Biblioteca"
   },
   {
     "Id": 163,
     "CapituloId": 4,
     "Japonés": "ぎんこう",
-    "Español": "banco"
+    "Español": "Banco"
   },
   {
     "Id": 164,
     "CapituloId": 4,
     "Japonés": "びじゅつかん",
-    "Español": "museo de arte"
+    "Español": "Museo de arte"
   },
   {
     "Id": 165,
     "CapituloId": 4,
     "Japonés": "ゆうびんきょく",
-    "Español": "oficina de correos"
+    "Español": "Oficina de correos"
   },
   {
     "Id": 166,
     "CapituloId": 4,
     "Japonés": "いま",
-    "Español": "ahora"
+    "Español": "Ahora"
   },
   {
     "Id": 167,
     "CapituloId": 4,
     "Japonés": "～じ",
-    "Español": "～hora"
+    "Español": "～Hora"
   },
   {
     "Id": 168,
     "CapituloId": 4,
     "Japonés": "～ふん（ぷん）",
-    "Español": "～minuto"
+    "Español": "～Minuto"
   },
   {
     "Id": 169,
     "CapituloId": 4,
     "Japonés": "はん",
-    "Español": "y media (hora)"
+    "Español": "Media (hora)"
   },
   {
     "Id": 170,
     "CapituloId": 4,
     "Japonés": "なんじ",
-    "Español": "¿qué hora?"
+    "Español": "¿Qué hora?"
   },
   {
     "Id": 171,
     "CapituloId": 4,
     "Japonés": "なんぷん",
-    "Español": "¿qué minuto?"
+    "Español": "¿Qué minuto?"
   },
   {
     "Id": 172,
     "CapituloId": 4,
     "Japonés": "ごぜん",
-    "Español": "a.m."
+    "Español": "A.M."
   },
   {
     "Id": 173,
     "CapituloId": 4,
     "Japonés": "ごご",
-    "Español": "p.m."
+    "Español": "P.M."
   },
   {
     "Id": 174,
     "CapituloId": 4,
     "Japonés": "あさ",
-    "Español": "la mañana"
+    "Español": "La mañana"
   },
   {
     "Id": 175,
     "CapituloId": 4,
     "Japonés": "ひる",
-    "Español": "mediodía"
+    "Español": "Mediodía"
   },
   {
     "Id": 176,
     "CapituloId": 4,
     "Japonés": "よる（ばん）",
-    "Español": "noche"
+    "Español": "Noche"
   },
   {
     "Id": 177,
     "CapituloId": 4,
     "Japonés": "けさ",
-    "Español": "esta mañana"
+    "Español": "Esta mañana"
   },
   {
     "Id": 178,
     "CapituloId": 4,
     "Japonés": "こんばん",
-    "Español": "esta noche"
+    "Español": "Esta noche"
   },
   {
     "Id": 179,
     "CapituloId": 4,
     "Japonés": "きょう",
-    "Español": "hoy"
+    "Español": "Hoy"
   },
   {
     "Id": 180,
     "CapituloId": 4,
     "Japonés": "あした",
-    "Español": "mañana"
+    "Español": "Mañana"
   },
   {
     "Id": 181,
     "CapituloId": 4,
     "Japonés": "あさって",
-    "Español": "pasado mañana"
+    "Español": "Pasado mañana"
   },
   {
     "Id": 182,
     "CapituloId": 4,
     "Japonés": "ひるやすみ",
-    "Español": "descanso del mediodía"
+    "Español": "Descanso del mediodía"
   },
   {
     "Id": 183,
     "CapituloId": 4,
     "Japonés": "かいぎ",
-    "Español": "reunión"
+    "Español": "Reunión"
   },
   {
     "Id": 184,
     "CapituloId": 4,
     "Japonés": "まいあさ",
-    "Español": "todas las mañanas"
+    "Español": "Todas las mañanas"
   },
   {
     "Id": 185,
     "CapituloId": 4,
     "Japonés": "まいばん",
-    "Español": "todas las noches"
+    "Español": "Todas las noches"
   },
   {
     "Id": 186,
     "CapituloId": 4,
     "Japonés": "まいにち",
-    "Español": "todos los días"
+    "Español": "Todos los días"
   },
   {
     "Id": 187,
     "CapituloId": 4,
     "Japonés": "やすみ",
-    "Español": "descanso"
+    "Español": "Descanso"
   },
   {
     "Id": 188,
     "CapituloId": 4,
     "Japonés": "しけん",
-    "Español": "examen"
+    "Español": "Examen"
   },
   {
     "Id": 189,
     "CapituloId": 4,
     "Japonés": "えいが",
-    "Español": "película"
+    "Español": "Película"
   }
 ]
