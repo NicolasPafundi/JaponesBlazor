@@ -1138,5 +1138,179 @@
     "CapituloId": 4,
     "Japonés": "おととい",
     "Español": "Antes de ayer"
+  },
+  {
+    "Id": 193,
+    "CapituloId": 3,
+    "Japonés": "すみません",
+    "Español": "Disculpe (como excusa para llamar la atención o pedir perdón)"
+  },
+  {
+    "Id": 194,
+    "CapituloId": 3,
+    "Japonés": "どうも",
+    "Español": "Gracias"
+  },
+  {
+    "Id": 195,
+    "CapituloId": 3,
+    "Japonés": "いらっしゃいませ",
+    "Español": "¡Bienvenido!"
+  },
+  {
+    "Id": 196,
+    "CapituloId": 3,
+    "Japonés": "〜をみせてください",
+    "Español": "Por favor, puede mostrarme 〜"
+  },
+  {
+    "Id": 197,
+    "CapituloId": 3,
+    "Japonés": "じゃ",
+    "Español": "Bueno, entonces"
+  },
+  {
+    "Id": 198,
+    "CapituloId": 3,
+    "Japonés": "〜をください",
+    "Español": "Deme 〜 por favor"
+  },
+  {
+    "Id": 199,
+    "CapituloId": 3,
+    "Japonés": "イタリア",
+    "Español": "Italia"
+  },
+  {
+    "Id": 200,
+    "CapituloId": 3,
+    "Japonés": "スイス",
+    "Español": "Suiza"
+  },
+  {
+    "Id": 201,
+    "CapituloId": 3,
+    "Japonés": "フランス",
+    "Español": "Francia"
+  },
+  {
+    "Id": 202,
+    "CapituloId": 3,
+    "Japonés": "マル・デル・プラタ",
+    "Español": "Mar del Plata"
+  },
+  {
+    "Id": 203,
+    "CapituloId": 3,
+    "Japonés": "ペソ",
+    "Español": "Peso"
+  },
+  {
+    "Id": 204,
+    "CapituloId": 3,
+    "Japonés": "ジャカルタ",
+    "Español": "Yakarta"
+  },
+  {
+    "Id": 205,
+    "CapituloId": 3,
+    "Japonés": "バンコク",
+    "Español": "Bangkok"
+  },
+  {
+    "Id": 206,
+    "CapituloId": 3,
+    "Japonés": "ベルリン",
+    "Español": "Berlín"
+  },
+  {
+    "Id": 207,
+    "CapituloId": 3,
+    "Japonés": "しんおおさか",
+    "Español": "Shin-Osaka"
+  },
+  {
+    "Id": 208,
+    "CapituloId": 1,
+    "Japonés": "アルゼンチン",
+    "Español": "Argentina"
+  },
+  {
+    "Id": 209,
+    "CapituloId": 1,
+    "Japonés": "ペルー",
+    "Español": "Perú"
+  },
+  {
+    "Id": 210,
+    "CapituloId": 1,
+    "Japonés": "にほん",
+    "Español": "Japón"
+  },
+  {
+    "Id": 211,
+    "CapituloId": 1,
+    "Japonés": "スペイン",
+    "Español": "España"
+  },
+  {
+    "Id": 212,
+    "CapituloId": 1,
+    "Japonés": "ライオン",
+    "Español": "León"
+  },
+  {
+    "Id": 213,
+    "CapituloId": 1,
+    "Japonés": "パンダ",
+    "Español": "Panda"
+  },
+  {
+    "Id": 214,
+    "CapituloId": 1,
+    "Japonés": "オレンジ",
+    "Español": "Naranja"
+  },
+  {
+    "Id": 215,
+    "CapituloId": 1,
+    "Japonés": "バナナ",
+    "Español": "Banana"
+  },
+  {
+    "Id": 216,
+    "CapituloId": 1,
+    "Japonés": "パン",
+    "Español": "Pan"
+  },
+  {
+    "Id": 217,
+    "CapituloId": 1,
+    "Japonés": "テレビ",
+    "Español": "Televisor"
+  },
+  {
+    "Id": 218,
+    "CapituloId": 1,
+    "Japonés": "レタス",
+    "Español": "Lechuga"
+  },
+  {
+    "Id": 219,
+    "CapituloId": 1,
+    "Japonés": "トマト",
+    "Español": "Tomate"
+  },
+  {
+    "Id": 220,
+    "CapituloId": 1,
+    "Japonés": "レモン",
+    "Español": "Limón"
+  },
+  {
+    "Id": 221,
+    "CapituloId": 1,
+    "Japonés": "プリン",
+    "Español": "Flan / Pudding"
   }
 ]
