@@ -82,7 +82,7 @@
 
 @code {
     private List<PreguntaModel> PreguntasFiltradas = new();
-    private List<string> CategoriasSeleccionadas = new();
+    private List<int> CategoriasSeleccionadas = new();
     private List<int> CapitulosSeleccionados = new();
     private bool cargando = true;
 
@@ -108,11 +108,11 @@
         {
             try
             {
-                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<string>>(catsJson) ?? new();
+                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<int>>(catsJson) ?? new();
             }
             catch
             {
-                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<string>>(Uri.UnescapeDataString(catsJson)) ?? new();
+                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<int>>(Uri.UnescapeDataString(catsJson)) ?? new();
             }
         }
         CapitulosSeleccionados = ids;
@@ -121,14 +121,14 @@
 
         // Unificamos todo en una lista con Categoria
         var palabrasVocabulario = vocabularioList
-            .Where(p => CapitulosSeleccionados.Contains(p.CapituloId) && CategoriasSeleccionadas.Contains(p.Categoria.ToString()))
+            .Where(p => CapitulosSeleccionados.Contains(p.CapituloId) && CategoriasSeleccionadas.Contains((int)p.Categoria))
             .Select(x => new {
                 Jap = x.Jap,
                 Esp = x.Esp,
                 Categoria = x.Categoria
             });
 
-        var gramaticaModels = CategoriasSeleccionadas.Contains(CategoriaEnum.Gramatica.ToString()) ? gramaticaList
+        var gramaticaModels = CategoriasSeleccionadas.Contains((int)CategoriaEnum.Gramatica) ? gramaticaList
             .Where(p => CapitulosSeleccionados.Contains(p.CapituloId))
             .SelectMany(x => x.Explicaciones)
             .SelectMany(x => x.Ejemplos)

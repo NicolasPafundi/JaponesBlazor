@@ -1,7 +1,83 @@
-@page "/Practica/Categorias/{TipoPractica}"
+﻿@page "/Practica/Categorias/{TipoPractica}"
 @using JaponesBlazor.Models
 @inject NavigationManager Nav
 @inject HttpClient Http
+@using JaponesBlazor.Component
+
+<div class="header-bar mb-8">
+    <BackButton />
+    <h1 class="titulo-centrado">Categorias</h1>
+    <div class="header-bar-space"></div>
+</div>
+
+<div class="text-right text-sm text-gray-600 mb-2">
+    Seleccionadas: <b>@Seleccionadas.Count</b> / @CategoriasDisponibles.Count
+</div>
+
+<div class="flex justify-end mb-3">
+    <button class="btn-mini" type="button" @onclick="ToggleSeleccionarTodo">
+        @(Seleccionadas.Count < CategoriasDisponibles.Count ? "Seleccionar todo" : "Deseleccionar todo")
+    </button>
+</div>
+
+<div class="max-w-lg mx-auto flex flex-col gap-2 mb-8">
+    @foreach (var cat in CategoriasDisponibles)
+    {
+        <label class="categoria-card categoria-checkbox-label" style="justify-content:space-between;">
+            <span>
+                <input type="checkbox"
+                       value="@cat"
+                       @onchange="@(() => ToggleCategoria(cat))"
+                       checked="@Seleccionadas.Contains(cat)"
+                       class="categoria-checkbox" />
+                <span class="categoria-titulo">@MostrarCategoria(cat) (@ContadorPorCategoria[cat])</span>
+            </span>
+            <button type="button" class="btn-mini" title="Ver palabras"
+                    style="margin-left:0.5em;" @onclick="() => AbrirPopup(cat)">
+                <span style="font-size:1.2em;">📖</span>
+            </button>
+        </label>
+    }
+</div>
+
+<div class="flex justify-center">
+    <button class="quizz-comenzar-btn"
+            @onclick="Comenzar"
+            disabled="@(!Seleccionadas.Any())">
+        Comenzar práctica
+    </button>
+</div>
+
+@if (MostrarPopup && CategoriaPopup != null)
+{
+    <div class="popup-bg" @onclick="CerrarPopup">
+        <div class="popup-content" @onclick:stopPropagation>
+            <div class="flex justify-between items-center mb-2">
+                <b>@MostrarCategoria(CategoriaPopup.Value)</b>
+                <button class="btn-mini" @onclick="CerrarPopup">✖</button>
+            </div>
+            <div style="max-height:300px;overflow:auto;">
+                <table class="table table-sm w-100">
+                    <thead>
+                        <tr>
+                            <th>Japonés</th>
+                            <th>Español</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var palabra in PalabrasPopup)
+                        {
+                            <tr>
+                                <td>@palabra.Jap</td>
+                                <td>@palabra.Esp</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
 
 @code {
     [Parameter] public string? TipoPractica { get; set; }
@@ -11,29 +87,39 @@
     private Dictionary<CategoriaEnum, int> ContadorPorCategoria = new();
     private HashSet<CategoriaEnum> Seleccionadas = new();
 
+    // Para el popup
+    private bool MostrarPopup = false;
+    private CategoriaEnum? CategoriaPopup = null;
+    private List<(string Jap, string Esp)> PalabrasPopup = new();
+
+    // Para filtrar y mostrar palabras
+    private List<VocabularioModel> vocabFiltrado = new();
+    private List<GramaticaModel>? gramaticaList;
+    private List<int> capIds = new();
+
     protected override async Task OnInitializedAsync()
     {
-        // Obtener cap�tulos seleccionados del query string
+        // Obtener capítulos seleccionados del query string
         var uri = Nav.ToAbsoluteUri(Nav.Uri);
         var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
         CapIds = query["ids"];
-        var capIds = CapIds?.Split(',').Select(id => int.TryParse(id, out var n) ? n : -1).Where(n => n > 0).ToList() ?? new();
+        capIds = CapIds?.Split(',').Select(id => int.TryParse(id, out var n) ? n : -1).Where(n => n > 0).ToList() ?? new();
 
-        // Cargar vocabulario y gram�tica
+        // Cargar vocabulario y gramática
         var vocabularioList = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
-        var gramaticaList = await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
+        gramaticaList = await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
 
-        // Filtrar vocabulario por cap�tulos seleccionados
-        var vocabFiltrado = vocabularioList
+        // Filtrar vocabulario por capítulos seleccionados
+        vocabFiltrado = vocabularioList
             .Where(v => capIds.Contains(v.CapituloId))
             .ToList();
 
-        // Contar por categor�a en vocabulario
+        // Contar por categoría en vocabulario
         var contadorVocab = vocabFiltrado
             .GroupBy(v => v.Categoria)
             .ToDictionary(g => g.Key, g => g.Count());
 
-        // Contar por categor�a en gram�tica
+        // Contar por categoría en gramática
         var contadorGramatica = new Dictionary<CategoriaEnum, int>();
         if (gramaticaList != null)
         {
@@ -51,7 +137,7 @@
             .Concat(contadorGramatica)
             .ToDictionary(kv => kv.Key, kv => kv.Value);
 
-        // Solo mostrar categor�as con al menos un �tem
+        // Solo mostrar categorías con al menos un ítem
         CategoriasDisponibles = ContadorPorCategoria.Keys.ToList();
     }
 
@@ -71,42 +157,48 @@
 
     private void Comenzar()
     {
-        var catsJson = System.Text.Json.JsonSerializer.Serialize(
-            Seleccionadas.Select(x => x.ToString()).ToList()
-        );
+        var catsJson = System.Text.Json.JsonSerializer.Serialize(Seleccionadas);
         var url = TipoPractica?.ToLower() == "escribir"
-            ? $"/Practica/Escribir?ids={CapIds}&cats={Uri.EscapeDataString(catsJson)}"
-            : $"/Quizz/Start?ids={CapIds}&cats={Uri.EscapeDataString(catsJson)}";
+            ? $"Practica/Escribir?ids={CapIds}&cats={Uri.EscapeDataString(catsJson)}"
+            : $"Quizz/Start?ids={CapIds}&cats={Uri.EscapeDataString(catsJson)}";
         Nav.NavigateTo(url);
     }
-}
 
-<h3 class="text-center mb-4">Selecciona las categor�as que quieres practicar:</h3>
-
-<div class="flex justify-end mb-3">
-    <button class="btn-mini" type="button" @onclick="ToggleSeleccionarTodo">
-        @(Seleccionadas.Count < CategoriasDisponibles.Count ? "Seleccionar todo" : "Deseleccionar todo")
-    </button>
-</div>
-
-<div class="max-w-lg mx-auto flex flex-col gap-2 mb-8">
-    @foreach (var cat in CategoriasDisponibles)
+    private void AbrirPopup(CategoriaEnum cat)
     {
-        <label class="categoria-card categoria-checkbox-label">
-            <input type="checkbox"
-                   value="@cat"
-                   @onchange="@(() => ToggleCategoria(cat))"
-                   checked="@Seleccionadas.Contains(cat)"
-                   class="categoria-checkbox" />
-            <span class="categoria-titulo">@cat (@ContadorPorCategoria[cat])</span>
-        </label>
-    }
-</div>
+        CategoriaPopup = cat;
+        PalabrasPopup = vocabFiltrado
+            .Where(v => v.Categoria == cat)
+            .Select(v => (v.Jap, v.Esp))
+            .ToList();
 
-<div class="flex justify-center">
-    <button class="quizz-comenzar-btn"
-            @onclick="Comenzar"
-            disabled="@(!Seleccionadas.Any())">
-        Comenzar pr�ctica
-    </button>
-</div>
+        // Si es gramática, agrega ejemplos de gramática
+        if (cat == CategoriaEnum.Gramatica && gramaticaList != null)
+        {
+            var ejemplos = gramaticaList
+                .Where(g => capIds.Contains(g.CapituloId))
+                .SelectMany(g => g.Explicaciones)
+                .SelectMany(e => e.Ejemplos)
+                .Select(e => (e.EjemploJap, e.EjemploEsp));
+            PalabrasPopup.AddRange(ejemplos);
+        }
+
+        MostrarPopup = true;
+    }
+    private void CerrarPopup() => MostrarPopup = false;
+
+    // Opcional: para mostrar nombres legibles
+    private string MostrarCategoria(CategoriaEnum cat)
+    {
+        return cat switch
+        {
+            CategoriaEnum.SufijosYPartículas => "Sufijos y Partículas",
+            CategoriaEnum.ProfesionesYRoles => "Profesiones y Roles",
+            CategoriaEnum.AnimalesYComida => "Animales y Comida",
+            CategoriaEnum.Gramatica => "Gramática",
+            CategoriaEnum.Demostrativos => "Demostrativos",
+            CategoriaEnum.Geografía => "Geografía",
+            _ => System.Text.RegularExpressions.Regex.Replace(cat.ToString(), "([A-Z])", " $1").Trim()
+        };
+    }
+}

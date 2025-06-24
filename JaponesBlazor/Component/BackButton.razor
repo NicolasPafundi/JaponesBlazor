@@ -44,15 +44,26 @@
             }
             else if (uri.StartsWith("quizz/start"))
             {
-                Nav.NavigateTo("Practica/Capitulos");
+                var uri2 = Nav.ToAbsoluteUri(Nav.Uri);
+                var query = System.Web.HttpUtility.ParseQueryString(uri2.Query);
+                var CapIds = query["ids"];
+                Nav.NavigateTo($"Practica/Categorias/Quizz?ids={CapIds}");
             }
             else if (uri.StartsWith("practica/escribir"))
             {
-                Nav.NavigateTo("Practica/Capitulos/escribir");
+                var uri2 = Nav.ToAbsoluteUri(Nav.Uri);
+                var query = System.Web.HttpUtility.ParseQueryString(uri2.Query);
+                var CapIds = query["ids"];
+                Nav.NavigateTo($"Practica/Categorias/Escribir?ids={CapIds}");
             }
-            else if (uri == "quizz")
+            else if (uri.StartsWith("practica/categorias"))
             {
-                Nav.NavigateTo("");
+                var practica = uri.Split('/')[2].Split('?')[0];
+                Nav.NavigateTo($"Practica/Capitulos/{practica}");
+            }
+            else if (uri.StartsWith("practica/capitulos"))
+            {
+                Nav.NavigateTo("Practica/Seleccion");
             }
             else
             {

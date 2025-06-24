@@ -120,7 +120,7 @@
 </div>
 
 @code {
-    private List<string> CategoriasSeleccionadas = new();
+    private List<int> CategoriasSeleccionadas = new();
     private List<int> CapitulosSeleccionados = new();
     private List<EjemploModel>? Palabras;
     private int Indice = 0;
@@ -145,26 +145,25 @@
         {
             try
             {
-                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<string>>(catsJson) ?? new();
+                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<int>>(catsJson) ?? new();
             }
             catch
             {
-                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<string>>(Uri.UnescapeDataString(catsJson)) ?? new();
+                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<int>>(Uri.UnescapeDataString(catsJson)) ?? new();
             }
         }
 
         if (ids is null || ids.Count == 0)
         {
-            Nav.NavigateTo("Quizz");
-            return;
+            throw new InvalidOperationException("No se han seleccionado capítulos válidos.");
         }
 
         CapitulosSeleccionados = ids;
 
         var vocabularioList = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
         var gramaticaList= await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
-        List<VocabularioModel> palabrasVocabulario = vocabularioList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId) && CategoriasSeleccionadas.Contains(p.Categoria.ToString())).ToList();
-        List<EjemploModel> gramaticaModels = CategoriasSeleccionadas.Contains(CategoriaEnum.Gramatica.ToString()) ? gramaticaList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).SelectMany(x=>x.Explicaciones).SelectMany(x=>x.Ejemplos).ToList() : new ();
+        List<VocabularioModel> palabrasVocabulario = vocabularioList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId) && CategoriasSeleccionadas.Contains((int)p.Categoria)).ToList();
+        List<EjemploModel> gramaticaModels = CategoriasSeleccionadas.Contains((int)CategoriaEnum.Gramatica) ? gramaticaList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).SelectMany(x=>x.Explicaciones).SelectMany(x=>x.Ejemplos).ToList() : new ();
         List<EjemploModel> palabras = gramaticaModels.Union(palabrasVocabulario.Select(x => new EjemploModel {EjemploEsp = x.Esp, EjemploJap = x.Jap })).ToList();
         var rng = new Random();
         Palabras = palabras.OrderBy(x => rng.Next()).ToList();
