@@ -466,14 +466,14 @@
     "CapituloId": 2,
     "Japonés": "チョコレート",
     "Español": "Chocolate",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 69,
     "CapituloId": 2,
     "Japonés": "コーヒー",
     "Español": "Café",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 70,
@@ -970,7 +970,7 @@
     "CapituloId": 3,
     "Japonés": "ワイン",
     "Español": "Vino",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 141,
@@ -1467,35 +1467,35 @@
     "CapituloId": 1,
     "Japonés": "ライオン",
     "Español": "León",
-    "Categoria": "Animales"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 213,
     "CapituloId": 1,
     "Japonés": "パンダ",
     "Español": "Panda",
-    "Categoria": "Animales"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 214,
     "CapituloId": 1,
     "Japonés": "オレンジ",
     "Español": "Naranja",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 215,
     "CapituloId": 1,
     "Japonés": "バナナ",
     "Español": "Banana",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 216,
     "CapituloId": 1,
     "Japonés": "パン",
     "Español": "Pan",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 217,
@@ -1509,28 +1509,28 @@
     "CapituloId": 1,
     "Japonés": "レタス",
     "Español": "Lechuga",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 219,
     "CapituloId": 1,
     "Japonés": "トマト",
     "Español": "Tomate",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 220,
     "CapituloId": 1,
     "Japonés": "レモン",
     "Español": "Limón",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 221,
     "CapituloId": 1,
     "Japonés": "プリン",
     "Español": "Flan / Pudding",
-    "Categoria": "Comida"
+    "Categoria": "Animales y Comida"
   },
   {
     "Id": 222,
