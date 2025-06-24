@@ -4,6 +4,7 @@
 @using JaponesBlazor.Models
 @inject NavigationManager Nav
 @inject HttpClient Http
+@inject IJSRuntime JS
 
 <div class="header-bar mb-8">
     <BackButton />
@@ -71,8 +72,8 @@
                 <div class="mt-6 text-center">
                     <p class="text-green-600 font-semibold mb-3 text-xl">🎉 ¡Quizz completado!</p>
                     <button class="quizz-comenzar-btn"
-                            @onclick="@(() => Nav.NavigateTo("Quizz"))">
-                        Volver al inicio
+                            @onclick="ReiniciarJuego">
+                        Reiniciar
                     </button>
                 </div>
             }
@@ -95,6 +96,12 @@
 
     protected override async Task OnInitializedAsync()
     {
+        await CargarPreguntas();
+    }
+
+    private async Task CargarPreguntas()
+    {
+        cargando = true;
         var uri = Nav.ToAbsoluteUri(Nav.Uri);
         var query = HttpUtility.ParseQueryString(uri.Query);
         var ids = query["ids"]?.Split(",").Select(id => int.TryParse(id, out var n) ? n : -1).Where(n => n > 0).ToList();
@@ -218,6 +225,16 @@
             });
         }
         cargando = false;
+    }
+
+    private async Task ReiniciarJuego()
+    {
+        Correctas = 0;
+        RespuestaSeleccionada = null;
+        PreguntasFiltradas = new();
+        Indice = 0;
+        await CargarPreguntas();
+        StateHasChanged();
     }
 
     private void SeleccionarRespuesta(string opcion)
