@@ -1,6 +1,7 @@
 ﻿@page "/Quizz/Start"
 @using System.Web
 @using JaponesBlazor.Component
+@using JaponesBlazor.Models
 @inject NavigationManager Nav
 @inject HttpClient Http
 
@@ -111,9 +112,9 @@
         var palabrasVocabulario = vocabularioList
             .Where(p => CapitulosSeleccionados.Contains(p.CapituloId))
             .Select(x => new {
-                Jap = x.Japonés,
-                Esp = x.Español,
-                Categoria = x.Categoria ?? "Vocabulario"
+                Jap = x.Jap,
+                Esp = x.Esp,
+                Categoria = x.Categoria
             });
 
         var gramaticaModels = gramaticaList
@@ -123,7 +124,7 @@
             .Select(ej => new {
                 Jap = ej.EjemploJap,
                 Esp = ej.EjemploEsp,
-                Categoria = "Gramatica"
+                Categoria = CategoriaEnum.Gramatica
             });
 
         var palabras = palabrasVocabulario.Concat(gramaticaModels).ToList();
@@ -161,7 +162,7 @@
             if (opcionesIncorrectas.Count < 3)
             {
                 IEnumerable<string> faltantes;
-                if(palabra.Categoria == "Gramatica")
+                if(palabra.Categoria == CategoriaEnum.Gramatica)
                 {
                     faltantes = gramaticaList
                     .SelectMany(x => x.Explicaciones)
@@ -180,13 +181,13 @@
                 {
                     faltantes = vocabularioList
                     .Where(p =>
-                        p.Español != palabra.Esp &&
-                        !opcionesIncorrectas.Contains(p.Español) &&
+                        p.Esp != palabra.Esp &&
+                        !opcionesIncorrectas.Contains(p.Esp) &&
                         p.Categoria == palabra.Categoria &&
-                        (esMiller == (p.Español.Contains("Miller", StringComparison.OrdinalIgnoreCase)))
+                        (esMiller == (p.Esp.Contains("Miller", StringComparison.OrdinalIgnoreCase)))
                     )
                     .OrderBy(_ => rng.Next())
-                    .Select(p => p.Español)
+                    .Select(p => p.Esp)
                     .Distinct()
                     .Take(3 - opcionesIncorrectas.Count);
                 }

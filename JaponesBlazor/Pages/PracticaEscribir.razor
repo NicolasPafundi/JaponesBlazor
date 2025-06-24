@@ -150,7 +150,7 @@
         var gramaticaList= await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
         List<VocabularioModel> palabrasVocabulario = vocabularioList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).ToList();
         List<EjemploModel> gramaticaModels = gramaticaList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).SelectMany(x=>x.Explicaciones).SelectMany(x=>x.Ejemplos).ToList();
-        List<EjemploModel> palabras = gramaticaModels.Union(palabrasVocabulario.Select(x => new EjemploModel {EjemploEsp = x.Español, EjemploJap = x.Japonés })).ToList();
+        List<EjemploModel> palabras = gramaticaModels.Union(palabrasVocabulario.Select(x => new EjemploModel {EjemploEsp = x.Esp, EjemploJap = x.Jap })).ToList();
         var rng = new Random();
         Palabras = palabras.OrderBy(x => rng.Next()).ToList();
     }
