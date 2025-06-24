@@ -82,6 +82,7 @@
 
 @code {
     private List<PreguntaModel> PreguntasFiltradas = new();
+    private List<string> CategoriasSeleccionadas = new();
     private List<int> CapitulosSeleccionados = new();
     private bool cargando = true;
 
@@ -100,24 +101,34 @@
 
         if (ids is null || ids.Count == 0)
         {
-            Nav.NavigateTo("Quizz");
-            return;
+            throw new InvalidOperationException("No se han seleccionado capítulos válidos.");
         }
-
+        var catsJson = query["cats"];
+        if (!string.IsNullOrEmpty(catsJson))
+        {
+            try
+            {
+                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<string>>(catsJson) ?? new();
+            }
+            catch
+            {
+                CategoriasSeleccionadas = System.Text.Json.JsonSerializer.Deserialize<List<string>>(Uri.UnescapeDataString(catsJson)) ?? new();
+            }
+        }
         CapitulosSeleccionados = ids;
         var vocabularioList = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
         var gramaticaList = await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
 
         // Unificamos todo en una lista con Categoria
         var palabrasVocabulario = vocabularioList
-            .Where(p => CapitulosSeleccionados.Contains(p.CapituloId))
+            .Where(p => CapitulosSeleccionados.Contains(p.CapituloId) && CategoriasSeleccionadas.Contains(p.Categoria.ToString()))
             .Select(x => new {
                 Jap = x.Jap,
                 Esp = x.Esp,
                 Categoria = x.Categoria
             });
 
-        var gramaticaModels = gramaticaList
+        var gramaticaModels = CategoriasSeleccionadas.Contains(CategoriaEnum.Gramatica.ToString()) ? gramaticaList
             .Where(p => CapitulosSeleccionados.Contains(p.CapituloId))
             .SelectMany(x => x.Explicaciones)
             .SelectMany(x => x.Ejemplos)
@@ -125,7 +136,7 @@
                 Jap = ej.EjemploJap,
                 Esp = ej.EjemploEsp,
                 Categoria = CategoriaEnum.Gramatica
-            });
+            }) : [];
 
         var palabras = palabrasVocabulario.Concat(gramaticaModels).ToList();
 

@@ -1,0 +1,112 @@
+@page "/Practica/Categorias/{TipoPractica}"
+@using JaponesBlazor.Models
+@inject NavigationManager Nav
+@inject HttpClient Http
+
+@code {
+    [Parameter] public string? TipoPractica { get; set; }
+    public string? CapIds { get; set; }
+
+    private List<CategoriaEnum> CategoriasDisponibles = new();
+    private Dictionary<CategoriaEnum, int> ContadorPorCategoria = new();
+    private HashSet<CategoriaEnum> Seleccionadas = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Obtener capítulos seleccionados del query string
+        var uri = Nav.ToAbsoluteUri(Nav.Uri);
+        var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+        CapIds = query["ids"];
+        var capIds = CapIds?.Split(',').Select(id => int.TryParse(id, out var n) ? n : -1).Where(n => n > 0).ToList() ?? new();
+
+        // Cargar vocabulario y gramática
+        var vocabularioList = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
+        var gramaticaList = await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
+
+        // Filtrar vocabulario por capítulos seleccionados
+        var vocabFiltrado = vocabularioList
+            .Where(v => capIds.Contains(v.CapituloId))
+            .ToList();
+
+        // Contar por categoría en vocabulario
+        var contadorVocab = vocabFiltrado
+            .GroupBy(v => v.Categoria)
+            .ToDictionary(g => g.Key, g => g.Count());
+
+        // Contar por categoría en gramática
+        var contadorGramatica = new Dictionary<CategoriaEnum, int>();
+        if (gramaticaList != null)
+        {
+            int count = gramaticaList
+                .Where(g => capIds.Contains(g.CapituloId))
+                .SelectMany(g => g.Explicaciones)
+                .SelectMany(e => e.Ejemplos)
+                .Count();
+            if (count > 0)
+                contadorGramatica[CategoriaEnum.Gramatica] = count;
+        }
+
+        // Unir ambos contadores
+        ContadorPorCategoria = contadorVocab
+            .Concat(contadorGramatica)
+            .ToDictionary(kv => kv.Key, kv => kv.Value);
+
+        // Solo mostrar categorías con al menos un ítem
+        CategoriasDisponibles = ContadorPorCategoria.Keys.ToList();
+    }
+
+    private void ToggleCategoria(CategoriaEnum cat)
+    {
+        if (!Seleccionadas.Add(cat))
+            Seleccionadas.Remove(cat);
+    }
+
+    private void ToggleSeleccionarTodo()
+    {
+        if (Seleccionadas.Count < CategoriasDisponibles.Count)
+            Seleccionadas = CategoriasDisponibles.ToHashSet();
+        else
+            Seleccionadas.Clear();
+    }
+
+    private void Comenzar()
+    {
+        var catsJson = System.Text.Json.JsonSerializer.Serialize(
+            Seleccionadas.Select(x => x.ToString()).ToList()
+        );
+        var url = TipoPractica?.ToLower() == "escribir"
+            ? $"/Practica/Escribir?ids={CapIds}&cats={Uri.EscapeDataString(catsJson)}"
+            : $"/Quizz/Start?ids={CapIds}&cats={Uri.EscapeDataString(catsJson)}";
+        Nav.NavigateTo(url);
+    }
+}
+
+<h3 class="text-center mb-4">Selecciona las categorías que quieres practicar:</h3>
+
+<div class="flex justify-end mb-3">
+    <button class="btn-mini" type="button" @onclick="ToggleSeleccionarTodo">
+        @(Seleccionadas.Count < CategoriasDisponibles.Count ? "Seleccionar todo" : "Deseleccionar todo")
+    </button>
+</div>
+
+<div class="max-w-lg mx-auto flex flex-col gap-2 mb-8">
+    @foreach (var cat in CategoriasDisponibles)
+    {
+        <label class="categoria-card categoria-checkbox-label">
+            <input type="checkbox"
+                   value="@cat"
+                   @onchange="@(() => ToggleCategoria(cat))"
+                   checked="@Seleccionadas.Contains(cat)"
+                   class="categoria-checkbox" />
+            <span class="categoria-titulo">@cat (@ContadorPorCategoria[cat])</span>
+        </label>
+    }
+</div>
+
+<div class="flex justify-center">
+    <button class="quizz-comenzar-btn"
+            @onclick="Comenzar"
+            disabled="@(!Seleccionadas.Any())">
+        Comenzar práctica
+    </button>
+</div>
