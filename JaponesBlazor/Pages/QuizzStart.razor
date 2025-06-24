@@ -4,7 +4,6 @@
 @inject NavigationManager Nav
 @inject HttpClient Http
 
-
 <div class="header-bar mb-8">
     <BackButton />
     <h1 class="titulo-centrado">📝 Pregunta</h1>
@@ -106,51 +105,51 @@
 
         CapitulosSeleccionados = ids;
         var vocabularioList = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
-        var gramaticaList= await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
-        List<VocabularioModel> palabrasVocabulario = vocabularioList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).ToList();
-        List<EjemploModel> gramaticaModels = gramaticaList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).SelectMany(x=>x.Explicaciones).SelectMany(x=>x.Ejemplos).ToList();
-        List<EjemploModel> palabras = gramaticaModels.Union(palabrasVocabulario.Select(x => new EjemploModel {EjemploEsp = x.Español, EjemploJap = x.Japonés })).ToList();
+        var gramaticaList = await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
+
+        // Unificamos todo en una lista con Categoria
+        var palabrasVocabulario = vocabularioList
+            .Where(p => CapitulosSeleccionados.Contains(p.CapituloId))
+            .Select(x => new {
+                Jap = x.Japonés,
+                Esp = x.Español,
+                Categoria = x.Categoria ?? "Vocabulario"
+            });
+
+        var gramaticaModels = gramaticaList
+            .Where(p => CapitulosSeleccionados.Contains(p.CapituloId))
+            .SelectMany(x => x.Explicaciones)
+            .SelectMany(x => x.Ejemplos)
+            .Select(ej => new {
+                Jap = ej.EjemploJap,
+                Esp = ej.EjemploEsp,
+                Categoria = "Gramatica"
+            });
+
+        var palabras = palabrasVocabulario.Concat(gramaticaModels).ToList();
+
         var rng = new Random();
         palabras = palabras.OrderBy(x => rng.Next()).ToList();
+
         foreach (var palabra in palabras)
         {
-            int longitudCorrecta = palabra.EjemploJap?.Length ?? 0;
+            int longitudCorrecta = palabra.Jap?.Length ?? 0;
             int tolerancia = 2;
             List<string> opcionesIncorrectas = new();
 
-            // Detecta si la respuesta correcta o la pregunta contiene "Miller" (en español o japonés)
-            bool esMiller = palabra.EjemploEsp.Contains("Miller", StringComparison.OrdinalIgnoreCase)
-                || palabra.EjemploJap.Contains("ミラー");
+            bool esMiller = palabra.Esp.Contains("Miller", StringComparison.OrdinalIgnoreCase);
 
-            // Considera frase si tiene "、", "です", "ます" o longitud > 6
-            bool esFrase = (palabra.EjemploJap?.Contains("、") ?? false)
-                || (palabra.EjemploJap?.Contains("です") ?? false)
-                || (palabra.EjemploJap?.Contains("ます") ?? false)
-                || (palabra.EjemploJap?.Length ?? 0) > 6;
-
+            // Filtrar solo por la misma categoría y Miller/no Miller
             while (opcionesIncorrectas.Count < 3 && tolerancia <= 8)
             {
                 opcionesIncorrectas = palabras
                     .Where(p =>
-                        p.EjemploEsp != palabra.EjemploEsp &&
-                        Math.Abs((p.EjemploJap?.Length ?? 0) - longitudCorrecta) <= tolerancia &&
-                        (p.EjemploJap?.Count(c => c == ' ') ?? 0) == (palabra.EjemploJap?.Count(c => c == ' ') ?? 0) &&
-                        (esMiller
-                            ? (p.EjemploEsp.Contains("Miller", StringComparison.OrdinalIgnoreCase) || p.EjemploJap.Contains("ミラー"))
-                            : (!p.EjemploEsp.Contains("Miller", StringComparison.OrdinalIgnoreCase) && !p.EjemploJap.Contains("ミラー"))) &&
-                        // Nuevo filtro: si la correcta es frase, solo acepta frases; si es palabra, solo palabras
-                        (esFrase
-                            ? ((p.EjemploJap?.Contains("、") ?? false)
-                                || (p.EjemploJap?.Contains("です") ?? false)
-                                || (p.EjemploJap?.Contains("ます") ?? false)
-                                || (p.EjemploJap?.Length ?? 0) > 6)
-                            : !((p.EjemploJap?.Contains("、") ?? false)
-                                || (p.EjemploJap?.Contains("です") ?? false)
-                                || (p.EjemploJap?.Contains("ます") ?? false)
-                                || (p.EjemploJap?.Length ?? 0) > 6))
+                        p.Esp != palabra.Esp &&
+                        p.Categoria == palabra.Categoria &&
+                        (esMiller == (p.Esp.Contains("Miller", StringComparison.OrdinalIgnoreCase)))
                     )
                     .OrderBy(_ => rng.Next())
-                    .Select(p => p.EjemploEsp)
+                    .Select(p => p.Esp)
                     .Distinct()
                     .Take(3)
                     .ToList();
@@ -158,33 +157,52 @@
                 tolerancia++;
             }
 
-            // Si aún no hay suficientes, completa con aleatorias del mismo tipo Miller/no Miller
+            // Si aún no hay suficientes, completa con aleatorias
             if (opcionesIncorrectas.Count < 3)
             {
-                var faltantes = palabras
+                IEnumerable<string> faltantes;
+                if(palabra.Categoria == "Gramatica")
+                {
+                    faltantes = gramaticaList
+                    .SelectMany(x => x.Explicaciones)
+                    .SelectMany(x => x.Ejemplos)
                     .Where(p =>
-                        p.EjemploEsp != palabra.EjemploEsp &&
+                        p.EjemploEsp != palabra.Esp &&
                         !opcionesIncorrectas.Contains(p.EjemploEsp) &&
-                        (esMiller
-                            ? (p.EjemploEsp.Contains("Miller", StringComparison.OrdinalIgnoreCase) || p.EjemploJap.Contains("ミラー"))
-                            : (!p.EjemploEsp.Contains("Miller", StringComparison.OrdinalIgnoreCase) && !p.EjemploJap.Contains("ミラー")))
+                        (esMiller == (p.EjemploEsp.Contains("Miller", StringComparison.OrdinalIgnoreCase)))
                     )
                     .OrderBy(_ => rng.Next())
                     .Select(p => p.EjemploEsp)
                     .Distinct()
                     .Take(3 - opcionesIncorrectas.Count);
+                }
+                else
+                {
+                    faltantes = vocabularioList
+                    .Where(p =>
+                        p.Español != palabra.Esp &&
+                        !opcionesIncorrectas.Contains(p.Español) &&
+                        p.Categoria == palabra.Categoria &&
+                        (esMiller == (p.Español.Contains("Miller", StringComparison.OrdinalIgnoreCase)))
+                    )
+                    .OrderBy(_ => rng.Next())
+                    .Select(p => p.Español)
+                    .Distinct()
+                    .Take(3 - opcionesIncorrectas.Count);
+                }
+
 
                 opcionesIncorrectas.AddRange(faltantes);
             }
 
-            opcionesIncorrectas.Add(palabra.EjemploEsp); // agrega la respuesta correcta
+            opcionesIncorrectas.Add(palabra.Esp); // agrega la respuesta correcta
             opcionesIncorrectas = opcionesIncorrectas.OrderBy(_ => rng.Next()).ToList();
 
             PreguntasFiltradas.Add(new PreguntaModel
             {
-                Enunciado = palabra.EjemploJap,
+                Enunciado = palabra.Jap,
                 Opciones = opcionesIncorrectas,
-                RespuestaCorrecta = palabra.EjemploEsp
+                RespuestaCorrecta = palabra.Esp
             });
         }
         cargando = false;

@@ -3,1314 +3,1547 @@
     "Id": 2,
     "CapituloId": 1,
     "Japonés": "あのかた",
-    "Español": "Aquella persona (Formal)"
+    "Español": "Aquella persona (Formal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 3,
     "CapituloId": 1,
     "Japonés": "あのひと",
-    "Español": "Aquella persona (Informal)"
+    "Español": "Aquella persona (Informal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 4,
     "CapituloId": 1,
     "Japonés": "さん",
-    "Español": "Sufijo para señor o señorita"
+    "Español": "Sufijo para señor o señorita",
+    "Categoria": "Sufijos y Partículas"
   },
   {
     "Id": 5,
     "CapituloId": 1,
     "Japonés": "ちゃん",
-    "Español": "Sufijo para niños en lugar de san"
+    "Español": "Sufijo para niños en lugar de san",
+    "Categoria": "Sufijos y Partículas"
   },
   {
     "Id": 6,
     "CapituloId": 1,
     "Japonés": "じん",
-    "Español": "Sufijo que se usa para la nacionalidad de una persona"
+    "Español": "Sufijo que se usa para la nacionalidad de una persona",
+    "Categoria": "Sufijos y Partículas"
   },
   {
     "Id": 7,
     "CapituloId": 1,
     "Japonés": "せんせい",
-    "Español": "Profesor/Maestro (no a sí mismo)"
+    "Español": "Profesor/Maestro (no a sí mismo)",
+    "Categoria": "Profesiones y Roles"
   },
   {
     "Id": 8,
     "CapituloId": 1,
     "Japonés": "きょうし",
-    "Español": "Profesor/Maestro (a uno mismo)"
+    "Español": "Profesor/Maestro (a uno mismo)",
+    "Categoria": "Profesiones y Roles"
   },
   {
     "Id": 9,
     "CapituloId": 1,
     "Japonés": "がくせい",
-    "Español": "Estudiante"
+    "Español": "Estudiante",
+    "Categoria": "Profesiones y Roles"
   },
   {
     "Id": 10,
     "CapituloId": 1,
     "Japonés": "かいしゃいん",
-    "Español": "Empleado de una empresa"
+    "Español": "Empleado de una empresa",
+    "Categoria": "Profesiones y Roles"
   },
   {
     "Id": 11,
     "CapituloId": 1,
     "Japonés": " の しゃいん",
-    "Español": "Empleado de una empresa específica"
+    "Español": "Empleado de una empresa específica",
+    "Categoria": "Profesiones y Roles"
   },
   {
     "Id": 12,
     "CapituloId": 1,
     "Japonés": "いしゃ",
-    "Español": "Médico"
+    "Español": "Médico",
+    "Categoria": "Profesiones y Roles"
   },
   {
     "Id": 13,
     "CapituloId": 1,
     "Japonés": "けんきゅうしゃ",
-    "Español": "Investigador"
+    "Español": "Investigador",
+    "Categoria": "Profesiones y Roles"
   },
   {
     "Id": 14,
     "CapituloId": 1,
     "Japonés": "ぎんこういん",
-    "Español": "Bancario"
+    "Español": "Bancario",
+    "Categoria": "Profesiones y Roles"
   },
   {
     "Id": 15,
     "CapituloId": 1,
     "Japonés": "だいがく",
-    "Español": "Universidad"
+    "Español": "Universidad",
+    "Categoria": "Lugares"
   },
   {
     "Id": 16,
     "CapituloId": 1,
     "Japonés": "びょういん",
-    "Español": "Hospital"
+    "Español": "Hospital",
+    "Categoria": "Lugares"
   },
   {
     "Id": 17,
     "CapituloId": 1,
     "Japonés": "だれ",
-    "Español": "¿Quién? (informal)"
+    "Español": "¿Quién? (informal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 18,
     "CapituloId": 1,
     "Japonés": "どなた",
-    "Español": "¿Quién? (formal)"
+    "Español": "¿Quién? (formal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 19,
     "CapituloId": 1,
     "Japonés": "さい",
-    "Español": "Decir edad"
+    "Español": "Decir edad",
+    "Categoria": "Sufijos y Partículas"
   },
   {
     "Id": 20,
     "CapituloId": 1,
     "Japonés": "なんさい",
-    "Español": "¿Cuántos años?"
+    "Español": "¿Cuántos años?",
+    "Categoria": "Preguntas"
   },
   {
     "Id": 21,
     "CapituloId": 1,
     "Japonés": "はい",
-    "Español": "Sí"
+    "Español": "Sí",
+    "Categoria": "Expresiones"
   },
   {
     "Id": 22,
     "CapituloId": 1,
     "Japonés": "いいえ",
-    "Español": "No"
+    "Español": "No",
+    "Categoria": "Expresiones"
   },
   {
     "Id": 23,
     "CapituloId": 1,
     "Japonés": "はじめまして",
-    "Español": "Mucho gusto / Es un placer conocerte"
+    "Español": "Mucho gusto / Es un placer conocerte",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 24,
     "CapituloId": 1,
     "Japonés": "からきました",
-    "Español": "Vengo de tal país o soy de tal país"
+    "Español": "Vengo de tal país o soy de tal país",
+    "Categoria": "Expresiones"
   },
   {
     "Id": 25,
     "CapituloId": 1,
     "Japonés": "しつれいですが",
-    "Español": "Disculpe pero..."
+    "Español": "Disculpe pero...",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 26,
     "CapituloId": 1,
     "Japonés": "おなまえは",
-    "Español": "¿Cómo te llamas?"
+    "Español": "¿Cómo te llamas?",
+    "Categoria": "Preguntas"
   },
   {
     "Id": 27,
     "CapituloId": 1,
     "Japonés": "どうぞよろしくおねがいします",
-    "Español": "Un placer trabajar contigo / Espero que nos llevemos bien"
+    "Español": "Un placer trabajar contigo / Espero que nos llevemos bien",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 28,
     "CapituloId": 1,
     "Japonés": "こちらはミラーさんです",
-    "Español": "Le presento al señor Miller"
+    "Español": "Le presento al señor...",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 29,
     "CapituloId": 1,
     "Japonés": "アメリカ",
-    "Español": "América"
+    "Español": "América",
+    "Categoria": "Países"
   },
   {
     "Id": 30,
     "CapituloId": 1,
     "Japonés": "イギリス",
-    "Español": "Reino Unido"
+    "Español": "Reino Unido",
+    "Categoria": "Países"
   },
   {
     "Id": 31,
     "CapituloId": 1,
     "Japonés": "インド",
-    "Español": "India"
+    "Español": "India",
+    "Categoria": "Países"
   },
   {
     "Id": 32,
     "CapituloId": 1,
     "Japonés": "インドネシア",
-    "Español": "Indonesia"
+    "Español": "Indonesia",
+    "Categoria": "Países"
   },
   {
     "Id": 33,
     "CapituloId": 1,
     "Japonés": "かんこく",
-    "Español": "Corea del Sur"
+    "Español": "Corea del Sur",
+    "Categoria": "Países"
   },
   {
     "Id": 34,
     "CapituloId": 1,
     "Japonés": "タイ",
-    "Español": "Tailandia"
+    "Español": "Tailandia",
+    "Categoria": "Países"
   },
   {
     "Id": 35,
     "CapituloId": 1,
     "Japonés": "ちゅうごく",
-    "Español": "China"
+    "Español": "China",
+    "Categoria": "Países"
   },
   {
     "Id": 36,
     "CapituloId": 1,
     "Japonés": "ドイツ",
-    "Español": "Alemania"
+    "Español": "Alemania",
+    "Categoria": "Países"
   },
   {
     "Id": 37,
     "CapituloId": 1,
     "Japonés": "にほん",
-    "Español": "Japón"
+    "Español": "Japón",
+    "Categoria": "Países"
   },
   {
     "Id": 38,
     "CapituloId": 1,
     "Japonés": "ブラジル",
-    "Español": "Brasil"
+    "Español": "Brasil",
+    "Categoria": "Países"
   },
   {
     "Id": 39,
     "CapituloId": 2,
     "Japonés": "これ",
-    "Español": "Esto, esta, este"
+    "Español": "Esto, esta, este",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 40,
     "CapituloId": 2,
     "Japonés": "それ",
-    "Español": "Eso, esa, ese"
+    "Español": "Eso, esa, ese",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 41,
     "CapituloId": 2,
     "Japonés": "あれ",
-    "Español": "Aquel, aquello, aquella"
+    "Español": "Aquel, aquello, aquella",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 42,
     "CapituloId": 2,
     "Japonés": "この",
-    "Español": "Esta..., este..."
+    "Español": "Esta..., este...",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 43,
     "CapituloId": 2,
     "Japonés": "その",
-    "Español": "Esa..., este..."
+    "Español": "Esa..., este...",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 44,
     "CapituloId": 2,
     "Japonés": "あの",
-    "Español": "Aquel..., aquella..."
+    "Español": "Aquel..., aquella...",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 45,
     "CapituloId": 2,
     "Japonés": "ほん",
-    "Español": "Libro"
+    "Español": "Libro",
+    "Categoria": "Objetos"
   },
   {
     "Id": 46,
     "CapituloId": 2,
     "Japonés": "じしょ",
-    "Español": "Diccionario"
+    "Español": "Diccionario",
+    "Categoria": "Objetos"
   },
   {
     "Id": 47,
     "CapituloId": 2,
     "Japonés": "ざっし",
-    "Español": "Revista"
+    "Español": "Revista",
+    "Categoria": "Objetos"
   },
   {
     "Id": 48,
     "CapituloId": 2,
     "Japonés": "しんぶん",
-    "Español": "Periódico, diario"
+    "Español": "Periódico, diario",
+    "Categoria": "Objetos"
   },
   {
     "Id": 49,
     "CapituloId": 2,
     "Japonés": "ノート",
-    "Español": "Cuaderno"
+    "Español": "Cuaderno",
+    "Categoria": "Objetos"
   },
   {
     "Id": 50,
     "CapituloId": 2,
     "Japonés": "てちょう",
-    "Español": "Agenda"
+    "Español": "Agenda",
+    "Categoria": "Objetos"
   },
   {
     "Id": 51,
     "CapituloId": 2,
     "Japonés": "めいし",
-    "Español": "Tarjeta de negocio"
+    "Español": "Tarjeta de negocio",
+    "Categoria": "Objetos"
   },
   {
     "Id": 52,
     "CapituloId": 2,
     "Japonés": "カード",
-    "Español": "Tarjeta"
+    "Español": "Tarjeta",
+    "Categoria": "Objetos"
   },
   {
     "Id": 53,
     "CapituloId": 2,
     "Japonés": "えんぴつ",
-    "Español": "Lápiz"
+    "Español": "Lápiz",
+    "Categoria": "Objetos"
   },
   {
     "Id": 54,
     "CapituloId": 2,
     "Japonés": "ボールペン",
-    "Español": "Lapicera"
+    "Español": "Lapicera",
+    "Categoria": "Objetos"
   },
   {
     "Id": 55,
     "CapituloId": 2,
     "Japonés": "シャープペンシル",
-    "Español": "Porta minas"
+    "Español": "Porta minas",
+    "Categoria": "Objetos"
   },
   {
     "Id": 56,
     "CapituloId": 2,
     "Japonés": "かぎ",
-    "Español": "Llave"
+    "Español": "Llave",
+    "Categoria": "Objetos"
   },
   {
     "Id": 57,
     "CapituloId": 2,
     "Japonés": "とけい",
-    "Español": "Reloj"
+    "Español": "Reloj",
+    "Categoria": "Objetos"
   },
   {
     "Id": 58,
     "CapituloId": 2,
     "Japonés": "かさ",
-    "Español": "Paraguas"
+    "Español": "Paraguas",
+    "Categoria": "Objetos"
   },
   {
     "Id": 59,
     "CapituloId": 2,
     "Japonés": "かばん",
-    "Español": "Maleta o bolso"
+    "Español": "Maleta o bolso",
+    "Categoria": "Objetos"
   },
   {
     "Id": 60,
     "CapituloId": 2,
     "Japonés": "シーディー",
-    "Español": "CD"
+    "Español": "CD",
+    "Categoria": "Objetos"
   },
   {
     "Id": 61,
     "CapituloId": 2,
     "Japonés": "テレビ",
-    "Español": "Televisor"
+    "Español": "Televisor",
+    "Categoria": "Objetos"
   },
   {
     "Id": 62,
     "CapituloId": 2,
     "Japonés": "ラジオ",
-    "Español": "Radio"
+    "Español": "Radio",
+    "Categoria": "Objetos"
   },
   {
     "Id": 63,
     "CapituloId": 2,
     "Japonés": "カメラ",
-    "Español": "Cámara"
+    "Español": "Cámara",
+    "Categoria": "Objetos"
   },
   {
     "Id": 64,
     "CapituloId": 2,
     "Japonés": "コンピューター",
-    "Español": "Computadora"
+    "Español": "Computadora",
+    "Categoria": "Objetos"
   },
   {
     "Id": 65,
     "CapituloId": 2,
     "Japonés": "くるま",
-    "Español": "Auto"
+    "Español": "Auto",
+    "Categoria": "Objetos"
   },
   {
     "Id": 66,
     "CapituloId": 2,
     "Japonés": "つくえ",
-    "Español": "Escritorio"
+    "Español": "Escritorio",
+    "Categoria": "Objetos"
   },
   {
     "Id": 67,
     "CapituloId": 2,
     "Japonés": "いす",
-    "Español": "Silla"
+    "Español": "Silla",
+    "Categoria": "Objetos"
   },
   {
     "Id": 68,
     "CapituloId": 2,
     "Japonés": "チョコレート",
-    "Español": "Chocolate"
+    "Español": "Chocolate",
+    "Categoria": "Objetos"
   },
   {
     "Id": 69,
     "CapituloId": 2,
     "Japonés": "コーヒー",
-    "Español": "Café"
+    "Español": "Café",
+    "Categoria": "Objetos"
   },
   {
     "Id": 70,
     "CapituloId": 2,
     "Japonés": "おみやげ",
-    "Español": "Souvenir de viaje"
+    "Español": "Souvenir de viaje",
+    "Categoria": "Objetos"
   },
   {
     "Id": 71,
     "CapituloId": 2,
     "Japonés": "えいご",
-    "Español": "Idioma inglés"
+    "Español": "Idioma inglés",
+    "Categoria": "Idiomas"
   },
   {
     "Id": 72,
     "CapituloId": 2,
     "Japonés": "にほんご",
-    "Español": "Idioma japonés"
+    "Español": "Idioma japonés",
+    "Categoria": "Idiomas"
   },
   {
     "Id": 73,
     "CapituloId": 2,
     "Japonés": "くに",
-    "Español": "País, idioma"
+    "Español": "País, idioma",
+    "Categoria": "Países"
   },
   {
     "Id": 74,
     "CapituloId": 2,
     "Japonés": "なん",
-    "Español": "¿Qué?"
+    "Español": "¿Qué?",
+    "Categoria": "Preguntas"
   },
   {
     "Id": 75,
     "CapituloId": 2,
     "Japonés": "あのう",
-    "Español": "Eh..., esto..."
+    "Español": "Eh..., esto...",
+    "Categoria": "Interjecciones"
   },
   {
     "Id": 76,
     "CapituloId": 2,
     "Japonés": "えっ",
-    "Español": "¿Cómo?"
+    "Español": "¿Cómo?",
+    "Categoria": "Interjecciones"
   },
   {
     "Id": 77,
     "CapituloId": 2,
     "Japonés": "どうぞ",
-    "Español": "Aquí tiene, tome"
+    "Español": "Aquí tiene, tome",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 78,
     "CapituloId": 2,
     "Japonés": "どうもありがとうございます",
-    "Español": "Muchas gracias"
+    "Español": "Muchas gracias",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 79,
     "CapituloId": 2,
     "Japonés": "そうですか",
-    "Español": "Ah, ¿sí?"
+    "Español": "Ah, ¿sí?",
+    "Categoria": "Expresiones"
   },
   {
     "Id": 80,
     "CapituloId": 2,
     "Japonés": "ちがいます",
-    "Español": "No es así"
+    "Español": "No es así",
+    "Categoria": "Expresiones"
   },
   {
     "Id": 81,
     "CapituloId": 2,
     "Japonés": "あっ",
-    "Español": "¡Eh!"
+    "Español": "¡Eh!",
+    "Categoria": "Interjecciones"
   },
   {
     "Id": 82,
     "CapituloId": 2,
     "Japonés": "これからおせわになります",
-    "Español": "Le agradezco de antemano su gentil apoyo"
+    "Español": "Le agradezco de antemano su gentil apoyo",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 83,
     "CapituloId": 2,
     "Japonés": "こちらこそよろしく",
-    "Español": "Yo también estoy encantado de conocerlo"
+    "Español": "Yo también estoy encantado de conocerlo",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 84,
     "CapituloId": 1,
     "Japonés": "あいさつ",
-    "Español": "Saludo"
+    "Español": "Saludo",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 85,
     "CapituloId": 1,
     "Japonés": "おはようございます",
-    "Español": "Buenos días"
+    "Español": "Buenos días",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 86,
     "CapituloId": 1,
     "Japonés": "こんにちは",
-    "Español": "Buenas tardes"
+    "Español": "Buenas tardes",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 87,
     "CapituloId": 1,
     "Japonés": "こんばんは",
-    "Español": "Buenas noches"
+    "Español": "Buenas noches",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 88,
     "CapituloId": 1,
     "Japonés": "おやすみなさい",
-    "Español": "Buenas noches (antes de dormir)"
+    "Español": "Buenas noches (antes de dormir)",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 89,
     "CapituloId": 1,
     "Japonés": "さようなら",
-    "Español": "Adiós"
+    "Español": "Adiós",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 90,
     "CapituloId": 1,
     "Japonés": "ありがとう",
-    "Español": "Gracias"
+    "Español": "Gracias",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 91,
     "CapituloId": 1,
     "Japonés": "すみません",
-    "Español": "Disculpe"
+    "Español": "Disculpe",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 92,
     "CapituloId": 1,
     "Japonés": "おねがいします",
-    "Español": "Por favor"
+    "Español": "Por favor",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 93,
     "CapituloId": 1,
     "Japonés": "わたし",
-    "Español": "Yo (Hombre Formal)"
+    "Español": "Yo (Hombre Formal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 94,
     "CapituloId": 1,
     "Japonés": "ぼく",
-    "Español": "Yo (Hombre Neutro)"
+    "Español": "Yo (Hombre Neutro)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 95,
     "CapituloId": 1,
     "Japonés": "おれ",
-    "Español": "Yo (Hombre Informal)"
+    "Español": "Yo (Hombre Informal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 96,
     "CapituloId": 1,
     "Japonés": "わし",
-    "Español": "Yo (Hombre Formal antiguo)"
+    "Español": "Yo (Hombre Formal antiguo)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 97,
     "CapituloId": 1,
     "Japonés": "わたし",
-    "Español": "Yo (Mujer Neutro)"
+    "Español": "Yo (Mujer Neutro)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 98,
     "CapituloId": 1,
     "Japonés": "わたくし",
-    "Español": "Yo (Mujer Formal)"
+    "Español": "Yo (Mujer Formal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 99,
     "CapituloId": 1,
     "Japonés": "あたし",
-    "Español": "Yo (Mujer Informal)"
+    "Español": "Yo (Mujer Informal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 100,
     "CapituloId": 1,
     "Japonés": "あなた",
-    "Español": "Tú/Vos (formal)"
+    "Español": "Tú/Vos (formal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 101,
     "CapituloId": 1,
     "Japonés": "おまえ",
-    "Español": "Tú/Vos (para pelear hombre)"
+    "Español": "Tú/Vos (para pelear hombre)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 102,
     "CapituloId": 1,
     "Japonés": "あなた",
-    "Español": "Tú/Vos (para pelear mujer)"
+    "Español": "Tú/Vos (para pelear mujer)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 103,
     "CapituloId": 1,
     "Japonés": "きみ",
-    "Español": "Tú/Vos (de superior a inferior)"
+    "Español": "Tú/Vos (de superior a inferior)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 104,
     "CapituloId": 1,
     "Japonés": "かれ",
-    "Español": "Él"
+    "Español": "Él",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 105,
     "CapituloId": 1,
     "Japonés": "かのじょ",
-    "Español": "Ella"
+    "Español": "Ella",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 106,
     "CapituloId": 1,
     "Japonés": "わたしたち",
-    "Español": "Nosotros (Hombre Formal)"
+    "Español": "Nosotros (Hombre Formal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 107,
     "CapituloId": 1,
     "Japonés": "ぼくたち",
-    "Español": "Nosotros (Hombre Neutro)"
+    "Español": "Nosotros (Hombre Neutro)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 108,
     "CapituloId": 1,
     "Japonés": "おれたち",
-    "Español": "Nosotros (Hombre Informal)"
+    "Español": "Nosotros (Hombre Informal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 109,
     "CapituloId": 1,
     "Japonés": "わしたち",
-    "Español": "Nosotros (Hombre Formal antiguo)"
+    "Español": "Nosotros (Hombre Formal antiguo)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 110,
     "CapituloId": 1,
     "Japonés": "わたしたち",
-    "Español": "Nosotras (Neutro)"
+    "Español": "Nosotras (Neutro)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 111,
     "CapituloId": 1,
     "Japonés": "わたくしたち",
-    "Español": "Nosotras (Formal)"
+    "Español": "Nosotras (Formal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 112,
     "CapituloId": 1,
     "Japonés": "あたしたち",
-    "Español": "Nosotras (Informal)"
+    "Español": "Nosotras (Informal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 113,
     "CapituloId": 1,
     "Japonés": "あなたたち",
-    "Español": "Ustedes (formal)"
+    "Español": "Ustedes (formal)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 114,
     "CapituloId": 1,
     "Japonés": "おまえたち",
-    "Español": "Ustedes (para pelear hombre)"
+    "Español": "Ustedes (para pelear hombre)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 115,
     "CapituloId": 1,
     "Japonés": "あなたたち",
-    "Español": "Ustedes (para pelear mujer)"
+    "Español": "Ustedes (para pelear mujer)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 116,
     "CapituloId": 1,
     "Japonés": "きみたち",
-    "Español": "Ustedes (de superior a inferior)"
+    "Español": "Ustedes (de superior a inferior)",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 117,
     "CapituloId": 1,
     "Japonés": "かれたち",
-    "Español": "Ellos"
+    "Español": "Ellos",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 118,
     "CapituloId": 1,
     "Japonés": "かのじょたち",
-    "Español": "Ellas"
+    "Español": "Ellas",
+    "Categoria": "Pronombres y Personas"
   },
   {
     "Id": 119,
     "CapituloId": 3,
     "Japonés": "ここ",
-    "Español": "Aquí, en este lugar"
+    "Español": "Aquí, en este lugar",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 120,
     "CapituloId": 3,
     "Japonés": "そこ",
-    "Español": "Ahí, en ese lugar"
+    "Español": "Ahí, en ese lugar",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 121,
     "CapituloId": 3,
     "Japonés": "あそこ",
-    "Español": "Allí, en aquel lugar"
+    "Español": "Allí, en aquel lugar",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 122,
     "CapituloId": 3,
     "Japonés": "どこ",
-    "Español": "¿Dónde?, ¿en qué lugar?"
+    "Español": "¿Dónde?, ¿en qué lugar?",
+    "Categoria": "Preguntas"
   },
   {
     "Id": 123,
     "CapituloId": 3,
     "Japonés": "こちら",
-    "Español": "Por aquí (formal)"
+    "Español": "Por aquí (formal)",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 124,
     "CapituloId": 3,
     "Japonés": "そちら",
-    "Español": "Por ahí (formal)"
+    "Español": "Por ahí (formal)",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 125,
     "CapituloId": 3,
     "Japonés": "あちら",
-    "Español": "Por allí (formal)"
+    "Español": "Por allí (formal)",
+    "Categoria": "Demostrativos"
   },
   {
     "Id": 126,
     "CapituloId": 3,
     "Japonés": "どちら",
-    "Español": "¿Por dónde?, ¿cuál? (formal)"
+    "Español": "¿Por dónde?, ¿cuál? (formal)",
+    "Categoria": "Preguntas"
   },
   {
     "Id": 127,
     "CapituloId": 3,
     "Japonés": "きょうしつ",
-    "Español": "Aula"
+    "Español": "Aula",
+    "Categoria": "Lugares"
   },
   {
     "Id": 128,
     "CapituloId": 3,
     "Japonés": "しょくどう",
-    "Español": "Comedor"
+    "Español": "Comedor",
+    "Categoria": "Lugares"
   },
   {
     "Id": 129,
     "CapituloId": 3,
     "Japonés": "じむしょ",
-    "Español": "Oficina"
+    "Español": "Oficina",
+    "Categoria": "Lugares"
   },
   {
     "Id": 130,
     "CapituloId": 3,
     "Japonés": "かいぎしつ",
-    "Español": "Sala de reuniones"
+    "Español": "Sala de reuniones",
+    "Categoria": "Lugares"
   },
   {
     "Id": 131,
     "CapituloId": 3,
     "Japonés": "うけつけ",
-    "Español": "Recepción"
+    "Español": "Recepción",
+    "Categoria": "Lugares"
   },
   {
     "Id": 132,
     "CapituloId": 3,
     "Japonés": "ロビー",
-    "Español": "Lobby"
+    "Español": "Lobby",
+    "Categoria": "Lugares"
   },
   {
     "Id": 133,
     "CapituloId": 3,
     "Japonés": "へや",
-    "Español": "Habitación"
+    "Español": "Habitación",
+    "Categoria": "Lugares"
   },
   {
     "Id": 134,
     "CapituloId": 3,
     "Japonés": "トイレ",
-    "Español": "Baño"
+    "Español": "Baño",
+    "Categoria": "Lugares"
   },
   {
     "Id": 135,
     "CapituloId": 3,
     "Japonés": "かいだん",
-    "Español": "Escaleras"
+    "Español": "Escaleras",
+    "Categoria": "Lugares"
   },
   {
     "Id": 136,
     "CapituloId": 3,
     "Japonés": "エレベーター",
-    "Español": "Ascensor"
+    "Español": "Ascensor",
+    "Categoria": "Lugares"
   },
   {
     "Id": 137,
     "CapituloId": 3,
     "Japonés": "エスカレーター",
-    "Español": "Escalera mecánica"
+    "Español": "Escalera mecánica",
+    "Categoria": "Lugares"
   },
   {
     "Id": 138,
     "CapituloId": 3,
     "Japonés": "じどうはんばいき",
-    "Español": "Máquina expendedora"
+    "Español": "Máquina expendedora",
+    "Categoria": "Lugares"
   },
   {
     "Id": 139,
     "CapituloId": 3,
     "Japonés": "でんわ",
-    "Español": "Teléfono"
+    "Español": "Teléfono",
+    "Categoria": "Objetos"
   },
   {
     "Id": 140,
     "CapituloId": 3,
     "Japonés": "ワイン",
-    "Español": "Vino"
+    "Español": "Vino",
+    "Categoria": "Objetos"
   },
   {
     "Id": 141,
     "CapituloId": 3,
     "Japonés": "くに",
-    "Español": "País"
+    "Español": "País",
+    "Categoria": "Países"
   },
   {
     "Id": 142,
     "CapituloId": 3,
     "Japonés": "かいしゃ",
-    "Español": "Empresa"
+    "Español": "Empresa",
+    "Categoria": "Lugares"
   },
   {
     "Id": 143,
     "CapituloId": 3,
     "Japonés": "うち",
-    "Español": "Casa, hogar"
+    "Español": "Casa, hogar",
+    "Categoria": "Lugares"
   },
   {
     "Id": 144,
     "CapituloId": 3,
     "Japonés": "くつ",
-    "Español": "Zapatos"
+    "Español": "Zapatos",
+    "Categoria": "Objetos"
   },
   {
     "Id": 145,
     "CapituloId": 3,
     "Japonés": "ネクタイ",
-    "Español": "Corbata"
+    "Español": "Corbata",
+    "Categoria": "Objetos"
   },
   {
     "Id": 146,
     "CapituloId": 3,
     "Japonés": "うりば",
-    "Español": "Sección (de tienda)"
+    "Español": "Sección (de tienda)",
+    "Categoria": "Lugares"
   },
   {
     "Id": 147,
     "CapituloId": 3,
     "Japonés": "ちか",
-    "Español": "Subsuelo / sótano"
+    "Español": "Subsuelo / sótano",
+    "Categoria": "Lugares"
   },
   {
     "Id": 148,
     "CapituloId": 3,
     "Japonés": "なんがい",
-    "Español": "¿Qué piso?"
+    "Español": "¿Qué piso?",
+    "Categoria": "Preguntas"
   },
   {
     "Id": 149,
     "CapituloId": 3,
     "Japonés": "えん",
-    "Español": "Yen (moneda japonesa)"
+    "Español": "Yen (moneda japonesa)",
+    "Categoria": "Objetos"
   },
   {
     "Id": 150,
     "CapituloId": 3,
     "Japonés": "いくら",
-    "Español": "¿Cuánto cuesta?"
+    "Español": "¿Cuánto cuesta?",
+    "Categoria": "Preguntas"
   },
   {
     "Id": 151,
     "CapituloId": 3,
     "Japonés": "いっかい",
-    "Español": "Primer piso"
+    "Español": "Primer piso",
+    "Categoria": "Lugares"
   },
   {
     "Id": 152,
     "CapituloId": 3,
     "Japonés": "にかい",
-    "Español": "Segundo piso"
+    "Español": "Segundo piso",
+    "Categoria": "Lugares"
   },
   {
     "Id": 153,
     "CapituloId": 3,
     "Japonés": "さんがい",
-    "Español": "Tercer piso"
+    "Español": "Tercer piso",
+    "Categoria": "Lugares"
   },
   {
     "Id": 154,
     "CapituloId": 3,
     "Japonés": "はっかい",
-    "Español": "Octavo piso"
+    "Español": "Octavo piso",
+    "Categoria": "Lugares"
   },
   {
     "Id": 155,
     "CapituloId": 4,
     "Japonés": "おきます",
-    "Español": "Levantarse"
+    "Español": "Levantarse",
+    "Categoria": "Verbos y Acciones"
   },
   {
     "Id": 156,
     "CapituloId": 4,
     "Japonés": "ねます",
-    "Español": "Acostarse"
+    "Español": "Acostarse",
+    "Categoria": "Verbos y Acciones"
   },
   {
     "Id": 157,
     "CapituloId": 4,
     "Japonés": "はたらきます",
-    "Español": "Trabajar"
+    "Español": "Trabajar",
+    "Categoria": "Verbos y Acciones"
   },
   {
     "Id": 158,
     "CapituloId": 4,
     "Japonés": "やすみます",
-    "Español": "Descansar"
+    "Español": "Descansar",
+    "Categoria": "Verbos y Acciones"
   },
   {
     "Id": 159,
     "CapituloId": 4,
     "Japonés": "べんきょうします",
-    "Español": "Estudiar"
+    "Español": "Estudiar",
+    "Categoria": "Verbos y Acciones"
   },
   {
     "Id": 160,
     "CapituloId": 4,
     "Japonés": "おわります",
-    "Español": "Terminar"
+    "Español": "Terminar",
+    "Categoria": "Verbos y Acciones"
   },
   {
     "Id": 161,
     "CapituloId": 4,
     "Japonés": "デパート",
-    "Español": "Tienda departamental"
+    "Español": "Tienda departamental",
+    "Categoria": "Lugares"
   },
   {
     "Id": 162,
     "CapituloId": 4,
     "Japonés": "としょかん",
-    "Español": "Biblioteca"
+    "Español": "Biblioteca",
+    "Categoria": "Lugares"
   },
   {
     "Id": 163,
     "CapituloId": 4,
     "Japonés": "ぎんこう",
-    "Español": "Banco"
+    "Español": "Banco",
+    "Categoria": "Lugares"
   },
   {
     "Id": 164,
     "CapituloId": 4,
     "Japonés": "びじゅつかん",
-    "Español": "Museo de arte"
+    "Español": "Museo de arte",
+    "Categoria": "Lugares"
   },
   {
     "Id": 165,
     "CapituloId": 4,
     "Japonés": "ゆうびんきょく",
-    "Español": "Oficina de correos"
+    "Español": "Oficina de correos",
+    "Categoria": "Lugares"
   },
   {
     "Id": 166,
     "CapituloId": 4,
     "Japonés": "いま",
-    "Español": "Ahora"
+    "Español": "Ahora",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 167,
     "CapituloId": 4,
     "Japonés": "～じ",
-    "Español": "～Hora"
+    "Español": "～Hora",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 168,
     "CapituloId": 4,
     "Japonés": "～ふん（ぷん）",
-    "Español": "～Minuto"
+    "Español": "～Minuto",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 169,
     "CapituloId": 4,
     "Japonés": "はん",
-    "Español": "Media (hora)"
+    "Español": "Media (hora)",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 170,
     "CapituloId": 4,
     "Japonés": "なんじ",
-    "Español": "¿Qué hora?"
+    "Español": "¿Qué hora?",
+    "Categoria": "Preguntas"
   },
   {
     "Id": 171,
     "CapituloId": 4,
     "Japonés": "なんぷん",
-    "Español": "¿Qué minuto?"
+    "Español": "¿Qué minuto?",
+    "Categoria": "Preguntas"
   },
   {
     "Id": 172,
     "CapituloId": 4,
     "Japonés": "ごぜん",
-    "Español": "A.M."
+    "Español": "A.M.",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 173,
     "CapituloId": 4,
     "Japonés": "ごご",
-    "Español": "P.M."
+    "Español": "P.M.",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 174,
     "CapituloId": 4,
     "Japonés": "あさ",
-    "Español": "La mañana"
+    "Español": "La mañana",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 175,
     "CapituloId": 4,
     "Japonés": "ひる",
-    "Español": "Mediodía"
+    "Español": "Mediodía",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 176,
     "CapituloId": 4,
     "Japonés": "よる（ばん）",
-    "Español": "Noche"
+    "Español": "Noche",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 177,
     "CapituloId": 4,
     "Japonés": "けさ",
-    "Español": "Esta mañana"
+    "Español": "Esta mañana",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 178,
     "CapituloId": 4,
     "Japonés": "こんばん",
-    "Español": "Esta noche"
+    "Español": "Esta noche",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 179,
     "CapituloId": 4,
     "Japonés": "きょう",
-    "Español": "Hoy"
+    "Español": "Hoy",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 180,
     "CapituloId": 4,
     "Japonés": "あした",
-    "Español": "Mañana"
+    "Español": "Mañana",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 181,
     "CapituloId": 4,
     "Japonés": "あさって",
-    "Español": "Pasado mañana"
+    "Español": "Pasado mañana",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 182,
     "CapituloId": 4,
     "Japonés": "ひるやすみ",
-    "Español": "Descanso del mediodía"
+    "Español": "Descanso del mediodía",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 183,
     "CapituloId": 4,
     "Japonés": "かいぎ",
-    "Español": "Reunión"
+    "Español": "Reunión",
+    "Categoria": "Verbos y Acciones"
   },
   {
     "Id": 184,
     "CapituloId": 4,
     "Japonés": "まいあさ",
-    "Español": "Todas las mañanas"
+    "Español": "Todas las mañanas",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 185,
     "CapituloId": 4,
     "Japonés": "まいばん",
-    "Español": "Todas las noches"
+    "Español": "Todas las noches",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 186,
     "CapituloId": 4,
     "Japonés": "まいにち",
-    "Español": "Todos los días"
+    "Español": "Todos los días",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 187,
     "CapituloId": 4,
     "Japonés": "やすみ",
-    "Español": "Descanso"
+    "Español": "Descanso",
+    "Categoria": "Verbos y Acciones"
   },
   {
     "Id": 188,
     "CapituloId": 4,
     "Japonés": "しけん",
-    "Español": "Examen"
+    "Español": "Examen",
+    "Categoria": "Objetos"
   },
   {
     "Id": 189,
     "CapituloId": 4,
     "Japonés": "えいが",
-    "Español": "Película"
+    "Español": "Película",
+    "Categoria": "Objetos"
   },
   {
     "Id": 191,
     "CapituloId": 4,
     "Japonés": "きのう",
-    "Español": "Ayer"
+    "Español": "Ayer",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 192,
     "CapituloId": 4,
     "Japonés": "おととい",
-    "Español": "Antes de ayer"
+    "Español": "Antes de ayer",
+    "Categoria": "Tiempo y Fechas"
   },
   {
     "Id": 193,
     "CapituloId": 3,
     "Japonés": "すみません",
-    "Español": "Disculpe (como excusa para llamar la atención o pedir perdón)"
+    "Español": "Disculpe (como excusa para llamar la atención o pedir perdón)",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 194,
     "CapituloId": 3,
     "Japonés": "どうも",
-    "Español": "Gracias"
+    "Español": "Gracias",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 195,
     "CapituloId": 3,
     "Japonés": "いらっしゃいませ",
-    "Español": "¡Bienvenido!"
+    "Español": "¡Bienvenido!",
+    "Categoria": "Saludos y Expresiones"
   },
   {
     "Id": 196,
     "CapituloId": 3,
     "Japonés": "〜をみせてください",
-    "Español": "Por favor, puede mostrarme 〜"
+    "Español": "Por favor, puede mostrarme 〜",
+    "Categoria": "Expresiones"
   },
   {
     "Id": 197,
     "CapituloId": 3,
     "Japonés": "じゃ",
-    "Español": "Bueno, entonces"
+    "Español": "Bueno, entonces",
+    "Categoria": "Interjecciones"
   },
   {
     "Id": 198,
     "CapituloId": 3,
     "Japonés": "〜をください",
-    "Español": "Deme 〜 por favor"
+    "Español": "Deme 〜 por favor",
+    "Categoria": "Expresiones"
   },
   {
     "Id": 199,
     "CapituloId": 3,
     "Japonés": "イタリア",
-    "Español": "Italia"
+    "Español": "Italia",
+    "Categoria": "Países"
   },
   {
     "Id": 200,
     "CapituloId": 3,
     "Japonés": "スイス",
-    "Español": "Suiza"
+    "Español": "Suiza",
+    "Categoria": "Países"
   },
   {
     "Id": 201,
     "CapituloId": 3,
     "Japonés": "フランス",
-    "Español": "Francia"
+    "Español": "Francia",
+    "Categoria": "Países"
   },
   {
     "Id": 202,
     "CapituloId": 3,
     "Japonés": "マル・デル・プラタ",
-    "Español": "Mar del Plata"
+    "Español": "Mar del Plata",
+    "Categoria": "Lugares"
   },
   {
     "Id": 203,
     "CapituloId": 3,
     "Japonés": "ペソ",
-    "Español": "Peso"
+    "Español": "Peso",
+    "Categoria": "Objetos"
   },
   {
     "Id": 204,
     "CapituloId": 3,
     "Japonés": "ジャカルタ",
-    "Español": "Yakarta"
+    "Español": "Yakarta",
+    "Categoria": "Lugares"
   },
   {
     "Id": 205,
     "CapituloId": 3,
     "Japonés": "バンコク",
-    "Español": "Bangkok"
+    "Español": "Bangkok",
+    "Categoria": "Lugares"
   },
   {
     "Id": 206,
     "CapituloId": 3,
     "Japonés": "ベルリン",
-    "Español": "Berlín"
+    "Español": "Berlín",
+    "Categoria": "Lugares"
   },
   {
     "Id": 207,
     "CapituloId": 3,
     "Japonés": "しんおおさか",
-    "Español": "Shin-Osaka"
+    "Español": "Shin-Osaka",
+    "Categoria": "Lugares"
   },
   {
     "Id": 208,
     "CapituloId": 1,
     "Japonés": "アルゼンチン",
-    "Español": "Argentina"
+    "Español": "Argentina",
+    "Categoria": "Países"
   },
   {
     "Id": 209,
     "CapituloId": 1,
     "Japonés": "ペルー",
-    "Español": "Perú"
+    "Español": "Perú",
+    "Categoria": "Países"
   },
   {
     "Id": 210,
     "CapituloId": 1,
     "Japonés": "にほん",
-    "Español": "Japón"
+    "Español": "Japón",
+    "Categoria": "Países"
   },
   {
     "Id": 211,
     "CapituloId": 1,
     "Japonés": "スペイン",
-    "Español": "España"
+    "Español": "España",
+    "Categoria": "Países"
   },
   {
     "Id": 212,
     "CapituloId": 1,
     "Japonés": "ライオン",
-    "Español": "León"
+    "Español": "León",
+    "Categoria": "Objetos"
   },
   {
     "Id": 213,
     "CapituloId": 1,
     "Japonés": "パンダ",
-    "Español": "Panda"
+    "Español": "Panda",
+    "Categoria": "Objetos"
   },
   {
     "Id": 214,
     "CapituloId": 1,
     "Japonés": "オレンジ",
-    "Español": "Naranja"
+    "Español": "Naranja",
+    "Categoria": "Objetos"
   },
   {
     "Id": 215,
     "CapituloId": 1,
     "Japonés": "バナナ",
-    "Español": "Banana"
+    "Español": "Banana",
+    "Categoria": "Objetos"
   },
   {
     "Id": 216,
     "CapituloId": 1,
     "Japonés": "パン",
-    "Español": "Pan"
+    "Español": "Pan",
+    "Categoria": "Objetos"
   },
   {
     "Id": 217,
     "CapituloId": 1,
     "Japonés": "テレビ",
-    "Español": "Televisor"
+    "Español": "Televisor",
+    "Categoria": "Objetos"
   },
   {
     "Id": 218,
     "CapituloId": 1,
     "Japonés": "レタス",
-    "Español": "Lechuga"
+    "Español": "Lechuga",
+    "Categoria": "Objetos"
   },
   {
     "Id": 219,
     "CapituloId": 1,
     "Japonés": "トマト",
-    "Español": "Tomate"
+    "Español": "Tomate",
+    "Categoria": "Objetos"
   },
   {
     "Id": 220,
     "CapituloId": 1,
     "Japonés": "レモン",
-    "Español": "Limón"
+    "Español": "Limón",
+    "Categoria": "Objetos"
   },
   {
     "Id": 221,
     "CapituloId": 1,
     "Japonés": "プリン",
-    "Español": "Flan / Pudding"
+    "Español": "Flan / Pudding",
+    "Categoria": "Objetos"
+  },
+  {
+    "Id": 222,
+    "CapituloId": 2,
+    "Japonés": "どいつご",
+    "Español": "Idioma alemán",
+    "Categoria": "Idiomas"
+  },
+  {
+    "Id": 223,
+    "CapituloId": 2,
+    "Japonés": "すぺいんご",
+    "Español": "Idioma español",
+    "Categoria": "Idiomas"
   }
 ]

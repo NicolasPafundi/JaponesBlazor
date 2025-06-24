@@ -18,15 +18,22 @@ else if (!Items.Any())
 }
 else
 {
-    <ul class="max-w-xl mx-auto space-y-3">
-        @foreach (var palabra in Items)
-        {
-            <li class="bg-yellow-50 p-4 rounded border shadow">
-                <PlayJapanese Texto="@palabra.Japonés"/>
-                <strong>@palabra.Japonés </strong> – @palabra.Español
-            </li>
-        }
-    </ul>
+    @foreach (var grupo in Items.GroupBy(x => x.Categoria))
+    {
+        <div class="categoria-group mb-10 p-4 rounded-lg bg-blue-50 shadow-sm w-full">
+            <h2 class="mb-4 text-xl font-semibold text-blue-800 border-b border-blue-200 pb-2">@grupo.Key</h2>
+            <div class="vocab-list flex flex-col gap-3">
+                @foreach (var palabra in grupo)
+                {
+                    <div class="bg-yellow-50 p-3 rounded border shadow-sm flex items-center gap-4 vocab-item">
+                        <PlayJapanese Texto="@palabra.Japonés" />
+                        <span class="jap-word">@palabra.Japonés</span>
+                        <span class="translation">– @palabra.Español</span>
+                    </div>
+                }
+            </div>
+        </div>
+    }
 }
 
 @code {
@@ -39,7 +46,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         var all = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
-        Items = all?.Where(x => x.CapituloId == Id).ToList();
+        Items = all?.Where(x => x.CapituloId == Id).ToList() ?? new();
         cargando = false;
     }
 }
