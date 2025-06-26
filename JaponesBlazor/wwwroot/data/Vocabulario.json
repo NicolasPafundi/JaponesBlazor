@@ -65,7 +65,7 @@
   {
     "Id": 11,
     "CapituloId": 1,
-    "Jap": " の しゃいん",
+    "Jap": "のしゃいん",
     "Esp": "Empleado de una empresa específica",
     "Categoria": "ProfesionesYRoles"
   },
@@ -185,7 +185,7 @@
     "Id": 28,
     "CapituloId": 1,
     "Jap": "こちらはミラーさんです",
-    "Esp": "Le presento al señor...",
+    "Esp": "Le presento al señor Miller",
     "Categoria": "Expresiones"
   },
   {

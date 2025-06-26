@@ -103,7 +103,7 @@
         {
             <div class="text-center">
                 <p class="text-green-600 font-semibold mb-3 text-xl">🎉 ¡Práctica completada!</p>
-                <button class="quizz-comenzar-btn" @onclick="@(() => Indice = 0)">
+                <button class="quizz-comenzar-btn" @onclick="ReiniciarJuego">
                     Volver a empezar
                 </button>
             </div>
@@ -136,6 +136,12 @@
 
     protected override async Task OnInitializedAsync()
     {
+        await CargarPalabras();
+    }
+
+    private async Task CargarPalabras()
+    {
+
         var uri = Nav.ToAbsoluteUri(Nav.Uri);
         var query = HttpUtility.ParseQueryString(uri.Query);
         var ids = query["ids"]?.Split(",").Select(id => int.TryParse(id, out var n) ? n : -1).Where(n => n > 0).ToList();
@@ -206,6 +212,18 @@
     {
         // Llama a la función JS para procesar el input
         RespuestaUsuario = await JS.InvokeAsync<string>("kanaInputProcess", KanaInputRef);
+        StateHasChanged();
+    }
+
+    private async Task ReiniciarJuego()
+    {
+        RespuestaUsuario = "";
+        YaRespondida = false;
+        TecladoVisible = TecladoVisibleAntesDeResponder;
+        Correctas = 0;
+        Indice = 0;
+        Palabras = null; 
+        await CargarPalabras();
         StateHasChanged();
     }
 }
