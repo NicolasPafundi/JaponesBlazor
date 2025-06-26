@@ -70,7 +70,7 @@
             }
 
             <button type="button"
-                    class="quizz-comenzar-btn"
+                    class="quiz-comenzar-btn"
                     style="margin-bottom:0.7rem; margin-top:0.2rem; font-size:1rem; padding:0.4em 1.2em;"
                     @onclick="ToggleTeclado"
                     disabled="@YaRespondida">
@@ -90,11 +90,11 @@
             <div class="flex justify-center gap-4">
                 @if (RespuestaUsuario != actual.EjemploJap)
                 {
-                    <button class="quizz-comenzar-btn" @onclick="ReintentarPalabra">
+                    <button class="quiz-comenzar-btn" @onclick="ReintentarPalabra">
                         Reintentar
                     </button>
                 }
-                <button class="quizz-comenzar-btn" @onclick="SiguientePalabra">
+                <button class="quiz-comenzar-btn" @onclick="SiguientePalabra">
                     Siguiente
                 </button>
             </div>
@@ -103,7 +103,7 @@
         {
             <div class="text-center">
                 <p class="text-green-600 font-semibold mb-3 text-xl">🎉 ¡Práctica completada!</p>
-                <button class="quizz-comenzar-btn" @onclick="ReiniciarJuego">
+                <button class="quiz-comenzar-btn" @onclick="ReiniciarJuego">
                     Volver a empezar
                 </button>
             </div>
@@ -111,7 +111,7 @@
         else
         {
             <div class="flex justify-center">
-                <button class="quizz-comenzar-btn" @onclick="VerificarRespuesta" disabled="@YaRespondida">
+                <button class="quiz-comenzar-btn" @onclick="VerificarRespuesta" disabled="@YaRespondida">
                     Verificar
                 </button>
             </div>

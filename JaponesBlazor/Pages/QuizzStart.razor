@@ -1,4 +1,4 @@
-﻿@page "/Quizz/Start"
+﻿@page "/Quiz/Start"
 @using System.Web
 @using JaponesBlazor.Component
 @using JaponesBlazor.Models
@@ -29,9 +29,9 @@
 
             <div class="mb-8">
                 <h2 class="text-2xl font-semibold mb-6 text-gray-800 text-center">
-                    <div class="quizz-palabra-centralizada mb-6">
+                    <div class="quiz-palabra-centralizada mb-6">
                         <PlayJapanese Texto="@actual.Enunciado" />
-                        <span class="quizz-palabra-japonesa">@actual.Enunciado</span>
+                        <span class="quiz-palabra-japonesa">@actual.Enunciado</span>
                     </div>
                 </h2>
                 <div class="flex flex-col gap-5">
@@ -41,10 +41,10 @@
                         var esCorrecta = opcion == actual.RespuestaCorrecta;
                         var mostrarCorrecta = YaRespondida && !esSeleccionada && esCorrecta && RespuestaSeleccionada != actual.RespuestaCorrecta;
 
-                        <button class="quizz-opcion-btn
+                        <button class="quiz-opcion-btn
                             @(esSeleccionada
-                                ? (esCorrecta ? "quizz-opcion-correcta" : "quizz-opcion-incorrecta")
-                                : (mostrarCorrecta ? "quizz-opcion-correcta" : ""))"
+                                ? (esCorrecta ? "quiz-opcion-correcta" : "quiz-opcion-incorrecta")
+                                : (mostrarCorrecta ? "quiz-opcion-correcta" : ""))"
                             @onclick="() => SeleccionarRespuesta(opcion)"
                             disabled="@YaRespondida">
                             @opcion
@@ -61,7 +61,7 @@
             @if (YaRespondida && !EsUltima)
             {
                 <div class="mt-6 flex justify-center">
-                    <button class="quizz-comenzar-btn"
+                    <button class="quiz-comenzar-btn"
                             @onclick="SiguientePregunta">
                         Siguiente ➡️
                     </button>
@@ -70,8 +70,8 @@
             else if (YaRespondida && EsUltima)
             {
                 <div class="mt-6 text-center">
-                    <p class="text-green-600 font-semibold mb-3 text-xl">🎉 ¡Quizz completado!</p>
-                    <button class="quizz-comenzar-btn"
+                    <p class="text-green-600 font-semibold mb-3 text-xl">🎉 ¡Práctica completada!</p>
+                    <button class="quiz-comenzar-btn"
                             @onclick="ReiniciarJuego">
                         Volver a empezar
                     </button>

@@ -219,8 +219,8 @@ a, .btn-link {
     text-decoration: none;
 }
 
-/* Quizz botones */
-.quizz-comenzar-btn {
+/* Quiz botones */
+.quiz-comenzar-btn {
     background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
     color: #fff;
     font-size: 1.18rem;
@@ -236,23 +236,23 @@ a, .btn-link {
     position: relative;
     overflow: hidden;
 }
-.quizz-comenzar-btn:disabled {
+.quiz-comenzar-btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
-.quizz-comenzar-btn:hover:enabled {
+.quiz-comenzar-btn:hover:enabled {
     background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%);
     transform: scale(1.05);
     box-shadow: 0 4px 24px 0 #bae6fd;
 }
-.quizz-comenzar-btn .icon-next {
+.quiz-comenzar-btn .icon-next {
     display: inline-block;
     transition: transform 0.18s cubic-bezier(.4,2,.3,1);
 }
-.quizz-comenzar-btn:hover .icon-next {
+.quiz-comenzar-btn:hover .icon-next {
     transform: translateX(2px);
 }
-.quizz-opcion-btn {
+.quiz-opcion-btn {
     display: block;
     width: 100%;
     padding: 1.5rem 1rem;
@@ -268,21 +268,21 @@ a, .btn-link {
     text-align: center;
     cursor: pointer;
 }
-.quizz-opcion-btn:hover:enabled {
+.quiz-opcion-btn:hover:enabled {
     background: #bae6fd;
     color: #0e7490;
     transform: scale(1.03);
 }
-.quizz-opcion-btn:disabled {
+.quiz-opcion-btn:disabled {
     opacity: 0.8;
     cursor: not-allowed;
 }
-.quizz-opcion-correcta {
+.quiz-opcion-correcta {
     background: #bbf7d0 !important;
     border-color: #22c55e !important;
     color: #166534 !important;
 }
-.quizz-opcion-incorrecta {
+.quiz-opcion-incorrecta {
     background: #fecaca !important;
     border-color: #ef4444 !important;
     color: #991b1b !important;
@@ -915,7 +915,7 @@ textarea.form-control {
         height: 13px;
     }
 
-    .quizz-comenzar-btn {
+    .quiz-comenzar-btn {
         font-size: 1.05rem;
         padding: 0.7rem 1.2rem;
     }
@@ -1047,7 +1047,7 @@ textarea.form-control {
     }
 
 /* Botón siguiente con animación */
-.quizz-comenzar-btn {
+.quiz-comenzar-btn {
     background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
     color: #fff;
     font-size: 1.18rem;
@@ -1064,23 +1064,23 @@ textarea.form-control {
     overflow: hidden;
 }
 
-    .quizz-comenzar-btn:disabled {
+    .quiz-comenzar-btn:disabled {
         opacity: 0.5;
         cursor: not-allowed;
     }
 
-    .quizz-comenzar-btn:hover:enabled {
+    .quiz-comenzar-btn:hover:enabled {
         background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%);
         transform: scale(1.05);
         box-shadow: 0 4px 24px 0 #bae6fd;
     }
 
-    .quizz-comenzar-btn .icon-next {
+    .quiz-comenzar-btn .icon-next {
         display: inline-block;
         transition: transform 0.18s cubic-bezier(.4,2,.3,1);
     }
 
-    .quizz-comenzar-btn:hover .icon-next {
+    .quiz-comenzar-btn:hover .icon-next {
         transform: translateX(2px);
     }
 
@@ -1115,7 +1115,7 @@ textarea.form-control {
         height: 11px;
     }
 
-    .quizz-comenzar-btn {
+    .quiz-comenzar-btn {
         font-size: 1.05rem;
         padding: 0.7rem 1.2rem;
     }

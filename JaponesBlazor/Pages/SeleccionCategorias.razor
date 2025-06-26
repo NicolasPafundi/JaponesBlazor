@@ -41,7 +41,7 @@
 </div>
 
 <div class="flex justify-center">
-    <button class="quizz-comenzar-btn"
+    <button class="quiz-comenzar-btn"
             @onclick="Comenzar"
             disabled="@(!Seleccionadas.Any())">
         Comenzar práctica
@@ -160,7 +160,7 @@
         var catsJson = System.Text.Json.JsonSerializer.Serialize(Seleccionadas);
         var url = TipoPractica?.ToLower() == "escribir"
             ? $"Practica/Escribir?ids={CapIds}&cats={Uri.EscapeDataString(catsJson)}"
-            : $"Quizz/Start?ids={CapIds}&cats={Uri.EscapeDataString(catsJson)}";
+            : $"Quiz/Start?ids={CapIds}&cats={Uri.EscapeDataString(catsJson)}";
         Nav.NavigateTo(url);
     }
 

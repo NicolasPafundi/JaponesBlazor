@@ -42,12 +42,12 @@
             {
                 Nav.NavigateTo("");
             }
-            else if (uri.StartsWith("quizz/start"))
+            else if (uri.StartsWith("quiz/start"))
             {
                 var uri2 = Nav.ToAbsoluteUri(Nav.Uri);
                 var query = System.Web.HttpUtility.ParseQueryString(uri2.Query);
                 var CapIds = query["ids"];
-                Nav.NavigateTo($"Practica/Categorias/Quizz?ids={CapIds}");
+                Nav.NavigateTo($"Practica/Categorias/Quiz?ids={CapIds}");
             }
             else if (uri.StartsWith("practica/escribir"))
             {

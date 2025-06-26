@@ -1,4 +1,4 @@
-﻿@page "/Quizz"
+﻿@page "/Quiz"
 @page "/Practica/Capitulos"
 @page "/Practica/Capitulos/{TipoPractica}"
 @inject NavigationManager Nav
@@ -33,7 +33,7 @@
 </div>
 
 <div class="flex justify-center">
-    <button class="quizz-comenzar-btn"
+    <button class="quiz-comenzar-btn"
             @onclick="Comenzar"
             disabled="@(!CapitulosSeleccionados.Any())">
         @(TipoPractica?.ToLower() == "escribir" ? "✍️ Comenzar práctica" : "🎯 Comenzar")
@@ -42,7 +42,7 @@
 
 @code {
     [Parameter]
-    public string? TipoPractica { get; set; } = "quizz"; // valor por defecto
+    public string? TipoPractica { get; set; } = "quiz"; // valor por defecto
 
     private List<CapituloModel> Capitulos = new()
     {
