@@ -332,5 +332,320 @@
         ]
       }
     ]
+  },
+  {
+    "Id": 15,
+    "CapituloId": 3,
+    "Titulo": "ここ / そこ / あそこ / こちら / そちら / あちら",
+    "Explicaciones": [
+      {
+        "Explicacion": "Se utilizan ここ / そこ / あそこ para indicar lugares. ここ es el lugar donde está el hablante, そこ donde está el oyente y あそこ es un lugar distante de ambos. こちら / そちら / あちら son formas más educadas de decir lo mismo y también se usan para indicar dirección o referirse a personas, empresas, etc.",
+        "Ejemplos": []
+      },
+      {
+        "Explicacion": "Cuando el hablante considera que el oyente está en su mismo entorno, se usa そこ en lugar de あそこ. En cambio, あそこ se usa para un lugar totalmente ajeno.",
+        "Ejemplos": []
+      }
+    ]
+  },
+  {
+    "Id": 16,
+    "CapituloId": 3,
+    "Titulo": "ここ は lugar です",
+    "Explicaciones": [
+      {
+        "Explicacion": "Esta estructura se usa para indicar el lugar donde se encuentra alguien o algo.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El niño está allí.",
+            "EjemploJap": "おとこのこはあそこです"
+          },
+          {
+            "EjemploEsp": "El teléfono de la señora Tanaka.",
+            "EjemploJap": "たなかさんのでんわばんごうです"
+          },
+          {
+            "EjemploEsp": "La estación donde tomo el tren es Shinjuku.",
+            "EjemploJap": "わたしがのるえきはしんじゅくです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 17,
+    "CapituloId": 3,
+    "Titulo": "どこ / どちら",
+    "Explicaciones": [
+      {
+        "Explicacion": "どこ se usa para preguntar por el lugar y どちら por la dirección. どちら también puede usarse para preguntar por el lugar de manera más cortés.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿Dónde está el niño? Está allí.",
+            "EjemploJap": "おとこのこはどこですか。あそこです"
+          },
+          {
+            "EjemploEsp": "¿Dónde está el ascensor? Está allí.",
+            "EjemploJap": "エレベーターはどちらですか。あちらです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Al preguntar por el nombre de país, compañía, escuela, empresa, etc., se puede preguntar el lugar con どこ y どちら en lugar de なん.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿A qué colegio vas?",
+            "EjemploJap": "がっこうはどこですか"
+          },
+          {
+            "EjemploEsp": "¿En qué empresa trabaja?",
+            "EjemploJap": "かいしゃはどちらですか"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 18,
+    "CapituloId": 3,
+    "Titulo": "S₁ の S₂",
+    "Explicaciones": [
+      {
+        "Explicacion": "Cuando S₁ representa el nombre de un país y S₂ un producto, S₁ の S₂ indica el lugar o país donde se fabrica S₂. Cuando S₁ representa el nombre de una empresa y S₂ el producto, S₁ の S₂ significa que S₂ está hecho por S₁. Es similar al término en inglés 'made in'.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿De dónde es esta computadora? Es una computadora de China.",
+            "EjemploJap": "これはどこのコンピューターですか。ちゅうごくのコンピューターです"
+          },
+          {
+            "EjemploEsp": "¿De qué marca es esta computadora? Es una computadora Lenovo.",
+            "EjemploJap": "これはどこのコンピューターですか。レノボのコンピューターです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 20,
+    "CapituloId": 3,
+    "Titulo": "お〜 (prefijo honorífico)",
+    "Explicaciones": [
+      {
+        "Explicacion": "El prefijo お〜 se agrega a ciertas palabras que, al referirse al oyente o a una tercera persona, se usa para expresar respeto por parte del hablante.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿De qué país es usted?",
+            "EjemploJap": "おくにはどちらですか"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 21,
+    "CapituloId": 4,
+    "Titulo": "(hora)〜じ (minuto)〜ふん です",
+    "Explicaciones": [
+      {
+        "Explicacion": "Para expresar la hora, se agregan los sufijos del contador 'じ' (para las horas) y 'ふん/ぷん' (para los minutos). Los números cambian según el sufijo.",
+        "Ejemplos": [
+
+          {
+            "EjemploEsp": "¿Qué hora es?",
+            "EjemploJap": "いまなんじですか"
+          },
+          {
+            "EjemploEsp": "07:10 AM",
+            "EjemploJap": "ごぜんしちじじゅっぷんです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Para las horas se usa el sufijo じ, y algunos números cambian su pronunciación:",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "1:00",
+            "EjemploJap": "いちじ"
+          },
+          {
+            "EjemploEsp": "4:00",
+            "EjemploJap": "よじ"
+          },
+          {
+            "EjemploEsp": "7:00",
+            "EjemploJap": "しちじ"
+          },
+          {
+            "EjemploEsp": "9:00",
+            "EjemploJap": "くじ"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Para los minutos se usa el sufijo ふん o っぷん dependiendo del número. Los que terminan en 1, 3, 4, 6, 8, 10 usan っぷん y cambian su forma.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "1 minuto",
+            "EjemploJap": "いっぷん"
+          },
+          {
+            "EjemploEsp": "3 minutos",
+            "EjemploJap": "さんぷん"
+          },
+          {
+            "EjemploEsp": "6 minutos",
+            "EjemploJap": "ろっぷん"
+          },
+          {
+            "EjemploEsp": "8 minutos",
+            "EjemploJap": "はっぷん"
+          },
+          {
+            "EjemploEsp": "10 minutos",
+            "EjemploJap": "じゅっぷん"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 22,
+    "CapituloId": 4,
+    "Titulo": "Vます / Vません / Vました / Vませんでした",
+    "Explicaciones": [
+      {
+        "Explicacion": "Vます funciona como predicado en una oración. La forma ます expresa cortesía del hablante y no modifica al objeto.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Estudio todos los días.",
+            "EjemploJap": "まいにちべんきょうします"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Estas formas también expresan hechos o decisiones. Se usan tanto para indicar acciones en el futuro como en el pasado, incluyendo formas negativas. La conjugación es:\nPresente afirmativo: おきます\nPresente negativo: おきません\nPasado afirmativo: おきました\nPasado negativo: おきませんでした",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Me levanto a las 6:00 todos los días.",
+            "EjemploJap": "まいにちろくじにおきます"
+          },
+          {
+            "EjemploEsp": "Ayer me levanté a las 9:00 p.m.",
+            "EjemploJap": "きのうくじにおきました"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Para hacer una oración interrogativa, se agrega la partícula か al final. El orden de palabras no cambia. Si la pregunta es negativa (ませんか), se responde はい para aceptar y いいえ para rechazar.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿Estudió ayer? Sí, estudié.",
+            "EjemploJap": "きのうべんきょうしましたか。はい、べんきょうしました"
+          },
+          {
+            "EjemploEsp": "¿Estudió ayer? No, no estudié.",
+            "EjemploJap": "きのうべんきょうしましたか。いいえ、べんきょうしませんでした"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 23,
+    "CapituloId": 4,
+    "Titulo": "S (Tiempo) に V",
+    "Explicaciones": [
+      {
+        "Explicacion": "Colocando la partícula に después de un sustantivo que expresa tiempo, se indica el momento en que sucede la acción. Se emplea en momentos que ocurren en un punto específico del tiempo. En notas de clase, se aclara que に no se usa con intervalos amplios como 'cuando era chico'.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Me levanto a las 6:30.",
+            "EjemploJap": "ろくじはんにおきます"
+          },
+          {
+            "EjemploEsp": "El domingo trabajo.",
+            "EjemploJap": "にちようびにはたらきます"
+          },
+          {
+            "EjemploEsp": "Ayer estudié.",
+            "EjemploJap": "きのうにべんきょうしました"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 24,
+    "CapituloId": 4,
+    "Titulo": "S₁ から S₂ まで",
+    "Explicaciones": [
+      {
+        "Explicacion": "La estructura から marca el punto inicial de tiempo o lugar, y まで indica el punto final. Se usa para expresar desde cuándo hasta cuándo sucede una acción o estado.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Estudio desde las 9 hasta las 5.",
+            "EjemploJap": "くじからごじまでべんきょうします"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Aunque muchas veces los elementos marcados con から y まで son tiempos, también puede aplicarse a lugares o situaciones.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Trabajo desde las 9.",
+            "EjemploJap": "くじからはたらきます"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Cuando se indican horarios o fechas de inicio y fin de una actividad, se usan las partículas から y まで para señalar desde cuándo hasta cuándo ocurre algo. En este caso, no hay verbo, solo se informa una franja de tiempo.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Los lunes, tengo clase desde las 9 hasta las 3.",
+            "EjemploJap": "げつようびはくじからさんじまでです"
+          },
+          {
+            "EjemploEsp": "El descanso del mediodía es desde las 12.",
+            "EjemploJap": "ひるやすみはじゅうにじからです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 25,
+    "CapituloId": 4,
+    "Titulo": "S₁ と S₂",
+    "Explicaciones": [
+      {
+        "Explicacion": "La partícula と conecta dos sustantivos y equivale a la conjunción 'y'.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Los lunes, descanso los sábados y domingos.",
+            "EjemploJap": "げつようびのやすみはどようびとにちようびです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 25,
+    "CapituloId": 4,
+    "Titulo": "ね (partícula final)",
+    "Explicaciones": [
+      {
+        "Explicacion": "La partícula ね al final de una oración se usa para confirmar o compartir sentimientos con el oyente. También puede expresar acuerdo o pedir aprobación cuando se asume que el oyente comparte la información o emoción.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Estudio hasta las 10 todos los días. Duro, pero ¿no?",
+            "EjemploJap": "まいにちじゅうじまでべんきょうします。たいへんですね"
+          },
+          {
+            "EjemploEsp": "El número de teléfono del Sr. Kimura es 871-6843, ¿verdad?",
+            "EjemploJap": "きむらさんのでんわばんごうは871の6843ですね"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -1545,5 +1545,103 @@
     "Jap": "すぺいんご",
     "Esp": "Idioma español",
     "Categoria": "Idiomas"
+  },
+  {
+    "Id": 224,
+    "CapituloId": 4,
+    "Jap": "げつようび",
+    "Esp": "Lunes",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 225,
+    "CapituloId": 4,
+    "Jap": "かようび",
+    "Esp": "Martes",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 226,
+    "CapituloId": 4,
+    "Jap": "すいようび",
+    "Esp": "Miércoles",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 227,
+    "CapituloId": 4,
+    "Jap": "もくようび",
+    "Esp": "Jueves",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 228,
+    "CapituloId": 4,
+    "Jap": "きんようび",
+    "Esp": "Viernes",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 229,
+    "CapituloId": 4,
+    "Jap": "どようび",
+    "Esp": "Sábado",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 230,
+    "CapituloId": 4,
+    "Jap": "にちようび",
+    "Esp": "Domingo",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 231,
+    "CapituloId": 4,
+    "Jap": "たいへんですね",
+    "Esp": "¡Qué duro! / ¡Cuánto lo siento!",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 232,
+    "CapituloId": 4,
+    "Jap": "ばんごう",
+    "Esp": "Número",
+    "Categoria": "Objetos"
+  },
+  {
+    "Id": 233,
+    "CapituloId": 4,
+    "Jap": "なんばん",
+    "Esp": "¿Qué número?",
+    "Categoria": "Preguntas"
+  },
+  {
+    "Id": 234,
+    "CapituloId": 4,
+    "Jap": "ニューヨーク",
+    "Esp": "Nueva York",
+    "Categoria": "Geografía"
+  },
+  {
+    "Id": 235,
+    "CapituloId": 4,
+    "Jap": "ロサンゼルス",
+    "Esp": "Los Ángeles",
+    "Categoria": "Geografía"
+  },
+  {
+    "Id": 236,
+    "CapituloId": 4,
+    "Jap": "ペキン",
+    "Esp": "Pekín",
+    "Categoria": "Geografía"
+  },
+  {
+    "Id": 237,
+    "CapituloId": 4,
+    "Jap": "ロンドン",
+    "Esp": "Londres",
+    "Categoria": "Geografía"
   }
 ]

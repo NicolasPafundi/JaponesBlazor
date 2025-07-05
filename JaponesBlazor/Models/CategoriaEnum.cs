@@ -15,6 +15,7 @@ namespace JaponesBlazor.Models
         Idiomas,
         Verbos,
         Tiempo,
-        AnimalesYComida
+        AnimalesYComida,
+        DiasDeLaSemana
     }
 }
