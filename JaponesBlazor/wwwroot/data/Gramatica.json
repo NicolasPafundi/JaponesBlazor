@@ -381,12 +381,20 @@
         "Explicacion": "どこ se usa para preguntar por el lugar y どちら por la dirección. どちら también puede usarse para preguntar por el lugar de manera más cortés.",
         "Ejemplos": [
           {
-            "EjemploEsp": "¿Dónde está el niño? Está allí.",
-            "EjemploJap": "おとこのこはどこですか。あそこです"
+            "EjemploEsp": "¿Dónde está el niño?",
+            "EjemploJap": "おとこのこはどこですか"
           },
           {
-            "EjemploEsp": "¿Dónde está el ascensor? Está allí.",
-            "EjemploJap": "エレベーターはどちらですか。あちらです"
+            "EjemploEsp": "Está allí.",
+            "EjemploJap": "あそこです"
+          },
+          {
+            "EjemploEsp": "¿Dónde está el ascensor?",
+            "EjemploJap": "エレベーターはどちらですか"
+          },
+          {
+            "EjemploEsp": "Está allí.",
+            "EjemploJap": "あちらです"
           }
         ]
       },
@@ -414,12 +422,20 @@
         "Explicacion": "Cuando S₁ representa el nombre de un país y S₂ un producto, S₁ の S₂ indica el lugar o país donde se fabrica S₂. Cuando S₁ representa el nombre de una empresa y S₂ el producto, S₁ の S₂ significa que S₂ está hecho por S₁. Es similar al término en inglés 'made in'.",
         "Ejemplos": [
           {
-            "EjemploEsp": "¿De dónde es esta computadora? Es una computadora de China.",
-            "EjemploJap": "これはどこのコンピューターですか。ちゅうごくのコンピューターです"
+            "EjemploEsp": "¿De dónde es esta computadora?",
+            "EjemploJap": "これはどこのコンピューターですか"
           },
           {
-            "EjemploEsp": "¿De qué marca es esta computadora? Es una computadora Lenovo.",
-            "EjemploJap": "これはどこのコンピューターですか。レノボのコンピューターです"
+            "EjemploEsp": "Es una computadora de China",
+            "EjemploJap": "ちゅうごくのコンピューターです"
+          },
+          {
+            "EjemploEsp": "¿De qué marca es esta computadora?",
+            "EjemploJap": "これはどこのコンピューターですか"
+          },
+          {
+            "EjemploEsp": "Es una computadora Lenovo",
+            "EjemploJap": "レノボのコンピューターです"
           }
         ]
       }
@@ -539,12 +555,20 @@
         "Explicacion": "Para hacer una oración interrogativa, se agrega la partícula か al final. El orden de palabras no cambia. Si la pregunta es negativa (ませんか), se responde はい para aceptar y いいえ para rechazar.",
         "Ejemplos": [
           {
-            "EjemploEsp": "¿Estudió ayer? Sí, estudié.",
-            "EjemploJap": "きのうべんきょうしましたか。はい、べんきょうしました"
+            "EjemploEsp": "¿Estudió ayer?",
+            "EjemploJap": "きのうべんきょうしましたか"
           },
           {
-            "EjemploEsp": "¿Estudió ayer? No, no estudié.",
-            "EjemploJap": "きのうべんきょうしましたか。いいえ、べんきょうしませんでした"
+            "EjemploEsp": "Sí, estudié",
+            "EjemploJap": "はい、べんきょうしました"
+          },
+          {
+            "EjemploEsp": "¿Estudió ayer?",
+            "EjemploJap": "きのうべんきょうしましたか"
+          },
+          {
+            "EjemploEsp": "No, no estudié.",
+            "EjemploJap": "いいえ、べんきょうしませんでした"
           }
         ]
       }
@@ -601,8 +625,8 @@
         "Explicacion": "Cuando se indican horarios o fechas de inicio y fin de una actividad, se usan las partículas から y まで para señalar desde cuándo hasta cuándo ocurre algo. En este caso, no hay verbo, solo se informa una franja de tiempo.",
         "Ejemplos": [
           {
-            "EjemploEsp": "Los lunes, tengo clase desde las 9 hasta las 3.",
-            "EjemploJap": "げつようびはくじからさんじまでです"
+            "EjemploEsp": "Los bancos están abiertos desde las 9 hasta las 3",
+            "EjemploJap": "ぎんこうは9じから3じまでです"
           },
           {
             "EjemploEsp": "El descanso del mediodía es desde las 12.",
@@ -621,8 +645,8 @@
         "Explicacion": "La partícula と conecta dos sustantivos y equivale a la conjunción 'y'.",
         "Ejemplos": [
           {
-            "EjemploEsp": "Los lunes, descanso los sábados y domingos.",
-            "EjemploJap": "げつようびのやすみはどようびとにちようびです"
+            "EjemploEsp": "Los bancos estan cerrados los sabados y los domingos",
+            "EjemploJap": "ぎんこうのやすみはどようびとにちようびです"
           }
         ]
       }
@@ -637,8 +661,12 @@
         "Explicacion": "La partícula ね al final de una oración se usa para confirmar o compartir sentimientos con el oyente. También puede expresar acuerdo o pedir aprobación cuando se asume que el oyente comparte la información o emoción.",
         "Ejemplos": [
           {
-            "EjemploEsp": "Estudio hasta las 10 todos los días. Duro, pero ¿no?",
-            "EjemploJap": "まいにちじゅうじまでべんきょうします。たいへんですね"
+            "EjemploEsp": "Estudio hasta las 10 todos los días",
+            "EjemploJap": "まいにちじゅうじまでべんきょうします"
+          },
+          {
+            "EjemploEsp": "Debe ser muy duro ¿no?",
+            "EjemploJap": "たいへんですね"
           },
           {
             "EjemploEsp": "El número de teléfono del Sr. Kimura es 871-6843, ¿verdad?",
