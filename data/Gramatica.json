@@ -1,0 +1,679 @@
+﻿[
+  {
+    "Id": 1,
+    "CapituloId": 1,
+    "Titulo": "S1 は S2 です",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- は: la partícula は indica que el S1 que le precede es el elemento principal de la oración. El hablante añade は a la palabra que corresponde al objeto del cual desea hablar y así forma la oración agregando diversas descripciones sobre sí mismo.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Yo soy Mike Miller",
+            "EjemploJap": "わたしはマイク・ミラーです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "2- です: los sustantivos usados con です funcionan como predicado. です indica el juicio o afirmación y también transmite constancia por parte del hablante con relación al oyente. です cambia de forma en caso de oración negativa o en tiempo pretérito.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Yo soy empleado de una empresa",
+            "EjemploJap": "わたしはかいしゃいんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "CapituloId": 1,
+    "Titulo": "S1 は S2 じゃありません",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- じゃ: es la forma negativa de です. じゃありません se emplea en la conversación cotidiana. En discursos o escritos formales se dice ではありません.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El señor Miller no es estudiante",
+            "EjemploJap": "ミラーさんはがくせいじゃありません"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "CapituloId": 1,
+    "Titulo": "S1 は S2 ですか",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- か: la partícula か es usada para expresar duda, inseguridad, etc., por parte del hablante. Agregando か al final de una oración se puede formar una oración interrogativa. Normalmente la entonación se torna ascendente al final.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿El señor Miller es estadounidense?",
+            "EjemploJap": "ミラーさんはアメリカじんですか"
+          },
+          {
+            "EjemploEsp": "Sí, es estadounidense",
+            "EjemploJap": "はい、アメリカじんです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "2- Oración interrogativa que exige una respuesta positiva o negativa: se obtiene la forma interrogativa agregando la partícula か al final de una oración sin alterar el orden de las palabras. Esta forma se utiliza para confirmar si el contenido es correcto o no, y el oyente responde con sí/no (はい / いいえ).",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿El señor Miller es profesor?",
+            "EjemploJap": "ミラーさんはせんせいですか"
+          },
+          {
+            "EjemploEsp": "No, no es profesor",
+            "EjemploJap": "いいえ、せんせいじゃありません"
+          }
+        ]
+      },
+      {
+        "Explicacion": "3- Oración interrogativa con la partícula か: la parte que se desea preguntar es reemplazada por la partícula interrogativa. El orden de las palabras no varía, simplemente se agrega か al final de la oración.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿Quién es aquella persona?",
+            "EjemploJap": "あのひとはだれですか"
+          },
+          {
+            "EjemploEsp": "Es el señor Miller",
+            "EjemploJap": "ミラーさんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "CapituloId": 1,
+    "Titulo": "S1 も S2",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- Cuando se hace una afirmación con la idea de que un hecho similar ya ha ocurrido, se usa も.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El señor Miller también es empleado de una empresa.",
+            "EjemploJap": "ミラーさんもかいしゃいんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "CapituloId": 1,
+    "Titulo": "S1 の S2",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- Cuando S1 modifica a S2, se conectan con la partícula の. En este caso, S1 representa un organismo o algún grupo al que pertenece S2.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El señor Miller es empleado de IMC.",
+            "EjemploJap": "ミラーさんはアイエムシーのかいしゃいんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 6,
+    "CapituloId": 1,
+    "Titulo": "～さん",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- En japonés se agrega さん al apellido o nombre del oyente o de una tercera persona. Dado que さん implica respeto, no se debe agregar al nombre del hablante mismo. En el caso de niños, en lugar de さん, se usa ちゃん como expresión de cariño. Normalmente, al referirse directamente a otra persona cuyo nombre se conoce, no se usa あなた. En general, se le dirige la palabra agregando さん a su nombre.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El señor Miller",
+            "EjemploJap": "ミラーさん"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 7,
+    "CapituloId": 2,
+    "Titulo": "これ/それ/あれ",
+    "Explicaciones": [
+      {
+        "Explicacion": "1- Son pronombres demostrativos y funcionan gramaticalmente como sustantivos. これ se refiere a objetos próximos al hablante. それ se refiere a objetos próximos al oyente. あれ se refiere a objetos que están lejos tanto del hablante como del oyente.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Eso es un diccionario?",
+            "EjemploJap": "それはじしょですか"
+          },
+          {
+            "EjemploEsp": "De quien es este paraguas?",
+            "EjemploJap": "これはだれのかさですか"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 8,
+    "CapituloId": 2,
+    "Titulo": "この S / その S / あの S",
+    "Explicaciones": [
+      {
+        "Explicacion": "Son adjetivos demostrativos que modifican sustantivos.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Este libro es mio",
+            "EjemploJap": "このほんはれたしのぞす"
+          },
+          {
+            "EjemploEsp": "Quien es aquella persona",
+            "EjemploJap": "あのかたはどなたですか"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 9,
+    "CapituloId": 2,
+    "Titulo": "そうです",
+    "Explicaciones": [
+      {
+        "Explicacion": "En el caso de una oración sustantiva, normalmente el término そう se usa para contestar afirmativamente a una pregunta que requiere una respuesta afirmativa o negativa. La respuesta afirmativa en este caso es はい、そうです.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Si, asi es (lo es)",
+            "EjemploJap": "はい、そうぞす"
+          }
+        ]
+      },
+      {
+        "Explicacion": "En caso de una respuesta negativa, generalmente no se responde con そう. En su lugar, en la mayoría de los casos, se usa ちがいます ('no lo es') o se expresa la respuesta correcta.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "No, no lo es",
+            "EjemploJap": "ちがいます"
+          },
+          {
+            "EjemploEsp": "No, es una lapicera",
+            "EjemploJap": "いいえ、ボールペンです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 10,
+    "CapituloId": 2,
+    "Titulo": "Oración1 か, Oración2 か",
+    "Explicaciones": [
+      {
+        "Explicacion": "En una oracion interlativa que requiere que el oyente seleccione la respuesta correcta de entre dos o mas oraciones interrogativas. Al contestar a este tipo de pregunta, se selecciona la alternativa sin usar はい o いいえ.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Esto es un libro o una revista?",
+            "EjemploJap": "これはほんですか、ざっしですか"
+          },
+          {
+            "EjemploEsp": "Es una revista",
+            "EjemploJap": "ざっしです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 11,
+    "CapituloId": 2,
+    "Titulo": "S1 の S2",
+    "Explicaciones": [
+      {
+        "Explicacion": "En el capitulo 1 vimos que se conectan S1 y S2 con の cuando S1 califica a の. En este capitulo 2 se aprende las formas de usar の abajo indicadas:",
+        "Ejemplos": [
+        ]
+      },
+      {
+        "Explicacion": "1- S1 Aclara que es S2",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Este es un libro de computacion",
+            "EjemploJap": "これはコンピューターのほんです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "2- S1 Aclara a quien pertenece a S2",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Este es mi libro",
+            "EjemploJap": "これはわたしのほんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 12,
+    "CapituloId": 2,
+    "Titulo": "の como sustitutivo del S",
+    "Explicaciones": [
+      {
+        "Explicacion": "La particula の se usa en el lugar del sustantivo que aparecio anteriormente. Se usa の en el lugar de objetos, pero nunca en el lugar de personas.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "De quien es aquella maleta?",
+            "EjemploJap": "あれはだれのかばんですか"
+          },
+          {
+            "EjemploEsp": "Es de el señor Miller",
+            "EjemploJap": "ミラーさんのです"
+          },
+          {
+            "EjemploEsp": "Esta maleta es suya?",
+            "EjemploJap": "このかばんはあなたのですか"
+          },
+          {
+            "EjemploEsp": "No, no es mia",
+            "EjemploJap": "いいえ、わたしのじゃありません"
+          },
+          {
+            "EjemploEsp": "El señor Miller es empleado de IMC?",
+            "EjemploJap": "ミラーさんは IMCのしゃいんですか"
+          },
+          {
+            "EjemploEsp": "Si, es empleado de IMC",
+            "EjemploJap": "はい、IMCのしゃいんです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 13,
+    "CapituloId": 2,
+    "Titulo": "お～",
+    "Explicaciones": [
+      {
+        "Explicacion": "Cuando se agrega el prefijo お a un sustantivo, se expresa cortesia.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Souvenir (Cortez)",
+            "EjemploJap": "おみやげ"
+          },
+          {
+            "EjemploEsp": "Bebida alcoholica (Cortez)",
+            "EjemploJap": "おさけ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 14,
+    "CapituloId": 2,
+    "Titulo": "そうですか",
+    "Explicaciones": [
+      {
+        "Explicacion": "Se emplea esta expresion para manifestar que una persona a entendido la informacion recibida. Se pronuncia con la entonacion descendiente.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Este paraguas es suyo?",
+            "EjemploJap": "このかさはあなたのですか"
+          },
+          {
+            "EjemploEsp": "No, no lo es, es del señor Miller",
+            "EjemploJap": "いいえ、ちがいます。ミラーさんのです"
+          },
+          {
+            "EjemploEsp": "Ah, si? / Ya veo",
+            "EjemploJap": "そうですか"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 15,
+    "CapituloId": 3,
+    "Titulo": "ここ / そこ / あそこ / こちら / そちら / あちら",
+    "Explicaciones": [
+      {
+        "Explicacion": "Se utilizan ここ / そこ / あそこ para indicar lugares. ここ es el lugar donde está el hablante, そこ donde está el oyente y あそこ es un lugar distante de ambos. こちら / そちら / あちら son formas más educadas de decir lo mismo y también se usan para indicar dirección o referirse a personas, empresas, etc.",
+        "Ejemplos": []
+      },
+      {
+        "Explicacion": "Cuando el hablante considera que el oyente está en su mismo entorno, se usa そこ en lugar de あそこ. En cambio, あそこ se usa para un lugar totalmente ajeno.",
+        "Ejemplos": []
+      }
+    ]
+  },
+  {
+    "Id": 16,
+    "CapituloId": 3,
+    "Titulo": "ここ は lugar です",
+    "Explicaciones": [
+      {
+        "Explicacion": "Esta estructura se usa para indicar el lugar donde se encuentra alguien o algo.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "El niño está allí.",
+            "EjemploJap": "おとこのこはあそこです"
+          },
+          {
+            "EjemploEsp": "El teléfono de la señora Tanaka.",
+            "EjemploJap": "たなかさんのでんわばんごうです"
+          },
+          {
+            "EjemploEsp": "La estación donde tomo el tren es Shinjuku.",
+            "EjemploJap": "わたしがのるえきはしんじゅくです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 17,
+    "CapituloId": 3,
+    "Titulo": "どこ / どちら",
+    "Explicaciones": [
+      {
+        "Explicacion": "どこ se usa para preguntar por el lugar y どちら por la dirección. どちら también puede usarse para preguntar por el lugar de manera más cortés.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿Dónde está el niño?",
+            "EjemploJap": "おとこのこはどこですか"
+          },
+          {
+            "EjemploEsp": "Está allí.",
+            "EjemploJap": "あそこです"
+          },
+          {
+            "EjemploEsp": "¿Dónde está el ascensor?",
+            "EjemploJap": "エレベーターはどちらですか"
+          },
+          {
+            "EjemploEsp": "Está allí.",
+            "EjemploJap": "あちらです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Al preguntar por el nombre de país, compañía, escuela, empresa, etc., se puede preguntar el lugar con どこ y どちら en lugar de なん.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿A qué colegio vas?",
+            "EjemploJap": "がっこうはどこですか"
+          },
+          {
+            "EjemploEsp": "¿En qué empresa trabaja?",
+            "EjemploJap": "かいしゃはどちらですか"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 18,
+    "CapituloId": 3,
+    "Titulo": "S₁ の S₂",
+    "Explicaciones": [
+      {
+        "Explicacion": "Cuando S₁ representa el nombre de un país y S₂ un producto, S₁ の S₂ indica el lugar o país donde se fabrica S₂. Cuando S₁ representa el nombre de una empresa y S₂ el producto, S₁ の S₂ significa que S₂ está hecho por S₁. Es similar al término en inglés 'made in'.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿De dónde es esta computadora?",
+            "EjemploJap": "これはどこのコンピューターですか"
+          },
+          {
+            "EjemploEsp": "Es una computadora de China",
+            "EjemploJap": "ちゅうごくのコンピューターです"
+          },
+          {
+            "EjemploEsp": "¿De qué marca es esta computadora?",
+            "EjemploJap": "これはどこのコンピューターですか"
+          },
+          {
+            "EjemploEsp": "Es una computadora Lenovo",
+            "EjemploJap": "レノボのコンピューターです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 20,
+    "CapituloId": 3,
+    "Titulo": "お〜 (prefijo honorífico)",
+    "Explicaciones": [
+      {
+        "Explicacion": "El prefijo お〜 se agrega a ciertas palabras que, al referirse al oyente o a una tercera persona, se usa para expresar respeto por parte del hablante.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿De qué país es usted?",
+            "EjemploJap": "おくにはどちらですか"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 21,
+    "CapituloId": 4,
+    "Titulo": "(hora)〜じ (minuto)〜ふん です",
+    "Explicaciones": [
+      {
+        "Explicacion": "Para expresar la hora, se agregan los sufijos del contador 'じ' (para las horas) y 'ふん/ぷん' (para los minutos). Los números cambian según el sufijo.",
+        "Ejemplos": [
+
+          {
+            "EjemploEsp": "¿Qué hora es?",
+            "EjemploJap": "いまなんじですか"
+          },
+          {
+            "EjemploEsp": "07:10 AM",
+            "EjemploJap": "ごぜんしちじじゅっぷんです"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Para las horas se usa el sufijo じ, y algunos números cambian su pronunciación:",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "1:00",
+            "EjemploJap": "いちじ"
+          },
+          {
+            "EjemploEsp": "4:00",
+            "EjemploJap": "よじ"
+          },
+          {
+            "EjemploEsp": "7:00",
+            "EjemploJap": "しちじ"
+          },
+          {
+            "EjemploEsp": "9:00",
+            "EjemploJap": "くじ"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Para los minutos se usa el sufijo ふん o っぷん dependiendo del número. Los que terminan en 1, 3, 4, 6, 8, 10 usan っぷん y cambian su forma.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "1 minuto",
+            "EjemploJap": "いっぷん"
+          },
+          {
+            "EjemploEsp": "3 minutos",
+            "EjemploJap": "さんぷん"
+          },
+          {
+            "EjemploEsp": "6 minutos",
+            "EjemploJap": "ろっぷん"
+          },
+          {
+            "EjemploEsp": "8 minutos",
+            "EjemploJap": "はっぷん"
+          },
+          {
+            "EjemploEsp": "10 minutos",
+            "EjemploJap": "じゅっぷん"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 22,
+    "CapituloId": 4,
+    "Titulo": "Vます / Vません / Vました / Vませんでした",
+    "Explicaciones": [
+      {
+        "Explicacion": "Vます funciona como predicado en una oración. La forma ます expresa cortesía del hablante y no modifica al objeto.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Estudio todos los días.",
+            "EjemploJap": "まいにちべんきょうします"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Estas formas también expresan hechos o decisiones. Se usan tanto para indicar acciones en el futuro como en el pasado, incluyendo formas negativas. La conjugación es:\nPresente afirmativo: おきます\nPresente negativo: おきません\nPasado afirmativo: おきました\nPasado negativo: おきませんでした",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Me levanto a las 6:00 todos los días.",
+            "EjemploJap": "まいにちろくじにおきます"
+          },
+          {
+            "EjemploEsp": "Ayer me levanté a las 9:00 p.m.",
+            "EjemploJap": "きのうくじにおきました"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Para hacer una oración interrogativa, se agrega la partícula か al final. El orden de palabras no cambia. Si la pregunta es negativa (ませんか), se responde はい para aceptar y いいえ para rechazar.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿Estudió ayer?",
+            "EjemploJap": "きのうべんきょうしましたか"
+          },
+          {
+            "EjemploEsp": "Sí, estudié",
+            "EjemploJap": "はい、べんきょうしました"
+          },
+          {
+            "EjemploEsp": "¿Estudió ayer?",
+            "EjemploJap": "きのうべんきょうしましたか"
+          },
+          {
+            "EjemploEsp": "No, no estudié.",
+            "EjemploJap": "いいえ、べんきょうしませんでした"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 23,
+    "CapituloId": 4,
+    "Titulo": "S (Tiempo) に V",
+    "Explicaciones": [
+      {
+        "Explicacion": "Colocando la partícula に después de un sustantivo que expresa tiempo, se indica el momento en que sucede la acción. Se emplea en momentos que ocurren en un punto específico del tiempo. En notas de clase, se aclara que に no se usa con intervalos amplios como 'cuando era chico'.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Me levanto a las 6:30.",
+            "EjemploJap": "ろくじはんにおきます"
+          },
+          {
+            "EjemploEsp": "El domingo trabajo.",
+            "EjemploJap": "にちようびにはたらきます"
+          },
+          {
+            "EjemploEsp": "Ayer estudié.",
+            "EjemploJap": "きのうにべんきょうしました"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 24,
+    "CapituloId": 4,
+    "Titulo": "S₁ から S₂ まで",
+    "Explicaciones": [
+      {
+        "Explicacion": "La estructura から marca el punto inicial de tiempo o lugar, y まで indica el punto final. Se usa para expresar desde cuándo hasta cuándo sucede una acción o estado.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Estudio desde las 9 hasta las 5.",
+            "EjemploJap": "くじからごじまでべんきょうします"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Aunque muchas veces los elementos marcados con から y まで son tiempos, también puede aplicarse a lugares o situaciones.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Trabajo desde las 9.",
+            "EjemploJap": "くじからはたらきます"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Cuando se indican horarios o fechas de inicio y fin de una actividad, se usan las partículas から y まで para señalar desde cuándo hasta cuándo ocurre algo. En este caso, no hay verbo, solo se informa una franja de tiempo.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Los bancos están abiertos desde las 9 hasta las 3",
+            "EjemploJap": "ぎんこうは9じから3じまでです"
+          },
+          {
+            "EjemploEsp": "El descanso del mediodía es desde las 12.",
+            "EjemploJap": "ひるやすみはじゅうにじからです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 25,
+    "CapituloId": 4,
+    "Titulo": "S₁ と S₂",
+    "Explicaciones": [
+      {
+        "Explicacion": "La partícula と conecta dos sustantivos y equivale a la conjunción 'y'.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Los bancos estan cerrados los sabados y los domingos",
+            "EjemploJap": "ぎんこうのやすみはどようびとにちようびです"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 25,
+    "CapituloId": 4,
+    "Titulo": "ね (partícula final)",
+    "Explicaciones": [
+      {
+        "Explicacion": "La partícula ね al final de una oración se usa para confirmar o compartir sentimientos con el oyente. También puede expresar acuerdo o pedir aprobación cuando se asume que el oyente comparte la información o emoción.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Estudio hasta las 10 todos los días",
+            "EjemploJap": "まいにちじゅうじまでべんきょうします"
+          },
+          {
+            "EjemploEsp": "Debe ser muy duro ¿no?",
+            "EjemploJap": "たいへんですね"
+          },
+          {
+            "EjemploEsp": "El número de teléfono del Sr. Kimura es 871-6843, ¿verdad?",
+            "EjemploJap": "きむらさんのでんわばんごうは871の6843ですね"
+          }
+        ]
+      }
+    ]
+  }
+]
