@@ -16,6 +16,8 @@ namespace JaponesBlazor.Models
         Verbos,
         Tiempo,
         AnimalesYComida,
-        DiasDeLaSemana
+        DiasDeLaSemana,
+        Meses,
+        Transporte
     }
 }

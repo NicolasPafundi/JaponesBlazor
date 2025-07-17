@@ -1643,5 +1643,495 @@
     "Jap": "ロンドン",
     "Esp": "Londres",
     "Categoria": "Geografía"
+  },
+  {
+    "Id": 238,
+    "CapituloId": 5,
+    "Jap": "いきます",
+    "Esp": "Ir",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 239,
+    "CapituloId": 5,
+    "Jap": "きます",
+    "Esp": "Venir",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 240,
+    "CapituloId": 5,
+    "Jap": "かえります",
+    "Esp": "Regresar / Volver",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 241,
+    "CapituloId": 5,
+    "Jap": "がっこう",
+    "Esp": "Escuela",
+    "Categoria": "Lugares"
+  },
+  {
+    "Id": 242,
+    "CapituloId": 5,
+    "Jap": "スーパー",
+    "Esp": "Supermercado",
+    "Categoria": "Lugares"
+  },
+  {
+    "Id": 243,
+    "CapituloId": 5,
+    "Jap": "えき",
+    "Esp": "Estación del tren",
+    "Categoria": "Lugares"
+  },
+  {
+    "Id": 244,
+    "CapituloId": 5,
+    "Jap": "ひこうき",
+    "Esp": "Avión",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 245,
+    "CapituloId": 5,
+    "Jap": "ふね",
+    "Esp": "Barco",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 246,
+    "CapituloId": 5,
+    "Jap": "でんしゃ",
+    "Esp": "Tren",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 247,
+    "CapituloId": 5,
+    "Jap": "ちかてつ",
+    "Esp": "Subte / Metro",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 248,
+    "CapituloId": 5,
+    "Jap": "しんかんせん",
+    "Esp": "Tren bala",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 249,
+    "CapituloId": 5,
+    "Jap": "バス",
+    "Esp": "Bus / Colectivo",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 250,
+    "CapituloId": 5,
+    "Jap": "タクシー",
+    "Esp": "Taxi",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 251,
+    "CapituloId": 5,
+    "Jap": "じてんしゃ",
+    "Esp": "Bicicleta",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 252,
+    "CapituloId": 5,
+    "Jap": "あるいて",
+    "Esp": "Caminando / A pie",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 253,
+    "CapituloId": 5,
+    "Jap": "ひと",
+    "Esp": "Persona",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 254,
+    "CapituloId": 5,
+    "Jap": "ともだち",
+    "Esp": "Amigo / Amiga",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 255,
+    "CapituloId": 5,
+    "Jap": "かれ",
+    "Esp": "Él / Novio",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 256,
+    "CapituloId": 5,
+    "Jap": "かのじょ",
+    "Esp": "Ella / Novia",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 257,
+    "CapituloId": 5,
+    "Jap": "かぞく",
+    "Esp": "Familia",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 258,
+    "CapituloId": 5,
+    "Jap": "ひとりで",
+    "Esp": "Solo / Sola",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 259,
+    "CapituloId": 5,
+    "Jap": "せんしゅう",
+    "Esp": "La semana pasada",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 260,
+    "CapituloId": 5,
+    "Jap": "こんしゅう",
+    "Esp": "Esta semana",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 261,
+    "CapituloId": 5,
+    "Jap": "らいしゅう",
+    "Esp": "La próxima semana",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 262,
+    "CapituloId": 5,
+    "Jap": "せんげつ",
+    "Esp": "El mes pasado",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 263,
+    "CapituloId": 5,
+    "Jap": "こんげつ",
+    "Esp": "Este mes",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 264,
+    "CapituloId": 5,
+    "Jap": "らいげつ",
+    "Esp": "El mes que viene",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 265,
+    "CapituloId": 5,
+    "Jap": "きょねん",
+    "Esp": "El año pasado",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 266,
+    "CapituloId": 5,
+    "Jap": "ことし",
+    "Esp": "Este año",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 267,
+    "CapituloId": 5,
+    "Jap": "らいねん",
+    "Esp": "El próximo año",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 268,
+    "CapituloId": 5,
+    "Jap": "いちがつ",
+    "Esp": "Enero",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 269,
+    "CapituloId": 5,
+    "Jap": "にがつ",
+    "Esp": "Febrero",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 270,
+    "CapituloId": 5,
+    "Jap": "さんがつ",
+    "Esp": "Marzo",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 271,
+    "CapituloId": 5,
+    "Jap": "しがつ",
+    "Esp": "Abril",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 272,
+    "CapituloId": 5,
+    "Jap": "ごがつ",
+    "Esp": "Mayo",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 273,
+    "CapituloId": 5,
+    "Jap": "ろくがつ",
+    "Esp": "Junio",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 274,
+    "CapituloId": 5,
+    "Jap": "しちがつ",
+    "Esp": "Julio",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 275,
+    "CapituloId": 5,
+    "Jap": "はちがつ",
+    "Esp": "Agosto",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 276,
+    "CapituloId": 5,
+    "Jap": "くがつ",
+    "Esp": "Septiembre",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 277,
+    "CapituloId": 5,
+    "Jap": "じゅうがつ",
+    "Esp": "Octubre",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 278,
+    "CapituloId": 5,
+    "Jap": "じゅういちがつ",
+    "Esp": "Noviembre",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 279,
+    "CapituloId": 5,
+    "Jap": "じゅうにがつ",
+    "Esp": "Diciembre",
+    "Categoria": "Meses"
+  },
+  {
+    "Id": 280,
+    "CapituloId": 5,
+    "Jap": "なんねん",
+    "Esp": "¿Qué año?",
+    "Categoria": "Preguntas"
+  },
+  {
+    "Id": 281,
+    "CapituloId": 5,
+    "Jap": "なんがつ",
+    "Esp": "¿Qué mes?",
+    "Categoria": "Preguntas"
+  },
+  {
+    "Id": 282,
+    "CapituloId": 5,
+    "Jap": "ついたち",
+    "Esp": "Día 1 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 283,
+    "CapituloId": 5,
+    "Jap": "ふつか",
+    "Esp": "Día 2 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 284,
+    "CapituloId": 5,
+    "Jap": "みっか",
+    "Esp": "Día 3 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 285,
+    "CapituloId": 5,
+    "Jap": "よっか",
+    "Esp": "Día 4 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 286,
+    "CapituloId": 5,
+    "Jap": "いつか",
+    "Esp": "Día 5 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 287,
+    "CapituloId": 5,
+    "Jap": "むいか",
+    "Esp": "Día 6 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 288,
+    "CapituloId": 5,
+    "Jap": "なのか",
+    "Esp": "Día 7 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 289,
+    "CapituloId": 5,
+    "Jap": "ようか",
+    "Esp": "Día 8 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 290,
+    "CapituloId": 5,
+    "Jap": "ここのか",
+    "Esp": "Día 9 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 291,
+    "CapituloId": 5,
+    "Jap": "とおか",
+    "Esp": "Día 10 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 292,
+    "CapituloId": 5,
+    "Jap": "じゅういちにち",
+    "Esp": "Día 11 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 293,
+    "CapituloId": 5,
+    "Jap": "じゅうよっか",
+    "Esp": "Día 14 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 294,
+    "CapituloId": 5,
+    "Jap": "はつか",
+    "Esp": "Día 20 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 295,
+    "CapituloId": 5,
+    "Jap": "にじゅうよっか",
+    "Esp": "Día 24 (del mes)",
+    "Categoria": "DiasDeLaSemana"
+  },
+  {
+    "Id": 296,
+    "CapituloId": 5,
+    "Jap": "なんにち",
+    "Esp": "¿Qué día?",
+    "Categoria": "Preguntas"
+  },
+  {
+    "Id": 297,
+    "CapituloId": 5,
+    "Jap": "いつ",
+    "Esp": "¿Cuándo?",
+    "Categoria": "Preguntas"
+  },
+  {
+    "Id": 298,
+    "CapituloId": 5,
+    "Jap": "たんじょうび",
+    "Esp": "Cumpleaños",
+    "Categoria": "Tiempo"
+  },
+  {
+    "Id": 299,
+    "CapituloId": 5,
+    "Jap": "そうですね",
+    "Esp": "Estoy de acuerdo",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 300,
+    "CapituloId": 5,
+    "Jap": "どういたしまして",
+    "Esp": "De nada",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 301,
+    "CapituloId": 5,
+    "Jap": "〜ばんせん",
+    "Esp": "Andén número ~",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 302,
+    "CapituloId": 5,
+    "Jap": "つぎの",
+    "Esp": "Próximo / siguiente",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 303,
+    "CapituloId": 5,
+    "Jap": "ふつう",
+    "Esp": "Tren común / local",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 304,
+    "CapituloId": 5,
+    "Jap": "きゅうこう",
+    "Esp": "Tren expreso",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 305,
+    "CapituloId": 5,
+    "Jap": "とっきゅう",
+    "Esp": "Tren super expreso",
+    "Categoria": "Transporte"
+  },
+  {
+    "Id": 306,
+    "CapituloId": 5,
+    "Jap": "こうしえん",
+    "Esp": "Nombre de una ciudad cerca de Osaka",
+    "Categoria": "Geografía"
+  },
+  {
+    "Id": 307,
+    "CapituloId": 5,
+    "Jap": "おおさかじょう",
+    "Esp": "Castillo de Osaka",
+    "Categoria": "Geografía"
   }
 ]
