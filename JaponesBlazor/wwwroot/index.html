@@ -61,7 +61,12 @@
             element.style.height = "1px"; // reiniciar altura
             element.style.height = (element.scrollHeight + 2) + "px"; // ajustar
         };
-        </script>
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.published.js');
+        }
+    </script>
 </body>
 
 </html>
