@@ -10,17 +10,17 @@ mkdir _publish
 
 REM Modificar el index.html publicado
 echo ===== CAMBIANDO BASE HREF A /JaponesBlazor/ EN ARCHIVO PUBLICADO =====
-powershell -Command "(Get-Content -Raw 'JaponesBlazor\bin\Release\net8.0\publish\wwwroot\index.html') -replace '<base href=\".*?\" />', '<base href=\"/JaponesBlazor/\" />' | Set-Content 'JaponesBlazor\bin\Release\net8.0\publish\wwwroot\index.html'"
+powershell -Command "(Get-Content -Raw 'JaponesBlazor\bin\Release\net9.0\publish\wwwroot\index.html') -replace '<base href=\".*?\" />', '<base href=\"/JaponesBlazor/\" />' | Set-Content 'JaponesBlazor\bin\Release\net9.0\publish\wwwroot\index.html'"
 
 REM Crear archivo 404.html que redirige a index.html
-echo ^<html^> > JaponesBlazor\bin\Release\net8.0\publish\wwwroot\404.html
-echo   ^<head^> >> JaponesBlazor\bin\Release\net8.0\publish\wwwroot\404.html
-echo     ^<meta http-equiv="refresh" content="0; url=/JaponesBlazor" /^> >> JaponesBlazor\bin\Release\net8.0\publish\wwwroot\404.html
-echo   ^</head^> >> JaponesBlazor\bin\Release\net8.0\publish\wwwroot\404.html
-echo ^</html^> >> JaponesBlazor\bin\Release\net8.0\publish\wwwroot\404.html
+echo ^<html^> > JaponesBlazor\bin\Release\net9.0\publish\wwwroot\404.html
+echo   ^<head^> >> JaponesBlazor\bin\Release\net9.0\publish\wwwroot\404.html
+echo     ^<meta http-equiv="refresh" content="0; url=/JaponesBlazor" /^> >> JaponesBlazor\bin\Release\net9.0\publish\wwwroot\404.html
+echo   ^</head^> >> JaponesBlazor\bin\Release\net9.0\publish\wwwroot\404.html
+echo ^</html^> >> JaponesBlazor\bin\Release\net9.0\publish\wwwroot\404.html
 
 REM Copiar solo el contenido dentro de la subcarpeta correcta
-xcopy /E /I /Y JaponesBlazor\bin\Release\net8.0\publish\wwwroot\* _publish
+xcopy /E /I /Y JaponesBlazor\bin\Release\net9.0\publish\wwwroot\* _publish
 
 REM Crear archivo .nojekyll para evitar procesamiento por Jekyll en GitHub Pages
 type nul > _publish\.nojekyll
