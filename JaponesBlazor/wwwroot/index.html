@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="JaponesBlazor.styles.css" rel="stylesheet" />
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body data-bs-theme="light">
@@ -58,7 +60,12 @@
             element.style.height = "1px"; // reiniciar altura
             element.style.height = (element.scrollHeight + 2) + "px"; // ajustar
         };
-        </script>
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.published.js');
+        }
+    </script>
 </body>
 
 </html>
