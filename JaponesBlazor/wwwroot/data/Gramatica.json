@@ -675,5 +675,86 @@
         ]
       }
     ]
+  },
+  {
+    "Id": 26,
+    "CapituloId": 5,
+    "Titulo": "S (persona / animal) と V",
+    "Explicaciones": [
+      {
+        "Explicacion": "Se emplea la partícula と para indicar que se comparte una acción con otra persona o animal.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Vine a Japon con mi familia",
+            "EjemploJap": "かぞくとにほんへきました"
+          }
+        ]
+      },
+      {
+        "Explicacion": "Cuando actúa solo, se emplea ひとりで ('solo/a solo/a'), en cuyo caso no se emplea la partícula と.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Voy a Tokyo solo",
+            "EjemploJap": "ひとりでとうきょうへいきます"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 27,
+    "CapituloId": 5,
+    "Titulo": "いつ (Cuándo)",
+    "Explicaciones": [
+      {
+        "Explicacion": "Para preguntar por un determinado momento, simplemente se emplea el tiempo interrogativo なん, como por ejemplo なんじ、なんようび、なんがつ、なんいち. Pero hay  casos en los que se usa いつ para preguntar por el momento en que ocurrió o va a ocurrir un hecho, se agrega la partícula に en いつ.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Cuándo viniste a Japón? Vine el 25 de mayo.",
+            "EjemploJap": "いつにほんへきましたか。5がつ25にちにきました"
+          },
+          {
+            "EjemploEsp": "Cuándo vas a Hiroshima? Voy la semana que viene",
+            "EjemploJap": "いつひろしまへいきますか。らいしゅういきます"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 28,
+    "CapituloId": 5,
+    "Titulo": "〜よ",
+    "Explicaciones": [
+      {
+        "Explicacion": "La partícula よ se coloca al final de una oración, y se usa para indicar que el hablante quiere enfatizar la información que el oyente desconoce o mostrar su punto de opinión.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Va este tren a Koshien?",
+            "EjemploJap": "このでんしゃはこうしえんへいきますか"
+          },
+          {
+            "EjemploEsp": " No,no va. El proximo tren local si.",
+            "EjemploJap": "いいえ、いきません。つぎのふつうですよ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 29,
+    "CapituloId": 5,
+    "Titulo": "そうですね",
+    "Explicaciones": [
+      {
+        "Explicacion": "Es una expresión que indica consentimiento o asentimiento con lo que otra parte ha dicho. Existe la expresión usual, そうですね, pero también al uso cuando el hablante se expresa sobre una información que él ha observado. Por eso, decir そうですね se usa para expresar consentimiento o equivalencia con lo que el hablante también ha podido ver o lo que ya tiene conocimiento.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "¿Mañana es domingo, no? Sí, así es.",
+            "EjemploJap": "あした は にちようび ですね。はい、そうですね。"
+          }
+        ]
+      }
+    ]
   }
 ]
