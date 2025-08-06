@@ -679,6 +679,78 @@
   {
     "Id": 26,
     "CapituloId": 5,
+    "Titulo": "S (lugar) へ いきます/きます/かえります",
+    "Explicaciones": [
+      {
+        "Explicacion": "La partícula へ se usa para indicar la dirección o destino de un desplazamiento. Se coloca después del lugar hacia donde se va, viene o regresa.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Voy a Kioto",
+            "EjemploJap": "きょうとへいきます"
+          },
+          {
+            "EjemploEsp": "Vine a Japón",
+            "EjemploJap": "にほんへきました"
+          },
+          {
+            "EjemploEsp": "Regreso a casa",
+            "EjemploJap": "うちへかえります"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 27,
+    "CapituloId": 5,
+    "Titulo": "どこ（へ）も いきません/いきませんでした",
+    "Explicaciones": [
+      {
+        "Explicacion": "Cuando se quiere negar ir a cualquier lugar, se reemplaza el nombre del lugar por un interrogativo y se usa con forma negativa. どこ（へ）も significa 'a ningún lugar'. También se aplica la misma estructura con otros interrogativos como なに (nada) o だれ (nadie) para negar completamente.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "No voy a ningún lugar",
+            "EjemploJap": "どこへもいきません"
+          },
+          {
+            "EjemploEsp": "No voy a comer nada",
+            "EjemploJap": "なにもたべません"
+          },
+          {
+            "EjemploEsp": "No vi a nadie",
+            "EjemploJap": "だれもみませんでした"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 28,
+    "CapituloId": 5,
+    "Titulo": "S (vehículo) で いきます/きます/かえります",
+    "Explicaciones": [
+      {
+        "Explicacion": "La partícula で se usa para indicar el medio o método con el que se realiza una acción. Cuando el sustantivo anterior es un medio de transporte, se especifica que se utiliza ese medio para desplazarse. Si la acción se realiza caminando, no se usa で, sino la forma あるいて.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Voy en tren",
+            "EjemploJap": "でんしゃでいきます"
+          },
+          {
+            "EjemploEsp": "Vine en taxi",
+            "EjemploJap": "タクシーできました"
+          },
+          {
+            "EjemploEsp": "Regreso a casa caminando desde la estación",
+            "EjemploJap": "えきからあるいてかえります"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 29,
+    "CapituloId": 5,
     "Titulo": "S (persona / animal) と V",
     "Explicaciones": [
       {
@@ -702,7 +774,7 @@
     ]
   },
   {
-    "Id": 27,
+    "Id": 30,
     "CapituloId": 5,
     "Titulo": "いつ (Cuándo)",
     "Explicaciones": [
@@ -722,7 +794,7 @@
     ]
   },
   {
-    "Id": 28,
+    "Id": 31,
     "CapituloId": 5,
     "Titulo": "〜よ",
     "Explicaciones": [
@@ -742,7 +814,7 @@
     ]
   },
   {
-    "Id": 29,
+    "Id": 32,
     "CapituloId": 5,
     "Titulo": "そうですね",
     "Explicaciones": [
