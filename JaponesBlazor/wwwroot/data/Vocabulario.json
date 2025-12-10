@@ -2133,5 +2133,372 @@
     "Jap": "おおさかじょう",
     "Esp": "Castillo de Osaka",
     "Categoria": "Geografía"
+  },
+  {
+    "Id": 308,
+    "CapituloId": 6,
+    "Jap": "たべます",
+    "Esp": "Comer",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 309,
+    "CapituloId": 6,
+    "Jap": "のみます",
+    "Esp": "Beber",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 310,
+    "CapituloId": 6,
+    "Jap": "すいます",
+    "Esp": "Fumar (cigarrillo)",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 311,
+    "CapituloId": 6,
+    "Jap": "みます",
+    "Esp": "Ver / Mirar",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 312,
+    "CapituloId": 6,
+    "Jap": "ききます",
+    "Esp": "Escuchar / Oír",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 313,
+    "CapituloId": 6,
+    "Jap": "よみます",
+    "Esp": "Leer",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 314,
+    "CapituloId": 6,
+    "Jap": "かきます",
+    "Esp": "Escribir / Dibujar",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 315,
+    "CapituloId": 6,
+    "Jap": "かいます",
+    "Esp": "Comprar",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 316,
+    "CapituloId": 6,
+    "Jap": "しゃしんをとります",
+    "Esp": "Sacar foto",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 317,
+    "CapituloId": 6,
+    "Jap": "します",
+    "Esp": "Hacer",
+    "Categoria": "Verbos"
+  },
+  {
+    "Id": 318,
+    "CapituloId": 6,
+    "Jap": "あいます",
+    "Esp": "Encontrarse (con amigos)",
+    "Categoria": "Verbos"
+  },
+
+  {
+    "Id": 319,
+    "CapituloId": 6,
+    "Jap": "ごはん",
+    "Esp": "Arroz / Comida (general)",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 320,
+    "CapituloId": 6,
+    "Jap": "あさごはん",
+    "Esp": "Desayuno",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 321,
+    "CapituloId": 6,
+    "Jap": "ひるごはん",
+    "Esp": "Almuerzo",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 322,
+    "CapituloId": 6,
+    "Jap": "ばんごはん",
+    "Esp": "Cena",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 323,
+    "CapituloId": 6,
+    "Jap": "パン",
+    "Esp": "Pan",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 324,
+    "CapituloId": 6,
+    "Jap": "たまご",
+    "Esp": "Huevo",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 325,
+    "CapituloId": 6,
+    "Jap": "ぎゅうにゅう（ミルク）",
+    "Esp": "Leche",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 326,
+    "CapituloId": 6,
+    "Jap": "ジュース",
+    "Esp": "Jugo",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 327,
+    "CapituloId": 6,
+    "Jap": "（お）さけ",
+    "Esp": "Alcohol / Sake",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 328,
+    "CapituloId": 6,
+    "Jap": "ワイン",
+    "Esp": "Vino",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 329,
+    "CapituloId": 6,
+    "Jap": "にく",
+    "Esp": "Carne",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 330,
+    "CapituloId": 6,
+    "Jap": "さかな",
+    "Esp": "Pescado",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 331,
+    "CapituloId": 6,
+    "Jap": "やさい",
+    "Esp": "Verdura",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 332,
+    "CapituloId": 6,
+    "Jap": "くだもの / フルーツ",
+    "Esp": "Fruta",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 333,
+    "CapituloId": 6,
+    "Jap": "みず",
+    "Esp": "Agua",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 334,
+    "CapituloId": 6,
+    "Jap": "おちゃ",
+    "Esp": "Té verde",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 335,
+    "CapituloId": 6,
+    "Jap": "こうちゃ",
+    "Esp": "Té negro",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 336,
+    "CapituloId": 6,
+    "Jap": "コーヒー",
+    "Esp": "Café",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 337,
+    "CapituloId": 6,
+    "Jap": "ビール",
+    "Esp": "Cerveza",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 338,
+    "CapituloId": 6,
+    "Jap": "たばこ",
+    "Esp": "Cigarrillo",
+    "Categoria": "Objetos"
+  },
+
+  {
+    "Id": 339,
+    "CapituloId": 6,
+    "Jap": "てがみ",
+    "Esp": "Carta / Correspondencia",
+    "Categoria": "Objetos"
+  },
+  {
+    "Id": 340,
+    "CapituloId": 6,
+    "Jap": "え",
+    "Esp": "Estampa / Pintura",
+    "Categoria": "Objetos"
+  },
+  {
+    "Id": 341,
+    "CapituloId": 6,
+    "Jap": "みせ",
+    "Esp": "Tienda / Negocio",
+    "Categoria": "Lugares"
+  },
+  {
+    "Id": 342,
+    "CapituloId": 6,
+    "Jap": "レポート",
+    "Esp": "Informe / Reporte",
+    "Categoria": "Objetos"
+  },
+  {
+    "Id": 343,
+    "CapituloId": 6,
+    "Jap": "ビデオ",
+    "Esp": "Video",
+    "Categoria": "Objetos"
+  },
+  {
+    "Id": 344,
+    "CapituloId": 6,
+    "Jap": "にわ",
+    "Esp": "Jardín",
+    "Categoria": "Lugares"
+  },
+  {
+    "Id": 345,
+    "CapituloId": 6,
+    "Jap": "としょかん",
+    "Esp": "Biblioteca",
+    "Categoria": "Lugares"
+  },
+  {
+    "Id": 346,
+    "CapituloId": 6,
+    "Jap": "サッカー（をします）",
+    "Esp": "Fútbol (jugar al fútbol)",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 347,
+    "CapituloId": 6,
+    "Jap": "テニス（をします）",
+    "Esp": "Tenis (jugar al tenis)",
+    "Categoria": "Expresiones"
+  },
+
+  {
+    "Id": 348,
+    "CapituloId": 6,
+    "Jap": "なに",
+    "Esp": "¿Qué?",
+    "Categoria": "Preguntas"
+  },
+  {
+    "Id": 349,
+    "CapituloId": 6,
+    "Jap": "ちょっと",
+    "Esp": "Un poco / Disculpe (cortesía)",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 350,
+    "CapituloId": 6,
+    "Jap": "いつも",
+    "Esp": "Siempre / Normalmente",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 351,
+    "CapituloId": 6,
+    "Jap": "ときどき",
+    "Esp": "A veces",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 352,
+    "CapituloId": 6,
+    "Jap": "それから",
+    "Esp": "Y luego / Después",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 353,
+    "CapituloId": 6,
+    "Jap": "そうですね",
+    "Esp": "Bueno… / Es una buena idea…",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 354,
+    "CapituloId": 6,
+    "Jap": "なんですか",
+    "Esp": "¿Qué desea?",
+    "Categoria": "Preguntas"
+  },
+  {
+    "Id": 355,
+    "CapituloId": 6,
+    "Jap": "わかりました",
+    "Esp": "Entendido",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 356,
+    "CapituloId": 6,
+    "Jap": "また あした",
+    "Esp": "Hasta mañana",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 357,
+    "CapituloId": 6,
+    "Jap": "いっしょに",
+    "Esp": "Juntos / Con",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 358,
+    "CapituloId": 6,
+    "Jap": "ええ",
+    "Esp": "Sí",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 359,
+    "CapituloId": 6,
+    "Jap": "メキシコ",
+    "Esp": "México",
+    "Categoria": "Geografía"
   }
 ]

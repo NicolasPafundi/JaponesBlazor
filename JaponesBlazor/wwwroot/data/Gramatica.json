@@ -822,8 +822,64 @@
         "Explicacion": "Es una expresión que indica consentimiento o asentimiento con lo que otra parte ha dicho. Existe la expresión usual, そうですね, pero también al uso cuando el hablante se expresa sobre una información que él ha observado. Por eso, decir そうですね se usa para expresar consentimiento o equivalencia con lo que el hablante también ha podido ver o lo que ya tiene conocimiento.",
         "Ejemplos": [
           {
-            "EjemploEsp": "¿Mañana es domingo, no? Sí, así es.",
-            "EjemploJap": "あした は にちようび ですね。はい、そうですね。"
+            "EjemploEsp": "¿Mañana es domingo, no? Sí, así es",
+            "EjemploJap": "あしたはにちようびですね。はい、そうですね"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 34,
+    "CapituloId": 6,
+    "Titulo": "S を V (transitivo)",
+    "Explicaciones": [
+      {
+        "Explicacion": "Se emplea la partícula を para indicar el objeto de un verbo transitivo.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Bebo jugo",
+            "EjemploJap": "ジュースをのみます"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 35,
+    "CapituloId": 6,
+    "Titulo": "S を します",
+    "Explicaciones": [
+      {
+        "Explicacion": "El verbo します toma como objeto sustantivos de uso amplio. Significa que se realiza la acción que indica dicho sustantivo.",
+        "Ejemplos": [
+          {
+            "EjemploEsp": "Juego al fútbol",
+            "EjemploJap": "サッカーをします"
+          },
+          {
+            "EjemploEsp": "Juego al básquet",
+            "EjemploJap": "バスケットをします"
+          },
+          {
+            "EjemploEsp": "Celebro una fiesta",
+            "EjemploJap": "パーティーをします"
+          },
+          {
+            "EjemploEsp": "Celebro una reunión",
+            "EjemploJap": "かいぎをします"
+          },
+          {
+            "EjemploEsp": "Hacer los deberes",
+            "EjemploJap": "しゅくだいをします"
+          },
+          {
+            "EjemploEsp": "Hacer un trabajo",
+            "EjemploJap": "しごとをします"
+          },
+          {
+            "EjemploEsp": "Hago una llamada telefónica",
+            "EjemploJap": "でんわをします"
           }
         ]
       }

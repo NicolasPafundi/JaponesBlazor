@@ -61,7 +61,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         var all = await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
-        Items = all?.Where(x => x.CapituloId == Id).ToList();
+        Items = all?.Where(x => x.CapituloId == Id || Id == 0).ToList();
         cargando = false;
     }
 }

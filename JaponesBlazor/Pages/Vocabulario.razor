@@ -46,7 +46,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         var all = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
-        Items = all?.Where(x => x.CapituloId == Id).ToList() ?? new();
+        Items = all?.Where(x => x.CapituloId == Id || Id == 0).ToList() ?? new();
         cargando = false;
     }
 }
