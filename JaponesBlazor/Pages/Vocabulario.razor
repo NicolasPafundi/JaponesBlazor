@@ -4,7 +4,14 @@
 
 <div class="header-bar mb-8">
     <BackButton />
-    <h1 class="titulo-centrado">📚 Vocabulario – Capítulo @Id</h1>
+    @if (@Id != 0)
+    {
+        <h1 class="titulo-centrado">📚 Vocabulario – Capítulo @Id</h1>
+    }
+    else
+    {
+        <h1 class="titulo-centrado">📚 Vocabulario</h1>
+    }
     <div class="header-bar-space"></div>
 </div>
 
@@ -18,22 +25,42 @@ else if (!Items.Any())
 }
 else
 {
-    @foreach (var grupo in Items.GroupBy(x => x.Categoria))
+    @foreach (var capitulo in Items.GroupBy(x => x.CapituloId))
     {
         <div class="categoria-group mb-10 p-4 rounded-lg bg-blue-50 shadow-sm w-full">
-            <h2 class="mb-4 text-xl font-semibold text-blue-800 border-b border-blue-200 pb-2">@grupo.Key</h2>
+            @if (@Id == 0)
+            {
+                <div class="header-bar mb-8">
+                    <h1 class="titulo-centrado">Capítulo @capitulo.Key</h1>
+                    <div class="header-bar-space"></div>
+                </div>
+            }
+            
             <div class="vocab-list flex flex-col gap-3">
-                @foreach (var palabra in grupo)
+                @foreach (var grupo in capitulo.GroupBy(x => x.Categoria))
                 {
-                    <div class="bg-yellow-50 p-3 rounded border shadow-sm flex items-center gap-4 vocab-item">
-                        <PlayJapanese Texto="@palabra.Jap" />
-                        <span class="jap-word">@palabra.Jap</span>
-                        <span class="translation">– @palabra.Esp</span>
+                    <div class="categoria-group mb-10 p-4 rounded-lg bg-blue-50 shadow-sm w-full">
+                        <h2 class="mb-4 text-xl font-semibold text-blue-800 border-b border-blue-200 pb-2">@grupo.Key</h2>
+                        <div class="vocab-list flex flex-col gap-3">
+                            @foreach (var palabra in grupo)
+                            {
+                                <div class="bg-yellow-50 p-3 rounded border shadow-sm flex items-center gap-4 vocab-item">
+                                    <PlayJapanese Texto="@palabra.Jap" />
+                                    <span class="jap-word">@palabra.Jap</span>
+                                    <span class="translation">– @palabra.Esp</span>
+                                    @if (!string.IsNullOrWhiteSpace(palabra.Notas))
+                                    {
+                                        <span class="notas text-gray-500 text-sm"> (@palabra.Notas)</span>
+                                    }
+                                </div>
+                            }
+                        </div>
                     </div>
                 }
             </div>
         </div>
     }
+    
 }
 
 @code {
@@ -45,8 +72,15 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        var all = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
-        Items = all?.Where(x => x.CapituloId == Id || Id == 0).ToList() ?? new();
-        cargando = false;
+        try
+        {
+            var all = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
+            Items = all?.Where(x => x.CapituloId == Id || Id == 0).ToList() ?? new();
+            cargando = false;
+        }catch(Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+
     }
 }

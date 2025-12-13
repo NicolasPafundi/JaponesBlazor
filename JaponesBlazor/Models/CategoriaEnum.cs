@@ -18,6 +18,7 @@ namespace JaponesBlazor.Models
         AnimalesYComida,
         DiasDeLaSemana,
         Meses,
-        Transporte
+        Transporte,
+        Actividades
     }
 }

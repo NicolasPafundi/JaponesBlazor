@@ -681,6 +681,13 @@ textarea.form-control {
     letter-spacing: 0.01em;
 }
 
+.juego-escribir-notas {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.01em;
+}
+
 /* Input de escritura */
 .juego-escribir-inputbox {
     width: 100%;

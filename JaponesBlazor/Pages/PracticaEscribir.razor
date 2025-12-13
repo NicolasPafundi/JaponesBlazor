@@ -42,6 +42,11 @@
         </div>
 
         <div class="juego-escribir-palabra">@actual.EjemploEsp</div>
+        @if (!string.IsNullOrWhiteSpace(actual.Notas))
+        {
+            <div class="juego-escribir-notas text-gray-500 text-sm">@actual.Notas</div>
+        }
+
         <div class="juego-escribir-inputbox" style="flex-direction:column;align-items:center;">
             <textarea
                 class="@inputClass"
@@ -170,7 +175,7 @@
         var gramaticaList= await Http.GetFromJsonAsync<List<GramaticaModel>>("data/Gramatica.json");
         List<VocabularioModel> palabrasVocabulario = vocabularioList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId) && CategoriasSeleccionadas.Contains((int)p.Categoria)).ToList();
         List<EjemploModel> gramaticaModels = CategoriasSeleccionadas.Contains((int)CategoriaEnum.Gramatica) ? gramaticaList.Where(p => CapitulosSeleccionados.Contains(p.CapituloId)).SelectMany(x=>x.Explicaciones).SelectMany(x=>x.Ejemplos).ToList() : new ();
-        List<EjemploModel> palabras = gramaticaModels.Union(palabrasVocabulario.Select(x => new EjemploModel {EjemploEsp = x.Esp, EjemploJap = x.Jap })).ToList();
+        List<EjemploModel> palabras = gramaticaModels.Union(palabrasVocabulario.Select(x => new EjemploModel {EjemploEsp = x.Esp, EjemploJap = x.Jap, Notas = x.Notas })).ToList();
         var rng = new Random();
         Palabras = palabras.OrderBy(x => rng.Next()).ToList();
     }

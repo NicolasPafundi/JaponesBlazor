@@ -4,7 +4,14 @@
 
 <div class="header-bar mb-8">
     <BackButton />
-    <h1 class="titulo-centrado">🧠 Gramática – Capítulo @Id</h1>
+    @if (@Id != 0)
+    {
+        <h1 class="titulo-centrado">🧠 Gramática – Capítulo @Id</h1>
+    }
+    else
+    {
+        <h1 class="titulo-centrado">🧠 Gramática</h1>
+    }
     <div class="header-bar-space"></div>
 </div>
 
@@ -19,34 +26,44 @@ else if (!Items.Any())
 else
 {
     <div class="max-w-2xl mx-auto space-y-6">
-        @foreach (var item in Items)
+        @foreach (var group in Items.GroupBy(x=>x.CapituloId))
         {
-            <div class="bg-green-50 p-4 rounded-lg border shadow">
-                <h2 class="font-semibold text-lg text-green-800 mb-2">@item.Titulo</h2>
-                @if (item.Explicaciones != null && item.Explicaciones.Any())
-                {
-                    @foreach (var explicacion in item.Explicaciones)
+            @if (@Id == 0)
+            {
+                <div class="header-bar mb-8">
+                    <h1 class="titulo-centrado">Capítulo @group.Key</h1>
+                    <div class="header-bar-space"></div>
+                </div>
+            }
+            @foreach (var item in group)
+            {
+                <div class="bg-green-50 p-4 rounded-lg border shadow">
+                    <h2 class="font-semibold text-lg text-green-800 mb-2">@item.Titulo</h2>
+                    @if (item.Explicaciones != null && item.Explicaciones.Any())
                     {
-                        <div class="mb-3">
-                            <p class="text-gray-700">@explicacion.Explicacion</p>
-                            @if (explicacion.Ejemplos != null && explicacion.Ejemplos.Any())
-                            {
-                                <ul class="mt-2 ml-4 list-disc text-gray-800">
-                                    @foreach (var ejemplo in explicacion.Ejemplos)
-                                    {
-                                        <li>
-                                            <span class="font-semibold">@ejemplo.EjemploEsp</span>
-                                            <span class="mx-2 text-gray-500">–</span>
-                                            <span>@ejemplo.EjemploJap</span>
-                                            <PlayJapanese Texto="@ejemplo.EjemploJap" />
-                                        </li>
-                                    }
-                                </ul>
-                            }
-                        </div>
+                        @foreach (var explicacion in item.Explicaciones)
+                        {
+                            <div class="mb-3">
+                                <p class="text-gray-700">@explicacion.Explicacion</p>
+                                @if (explicacion.Ejemplos != null && explicacion.Ejemplos.Any())
+                                {
+                                    <ul class="mt-2 ml-4 list-disc text-gray-800">
+                                        @foreach (var ejemplo in explicacion.Ejemplos)
+                                        {
+                                            <li>
+                                                <span class="font-semibold">@ejemplo.EjemploEsp</span>
+                                                <span class="mx-2 text-gray-500">–</span>
+                                                <span>@ejemplo.EjemploJap</span>
+                                                <PlayJapanese Texto="@ejemplo.EjemploJap" />
+                                            </li>
+                                        }
+                                    </ul>
+                                }
+                            </div>
+                        }
                     }
-                }
-            </div>
+                </div>
+            }
         }
     </div>
 }

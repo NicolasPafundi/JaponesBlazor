@@ -131,7 +131,7 @@
             .Where(p => CapitulosSeleccionados.Contains(p.CapituloId) && CategoriasSeleccionadas.Contains((int)p.Categoria))
             .Select(x => new {
                 Jap = x.Jap,
-                Esp = x.Esp,
+                Esp = string.IsNullOrEmpty(x.Notas) ? x.Esp : x.Esp + ". (" + x.Notas + ")",
                 Categoria = x.Categoria
             });
 

@@ -62,6 +62,7 @@
                         <tr>
                             <th>Japonés</th>
                             <th>Español</th>
+                            <th>Notas</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -70,6 +71,7 @@
                             <tr>
                                 <td>@palabra.Jap</td>
                                 <td>@palabra.Esp</td>
+                                <td>@palabra.Notas</td>
                             </tr>
                         }
                     </tbody>
@@ -90,7 +92,7 @@
     // Para el popup
     private bool MostrarPopup = false;
     private CategoriaEnum? CategoriaPopup = null;
-    private List<(string Jap, string Esp)> PalabrasPopup = new();
+    private List<(string Jap, string Esp, string Notas)> PalabrasPopup = new();
 
     // Para filtrar y mostrar palabras
     private List<VocabularioModel> vocabFiltrado = new();
@@ -169,7 +171,7 @@
         CategoriaPopup = cat;
         PalabrasPopup = vocabFiltrado
             .Where(v => v.Categoria == cat)
-            .Select(v => (v.Jap, v.Esp))
+            .Select(v => (v.Jap, v.Esp, v.Notas))
             .ToList();
 
         // Si es gramática, agrega ejemplos de gramática
@@ -179,7 +181,7 @@
                 .Where(g => capIds.Contains(g.CapituloId))
                 .SelectMany(g => g.Explicaciones)
                 .SelectMany(e => e.Ejemplos)
-                .Select(e => (e.EjemploJap, e.EjemploEsp));
+                .Select(e => (e.EjemploJap, e.EjemploEsp, ""));
             PalabrasPopup.AddRange(ejemplos);
         }
 
