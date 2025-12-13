@@ -27,7 +27,7 @@ else
 {
     @foreach (var capitulo in Items.GroupBy(x => x.CapituloId))
     {
-        <div class="categoria-group mb-10 p-4 rounded-lg bg-blue-50 shadow-sm w-full">
+        <div class="capitulo-group w-full  mb-10">
             @if (@Id == 0)
             {
                 <div class="header-bar mb-8">
@@ -35,32 +35,28 @@ else
                     <div class="header-bar-space"></div>
                 </div>
             }
-            
-            <div class="vocab-list flex flex-col gap-3">
-                @foreach (var grupo in capitulo.GroupBy(x => x.Categoria))
-                {
-                    <div class="categoria-group mb-10 p-4 rounded-lg bg-blue-50 shadow-sm w-full">
-                        <h2 class="mb-4 text-xl font-semibold text-blue-800 border-b border-blue-200 pb-2">@grupo.Key</h2>
-                        <div class="vocab-list flex flex-col gap-3">
-                            @foreach (var palabra in grupo)
-                            {
-                                <div class="bg-yellow-50 p-3 rounded border shadow-sm flex items-center gap-4 vocab-item">
-                                    <PlayJapanese Texto="@palabra.Jap" />
-                                    <span class="jap-word">@palabra.Jap</span>
-                                    <span class="translation">– @palabra.Esp</span>
-                                    @if (!string.IsNullOrWhiteSpace(palabra.Notas))
-                                    {
-                                        <span class="notas text-gray-500 text-sm"> (@palabra.Notas)</span>
-                                    }
-                                </div>
-                            }
-                        </div>
+            @foreach (var grupo in capitulo.GroupBy(x => x.Categoria))
+            {
+                <div class="categoria-group w-full  mb-8">
+                    <h2 class="mb-4 text-xl font-semibold text-blue-800 border-b border-blue-200 pb-2">@grupo.Key</h2>
+                    <div class="vocab-list flex flex-col gap-3 w-full">
+                        @foreach (var palabra in grupo)
+                        {
+                            <div class="bg-yellow-50 p-3 rounded border shadow-sm flex items-center gap-4 vocab-item w-full">
+                                <PlayJapanese Texto="@palabra.Jap" />
+                                <span class="jap-word">@palabra.Jap</span>
+                                <span class="translation">– @palabra.Esp</span>
+                                @if (!string.IsNullOrWhiteSpace(palabra.Notas))
+                                {
+                                    <span class="notas text-gray-500 text-sm"> (@palabra.Notas)</span>
+                                }
+                            </div>
+                        }
                     </div>
-                }
-            </div>
+                </div>
+            }
         </div>
     }
-    
 }
 
 @code {
