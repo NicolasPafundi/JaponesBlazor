@@ -1,0 +1,71 @@
+﻿@page "/traductor"
+@using System.Text
+@using System.Globalization
+@using JaponesBlazor.Component
+@inject HttpClient Http
+
+<h3 class="text-2xl font-bold text-sky-700 mb-6 text-center">Traductor</h3>
+
+<div class="max-w-xl mx-auto">
+    <input class="w-full p-2 border rounded mb-2 text-center"
+           placeholder="Escribe en japonés o español..."
+           value="@busqueda"
+           @oninput="OnInputChanged" />
+
+    @if (sugerencias.Any())
+    {
+        <div class="vocab-list flex flex-col gap-3 w-full">
+            @foreach (var palabra in sugerencias)
+            {
+                <div class="bg-yellow-50 p-3 rounded border shadow-sm flex items-center gap-4 vocab-item w-full">
+                    <PlayJapanese Texto="@palabra.Jap" />
+                    <span class="jap-word">@palabra.Jap</span>
+                    <span class="translation">– @palabra.Esp</span>
+                    @if (!string.IsNullOrWhiteSpace(palabra.Notas))
+                    {
+                        <span class="notas text-gray-500 text-sm"> (@palabra.Notas)</span>
+                    }
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private string busqueda = "";
+    private List<VocabularioModel> vocabulario = new();
+    private List<VocabularioModel> sugerencias = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        vocabulario = await Http.GetFromJsonAsync<List<VocabularioModel>>("data/Vocabulario.json");
+    }
+
+    private void OnInputChanged(ChangeEventArgs e)
+    {
+        busqueda = e.Value?.ToString() ?? string.Empty;
+        OnBusquedaChanged();
+    }
+
+    private void OnBusquedaChanged()
+    {
+        var texto = RemoverTildes(busqueda.Trim().ToLowerInvariant());
+        if (string.IsNullOrWhiteSpace(texto))
+        {
+            sugerencias = new();
+            return;
+        }
+        sugerencias = vocabulario
+            .Where(x => RemoverTildes(x.Jap).Contains(texto, StringComparison.OrdinalIgnoreCase)
+                     || RemoverTildes(x.Esp).Contains(texto, StringComparison.OrdinalIgnoreCase))
+            .Take(10)
+            .ToList();
+    }
+
+    private string RemoverTildes(string texto)
+    {
+        return string.Concat(texto.Normalize(NormalizationForm.FormD)
+            .Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark))
+            .Normalize(NormalizationForm.FormC);
+    }
+}
