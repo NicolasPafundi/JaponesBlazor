@@ -11,28 +11,46 @@
     <div class="header-bar-space"></div>
 </div>
 
-<div class="">
-        <div class="flex items-center justify-center min-h-screen">
-        @if (Jap)
-        {
-            <textarea
-                class="japones-input"
-                @ref="KanaInputRef"
-                @oninput="@(async e => { await OnKanaInput(e); })"
-                @bind="busqueda"
-                lang="ja"
-                autocomplete="off"
-                rows="1"
-                placeholder="Romanji - a=あ A=ア" />
-        }
-        else
-        {
-            <input class="w-full max-w-md p-2 border rounded text-center"
-                    placeholder="Escribe la palabra"
-                    value="@busqueda"
-                    @oninput="OnInputChanged" />
-        }
-        </div>
+<div class="flex items-center justify-center min-h-screen">
+    @if (Jap)
+    {
+        <textarea class="search-input"
+                    @ref="KanaInputRef"
+                    @oninput="@(async e => { await OnKanaInput(e); })"
+                    @bind="busqueda"
+                    lang="ja"
+                    rows="1"
+                    placeholder="Romaji - a=あ A=ア" />
+    }
+    else
+    {
+        <input class="search-input"
+                placeholder="Escribe la palabra"
+                value="@busqueda"
+                @oninput="OnInputChanged" />
+    }
+            
+    <div class="flex justify-center mb-4">
+        <button @onclick="ToggleModo"
+                class="relative flex w-32 h-10 rounded-full bg-gray-200 p-1 transition-colors">
+
+            <div class="absolute top-1 left-1 h-8 w-1/2 rounded-full transition-all duration-200
+                        @(!Jap ? "translate-x-full bg-blue-600" : "bg-blue-600")">
+            </div>
+
+            <span class="relative z-10 w-1/2 flex items-center justify-center text-sm font-semibold
+                            @(!Jap ? "text-gray-600" : "text-white")">
+                ESP
+            </span>
+
+            <span class="relative z-10 w-1/2 flex items-center justify-center text-sm font-semibold
+                            @(!Jap ? "text-white" : "text-gray-600")">
+                JAP
+            </span>
+
+        </button>
+    </div>
+</div>
 
     @if (sugerencias.Any())
     {
@@ -51,7 +69,6 @@
             }
         </div>
     }
-</div>
 
 @code {
 
@@ -117,5 +134,12 @@
         var respuesta = await JS.InvokeAsync<string>("kanaInputProcess", KanaInputRef);
         e.Value = respuesta;
         OnInputChanged(e);
+    }
+
+    private void ToggleModo()
+    {
+        Jap = !Jap;
+        busqueda = "";
+        sugerencias.Clear();
     }
 }
