@@ -1,0 +1,4305 @@
+﻿[
+  {
+    "Id": 1,
+    "CapituloId": 1,
+    "Jap": "わたし",
+    "Esp": "yo",
+    "Categoria": "Pronombres",
+    "Notas": ""
+  },
+  {
+    "Id": 2,
+    "CapituloId": 1,
+    "Jap": "あなた",
+    "Esp": "Ud.",
+    "Categoria": "Pronombres",
+    "Notas": ""
+  },
+  {
+    "Id": 3,
+    "CapituloId": 1,
+    "Jap": "あのひと",
+    "Esp": "aquella persona, él, ella",
+    "Categoria": "Demostrativos",
+    "Notas": ""
+  },
+  {
+    "Id": 4,
+    "CapituloId": 1,
+    "Jap": "あのかた",
+    "Esp": "aquella persona",
+    "Categoria": "Demostrativos",
+    "Notas": "Es la forma cortés de あのひと."
+  },
+  {
+    "Id": 5,
+    "CapituloId": 1,
+    "Jap": "～さん",
+    "Esp": "Sr., Sra., Srta.",
+    "Categoria": "SufijosYPartículas",
+    "Notas": "Forma cortés de tratamiento que se agrega al nombre."
+  },
+  {
+    "Id": 6,
+    "CapituloId": 1,
+    "Jap": "～ちゃん",
+    "Esp": "Sufijo que se añade frecuentemente al nombre de los niños en vez de ～さん.",
+    "Categoria": "SufijosYPartículas",
+    "Notas": ""
+  },
+  {
+    "Id": 7,
+    "CapituloId": 1,
+    "Jap": "～じん",
+    "Esp": "Sufijo que se emplea para indicar la nacionalidad de una persona.",
+    "Categoria": "SufijosYPartículas",
+    "Notas": ""
+  },
+  {
+    "Id": 8,
+    "CapituloId": 1,
+    "Jap": "せんせい",
+    "Esp": "maestro, profesor, instructor",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": "No se usa al referirse a la profesión de uno mismo."
+  },
+  {
+    "Id": 9,
+    "CapituloId": 1,
+    "Jap": "きょうし",
+    "Esp": "maestro, profesor, instructor",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 10,
+    "CapituloId": 1,
+    "Jap": "がくせい",
+    "Esp": "estudiante",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 11,
+    "CapituloId": 1,
+    "Jap": "かいしゃいん",
+    "Esp": "empleado de una empresa",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 12,
+    "CapituloId": 1,
+    "Jap": "しゃいん",
+    "Esp": "empleado de la empresa",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": "Se usa junto con la razón social."
+  },
+  {
+    "Id": 13,
+    "CapituloId": 1,
+    "Jap": "ぎんこういん",
+    "Esp": "empleado de un banco",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 14,
+    "CapituloId": 1,
+    "Jap": "いしゃ",
+    "Esp": "médico",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 15,
+    "CapituloId": 1,
+    "Jap": "けんきゅうしゃ",
+    "Esp": "investigador",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 16,
+    "CapituloId": 1,
+    "Jap": "だいがく",
+    "Esp": "universidad",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 17,
+    "CapituloId": 1,
+    "Jap": "びょういん",
+    "Esp": "hospital",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 18,
+    "CapituloId": 1,
+    "Jap": "だれ",
+    "Esp": "quién",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 19,
+    "CapituloId": 1,
+    "Jap": "どなた",
+    "Esp": "quién",
+    "Categoria": "Preguntas",
+    "Notas": "Es la forma cortés de だれ."
+  },
+  {
+    "Id": 20,
+    "CapituloId": 1,
+    "Jap": "～さい",
+    "Esp": "años de edad",
+    "Categoria": "SufijosYPartículas",
+    "Notas": ""
+  },
+  {
+    "Id": 21,
+    "CapituloId": 1,
+    "Jap": "なんさい",
+    "Esp": "cuántos años",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 22,
+    "CapituloId": 1,
+    "Jap": "おいくつ",
+    "Esp": "cuántos años",
+    "Categoria": "Preguntas",
+    "Notas": "Es la forma cortés de なんさい."
+  },
+  {
+    "Id": 23,
+    "CapituloId": 1,
+    "Jap": "はい",
+    "Esp": "sí",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 24,
+    "CapituloId": 1,
+    "Jap": "いいえ",
+    "Esp": "no",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 25,
+    "CapituloId": 1,
+    "Jap": "はじめまして",
+    "Esp": "Mucho gusto.",
+    "Categoria": "Expresiones",
+    "Notas": "Lit., «es la primera vez que lo veo» y suele emplearse como primera frase cuando uno se presenta."
+  },
+  {
+    "Id": 26,
+    "CapituloId": 1,
+    "Jap": "～からきました",
+    "Esp": "Soy de ~ / Vengo de ~.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 27,
+    "CapituloId": 1,
+    "Jap": "どうぞよろしくおねがいします",
+    "Esp": "Encantado. / Mucho gusto.",
+    "Categoria": "Expresiones",
+    "Notas": "Lit., «por favor, sea amable conmigo» y suele emplearse al final cuando uno se presenta."
+  },
+  {
+    "Id": 28,
+    "CapituloId": 1,
+    "Jap": "しつれいですが",
+    "Esp": "Disculpe, pero",
+    "Categoria": "Expresiones",
+    "Notas": "Se usa al hacer una pregunta personal como el nombre o la dirección."
+  },
+  {
+    "Id": 29,
+    "CapituloId": 1,
+    "Jap": "おなまえは？",
+    "Esp": "¿Cómo se llama? / ¿Cuál es su nombre?",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 30,
+    "CapituloId": 1,
+    "Jap": "こちらは～さんです",
+    "Esp": "Le presento al Sr./Sra./Srta. ~.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 31,
+    "CapituloId": 1,
+    "Jap": "アメリカ",
+    "Esp": "Estados Unidos",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 32,
+    "CapituloId": 1,
+    "Jap": "イギリス",
+    "Esp": "Reino Unido",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 33,
+    "CapituloId": 1,
+    "Jap": "インド",
+    "Esp": "India",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 34,
+    "CapituloId": 1,
+    "Jap": "インドネシア",
+    "Esp": "Indonesia",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 35,
+    "CapituloId": 1,
+    "Jap": "かんこく",
+    "Esp": "Corea del Sur",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 36,
+    "CapituloId": 1,
+    "Jap": "タイ",
+    "Esp": "Tailandia",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 37,
+    "CapituloId": 1,
+    "Jap": "ちゅうごく",
+    "Esp": "China",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 38,
+    "CapituloId": 1,
+    "Jap": "ドイツ",
+    "Esp": "Alemania",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 40,
+    "CapituloId": 1,
+    "Jap": "ブラジル",
+    "Esp": "Brasil",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 41,
+    "CapituloId": 1,
+    "Jap": "あいさつ",
+    "Esp": "Saludo",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 42,
+    "CapituloId": 1,
+    "Jap": "おはようございます",
+    "Esp": "Buenos días",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 43,
+    "CapituloId": 1,
+    "Jap": "こんにちは",
+    "Esp": "Buenas tardes",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 44,
+    "CapituloId": 1,
+    "Jap": "こんばんは",
+    "Esp": "Buenas noches",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 45,
+    "CapituloId": 1,
+    "Jap": "おやすみなさい",
+    "Esp": "Buenas noches (antes de dormir)",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 46,
+    "CapituloId": 1,
+    "Jap": "さようなら",
+    "Esp": "Adiós",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 47,
+    "CapituloId": 1,
+    "Jap": "ありがとう",
+    "Esp": "Gracias",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 48,
+    "CapituloId": 1,
+    "Jap": "すみません",
+    "Esp": "Disculpe",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 49,
+    "CapituloId": 1,
+    "Jap": "おねがいします",
+    "Esp": "Por favor",
+    "Categoria": "Expresiones"
+  },
+  {
+    "Id": 50,
+    "CapituloId": 1,
+    "Jap": "わたし",
+    "Esp": "Yo (Hombre Formal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 51,
+    "CapituloId": 1,
+    "Jap": "ぼく",
+    "Esp": "Yo (Hombre Neutro)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 52,
+    "CapituloId": 1,
+    "Jap": "おれ",
+    "Esp": "Yo (Hombre Informal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 53,
+    "CapituloId": 1,
+    "Jap": "わし",
+    "Esp": "Yo (Hombre Formal antiguo)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 54,
+    "CapituloId": 1,
+    "Jap": "わたし",
+    "Esp": "Yo (Mujer Neutro)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 55,
+    "CapituloId": 1,
+    "Jap": "わたくし",
+    "Esp": "Yo (Mujer Formal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 56,
+    "CapituloId": 1,
+    "Jap": "あたし",
+    "Esp": "Yo (Mujer Informal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 57,
+    "CapituloId": 1,
+    "Jap": "あなた",
+    "Esp": "Tú/Vos (formal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 58,
+    "CapituloId": 1,
+    "Jap": "おまえ",
+    "Esp": "Tú/Vos (para pelear hombre)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 59,
+    "CapituloId": 1,
+    "Jap": "あなた",
+    "Esp": "Tú/Vos (para pelear mujer)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 60,
+    "CapituloId": 1,
+    "Jap": "きみ",
+    "Esp": "Tú/Vos (de superior a inferior)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 61,
+    "CapituloId": 1,
+    "Jap": "かれ",
+    "Esp": "Él",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 62,
+    "CapituloId": 1,
+    "Jap": "かのじょ",
+    "Esp": "Ella",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 63,
+    "CapituloId": 1,
+    "Jap": "わたしたち",
+    "Esp": "Nosotros (Hombre Formal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 64,
+    "CapituloId": 1,
+    "Jap": "ぼくたち",
+    "Esp": "Nosotros (Hombre Neutro)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 65,
+    "CapituloId": 1,
+    "Jap": "おれたち",
+    "Esp": "Nosotros (Hombre Informal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 66,
+    "CapituloId": 1,
+    "Jap": "わしたち",
+    "Esp": "Nosotros (Hombre Formal antiguo)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 67,
+    "CapituloId": 1,
+    "Jap": "わたしたち",
+    "Esp": "Nosotras (Neutro)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 68,
+    "CapituloId": 1,
+    "Jap": "わたくしたち",
+    "Esp": "Nosotras (Formal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 69,
+    "CapituloId": 1,
+    "Jap": "あたしたち",
+    "Esp": "Nosotras (Informal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 70,
+    "CapituloId": 1,
+    "Jap": "あなたたち",
+    "Esp": "Ustedes (formal)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 71,
+    "CapituloId": 1,
+    "Jap": "おまえたち",
+    "Esp": "Ustedes (para pelear hombre)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 72,
+    "CapituloId": 1,
+    "Jap": "あなたたち",
+    "Esp": "Ustedes (para pelear mujer)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 73,
+    "CapituloId": 1,
+    "Jap": "きみたち",
+    "Esp": "Ustedes (de superior a inferior)",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 74,
+    "CapituloId": 1,
+    "Jap": "かれたち",
+    "Esp": "Ellos",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 75,
+    "CapituloId": 1,
+    "Jap": "かのじょたち",
+    "Esp": "Ellas",
+    "Categoria": "Pronombres"
+  },
+  {
+    "Id": 76,
+    "CapituloId": 1,
+    "Jap": "アルゼンチン",
+    "Esp": "Argentina",
+    "Categoria": "Geografía"
+  },
+  {
+    "Id": 77,
+    "CapituloId": 1,
+    "Jap": "ペルー",
+    "Esp": "Perú",
+    "Categoria": "Geografía"
+  },
+  {
+    "Id": 78,
+    "CapituloId": 1,
+    "Jap": "にほん",
+    "Esp": "Japón",
+    "Categoria": "Geografía"
+  },
+  {
+    "Id": 79,
+    "CapituloId": 1,
+    "Jap": "スペイン",
+    "Esp": "España",
+    "Categoria": "Geografía"
+  },
+  {
+    "Id": 80,
+    "CapituloId": 1,
+    "Jap": "ライオン",
+    "Esp": "León",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 81,
+    "CapituloId": 1,
+    "Jap": "パンダ",
+    "Esp": "Panda",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 82,
+    "CapituloId": 1,
+    "Jap": "オレンジ",
+    "Esp": "Naranja",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 83,
+    "CapituloId": 1,
+    "Jap": "バナナ",
+    "Esp": "Banana",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 84,
+    "CapituloId": 1,
+    "Jap": "パン",
+    "Esp": "Pan",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 85,
+    "CapituloId": 1,
+    "Jap": "テレビ",
+    "Esp": "Televisor",
+    "Categoria": "Objetos"
+  },
+  {
+    "Id": 86,
+    "CapituloId": 1,
+    "Jap": "レタス",
+    "Esp": "Lechuga",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 87,
+    "CapituloId": 1,
+    "Jap": "トマト",
+    "Esp": "Tomate",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 88,
+    "CapituloId": 1,
+    "Jap": "レモン",
+    "Esp": "Limón",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 89,
+    "CapituloId": 1,
+    "Jap": "プリン",
+    "Esp": "Flan / Pudding",
+    "Categoria": "AnimalesYComida"
+  },
+  {
+    "Id": 90,
+    "CapituloId": 2,
+    "Jap": "これ",
+    "Esp": "este, esta, esto",
+    "Categoria": "Demostrativos",
+    "Notas": "Objeto próximo al hablante."
+  },
+  {
+    "Id": 91,
+    "CapituloId": 2,
+    "Jap": "それ",
+    "Esp": "ese, esa, eso",
+    "Categoria": "Demostrativos",
+    "Notas": "Objeto próximo al oyente."
+  },
+  {
+    "Id": 92,
+    "CapituloId": 2,
+    "Jap": "あれ",
+    "Esp": "aquel, aquella, aquello",
+    "Categoria": "Demostrativos",
+    "Notas": "Objeto que está lejos tanto del hablante como del oyente."
+  },
+  {
+    "Id": 93,
+    "CapituloId": 2,
+    "Jap": "この～",
+    "Esp": "este, esta ~",
+    "Categoria": "Demostrativos",
+    "Notas": ""
+  },
+  {
+    "Id": 94,
+    "CapituloId": 2,
+    "Jap": "その～",
+    "Esp": "ese, esa ~",
+    "Categoria": "Demostrativos",
+    "Notas": ""
+  },
+  {
+    "Id": 95,
+    "CapituloId": 2,
+    "Jap": "あの～",
+    "Esp": "aquel, aquella ~",
+    "Categoria": "Demostrativos",
+    "Notas": ""
+  },
+  {
+    "Id": 96,
+    "CapituloId": 2,
+    "Jap": "ほん",
+    "Esp": "libro",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 97,
+    "CapituloId": 2,
+    "Jap": "じしょ",
+    "Esp": "diccionario",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 98,
+    "CapituloId": 2,
+    "Jap": "ざっし",
+    "Esp": "revista",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 99,
+    "CapituloId": 2,
+    "Jap": "しんぶん",
+    "Esp": "periódico",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 100,
+    "CapituloId": 2,
+    "Jap": "ノート",
+    "Esp": "cuaderno",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 101,
+    "CapituloId": 2,
+    "Jap": "てちょう",
+    "Esp": "agenda",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 102,
+    "CapituloId": 2,
+    "Jap": "めいし",
+    "Esp": "tarjeta de visita",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 103,
+    "CapituloId": 2,
+    "Jap": "カード",
+    "Esp": "tarjeta",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 104,
+    "CapituloId": 2,
+    "Jap": "えんぴつ",
+    "Esp": "lápiz",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 105,
+    "CapituloId": 2,
+    "Jap": "ボールペン",
+    "Esp": "bolígrafo",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 106,
+    "CapituloId": 2,
+    "Jap": "シャープペンシル",
+    "Esp": "portaminas, lapicero",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 107,
+    "CapituloId": 2,
+    "Jap": "かぎ",
+    "Esp": "llave",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 108,
+    "CapituloId": 2,
+    "Jap": "とけい",
+    "Esp": "reloj",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 109,
+    "CapituloId": 2,
+    "Jap": "かさ",
+    "Esp": "paraguas",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 110,
+    "CapituloId": 2,
+    "Jap": "かばん",
+    "Esp": "bolso, maleta",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 111,
+    "CapituloId": 2,
+    "Jap": "CD",
+    "Esp": "CD",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 112,
+    "CapituloId": 2,
+    "Jap": "テレビ",
+    "Esp": "televisión, televisor",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 113,
+    "CapituloId": 2,
+    "Jap": "ラジオ",
+    "Esp": "radio",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 114,
+    "CapituloId": 2,
+    "Jap": "カメラ",
+    "Esp": "cámara",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 115,
+    "CapituloId": 2,
+    "Jap": "コンピューター",
+    "Esp": "ordenador, computadora",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 116,
+    "CapituloId": 2,
+    "Jap": "くるま",
+    "Esp": "automóvil",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 117,
+    "CapituloId": 2,
+    "Jap": "つくえ",
+    "Esp": "escritorio",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 118,
+    "CapituloId": 2,
+    "Jap": "いす",
+    "Esp": "silla",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 119,
+    "CapituloId": 2,
+    "Jap": "チョコレート",
+    "Esp": "chocolate",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 120,
+    "CapituloId": 2,
+    "Jap": "コーヒー",
+    "Esp": "café",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 121,
+    "CapituloId": 2,
+    "Jap": "[お]みやげ",
+    "Esp": "recuerdo de un viaje, regalo que se lleva al visitar a alguien",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 122,
+    "CapituloId": 2,
+    "Jap": "えいご",
+    "Esp": "el idioma inglés",
+    "Categoria": "Idiomas",
+    "Notas": ""
+  },
+  {
+    "Id": 123,
+    "CapituloId": 2,
+    "Jap": "にほんご",
+    "Esp": "el idioma japonés",
+    "Categoria": "Idiomas",
+    "Notas": ""
+  },
+  {
+    "Id": 124,
+    "CapituloId": 2,
+    "Jap": "～ご",
+    "Esp": "idioma ~",
+    "Categoria": "Idiomas",
+    "Notas": ""
+  },
+  {
+    "Id": 125,
+    "CapituloId": 2,
+    "Jap": "なん",
+    "Esp": "qué",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 126,
+    "CapituloId": 2,
+    "Jap": "そう",
+    "Esp": "sí, eso",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 127,
+    "CapituloId": 2,
+    "Jap": "あのう",
+    "Esp": "eh..., esto...",
+    "Categoria": "Expresiones",
+    "Notas": "Se usa para expresar vacilación al dirigir la palabra a alguien."
+  },
+  {
+    "Id": 128,
+    "CapituloId": 2,
+    "Jap": "えっ",
+    "Esp": "¿Cómo?",
+    "Categoria": "Expresiones",
+    "Notas": "Se usa al enterarse de algo inesperado."
+  },
+  {
+    "Id": 129,
+    "CapituloId": 2,
+    "Jap": "どうぞ",
+    "Esp": "Tome. / Aquí tiene.",
+    "Categoria": "Expresiones",
+    "Notas": "Se usa al ofrecer o mostrar algo a alguien."
+  },
+  {
+    "Id": 130,
+    "CapituloId": 2,
+    "Jap": "[どうも]ありがとう[ございます]",
+    "Esp": "[Muchas] gracias.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 131,
+    "CapituloId": 2,
+    "Jap": "そうですか",
+    "Esp": "¿Ah, sí? / Ya.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 132,
+    "CapituloId": 2,
+    "Jap": "ちがいます",
+    "Esp": "No, no es así.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 133,
+    "CapituloId": 2,
+    "Jap": "あ",
+    "Esp": "¡Eh!",
+    "Categoria": "Expresiones",
+    "Notas": "Se usa al tener conocimiento de algo."
+  },
+  {
+    "Id": 134,
+    "CapituloId": 2,
+    "Jap": "[どうぞ]よろしく[おねがいします]",
+    "Esp": "Le agradezco de antemano su gentil apoyo.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 135,
+    "CapituloId": 2,
+    "Jap": "こちらこそ[どうぞ]よろしく[おねがいします]",
+    "Esp": "Yo también estoy encantado de conocerlo.",
+    "Categoria": "Expresiones",
+    "Notas": "Respuesta a [どうぞ]よろしく[おねがいします]"
+  },
+  {
+    "Id": 136,
+    "CapituloId": 3,
+    "Jap": "ここ",
+    "Esp": "aquí, en este lugar",
+    "Categoria": "Demostrativos",
+    "Notas": ""
+  },
+  {
+    "Id": 137,
+    "CapituloId": 3,
+    "Jap": "そこ",
+    "Esp": "ahí, en ese lugar",
+    "Categoria": "Demostrativos",
+    "Notas": ""
+  },
+  {
+    "Id": 138,
+    "CapituloId": 3,
+    "Jap": "あそこ",
+    "Esp": "allí, en aquel lugar",
+    "Categoria": "Demostrativos",
+    "Notas": ""
+  },
+  {
+    "Id": 139,
+    "CapituloId": 3,
+    "Jap": "どこ",
+    "Esp": "dónde, en qué lugar",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 140,
+    "CapituloId": 3,
+    "Jap": "こちら",
+    "Esp": "por aquí, aquí",
+    "Categoria": "Demostrativos",
+    "Notas": "Forma cortés de ここ."
+  },
+  {
+    "Id": 141,
+    "CapituloId": 3,
+    "Jap": "そちら",
+    "Esp": "por ahí, ahí",
+    "Categoria": "Demostrativos",
+    "Notas": "Forma cortés de そこ."
+  },
+  {
+    "Id": 142,
+    "CapituloId": 3,
+    "Jap": "あちら",
+    "Esp": "por allí, allí",
+    "Categoria": "Demostrativos",
+    "Notas": "Forma cortés de あそこ."
+  },
+  {
+    "Id": 143,
+    "CapituloId": 3,
+    "Jap": "どちら",
+    "Esp": "por dónde, dónde",
+    "Categoria": "Preguntas",
+    "Notas": "Forma cortés de どこ."
+  },
+  {
+    "Id": 144,
+    "CapituloId": 3,
+    "Jap": "きょうしつ",
+    "Esp": "aula",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 145,
+    "CapituloId": 3,
+    "Jap": "しょくどう",
+    "Esp": "comedor",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 146,
+    "CapituloId": 3,
+    "Jap": "じむしょ",
+    "Esp": "oficina",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 147,
+    "CapituloId": 3,
+    "Jap": "かいぎしつ",
+    "Esp": "sala de reuniones",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 148,
+    "CapituloId": 3,
+    "Jap": "うけつけ",
+    "Esp": "recepción",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 149,
+    "CapituloId": 3,
+    "Jap": "ロビー",
+    "Esp": "recepción, vestíbulo",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 150,
+    "CapituloId": 3,
+    "Jap": "へや",
+    "Esp": "habitación, cuarto",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 151,
+    "CapituloId": 3,
+    "Jap": "トイレ",
+    "Esp": "baño, servicio",
+    "Categoria": "Lugares",
+    "Notas": "おてあらい es una forma más cortés."
+  },
+  {
+    "Id": 152,
+    "CapituloId": 3,
+    "Jap": "かいだん",
+    "Esp": "escalera",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 153,
+    "CapituloId": 3,
+    "Jap": "エレベーター",
+    "Esp": "ascensor, elevador",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 154,
+    "CapituloId": 3,
+    "Jap": "エスカレーター",
+    "Esp": "escalera mecánica",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 155,
+    "CapituloId": 3,
+    "Jap": "じどうはんばいき",
+    "Esp": "máquina de venta automática",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 156,
+    "CapituloId": 3,
+    "Jap": "でんわ",
+    "Esp": "teléfono, llamada telefónica",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 157,
+    "CapituloId": 3,
+    "Jap": "[お]くに",
+    "Esp": "[su] país, patria",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 158,
+    "CapituloId": 3,
+    "Jap": "かいしゃ",
+    "Esp": "empresa, compañía, firma",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 159,
+    "CapituloId": 3,
+    "Jap": "うち",
+    "Esp": "casa",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 160,
+    "CapituloId": 3,
+    "Jap": "くつ",
+    "Esp": "zapatos",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 161,
+    "CapituloId": 3,
+    "Jap": "ネクタイ",
+    "Esp": "corbata",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 162,
+    "CapituloId": 3,
+    "Jap": "ワイン",
+    "Esp": "vino",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 163,
+    "CapituloId": 3,
+    "Jap": "うりば",
+    "Esp": "sección",
+    "Categoria": "Lugares",
+    "Notas": "En un gran almacén, etc."
+  },
+  {
+    "Id": 164,
+    "CapituloId": 3,
+    "Jap": "ちか",
+    "Esp": "sótano, subsuelo",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 165,
+    "CapituloId": 3,
+    "Jap": "いっかい",
+    "Esp": "primer piso, planta baja",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 166,
+    "CapituloId": 3,
+    "Jap": "なんがい",
+    "Esp": "qué piso",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 167,
+    "CapituloId": 3,
+    "Jap": "～えん",
+    "Esp": "yen(es)",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 168,
+    "CapituloId": 3,
+    "Jap": "いくら",
+    "Esp": "cuánto",
+    "Categoria": "Preguntas",
+    "Notas": "Término limitado a la cantidad de dinero."
+  },
+  {
+    "Id": 169,
+    "CapituloId": 3,
+    "Jap": "ひゃく",
+    "Esp": "cien",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 170,
+    "CapituloId": 3,
+    "Jap": "せん",
+    "Esp": "mil",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 171,
+    "CapituloId": 3,
+    "Jap": "まん",
+    "Esp": "diez mil",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 172,
+    "CapituloId": 3,
+    "Jap": "すみません",
+    "Esp": "Disculpe.",
+    "Categoria": "Expresiones",
+    "Notas": "Fórmula empleada para llamar la atención de una persona."
+  },
+  {
+    "Id": 173,
+    "CapituloId": 3,
+    "Jap": "どうも",
+    "Esp": "Gracias.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 174,
+    "CapituloId": 3,
+    "Jap": "[～を]みせてください",
+    "Esp": "Por favor, puede mostrarme / enseñarme [~].",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 175,
+    "CapituloId": 3,
+    "Jap": "じゃ",
+    "Esp": "bueno, entonces",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 176,
+    "CapituloId": 3,
+    "Jap": "[～を]ください",
+    "Esp": "Déme [~], por favor.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 177,
+    "CapituloId": 3,
+    "Jap": "いらっしゃいませ",
+    "Esp": "Buenos días / Buenas tardes / Buenas noches / Bienvenido.",
+    "Categoria": "Expresiones",
+    "Notas": "Expresión con que se recibe a invitados o clientes a su llegada."
+  },
+  {
+    "Id": 178,
+    "CapituloId": 3,
+    "Jap": "イタリア",
+    "Esp": "Italia",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 179,
+    "CapituloId": 3,
+    "Jap": "スイス",
+    "Esp": "Suiza",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 180,
+    "CapituloId": 3,
+    "Jap": "フランス",
+    "Esp": "Francia",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 181,
+    "CapituloId": 3,
+    "Jap": "ジャカルタ",
+    "Esp": "Jakarta",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 182,
+    "CapituloId": 3,
+    "Jap": "バンコク",
+    "Esp": "Bangkok",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 183,
+    "CapituloId": 3,
+    "Jap": "ベルリン",
+    "Esp": "Berlín",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 184,
+    "CapituloId": 3,
+    "Jap": "しんおおさか",
+    "Esp": "Shin-Osaka",
+    "Categoria": "Geografía",
+    "Notas": "Nombre de una estación de tren en Osaka."
+  },
+  {
+    "Id": 185,
+    "CapituloId": 4,
+    "Jap": "おきます",
+    "Esp": "levantarse",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 186,
+    "CapituloId": 4,
+    "Jap": "ねます",
+    "Esp": "acostarse, irse a la cama, dormir",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 187,
+    "CapituloId": 4,
+    "Jap": "はたらきます",
+    "Esp": "trabajar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 188,
+    "CapituloId": 4,
+    "Jap": "やすみます",
+    "Esp": "descansar, estar de vacaciones",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 189,
+    "CapituloId": 4,
+    "Jap": "べんきょうします",
+    "Esp": "estudiar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 190,
+    "CapituloId": 4,
+    "Jap": "おわります",
+    "Esp": "terminar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 191,
+    "CapituloId": 4,
+    "Jap": "デパート",
+    "Esp": "gran almacén",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 192,
+    "CapituloId": 4,
+    "Jap": "ぎんこう",
+    "Esp": "banco, institución financiera",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 193,
+    "CapituloId": 4,
+    "Jap": "ゆうびんきょく",
+    "Esp": "oficina de correos",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 194,
+    "CapituloId": 4,
+    "Jap": "としょかん",
+    "Esp": "biblioteca",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 195,
+    "CapituloId": 4,
+    "Jap": "びじゅつかん",
+    "Esp": "museo de arte",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 196,
+    "CapituloId": 4,
+    "Jap": "いま",
+    "Esp": "ahora",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 197,
+    "CapituloId": 4,
+    "Jap": "～じ",
+    "Esp": "las ~ horas",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 198,
+    "CapituloId": 4,
+    "Jap": "～ふん",
+    "Esp": "~ minutos",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 199,
+    "CapituloId": 4,
+    "Jap": "はん",
+    "Esp": "y media",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 200,
+    "CapituloId": 4,
+    "Jap": "なんじ",
+    "Esp": "qué hora",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 201,
+    "CapituloId": 4,
+    "Jap": "なんぷん",
+    "Esp": "qué minuto",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 202,
+    "CapituloId": 4,
+    "Jap": "ごぜん",
+    "Esp": "de la mañana",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 203,
+    "CapituloId": 4,
+    "Jap": "ごご",
+    "Esp": "de la tarde",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 204,
+    "CapituloId": 4,
+    "Jap": "あさ",
+    "Esp": "la mañana",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 205,
+    "CapituloId": 4,
+    "Jap": "ひる",
+    "Esp": "día, mediodía",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 206,
+    "CapituloId": 4,
+    "Jap": "ばん",
+    "Esp": "noche",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 207,
+    "CapituloId": 4,
+    "Jap": "おととい",
+    "Esp": "anteayer",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 208,
+    "CapituloId": 4,
+    "Jap": "きのう",
+    "Esp": "ayer",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 209,
+    "CapituloId": 4,
+    "Jap": "きょう",
+    "Esp": "hoy",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 210,
+    "CapituloId": 4,
+    "Jap": "あした",
+    "Esp": "mañana",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 211,
+    "CapituloId": 4,
+    "Jap": "あさって",
+    "Esp": "pasado mañana",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 212,
+    "CapituloId": 4,
+    "Jap": "けさ",
+    "Esp": "esta mañana",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 213,
+    "CapituloId": 4,
+    "Jap": "こんばん",
+    "Esp": "esta noche",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 214,
+    "CapituloId": 4,
+    "Jap": "やすみ",
+    "Esp": "descanso, día libre, día festivo, feriado",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 215,
+    "CapituloId": 4,
+    "Jap": "ひるやすみ",
+    "Esp": "hora del almuerzo, descanso del mediodía",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 216,
+    "CapituloId": 4,
+    "Jap": "しけん",
+    "Esp": "examen",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 217,
+    "CapituloId": 4,
+    "Jap": "かいぎ",
+    "Esp": "reunión, conferencia",
+    "Categoria": "Objetos",
+    "Notas": "~をします: celebrar una reunión."
+  },
+  {
+    "Id": 218,
+    "CapituloId": 4,
+    "Jap": "えいが",
+    "Esp": "película",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 219,
+    "CapituloId": 4,
+    "Jap": "まいあさ",
+    "Esp": "todas las mañanas, cada mañana",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 220,
+    "CapituloId": 4,
+    "Jap": "まいばん",
+    "Esp": "todas las noches, cada noche",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 221,
+    "CapituloId": 4,
+    "Jap": "まいにち",
+    "Esp": "todos los días, cada día",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 222,
+    "CapituloId": 4,
+    "Jap": "げつようび",
+    "Esp": "lunes",
+    "Categoria": "DiasDeLaSemana",
+    "Notas": ""
+  },
+  {
+    "Id": 223,
+    "CapituloId": 4,
+    "Jap": "かようび",
+    "Esp": "martes",
+    "Categoria": "DiasDeLaSemana",
+    "Notas": ""
+  },
+  {
+    "Id": 224,
+    "CapituloId": 4,
+    "Jap": "すいようび",
+    "Esp": "miércoles",
+    "Categoria": "DiasDeLaSemana",
+    "Notas": ""
+  },
+  {
+    "Id": 225,
+    "CapituloId": 4,
+    "Jap": "もくようび",
+    "Esp": "jueves",
+    "Categoria": "DiasDeLaSemana",
+    "Notas": ""
+  },
+  {
+    "Id": 226,
+    "CapituloId": 4,
+    "Jap": "きんようび",
+    "Esp": "viernes",
+    "Categoria": "DiasDeLaSemana",
+    "Notas": ""
+  },
+  {
+    "Id": 227,
+    "CapituloId": 4,
+    "Jap": "どようび",
+    "Esp": "sábado",
+    "Categoria": "DiasDeLaSemana",
+    "Notas": ""
+  },
+  {
+    "Id": 228,
+    "CapituloId": 4,
+    "Jap": "にちようび",
+    "Esp": "domingo",
+    "Categoria": "DiasDeLaSemana",
+    "Notas": ""
+  },
+  {
+    "Id": 229,
+    "CapituloId": 4,
+    "Jap": "なんようび",
+    "Esp": "qué día de la semana",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 230,
+    "CapituloId": 4,
+    "Jap": "～から",
+    "Esp": "desde ~",
+    "Categoria": "SufijosYPartículas",
+    "Notas": ""
+  },
+  {
+    "Id": 231,
+    "CapituloId": 4,
+    "Jap": "～まで",
+    "Esp": "hasta ~",
+    "Categoria": "SufijosYPartículas",
+    "Notas": ""
+  },
+  {
+    "Id": 232,
+    "CapituloId": 4,
+    "Jap": "～と～",
+    "Esp": "y",
+    "Categoria": "SufijosYPartículas",
+    "Notas": "Se emplea para conectar sustantivos."
+  },
+  {
+    "Id": 233,
+    "CapituloId": 4,
+    "Jap": "たいへんですね",
+    "Esp": "¡Qué duro! / ¡Cuánto lo siento!",
+    "Categoria": "Expresiones",
+    "Notas": "Se emplea para manifestar simpatía por la dificultad de otros."
+  },
+  {
+    "Id": 234,
+    "CapituloId": 4,
+    "Jap": "ばんごう",
+    "Esp": "número",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 235,
+    "CapituloId": 4,
+    "Jap": "なんばん",
+    "Esp": "qué número",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 236,
+    "CapituloId": 4,
+    "Jap": "そちら",
+    "Esp": "allí, su lugar",
+    "Categoria": "Demostrativos",
+    "Notas": ""
+  },
+  {
+    "Id": 237,
+    "CapituloId": 4,
+    "Jap": "ニューヨーク",
+    "Esp": "Nueva York",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 238,
+    "CapituloId": 4,
+    "Jap": "ペキン",
+    "Esp": "Pekín",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 239,
+    "CapituloId": 4,
+    "Jap": "ロサンゼルス",
+    "Esp": "Los Ángeles",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 240,
+    "CapituloId": 4,
+    "Jap": "ロンドン",
+    "Esp": "Londres",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 241,
+    "CapituloId": 5,
+    "Jap": "いきます",
+    "Esp": "ir",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 242,
+    "CapituloId": 5,
+    "Jap": "きます",
+    "Esp": "venir",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 243,
+    "CapituloId": 5,
+    "Jap": "かえります",
+    "Esp": "volver, regresar, irse a casa",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 244,
+    "CapituloId": 5,
+    "Jap": "がっこう",
+    "Esp": "escuela",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 245,
+    "CapituloId": 5,
+    "Jap": "スーパー",
+    "Esp": "supermercado",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 246,
+    "CapituloId": 5,
+    "Jap": "えき",
+    "Esp": "estación",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 247,
+    "CapituloId": 5,
+    "Jap": "ひこうき",
+    "Esp": "avión",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 248,
+    "CapituloId": 5,
+    "Jap": "ふね",
+    "Esp": "buque, barco",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 249,
+    "CapituloId": 5,
+    "Jap": "でんしゃ",
+    "Esp": "tren eléctrico",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 250,
+    "CapituloId": 5,
+    "Jap": "ちかてつ",
+    "Esp": "metro",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 251,
+    "CapituloId": 5,
+    "Jap": "しんかんせん",
+    "Esp": "Shinkansen, tren bala",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 252,
+    "CapituloId": 5,
+    "Jap": "バス",
+    "Esp": "autobús, camión",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 253,
+    "CapituloId": 5,
+    "Jap": "タクシー",
+    "Esp": "taxi",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 254,
+    "CapituloId": 5,
+    "Jap": "じてんしゃ",
+    "Esp": "bicicleta",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 255,
+    "CapituloId": 5,
+    "Jap": "あるいて",
+    "Esp": "a pie, andando, caminando",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 256,
+    "CapituloId": 5,
+    "Jap": "ひと",
+    "Esp": "persona, gente",
+    "Categoria": "Pronombres",
+    "Notas": ""
+  },
+  {
+    "Id": 257,
+    "CapituloId": 5,
+    "Jap": "ともだち",
+    "Esp": "amigo(s)",
+    "Categoria": "Pronombres",
+    "Notas": ""
+  },
+  {
+    "Id": 258,
+    "CapituloId": 5,
+    "Jap": "かれ",
+    "Esp": "él, novio",
+    "Categoria": "Pronombres",
+    "Notas": ""
+  },
+  {
+    "Id": 259,
+    "CapituloId": 5,
+    "Jap": "かのじょ",
+    "Esp": "ella, novia",
+    "Categoria": "Pronombres",
+    "Notas": ""
+  },
+  {
+    "Id": 260,
+    "CapituloId": 5,
+    "Jap": "かぞく",
+    "Esp": "familia",
+    "Categoria": "Pronombres",
+    "Notas": ""
+  },
+  {
+    "Id": 261,
+    "CapituloId": 5,
+    "Jap": "ひとりで",
+    "Esp": "solo",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 262,
+    "CapituloId": 5,
+    "Jap": "せんしゅう",
+    "Esp": "la semana pasada",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 263,
+    "CapituloId": 5,
+    "Jap": "こんしゅう",
+    "Esp": "esta semana",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 264,
+    "CapituloId": 5,
+    "Jap": "らいしゅう",
+    "Esp": "la semana que viene, la semana próxima",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 265,
+    "CapituloId": 5,
+    "Jap": "せんげつ",
+    "Esp": "el mes pasado",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 266,
+    "CapituloId": 5,
+    "Jap": "こんげつ",
+    "Esp": "este mes, el mes corriente",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 267,
+    "CapituloId": 5,
+    "Jap": "らいげつ",
+    "Esp": "el mes que viene, el mes próximo",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 268,
+    "CapituloId": 5,
+    "Jap": "きょねん",
+    "Esp": "el año pasado",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 269,
+    "CapituloId": 5,
+    "Jap": "ことし",
+    "Esp": "este año, el año corriente",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 270,
+    "CapituloId": 5,
+    "Jap": "らいねん",
+    "Esp": "el año que viene, el año próximo",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 271,
+    "CapituloId": 5,
+    "Jap": "ねん",
+    "Esp": "año",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 272,
+    "CapituloId": 5,
+    "Jap": "なんねん",
+    "Esp": "qué año",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 273,
+    "CapituloId": 5,
+    "Jap": "いちがつ",
+    "Esp": "mes de enero",
+    "Categoria": "Meses",
+    "Notas": ""
+  },
+  {
+    "Id": 274,
+    "CapituloId": 5,
+    "Jap": "なんがつ",
+    "Esp": "qué mes",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 275,
+    "CapituloId": 5,
+    "Jap": "ついたち",
+    "Esp": "el día uno, el primer día del mes",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 276,
+    "CapituloId": 5,
+    "Jap": "ふつか",
+    "Esp": "el día dos, 2 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 277,
+    "CapituloId": 5,
+    "Jap": "みっか",
+    "Esp": "el día tres, 3 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 278,
+    "CapituloId": 5,
+    "Jap": "よっか",
+    "Esp": "el día cuatro, 4 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 279,
+    "CapituloId": 5,
+    "Jap": "いつか",
+    "Esp": "el día cinco, 5 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 280,
+    "CapituloId": 5,
+    "Jap": "むいか",
+    "Esp": "el día seis, 6 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 281,
+    "CapituloId": 5,
+    "Jap": "なのか",
+    "Esp": "el día siete, 7 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 282,
+    "CapituloId": 5,
+    "Jap": "ようか",
+    "Esp": "el día ocho, 8 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 283,
+    "CapituloId": 5,
+    "Jap": "ここのか",
+    "Esp": "el día nueve, 9 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 284,
+    "CapituloId": 5,
+    "Jap": "とおか",
+    "Esp": "el día diez, 10 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 285,
+    "CapituloId": 5,
+    "Jap": "じゅうよっか",
+    "Esp": "el día catorce, 14 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 286,
+    "CapituloId": 5,
+    "Jap": "はつか",
+    "Esp": "el día veinte, 20 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 287,
+    "CapituloId": 5,
+    "Jap": "にじゅうよっか",
+    "Esp": "el día veinticuatro, 24 días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 288,
+    "CapituloId": 5,
+    "Jap": "いちにち",
+    "Esp": "día, días",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 289,
+    "CapituloId": 5,
+    "Jap": "なんにち",
+    "Esp": "qué día del mes, cuántos días",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 290,
+    "CapituloId": 5,
+    "Jap": "いつ",
+    "Esp": "cuándo",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 291,
+    "CapituloId": 5,
+    "Jap": "たんじょうび",
+    "Esp": "cumpleaños",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 292,
+    "CapituloId": 5,
+    "Jap": "そうですね",
+    "Esp": "Estoy de acuerdo.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 293,
+    "CapituloId": 5,
+    "Jap": "ありがとうございました",
+    "Esp": "[Muchas] gracias.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 294,
+    "CapituloId": 5,
+    "Jap": "どういたしまして",
+    "Esp": "De nada. / No hay de qué.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 295,
+    "CapituloId": 5,
+    "Jap": "ばんせん",
+    "Esp": "andén, plataforma",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 296,
+    "CapituloId": 5,
+    "Jap": "つぎ",
+    "Esp": "próximo, siguiente",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 297,
+    "CapituloId": 5,
+    "Jap": "ふつう",
+    "Esp": "(tren) ordinario, local",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 298,
+    "CapituloId": 5,
+    "Jap": "きゅうこう",
+    "Esp": "(tren) expreso",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 299,
+    "CapituloId": 5,
+    "Jap": "とっきゅう",
+    "Esp": "(tren) superexpreso",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 300,
+    "CapituloId": 5,
+    "Jap": "こうしえん",
+    "Esp": "nombre de una ciudad cerca de Osaka",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 301,
+    "CapituloId": 5,
+    "Jap": "おおさかじょう",
+    "Esp": "Castillo de Osaka",
+    "Categoria": "Geografía",
+    "Notas": "Un castillo famoso de Osaka."
+  },
+  {
+    "Id": 302,
+    "CapituloId": 6,
+    "Jap": "たべます",
+    "Esp": "comer",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 303,
+    "CapituloId": 6,
+    "Jap": "のみます",
+    "Esp": "beber, tomar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 304,
+    "CapituloId": 6,
+    "Jap": "すいます",
+    "Esp": "fumar",
+    "Categoria": "Verbos",
+    "Notas": "[たばこを~]"
+  },
+  {
+    "Id": 305,
+    "CapituloId": 6,
+    "Jap": "みます",
+    "Esp": "ver, mirar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 306,
+    "CapituloId": 6,
+    "Jap": "ききます",
+    "Esp": "oír, escuchar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 307,
+    "CapituloId": 6,
+    "Jap": "よみます",
+    "Esp": "leer",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 308,
+    "CapituloId": 6,
+    "Jap": "かきます",
+    "Esp": "escribir",
+    "Categoria": "Verbos",
+    "Notas": "en este libro かきます en el sentido de pintar o dibujar se escribe con hiragana"
+  },
+  {
+    "Id": 309,
+    "CapituloId": 6,
+    "Jap": "かいます",
+    "Esp": "comprar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 310,
+    "CapituloId": 6,
+    "Jap": "とります",
+    "Esp": "sacar [fotos]",
+    "Categoria": "Verbos",
+    "Notas": "[しゃしんを~]"
+  },
+  {
+    "Id": 311,
+    "CapituloId": 6,
+    "Jap": "します",
+    "Esp": "hacer",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 312,
+    "CapituloId": 6,
+    "Jap": "あいます",
+    "Esp": "ver a, encontrarse con [amigos]",
+    "Categoria": "Verbos",
+    "Notas": "[ともだちに~]"
+  },
+  {
+    "Id": 313,
+    "CapituloId": 6,
+    "Jap": "ごはん",
+    "Esp": "comida, arroz cocido",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 314,
+    "CapituloId": 6,
+    "Jap": "あさごはん",
+    "Esp": "desayuno",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 315,
+    "CapituloId": 6,
+    "Jap": "ひるごはん",
+    "Esp": "almuerzo, comida de mediodía",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 316,
+    "CapituloId": 6,
+    "Jap": "ばんごはん",
+    "Esp": "cena",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 317,
+    "CapituloId": 6,
+    "Jap": "パン",
+    "Esp": "pan",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 318,
+    "CapituloId": 6,
+    "Jap": "たまご",
+    "Esp": "huevo",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 319,
+    "CapituloId": 6,
+    "Jap": "にく",
+    "Esp": "carne",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 320,
+    "CapituloId": 6,
+    "Jap": "さかな",
+    "Esp": "pescado, pez",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 321,
+    "CapituloId": 6,
+    "Jap": "やさい",
+    "Esp": "verduras, hortalizas",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 322,
+    "CapituloId": 6,
+    "Jap": "くだもの",
+    "Esp": "frutas",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 323,
+    "CapituloId": 6,
+    "Jap": "みず",
+    "Esp": "agua",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 324,
+    "CapituloId": 6,
+    "Jap": "おちゃ",
+    "Esp": "té, té verde",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 325,
+    "CapituloId": 6,
+    "Jap": "こうちゃ",
+    "Esp": "té negro, té inglés",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 326,
+    "CapituloId": 6,
+    "Jap": "ぎゅうにゅう",
+    "Esp": "leche",
+    "Categoria": "AnimalesYComida",
+    "Notas": "(ミルク)"
+  },
+  {
+    "Id": 327,
+    "CapituloId": 6,
+    "Jap": "ジュース",
+    "Esp": "jugo, zumo",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 328,
+    "CapituloId": 6,
+    "Jap": "ビール",
+    "Esp": "cerveza",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 329,
+    "CapituloId": 6,
+    "Jap": "さけ",
+    "Esp": "bebida alcohólica, sake",
+    "Categoria": "AnimalesYComida",
+    "Notas": "[お]"
+  },
+  {
+    "Id": 330,
+    "CapituloId": 6,
+    "Jap": "たばこ",
+    "Esp": "cigarrillo",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 331,
+    "CapituloId": 6,
+    "Jap": "てがみ",
+    "Esp": "carta, correspondencia",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 332,
+    "CapituloId": 6,
+    "Jap": "レポート",
+    "Esp": "informe, reporte",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 333,
+    "CapituloId": 6,
+    "Jap": "しゃしん",
+    "Esp": "fotografía",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 334,
+    "CapituloId": 6,
+    "Jap": "ビデオ",
+    "Esp": "vídeo (cinta o aparato)",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 335,
+    "CapituloId": 6,
+    "Jap": "みせ",
+    "Esp": "tienda, negocio",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 336,
+    "CapituloId": 6,
+    "Jap": "にわ",
+    "Esp": "jardín",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 337,
+    "CapituloId": 6,
+    "Jap": "しゅくだい",
+    "Esp": "deberes, tarea",
+    "Categoria": "Actividades",
+    "Notas": "~をします: hacer los deberes"
+  },
+  {
+    "Id": 338,
+    "CapituloId": 6,
+    "Jap": "テニス",
+    "Esp": "tenis",
+    "Categoria": "Actividades",
+    "Notas": "~をします: jugar al tenis"
+  },
+  {
+    "Id": 339,
+    "CapituloId": 6,
+    "Jap": "サッカー",
+    "Esp": "fútbol",
+    "Categoria": "Actividades",
+    "Notas": "~をします: jugar al fútbol"
+  },
+  {
+    "Id": 340,
+    "CapituloId": 6,
+    "Jap": "はなみ",
+    "Esp": "costumbre japonesa que consiste en ir a ver los cerezos en plena floración",
+    "Categoria": "Actividades",
+    "Notas": "~をします: ir a ver las flores de cerezo"
+  },
+  {
+    "Id": 341,
+    "CapituloId": 6,
+    "Jap": "なに",
+    "Esp": "qué",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 342,
+    "CapituloId": 6,
+    "Jap": "いっしょに",
+    "Esp": "junto(s)",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 343,
+    "CapituloId": 6,
+    "Jap": "ちょっと",
+    "Esp": "un poco (refiriéndose a tiempo, cantidad)",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 344,
+    "CapituloId": 6,
+    "Jap": "いつも",
+    "Esp": "siempre, normalmente",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 345,
+    "CapituloId": 6,
+    "Jap": "ときどき",
+    "Esp": "de vez en cuando, a veces",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 346,
+    "CapituloId": 6,
+    "Jap": "それから",
+    "Esp": "y luego, y después",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 347,
+    "CapituloId": 6,
+    "Jap": "ええ",
+    "Esp": "sí",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 348,
+    "CapituloId": 6,
+    "Jap": "いいですね",
+    "Esp": "Es una buena idea.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 349,
+    "CapituloId": 6,
+    "Jap": "わかりました",
+    "Esp": "Entendido. / Muy bien.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 350,
+    "CapituloId": 6,
+    "Jap": "なんですか",
+    "Esp": "¿Sí? / ¿Qué deseaba?",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 351,
+    "CapituloId": 6,
+    "Jap": "じゃ、また",
+    "Esp": "Entonces, hasta mañana.",
+    "Categoria": "Expresiones",
+    "Notas": "[あした]"
+  },
+  {
+    "Id": 352,
+    "CapituloId": 6,
+    "Jap": "メキシコ",
+    "Esp": "México",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 353,
+    "CapituloId": 6,
+    "Jap": "おおさか",
+    "Esp": "Osaka",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 354,
+    "CapituloId": 7,
+    "Jap": "きります",
+    "Esp": "cortar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 355,
+    "CapituloId": 7,
+    "Jap": "おくります",
+    "Esp": "enviar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 356,
+    "CapituloId": 7,
+    "Jap": "あげます",
+    "Esp": "dar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 357,
+    "CapituloId": 7,
+    "Jap": "もらいます",
+    "Esp": "recibir (regalos, etc.)",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 358,
+    "CapituloId": 7,
+    "Jap": "かします",
+    "Esp": "prestar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 359,
+    "CapituloId": 7,
+    "Jap": "かります",
+    "Esp": "tomar prestado",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 360,
+    "CapituloId": 7,
+    "Jap": "おしえます",
+    "Esp": "enseñar",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 361,
+    "CapituloId": 7,
+    "Jap": "ならいます",
+    "Esp": "aprender",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 362,
+    "CapituloId": 7,
+    "Jap": "かけます",
+    "Esp": "hacer [una llamada telefónica]",
+    "Categoria": "Verbos",
+    "Notas": "[でんわを~]"
+  },
+  {
+    "Id": 363,
+    "CapituloId": 7,
+    "Jap": "て",
+    "Esp": "mano",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 364,
+    "CapituloId": 7,
+    "Jap": "はし",
+    "Esp": "palillos",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 365,
+    "CapituloId": 7,
+    "Jap": "スプーン",
+    "Esp": "cuchara, cucharilla",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 366,
+    "CapituloId": 7,
+    "Jap": "ナイフ",
+    "Esp": "cuchillo",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 367,
+    "CapituloId": 7,
+    "Jap": "フォーク",
+    "Esp": "tenedor",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 368,
+    "CapituloId": 7,
+    "Jap": "はさみ",
+    "Esp": "tijeras",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 369,
+    "CapituloId": 7,
+    "Jap": "パソコン",
+    "Esp": "ordenador, computadora",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 370,
+    "CapituloId": 7,
+    "Jap": "ケータイ",
+    "Esp": "teléfono móvil, celular",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 371,
+    "CapituloId": 7,
+    "Jap": "メール",
+    "Esp": "e-mail, correo electrónico",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 372,
+    "CapituloId": 7,
+    "Jap": "ねんがじょう",
+    "Esp": "tarjeta (de felicitación) de año nuevo",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 373,
+    "CapituloId": 7,
+    "Jap": "パンチ",
+    "Esp": "perforadora (artículo de papelería)",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 374,
+    "CapituloId": 7,
+    "Jap": "ホッチキス",
+    "Esp": "grapadora",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 375,
+    "CapituloId": 7,
+    "Jap": "セロテープ",
+    "Esp": "cinta adhesiva",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 376,
+    "CapituloId": 7,
+    "Jap": "けしゴム",
+    "Esp": "goma de borrar",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 377,
+    "CapituloId": 7,
+    "Jap": "かみ",
+    "Esp": "papel",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 378,
+    "CapituloId": 7,
+    "Jap": "はな",
+    "Esp": "flor",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 379,
+    "CapituloId": 7,
+    "Jap": "シャツ",
+    "Esp": "camisa",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 380,
+    "CapituloId": 7,
+    "Jap": "プレゼント",
+    "Esp": "regalo",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 381,
+    "CapituloId": 7,
+    "Jap": "にもつ",
+    "Esp": "equipaje, paquete",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 382,
+    "CapituloId": 7,
+    "Jap": "おかね",
+    "Esp": "dinero",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 383,
+    "CapituloId": 7,
+    "Jap": "きっぷ",
+    "Esp": "billete (de medios de transporte)",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 384,
+    "CapituloId": 7,
+    "Jap": "クリスマス",
+    "Esp": "Navidad",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 385,
+    "CapituloId": 7,
+    "Jap": "ちち",
+    "Esp": "(mi) padre",
+    "Categoria": "Pronombres",
+    "Notas": ""
+  },
+  {
+    "Id": 386,
+    "CapituloId": 7,
+    "Jap": "はは",
+    "Esp": "(mi) madre",
+    "Categoria": "Pronombres",
+    "Notas": ""
+  },
+  {
+    "Id": 387,
+    "CapituloId": 7,
+    "Jap": "おとうさん",
+    "Esp": "(tu/su) padre",
+    "Categoria": "Pronombres",
+    "Notas": "se utiliza también para llamar al padre del hablante mismo"
+  },
+  {
+    "Id": 388,
+    "CapituloId": 7,
+    "Jap": "おかあさん",
+    "Esp": "(tu/su) madre",
+    "Categoria": "Pronombres",
+    "Notas": "se utiliza también para llamar a la madre del hablante mismo"
+  },
+  {
+    "Id": 389,
+    "CapituloId": 7,
+    "Jap": "もう",
+    "Esp": "ya",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 390,
+    "CapituloId": 7,
+    "Jap": "まだ",
+    "Esp": "todavía",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 391,
+    "CapituloId": 7,
+    "Jap": "これから",
+    "Esp": "desde ahora, dentro de poco",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 392,
+    "CapituloId": 7,
+    "Jap": "すてきですね",
+    "Esp": "¡Qué bonito es [~]! / Es bonito [~].",
+    "Categoria": "Expresiones",
+    "Notas": "[~、]"
+  },
+  {
+    "Id": 393,
+    "CapituloId": 7,
+    "Jap": "いらっしゃい",
+    "Esp": "Bienvenido.",
+    "Categoria": "Expresiones",
+    "Notas": "expresión de acogida al visitante"
+  },
+  {
+    "Id": 394,
+    "CapituloId": 7,
+    "Jap": "どうぞおあがりください",
+    "Esp": "Pase, por favor.",
+    "Categoria": "Expresiones",
+    "Notas": "expresión empleada para invitar al visitante a entrar en casa"
+  },
+  {
+    "Id": 395,
+    "CapituloId": 7,
+    "Jap": "しつれいします",
+    "Esp": "Con su permiso.",
+    "Categoria": "Expresiones",
+    "Notas": "expresión pronunciada al entrar o salir de la casa o el cuarto de alguien"
+  },
+  {
+    "Id": 396,
+    "CapituloId": 7,
+    "Jap": "いかがですか",
+    "Esp": "¿Le apetece [~]?",
+    "Categoria": "Expresiones",
+    "Notas": "expresión empleada al ofrecer comida, bebida, etc. al invitado"
+  },
+  {
+    "Id": 397,
+    "CapituloId": 7,
+    "Jap": "いただきます",
+    "Esp": "Muchas gracias.",
+    "Categoria": "Expresiones",
+    "Notas": "expresión que se pronuncia al empezar a comer o beber"
+  },
+  {
+    "Id": 398,
+    "CapituloId": 7,
+    "Jap": "ごちそうさまでした",
+    "Esp": "Muchas gracias.",
+    "Categoria": "Expresiones",
+    "Notas": "expresión que se pronuncia después de comer o beber"
+  },
+  {
+    "Id": 399,
+    "CapituloId": 7,
+    "Jap": "スペイン",
+    "Esp": "España",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 400,
+    "CapituloId": 8,
+    "Jap": "ハンサム",
+    "Esp": "guapo",
+    "Categoria": "Gramatica",
+    "Notas": "[な]"
+  },
+  {
+    "Id": 401,
+    "CapituloId": 8,
+    "Jap": "きれい",
+    "Esp": "hermoso, limpio",
+    "Categoria": "Gramatica",
+    "Notas": "[な]"
+  },
+  {
+    "Id": 402,
+    "CapituloId": 8,
+    "Jap": "しずか",
+    "Esp": "silencioso",
+    "Categoria": "Gramatica",
+    "Notas": "[な]"
+  },
+  {
+    "Id": 403,
+    "CapituloId": 8,
+    "Jap": "にぎやか",
+    "Esp": "concurrido, animado",
+    "Categoria": "Gramatica",
+    "Notas": "[な]"
+  },
+  {
+    "Id": 404,
+    "CapituloId": 8,
+    "Jap": "ゆうめい",
+    "Esp": "famoso, célebre",
+    "Categoria": "Gramatica",
+    "Notas": "[な]"
+  },
+  {
+    "Id": 405,
+    "CapituloId": 8,
+    "Jap": "しんせつ",
+    "Esp": "amable, generoso",
+    "Categoria": "Gramatica",
+    "Notas": "no se emplea al referir a la familia del hablante mismo"
+  },
+  {
+    "Id": 406,
+    "CapituloId": 8,
+    "Jap": "げんき",
+    "Esp": "sano, con ánimo",
+    "Categoria": "Gramatica",
+    "Notas": "[な]"
+  },
+  {
+    "Id": 407,
+    "CapituloId": 8,
+    "Jap": "ひま",
+    "Esp": "estar libre (tiempo)",
+    "Categoria": "Gramatica",
+    "Notas": "[な]"
+  },
+  {
+    "Id": 408,
+    "CapituloId": 8,
+    "Jap": "べんり",
+    "Esp": "útil, práctico, conveniente",
+    "Categoria": "Gramatica",
+    "Notas": "[な]"
+  },
+  {
+    "Id": 409,
+    "CapituloId": 8,
+    "Jap": "すてき",
+    "Esp": "bonito",
+    "Categoria": "Gramatica",
+    "Notas": "[な]"
+  },
+  {
+    "Id": 410,
+    "CapituloId": 8,
+    "Jap": "おおきい",
+    "Esp": "grande",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 411,
+    "CapituloId": 8,
+    "Jap": "ちいさい",
+    "Esp": "pequeño",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 412,
+    "CapituloId": 8,
+    "Jap": "あたらしい",
+    "Esp": "nuevo",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 413,
+    "CapituloId": 8,
+    "Jap": "ふるい",
+    "Esp": "viejo, antiguo",
+    "Categoria": "Gramatica",
+    "Notas": "no se emplea para referirse a la gente"
+  },
+  {
+    "Id": 414,
+    "CapituloId": 8,
+    "Jap": "わるい",
+    "Esp": "malo",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 415,
+    "CapituloId": 8,
+    "Jap": "あつい",
+    "Esp": "caluroso, caliente",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 416,
+    "CapituloId": 8,
+    "Jap": "さむい",
+    "Esp": "frío",
+    "Categoria": "Gramatica",
+    "Notas": "se limita su uso al clima o la temperatura ambiental"
+  },
+  {
+    "Id": 417,
+    "CapituloId": 8,
+    "Jap": "つめたい",
+    "Esp": "frío",
+    "Categoria": "Gramatica",
+    "Notas": "relativo al tacto"
+  },
+  {
+    "Id": 418,
+    "CapituloId": 8,
+    "Jap": "むずかしい",
+    "Esp": "difícil",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 419,
+    "CapituloId": 8,
+    "Jap": "やさしい",
+    "Esp": "fácil",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 420,
+    "CapituloId": 8,
+    "Jap": "たかい",
+    "Esp": "caro, alto",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 421,
+    "CapituloId": 8,
+    "Jap": "やすい",
+    "Esp": "barato",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 422,
+    "CapituloId": 8,
+    "Jap": "ひくい",
+    "Esp": "bajo (relativo a altura y estatura)",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 423,
+    "CapituloId": 8,
+    "Jap": "おもしろい",
+    "Esp": "interesante",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 424,
+    "CapituloId": 8,
+    "Jap": "おいしい",
+    "Esp": "delicioso, sabroso, rico",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 425,
+    "CapituloId": 8,
+    "Jap": "いそがしい",
+    "Esp": "atareado, ocupado",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 426,
+    "CapituloId": 8,
+    "Jap": "たのしい",
+    "Esp": "divertido, placentero",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 427,
+    "CapituloId": 8,
+    "Jap": "しろい",
+    "Esp": "blanco",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 428,
+    "CapituloId": 8,
+    "Jap": "くろい",
+    "Esp": "negro",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 429,
+    "CapituloId": 8,
+    "Jap": "あかい",
+    "Esp": "rojo",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 430,
+    "CapituloId": 8,
+    "Jap": "あおい",
+    "Esp": "azul",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 431,
+    "CapituloId": 8,
+    "Jap": "さくら",
+    "Esp": "árbol o flor de cerezo",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 432,
+    "CapituloId": 8,
+    "Jap": "やま",
+    "Esp": "montaña, monte",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 433,
+    "CapituloId": 8,
+    "Jap": "まち",
+    "Esp": "población",
+    "Categoria": "Lugares",
+    "Notas": "normalmente se refiere a ciudades no muy grandes"
+  },
+  {
+    "Id": 434,
+    "CapituloId": 8,
+    "Jap": "たべもの",
+    "Esp": "comida, alimentos",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 435,
+    "CapituloId": 8,
+    "Jap": "ところ",
+    "Esp": "lugar",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 436,
+    "CapituloId": 8,
+    "Jap": "りょう",
+    "Esp": "residencia, dormitorio",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 437,
+    "CapituloId": 8,
+    "Jap": "レストラン",
+    "Esp": "restaurante",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 438,
+    "CapituloId": 8,
+    "Jap": "せいかつ",
+    "Esp": "vida (diaria)",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 439,
+    "CapituloId": 8,
+    "Jap": "どう",
+    "Esp": "cómo",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 440,
+    "CapituloId": 8,
+    "Jap": "どんな",
+    "Esp": "qué clase de~",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 441,
+    "CapituloId": 8,
+    "Jap": "しごと",
+    "Esp": "trabajo, profesión",
+    "Categoria": "Actividades",
+    "Notas": "~をします: trabajar, hacer un trabajo"
+  },
+  {
+    "Id": 442,
+    "CapituloId": 8,
+    "Jap": "とても",
+    "Esp": "muy, mucho",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 443,
+    "CapituloId": 8,
+    "Jap": "あまり",
+    "Esp": "no tan, no muy",
+    "Categoria": "Gramatica",
+    "Notas": "se emplea con formas negativas"
+  },
+  {
+    "Id": 444,
+    "CapituloId": 8,
+    "Jap": "そして",
+    "Esp": "y",
+    "Categoria": "Gramatica",
+    "Notas": "se emplea para conectar oraciones"
+  },
+  {
+    "Id": 445,
+    "CapituloId": 8,
+    "Jap": "~が、~",
+    "Esp": "~, pero~",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 446,
+    "CapituloId": 8,
+    "Jap": "おげんきですか",
+    "Esp": "¿Cómo está Ud.?",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 447,
+    "CapituloId": 8,
+    "Jap": "そうですね",
+    "Esp": "Bueno...",
+    "Categoria": "Expresiones",
+    "Notas": "al estar pensando en qué contestar"
+  },
+  {
+    "Id": 448,
+    "CapituloId": 8,
+    "Jap": "もういっぱいいかがですか",
+    "Esp": "¿Le apetece otra taza (copa, vaso) de [~]?",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 449,
+    "CapituloId": 8,
+    "Jap": "けっこうです",
+    "Esp": "No, gracias.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 450,
+    "CapituloId": 8,
+    "Jap": "もう〜です",
+    "Esp": "Ya es~",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 451,
+    "CapituloId": 8,
+    "Jap": "そろそろしつれいします",
+    "Esp": "Es hora de marcharnos.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 452,
+    "CapituloId": 8,
+    "Jap": "いいえ",
+    "Esp": "De nada. / No hay de qué.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 453,
+    "CapituloId": 8,
+    "Jap": "またいらっしゃってください",
+    "Esp": "Vuelva(n) a visitarnos.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 454,
+    "CapituloId": 8,
+    "Jap": "シャンハイ",
+    "Esp": "Shanghái",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 455,
+    "CapituloId": 8,
+    "Jap": "きんかくじ",
+    "Esp": "Templo budista Kinkakuji",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 456,
+    "CapituloId": 8,
+    "Jap": "ならこうえん",
+    "Esp": "nombre de un parque en Nara",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 457,
+    "CapituloId": 8,
+    "Jap": "ふじさん",
+    "Esp": "Monte Fuji",
+    "Categoria": "Geografía",
+    "Notas": "la montaña más alta en Japón"
+  },
+  {
+    "Id": 458,
+    "CapituloId": 8,
+    "Jap": "しちにんのさむらい",
+    "Esp": "\"Los siete samuráis\"",
+    "Categoria": "Geografía",
+    "Notas": "una película clásica dirigida por Akira Kurosawa"
+  },
+  {
+    "Id": 459,
+    "CapituloId": 9,
+    "Jap": "わかります",
+    "Esp": "entender, comprender",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 460,
+    "CapituloId": 9,
+    "Jap": "あります",
+    "Esp": "haber",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 461,
+    "CapituloId": 9,
+    "Jap": "すき [な]",
+    "Esp": "gustar",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 462,
+    "CapituloId": 9,
+    "Jap": "きらい [な]",
+    "Esp": "no gustar",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 463,
+    "CapituloId": 9,
+    "Jap": "じょうず [な]",
+    "Esp": "ser bueno, ser hábil",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 464,
+    "CapituloId": 9,
+    "Jap": "へた [な]",
+    "Esp": "no ser bueno, no ser hábil",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 465,
+    "CapituloId": 9,
+    "Jap": "のみもの",
+    "Esp": "bebida",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 466,
+    "CapituloId": 9,
+    "Jap": "りょうり",
+    "Esp": "plato (relativo a la comida), cocina",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 467,
+    "CapituloId": 9,
+    "Jap": "スポーツ",
+    "Esp": "deporte",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 468,
+    "CapituloId": 9,
+    "Jap": "やきゅう",
+    "Esp": "béisbol",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 469,
+    "CapituloId": 9,
+    "Jap": "ダンス",
+    "Esp": "baile",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 470,
+    "CapituloId": 9,
+    "Jap": "りょこう",
+    "Esp": "viaje",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 471,
+    "CapituloId": 9,
+    "Jap": "おんがく",
+    "Esp": "música",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 472,
+    "CapituloId": 9,
+    "Jap": "うた",
+    "Esp": "canción",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 473,
+    "CapituloId": 9,
+    "Jap": "クラシック",
+    "Esp": "música clásica",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 474,
+    "CapituloId": 9,
+    "Jap": "ジャズ",
+    "Esp": "jazz",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 475,
+    "CapituloId": 9,
+    "Jap": "コンサート",
+    "Esp": "concierto",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 476,
+    "CapituloId": 9,
+    "Jap": "カラオケ",
+    "Esp": "karaoke",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 477,
+    "CapituloId": 9,
+    "Jap": "かぶき",
+    "Esp": "kabuki (teatro tradicional de Japón)",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 478,
+    "CapituloId": 9,
+    "Jap": "え",
+    "Esp": "pintura, dibujo, cuadro",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 479,
+    "CapituloId": 9,
+    "Jap": "じ",
+    "Esp": "letra",
+    "Categoria": "Idiomas",
+    "Notas": ""
+  },
+  {
+    "Id": 480,
+    "CapituloId": 9,
+    "Jap": "かんじ",
+    "Esp": "caracteres chinos",
+    "Categoria": "Idiomas",
+    "Notas": ""
+  },
+  {
+    "Id": 481,
+    "CapituloId": 9,
+    "Jap": "ひらがな",
+    "Esp": "escritura de hiragana",
+    "Categoria": "Idiomas",
+    "Notas": ""
+  },
+  {
+    "Id": 482,
+    "CapituloId": 9,
+    "Jap": "かたかな",
+    "Esp": "escritura de katakana",
+    "Categoria": "Idiomas",
+    "Notas": ""
+  },
+  {
+    "Id": 483,
+    "CapituloId": 9,
+    "Jap": "ローマじ",
+    "Esp": "alfabeto latino",
+    "Categoria": "Idiomas",
+    "Notas": ""
+  },
+  {
+    "Id": 484,
+    "CapituloId": 9,
+    "Jap": "こまかいおかね",
+    "Esp": "cambio (pequeña cantidad de dinero en monedas)",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 485,
+    "CapituloId": 9,
+    "Jap": "チケット",
+    "Esp": "entrada",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 486,
+    "CapituloId": 9,
+    "Jap": "じかん",
+    "Esp": "tiempo",
+    "Categoria": "Tiempo",
+    "Notas": ""
+  },
+  {
+    "Id": 487,
+    "CapituloId": 9,
+    "Jap": "ようじ",
+    "Esp": "algo que hacer",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 488,
+    "CapituloId": 9,
+    "Jap": "やくそく",
+    "Esp": "cita, compromiso",
+    "Categoria": "Actividades",
+    "Notas": ""
+  },
+  {
+    "Id": 489,
+    "CapituloId": 9,
+    "Jap": "アルバイト",
+    "Esp": "trabajo temporal, trabajo eventual",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 490,
+    "CapituloId": 9,
+    "Jap": "どうして",
+    "Esp": "por qué",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 491,
+    "CapituloId": 9,
+    "Jap": "カしてください",
+    "Esp": "Por favor, préstame.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 492,
+    "CapituloId": 9,
+    "Jap": "いいですよ",
+    "Esp": "Sí, claro.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 493,
+    "CapituloId": 9,
+    "Jap": "ざんねんです[が]",
+    "Esp": "Lo siento, pero...",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 494,
+    "CapituloId": 9,
+    "Jap": "いっしょにいかがですか",
+    "Esp": "¿Me (nos) acompaña?",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 495,
+    "CapituloId": 9,
+    "Jap": "[~は] ちょっと",
+    "Esp": "[~] es un poco difícil.",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 496,
+    "CapituloId": 9,
+    "Jap": "だめですか",
+    "Esp": "¿No puede?",
+    "Categoria": "Preguntas",
+    "Notas": ""
+  },
+  {
+    "Id": 497,
+    "CapituloId": 9,
+    "Jap": "またこんどおねがいします",
+    "Esp": "Por favor, vuelva a invitarme una próxima vez.",
+    "Categoria": "Expresiones",
+    "Notas": "esta expresión se emplea al rechazar una invitación de manera indirecta considerando el sentimiento de quien le ha invitado"
+  },
+  {
+    "Id": 498,
+    "CapituloId": 10,
+    "Jap": "あります",
+    "Esp": "estar, haber (cosas inanimadas)",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 499,
+    "CapituloId": 10,
+    "Jap": "います",
+    "Esp": "estar, haber, existir (seres animados)",
+    "Categoria": "Verbos",
+    "Notas": ""
+  },
+  {
+    "Id": 500,
+    "CapituloId": 10,
+    "Jap": "いろいろ [な]",
+    "Esp": "diversos",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 501,
+    "CapituloId": 10,
+    "Jap": "おとこのひと",
+    "Esp": "hombre",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 502,
+    "CapituloId": 10,
+    "Jap": "おんなのひと",
+    "Esp": "mujer",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 503,
+    "CapituloId": 10,
+    "Jap": "おとこのこ",
+    "Esp": "niño",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 504,
+    "CapituloId": 10,
+    "Jap": "おんなのこ",
+    "Esp": "niña",
+    "Categoria": "ProfesionesYRoles",
+    "Notas": ""
+  },
+  {
+    "Id": 505,
+    "CapituloId": 10,
+    "Jap": "いぬ",
+    "Esp": "perro",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 506,
+    "CapituloId": 10,
+    "Jap": "ねこ",
+    "Esp": "gato",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 507,
+    "CapituloId": 10,
+    "Jap": "パンダ",
+    "Esp": "panda",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 508,
+    "CapituloId": 10,
+    "Jap": "ぞう",
+    "Esp": "elefante",
+    "Categoria": "AnimalesYComida",
+    "Notas": ""
+  },
+  {
+    "Id": 509,
+    "CapituloId": 10,
+    "Jap": "き",
+    "Esp": "árbol, madera",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 510,
+    "CapituloId": 10,
+    "Jap": "もの",
+    "Esp": "cosa, objeto",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 511,
+    "CapituloId": 10,
+    "Jap": "でんち",
+    "Esp": "pila, batería",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 512,
+    "CapituloId": 10,
+    "Jap": "はこ",
+    "Esp": "caja",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 513,
+    "CapituloId": 10,
+    "Jap": "スイッチ",
+    "Esp": "interruptor",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 514,
+    "CapituloId": 10,
+    "Jap": "れいぞうこ",
+    "Esp": "refrigerador",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 515,
+    "CapituloId": 10,
+    "Jap": "テーブル",
+    "Esp": "mesa",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 516,
+    "CapituloId": 10,
+    "Jap": "ベッド",
+    "Esp": "cama",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 517,
+    "CapituloId": 10,
+    "Jap": "たな",
+    "Esp": "estante",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 518,
+    "CapituloId": 10,
+    "Jap": "ドア",
+    "Esp": "puerta",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 519,
+    "CapituloId": 10,
+    "Jap": "まど",
+    "Esp": "ventana",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 520,
+    "CapituloId": 10,
+    "Jap": "ポスト",
+    "Esp": "buzón",
+    "Categoria": "Objetos",
+    "Notas": ""
+  },
+  {
+    "Id": 521,
+    "CapituloId": 10,
+    "Jap": "ビル",
+    "Esp": "edificio",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 522,
+    "CapituloId": 10,
+    "Jap": "ATM",
+    "Esp": "cajero automático",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 523,
+    "CapituloId": 10,
+    "Jap": "コンビニ",
+    "Esp": "tienda de conveniencia, tienda 24 horas",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 524,
+    "CapituloId": 10,
+    "Jap": "こうえん",
+    "Esp": "parque",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 525,
+    "CapituloId": 10,
+    "Jap": "きっさてん",
+    "Esp": "cafetería",
+    "Categoria": "Lugares",
+    "Notas": ""
+  },
+  {
+    "Id": 526,
+    "CapituloId": 10,
+    "Jap": "~や",
+    "Esp": "tienda de~",
+    "Categoria": "SufijosYPartículas",
+    "Notas": ""
+  },
+  {
+    "Id": 527,
+    "CapituloId": 10,
+    "Jap": "のりば",
+    "Esp": "lugar donde se toman taxis, trenes, etc.",
+    "Categoria": "Transporte",
+    "Notas": ""
+  },
+  {
+    "Id": 528,
+    "CapituloId": 10,
+    "Jap": "けん",
+    "Esp": "prefectura",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 529,
+    "CapituloId": 10,
+    "Jap": "うえ",
+    "Esp": "encima, arriba",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 530,
+    "CapituloId": 10,
+    "Jap": "した",
+    "Esp": "debajo, abajo",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 531,
+    "CapituloId": 10,
+    "Jap": "まえ",
+    "Esp": "delante",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 532,
+    "CapituloId": 10,
+    "Jap": "うしろ",
+    "Esp": "detrás",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 533,
+    "CapituloId": 10,
+    "Jap": "みぎ",
+    "Esp": "derecha",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 534,
+    "CapituloId": 10,
+    "Jap": "ひだり",
+    "Esp": "izquierda",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 535,
+    "CapituloId": 10,
+    "Jap": "なか",
+    "Esp": "dentro",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 536,
+    "CapituloId": 10,
+    "Jap": "そと",
+    "Esp": "fuera",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 537,
+    "CapituloId": 10,
+    "Jap": "となり",
+    "Esp": "al lado",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 538,
+    "CapituloId": 10,
+    "Jap": "ちかく",
+    "Esp": "cerca",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 539,
+    "CapituloId": 10,
+    "Jap": "あいだ",
+    "Esp": "entre",
+    "Categoria": "Gramatica",
+    "Notas": ""
+  },
+  {
+    "Id": 540,
+    "CapituloId": 10,
+    "Jap": "~や~ [など]",
+    "Esp": "~, ~ y otros",
+    "Categoria": "SufijosYPartículas",
+    "Notas": ""
+  },
+  {
+    "Id": 541,
+    "CapituloId": 10,
+    "Jap": "[どうも]すみません",
+    "Esp": "[Muchas] gracias",
+    "Categoria": "Expresiones",
+    "Notas": ""
+  },
+  {
+    "Id": 542,
+    "CapituloId": 10,
+    "Jap": "とうきょうディズニーランド",
+    "Esp": "Disneylandia de Tokio",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 543,
+    "CapituloId": 10,
+    "Jap": "いちばんした",
+    "Esp": "el más inferior",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 544,
+    "CapituloId": 10,
+    "Jap": "コーナー",
+    "Esp": "sección",
+    "Categoria": "Geografía",
+    "Notas": ""
+  },
+  {
+    "Id": 545,
+    "CapituloId": 10,
+    "Jap": "ナンプラー",
+    "Esp": "nam pla (salsa popularmente usada en la culinaria del Sudeste Asiático)",
+    "Categoria": "Geografía",
+    "Notas": ""
+  }
+]
