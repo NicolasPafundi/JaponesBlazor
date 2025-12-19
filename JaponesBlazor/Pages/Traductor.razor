@@ -3,21 +3,43 @@
 @using System.Globalization
 @using JaponesBlazor.Component
 @inject HttpClient Http
+@inject IJSRuntime JS
 
-<h3 class="text-2xl font-bold text-sky-700 mb-6 text-center">Traductor</h3>
+<div class="header-bar mb-8">
+    <BackButton />
+    <h1 class="titulo-centrado">🔎 Traductor</h1>
+    <div class="header-bar-space"></div>
+</div>
 
-<div class="max-w-xl mx-auto">
-    <input class="w-full p-2 border rounded mb-2 text-center"
-           placeholder="Escribe en japonés o español..."
-           value="@busqueda"
-           @oninput="OnInputChanged" />
+<div class="">
+        <div class="flex items-center justify-center min-h-screen">
+        @if (Jap)
+        {
+            <textarea
+                class="japones-input"
+                @ref="KanaInputRef"
+                @oninput="@(async e => { await OnKanaInput(e); })"
+                @bind="busqueda"
+                lang="ja"
+                autocomplete="off"
+                rows="1"
+                placeholder="Romanji - a=あ A=ア" />
+        }
+        else
+        {
+            <input class="w-full max-w-md p-2 border rounded text-center"
+                    placeholder="Escribe la palabra"
+                    value="@busqueda"
+                    @oninput="OnInputChanged" />
+        }
+        </div>
 
     @if (sugerencias.Any())
     {
         <div class="vocab-list flex flex-col gap-3 w-full">
             @foreach (var palabra in sugerencias)
             {
-                <div class="bg-yellow-50 p-3 rounded border shadow-sm flex items-center gap-4 vocab-item w-full">
+                <div class="flex">
                     <PlayJapanese Texto="@palabra.Jap" />
                     <span class="jap-word">@palabra.Jap</span>
                     <span class="translation">– @palabra.Esp</span>
@@ -32,9 +54,12 @@
 </div>
 
 @code {
+
     private string busqueda = "";
     private List<VocabularioModel> vocabulario = new();
     private List<VocabularioModel> sugerencias = new();
+    private bool Jap = false;
+    private ElementReference KanaInputRef;
 
     protected override async Task OnInitializedAsync()
     {
@@ -49,17 +74,34 @@
 
     private void OnBusquedaChanged()
     {
-        var texto = RemoverTildes(busqueda.Trim().ToLowerInvariant());
+        string texto;
+        if (Jap)
+        {
+            texto = busqueda;
+        }
+        else
+        {
+            texto = RemoverTildes(busqueda.ToLowerInvariant());
+        }
         if (string.IsNullOrWhiteSpace(texto))
         {
             sugerencias = new();
             return;
         }
-        sugerencias = vocabulario
-            .Where(x => RemoverTildes(x.Jap).Contains(texto, StringComparison.OrdinalIgnoreCase)
-                     || RemoverTildes(x.Esp).Contains(texto, StringComparison.OrdinalIgnoreCase))
+        if (Jap)
+        {
+            sugerencias = vocabulario
+            .Where(x => x.Jap.Contains(texto))
             .Take(10)
             .ToList();
+        }
+        else
+        {
+            sugerencias = vocabulario
+            .Where(x => RemoverTildes(x.Esp).Contains(texto, StringComparison.OrdinalIgnoreCase))
+            .Take(10)
+            .ToList();
+        }
     }
 
     private string RemoverTildes(string texto)
@@ -67,5 +109,13 @@
         return string.Concat(texto.Normalize(NormalizationForm.FormD)
             .Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark))
             .Normalize(NormalizationForm.FormC);
+    }
+
+    private async Task OnKanaInput(ChangeEventArgs e)
+    {
+        // Llama a la función JS para procesar el input
+        var respuesta = await JS.InvokeAsync<string>("kanaInputProcess", KanaInputRef);
+        e.Value = respuesta;
+        OnInputChanged(e);
     }
 }
